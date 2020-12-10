@@ -25,10 +25,7 @@
 				"defensive:cannon_turret"
 			],
 			"animation_references": [],
-			"families": [
-				"turret",
-				"cannon"
-			],
+			"families": [],
 			"custom_commands": [],
 			"custom_components": []
 		}
@@ -59,6 +56,36 @@
 			"custom_commands": []
 		},
 		"BP/items/Cannon Turret/cannon_turret.json": {
+			"identifiers": [
+				"defensive:cannon_turret"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cannon_turret/cannon_base.json": {
+			"identifiers": [
+				"defensive:cannon_base"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cannon_turret/cannon_stand.json": {
+			"identifiers": [
+				"defensive:cannon_stand"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cannon_turret/unfinished_cannon_head.json": {
+			"identifiers": [
+				"defensive:unfinished_cannon_head"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cannon_turret/cannon_head.json": {
+			"identifiers": [
+				"defensive:cannon_head"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cannon_turret/cannon_turret.json": {
 			"identifiers": [
 				"defensive:cannon_turret"
 			],
@@ -97,19 +124,9 @@
 			"identifiers": [
 				"defensive:cannon_turret"
 			],
-			"particle_references": [
-				"muzzle_flash",
-				"lit_fuse"
-			],
-			"animation_references": [
-				"idle",
-				"shoot",
-				"destroyed"
-			],
-			"sound_references": [
-				"shoot",
-				"destroyed"
-			],
+			"particle_references": [],
+			"animation_references": [],
+			"sound_references": [],
 			"texture_references": [
 				"default"
 			],
@@ -150,6 +167,11 @@
 	},
 	"render_controller": {
 		"RP/render_controllers/cannon_turret.render_controllers.json": {
+			"ids": [
+				"controller.render.cannon_turret"
+			]
+		},
+		"RP/render_controllers/cannon_turret.render_controller.json": {
 			"ids": [
 				"controller.render.cannon_turret"
 			]

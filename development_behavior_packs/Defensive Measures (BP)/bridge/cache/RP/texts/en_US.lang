@@ -1,8 +1,8 @@
 {
-	"file_path": "C:\\Users\\SatchTFF\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\texts\\en_US.lang",
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\texts\\en_US.lang",
 	"file_type": "client_lang",
 	"format_version": 0,
-	"file_uuid": "a1ddcfe8_1eec_437b_b0b9_3ba762e3b7d2",
-	"file_version": 9,
+	"file_uuid": "a5e0b579_398f_4eb0_9cc4_ec918dd8e9fa",
+	"file_version": 0,
 	"cache_content": "pack.name=Defensive Measures (RP)\r\npack.description=The required Resource Pack for the Behavior Pack Defensive Measures.\r\n\r\nitem.defensive:cannon_head.name=Cannon Head\r\nitem.defensive:cannon_base.name=Cannon Base\r\nitem.defensive:cannon_stand.name=Cannon Stand\r\nitem.defensive:unfinished_cannon_head.name=Unfinished Cannon Head\r\nitem.defensive:cannon_turret.name=Place Cannon Turret\r\n\r\nentity.defensive:cannon_turret.name=Cannon Turret"
 }

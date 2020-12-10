@@ -1,0 +1,473 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\sounds.json",
+	"file_type": "client_sound",
+	"format_version": 1,
+	"file_uuid": "13ad1a00_3daf_477c_8e08_3f8f48d1c09d",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"key": "individual_event_sounds",
+				"is_minified": true,
+				"children": {
+					"events": {}
+				}
+			},
+			{
+				"key": "block_sounds",
+				"is_minified": true,
+				"children": {}
+			},
+			{
+				"open": {
+					"individual_event_sounds": {
+						"events": {}
+					},
+					"block_sounds": {},
+					"entity_sounds": {
+						"defaults": {
+							"volume": 1,
+							"pitch": [
+								0.8,
+								1.2
+							],
+							"events": {
+								"fall.big": {
+									"sound": "damage.fallbig",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"fall.small": {
+									"sound": "damage.fallsmall",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"splash": {
+									"sound": "random.splash",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"swim": {
+									"sound": "random.swim",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"fizz": {
+									"sound": "random.fizz",
+									"volume": 0.7,
+									"pitch": [
+										1.2,
+										2
+									]
+								},
+								"drink": {
+									"sound": "random.drink",
+									"volume": 0.5,
+									"pitch": [
+										0.9,
+										1
+									]
+								},
+								"eat": {
+									"sound": "random.eat",
+									"volume": [
+										0.5,
+										1.5
+									],
+									"pitch": [
+										0.8,
+										1.2
+									]
+								},
+								"ambient": {},
+								"flop": {},
+								"hurt": "game.player.hurt",
+								"death": "game.player.die",
+								"ambient.in.water": {},
+								"hurt.in.water": {},
+								"death.in.water": {},
+								"ambient.in.raid": {}
+							}
+						},
+						"entities": {
+							"defensive:cannon_turret": {
+								"volume": 1,
+								"pitch": [
+									0.5,
+									1.5
+								],
+								"events": {
+									"shoot": {
+										"sound": "cannon.shoot",
+										"volume": 1,
+										"pitch": [
+											0.75,
+											1.25
+										]
+									},
+									"death": {
+										"sound": "cannon.destroyed",
+										"volume": 1,
+										"pitch": [
+											0.75,
+											1.25
+										]
+									}
+								}
+							}
+						}
+					}
+				},
+				"key": "entity_sounds",
+				"children": [
+					{
+						"key": "defaults",
+						"is_minified": true,
+						"children": {
+							"volume": 1,
+							"pitch": [
+								0.8,
+								1.2
+							],
+							"events": {
+								"fall.big": {
+									"sound": "damage.fallbig",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"fall.small": {
+									"sound": "damage.fallsmall",
+									"volume": 0.75,
+									"pitch": 1
+								},
+								"splash": {
+									"sound": "random.splash",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"swim": {
+									"sound": "random.swim",
+									"pitch": [
+										0.6,
+										1.4
+									]
+								},
+								"fizz": {
+									"sound": "random.fizz",
+									"volume": 0.7,
+									"pitch": [
+										1.2,
+										2
+									]
+								},
+								"drink": {
+									"sound": "random.drink",
+									"volume": 0.5,
+									"pitch": [
+										0.9,
+										1
+									]
+								},
+								"eat": {
+									"sound": "random.eat",
+									"volume": [
+										0.5,
+										1.5
+									],
+									"pitch": [
+										0.8,
+										1.2
+									]
+								},
+								"ambient": {},
+								"flop": {},
+								"hurt": "game.player.hurt",
+								"death": "game.player.die",
+								"ambient.in.water": {},
+								"hurt.in.water": {},
+								"death.in.water": {},
+								"ambient.in.raid": {}
+							}
+						}
+					},
+					{
+						"open": {
+							"defaults": {
+								"volume": 1,
+								"pitch": [
+									0.8,
+									1.2
+								],
+								"events": {
+									"fall.big": {
+										"sound": "damage.fallbig",
+										"volume": 0.75,
+										"pitch": 1
+									},
+									"fall.small": {
+										"sound": "damage.fallsmall",
+										"volume": 0.75,
+										"pitch": 1
+									},
+									"splash": {
+										"sound": "random.splash",
+										"pitch": [
+											0.6,
+											1.4
+										]
+									},
+									"swim": {
+										"sound": "random.swim",
+										"pitch": [
+											0.6,
+											1.4
+										]
+									},
+									"fizz": {
+										"sound": "random.fizz",
+										"volume": 0.7,
+										"pitch": [
+											1.2,
+											2
+										]
+									},
+									"drink": {
+										"sound": "random.drink",
+										"volume": 0.5,
+										"pitch": [
+											0.9,
+											1
+										]
+									},
+									"eat": {
+										"sound": "random.eat",
+										"volume": [
+											0.5,
+											1.5
+										],
+										"pitch": [
+											0.8,
+											1.2
+										]
+									},
+									"ambient": {},
+									"flop": {},
+									"hurt": "game.player.hurt",
+									"death": "game.player.die",
+									"ambient.in.water": {},
+									"hurt.in.water": {},
+									"death.in.water": {},
+									"ambient.in.raid": {}
+								}
+							},
+							"entities": {
+								"defensive:cannon_turret": {
+									"volume": 1,
+									"pitch": [
+										0.5,
+										1.5
+									],
+									"events": {
+										"shoot": {
+											"sound": "cannon.shoot",
+											"volume": 1,
+											"pitch": [
+												0.75,
+												1.25
+											]
+										},
+										"death": {
+											"sound": "cannon.destroyed",
+											"volume": 1,
+											"pitch": [
+												0.75,
+												1.25
+											]
+										}
+									}
+								}
+							}
+						},
+						"key": "entities",
+						"children": [
+							{
+								"open": {
+									"defensive:cannon_turret": {
+										"volume": 1,
+										"pitch": [
+											0.5,
+											1.5
+										],
+										"events": {
+											"shoot": {
+												"sound": "cannon.shoot",
+												"volume": 1,
+												"pitch": [
+													0.75,
+													1.25
+												]
+											},
+											"death": {
+												"sound": "cannon.destroyed",
+												"volume": 1,
+												"pitch": [
+													0.75,
+													1.25
+												]
+											}
+										}
+									}
+								},
+								"key": "defensive:cannon_turret",
+								"children": [
+									{
+										"data": "1",
+										"key": "volume"
+									},
+									{
+										"key": "pitch",
+										"is_minified": true,
+										"children": [
+											0.5,
+											1.5
+										]
+									},
+									{
+										"open": {
+											"volume": 1,
+											"pitch": [
+												0.5,
+												1.5
+											],
+											"events": {
+												"shoot": {
+													"sound": "cannon.shoot",
+													"volume": 1,
+													"pitch": [
+														0.75,
+														1.25
+													]
+												},
+												"death": {
+													"sound": "cannon.destroyed",
+													"volume": 1,
+													"pitch": [
+														0.75,
+														1.25
+													]
+												}
+											}
+										},
+										"key": "events",
+										"children": [
+											{
+												"open": {
+													"shoot": {
+														"sound": "cannon.shoot",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													},
+													"death": {
+														"sound": "cannon.destroyed",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													}
+												},
+												"key": "shoot",
+												"children": [
+													{
+														"data": "cannon.shoot",
+														"key": "sound"
+													},
+													{
+														"data": "1",
+														"key": "volume"
+													},
+													{
+														"open": {
+															"sound": "cannon.shoot",
+															"volume": 1,
+															"pitch": [
+																0.75,
+																1.25
+															]
+														},
+														"key": "pitch",
+														"is_minified": true,
+														"children": [
+															0.75,
+															1.25
+														]
+													}
+												]
+											},
+											{
+												"open": {
+													"shoot": {
+														"sound": "cannon.shoot",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													},
+													"death": {
+														"sound": "cannon.destroyed",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													}
+												},
+												"key": "death",
+												"children": [
+													{
+														"data": "cannon.destroyed",
+														"key": "sound"
+													},
+													{
+														"data": "1",
+														"key": "volume"
+													},
+													{
+														"open": {
+															"sound": "cannon.destroyed",
+															"volume": 1,
+															"pitch": [
+																0.75,
+																1.25
+															]
+														},
+														"key": "pitch",
+														"is_minified": true,
+														"children": [
+															0.75,
+															1.25
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
