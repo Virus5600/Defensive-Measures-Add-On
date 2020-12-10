@@ -1,0 +1,23 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.16.100",
+	"sound_definitions": {
+		"cannon.shoot": {
+			"category": "block",
+			"max_distance": 16,
+			"sounds": [
+				"sounds/turrets/Cannon Turret/shot1",
+				"sounds/turrets/Cannon Turret/shot2",
+				"sounds/turrets/Cannon Turret/shot3"
+			]
+		},
+		"cannon.destroyed": {
+			"category": "block",
+			"max_distance": 8,
+			"sounds": [
+				"sounds/turrets/Cannon Turret/crumbling cannon1",
+				"sounds/turrets/Cannon Turret/crumbling cannon2"
+			]
+		}
+	}
+}

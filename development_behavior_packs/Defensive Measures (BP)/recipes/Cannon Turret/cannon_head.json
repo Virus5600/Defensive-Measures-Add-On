@@ -1,0 +1,30 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "defensive:cannon_head"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"S ",
+			" U"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:string"
+			},
+			"U": {
+				"item": "defensive:unfinished_cannon_head"
+			}
+		},
+		"result": [
+			{
+				"item": "defensive:cannon_head",
+				"count": 1
+			}
+		]
+	}
+}

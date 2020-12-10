@@ -1,0 +1,45 @@
+//bridge-file-version: #16
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "defensive:cannon_turret",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/cannon_turret"
+			},
+			"geometry": {
+				"default": "geometry.cannon_turret"
+			},
+			"animations": {
+				"idle": "animation.cannon_turret.idle",
+				"shoot": "animation.cannon_turret.shoot",
+				"destroyed": "animation.cannon_turret.destroyed"
+			},
+			"sound_effects": {
+				"shoot": "cannon.shoot",
+				"destroyed": "cannon.destroyed"
+			},
+			"particle_effects": {
+				"muzzle_flash": "defensive:cannon_flash",
+				"lit_fuse": "defensive:cannon_fuse"
+			},
+			"render_controllers": [
+				"controller.render.cannon_turret"
+			],
+			"scripts": {
+				"animate": [
+					"idle",
+					{
+						"destroyed": "query.health <= 0"
+					},
+					{
+						"shoot": "query.is_charged"
+					}
+				]
+			}
+		}
+	}
+}

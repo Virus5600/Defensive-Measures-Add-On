@@ -1,0 +1,148 @@
+{
+	"file_path": "C:\\Users\\SatchTFF\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\entity\\cannon_turret.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "47d3ce4e_e48a_4d32_903d_18a4865363d5",
+	"file_version": 16,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "defensive:cannon_turret",
+							"materials": {
+								"default": "entity"
+							},
+							"textures": {
+								"default": "textures/entity/cannon_turret"
+							},
+							"geometry": {
+								"default": "geometry.cannon_turret"
+							},
+							"animations": {
+								"idle": "animation.cannon_turret.idle",
+								"shoot": "animation.cannon_turret.shoot",
+								"destroyed": "animation.cannon_turret.destroyed"
+							},
+							"sound_effects": {
+								"shoot": "cannon.shoot",
+								"destroyed": "cannon.destroyed"
+							},
+							"particle_effects": {
+								"muzzle_flash": "defensive:cannon_flash",
+								"lit_fuse": "defensive:cannon_fuse"
+							},
+							"render_controllers": [
+								"controller.render.cannon_turret"
+							],
+							"scripts": {
+								"animate": [
+									"idle",
+									{
+										"destroyed": "query.health <= 0"
+									},
+									{
+										"shoot": "query.is_charged"
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:cannon_turret",
+								"materials": {
+									"default": "entity"
+								},
+								"textures": {
+									"default": "textures/entity/cannon_turret"
+								},
+								"geometry": {
+									"default": "geometry.cannon_turret"
+								},
+								"animations": {
+									"idle": "animation.cannon_turret.idle",
+									"shoot": "animation.cannon_turret.shoot",
+									"destroyed": "animation.cannon_turret.destroyed"
+								},
+								"sound_effects": {
+									"shoot": "cannon.shoot",
+									"destroyed": "cannon.destroyed"
+								},
+								"particle_effects": {
+									"muzzle_flash": "defensive:cannon_flash",
+									"lit_fuse": "defensive:cannon_fuse"
+								},
+								"render_controllers": [
+									"controller.render.cannon_turret"
+								],
+								"scripts": {
+									"animate": [
+										"idle",
+										{
+											"destroyed": "query.health <= 0"
+										},
+										{
+											"shoot": "query.is_charged"
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "defensive:cannon_turret",
+							"materials": {
+								"default": "entity"
+							},
+							"textures": {
+								"default": "textures/entity/cannon_turret"
+							},
+							"geometry": {
+								"default": "geometry.cannon_turret"
+							},
+							"animations": {
+								"idle": "animation.cannon_turret.idle",
+								"shoot": "animation.cannon_turret.shoot",
+								"destroyed": "animation.cannon_turret.destroyed"
+							},
+							"sound_effects": {
+								"shoot": "cannon.shoot",
+								"destroyed": "cannon.destroyed"
+							},
+							"particle_effects": {
+								"muzzle_flash": "defensive:cannon_flash",
+								"lit_fuse": "defensive:cannon_fuse"
+							},
+							"render_controllers": [
+								"controller.render.cannon_turret"
+							],
+							"scripts": {
+								"animate": [
+									"idle",
+									{
+										"destroyed": "query.health <= 0"
+									},
+									{
+										"shoot": "query.is_charged"
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

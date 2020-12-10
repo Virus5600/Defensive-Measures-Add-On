@@ -1,0 +1,116 @@
+{
+	"RP/textures/item_texture.json": {
+		"data": {}
+	},
+	"RP/textures/terrain_texture.json": {
+		"data": {}
+	},
+	"BP/entities/player.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/bridge/custom_item_behavior.json": {
+		"data": {
+			"7d9ce721_b7eb_46ec_b389_2a43aa8a0829": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"a949445f_c184_45e4_b3ea_5a7000aabc0e": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"e9335de8_6c71_4891_ad5c_8f4f57ba32d6": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"debe5a7a_2499_4284_9e9a_4c55d1bc52d3": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"0bee286c_0d3c_44af_a470_7601a38e05e5": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			}
+		}
+	},
+	"BP/items/Cannon Turret/cannon_head.json": {
+		"data": {}
+	},
+	"BP/items/Cannon Turret/cannon_base.json": {
+		"data": {}
+	},
+	"BP/items/Cannon Turret/cannon_stand.json": {
+		"data": {}
+	},
+	"BP/items/Cannon Turret/unfinished_cannon_head.json": {
+		"data": {}
+	},
+	"BP/items/Cannon Turret/cannon_turret.json": {
+		"data": {}
+	},
+	"BP/loot_tables/Cannon Turret/cannon_turret.json": {
+		"data": {}
+	},
+	"BP/recipes/Cannon Turret/cannon_base.json": {
+		"data": {}
+	},
+	"BP/recipes/Cannon Turret/cannon_head.json": {
+		"data": {}
+	},
+	"BP/recipes/Cannon Turret/cannon_stand.json": {
+		"data": {}
+	},
+	"BP/recipes/Cannon Turret/cannon_turret.json": {
+		"data": {}
+	},
+	"BP/recipes/Cannon Turret/unfinished_cannon_head.json": {
+		"data": {}
+	},
+	"RP/entity/cannon_turret.entity.json": {
+		"data": {}
+	},
+	"RP/sounds/sound_definitions.json": {
+		"data": {}
+	},
+	"RP/animations/cannon_turret.animation.json": {
+		"data": {}
+	},
+	"BP/entities/cannon_turret.json": {
+		"data": {}
+	},
+	"RP/particles/cannon_fuse.particle.json": {
+		"data": {}
+	},
+	"RP/render_controllers/cannon_turret.render_controllers.json": {
+		"data": {}
+	}
+}

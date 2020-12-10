@@ -1,0 +1,218 @@
+{
+	"file_path": "C:\\Users\\SatchTFF\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)/recipes/Cannon Turret/cannon_stand.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "7d1bda9f_0380_4616_bd5d_33bb1f42d906",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "defensive:cannon_stand"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"SS",
+							"SSS"
+						],
+						"key": {
+							"S": {
+								"item": "minecraft:wooden_slab"
+							}
+						},
+						"result": [
+							{
+								"item": "defensive:cannon_stand",
+								"count": 2
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:cannon_stand"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"SS",
+								"SSS"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:wooden_slab"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:cannon_stand",
+									"count": 2
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "defensive:cannon_stand"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:cannon_stand"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"SS",
+								"SSS"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:wooden_slab"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:cannon_stand",
+									"count": 2
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:cannon_stand"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"SS",
+								"SSS"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:wooden_slab"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:cannon_stand",
+									"count": 2
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"SS",
+							"SSS"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:cannon_stand"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"SS",
+								"SSS"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:wooden_slab"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:cannon_stand",
+									"count": 2
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"S": {
+										"item": "minecraft:wooden_slab"
+									}
+								},
+								"key": "S",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:wooden_slab"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:cannon_stand"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"SS",
+								"SSS"
+							],
+							"key": {
+								"S": {
+									"item": "minecraft:wooden_slab"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:cannon_stand",
+									"count": 2
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "defensive:cannon_stand",
+										"count": 2
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "defensive:cannon_stand",
+									"count": 2
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

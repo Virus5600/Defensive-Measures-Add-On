@@ -1,0 +1,17 @@
+{
+	"file_path": "C:\\Users\\SatchTFF\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\textures\\terrain_texture.json",
+	"file_type": "terrain_texture",
+	"format_version": 1,
+	"file_uuid": "15c9e291_78c1_49e3_b2f0_320e89949d5a",
+	"file_version": 0,
+	"cache_content": {
+		"is_minified": true,
+		"children": {
+			"resource_pack_name": "Defensive Measures (RP)",
+			"texture_name": "atlas.terrain",
+			"padding": 8,
+			"num_mip_levels": 4,
+			"texture_data": {}
+		}
+	}
+}

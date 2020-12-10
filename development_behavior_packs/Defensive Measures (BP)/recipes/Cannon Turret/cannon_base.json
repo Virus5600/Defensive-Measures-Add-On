@@ -1,0 +1,30 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "defensive:cannon_base"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:stone"
+			},
+			"P": {
+				"item": "minecraft:wooden_slab"
+			}
+		},
+		"pattern": [
+			"PPP",
+			"SSS"
+		],
+		"result": [
+			{
+				"item": "defensive:cannon_base",
+				"count": 1
+			}
+		]
+	}
+}

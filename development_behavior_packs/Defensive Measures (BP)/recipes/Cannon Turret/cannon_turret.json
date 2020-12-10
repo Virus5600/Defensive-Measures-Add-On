@@ -1,0 +1,33 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "defensive:cannon_turret"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" H ",
+			"SBS"
+		],
+		"key": {
+			"H": {
+				"item": "defensive:cannon_head"
+			},
+			"S": {
+				"item": "defensive:cannon_stand"
+			},
+			"B": {
+				"item": "defensive:cannon_base"
+			}
+		},
+		"result": [
+			{
+				"item": "defensive:cannon_turret",
+				"count": 1
+			}
+		]
+	}
+}

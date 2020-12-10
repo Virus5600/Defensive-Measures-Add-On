@@ -1,0 +1,1896 @@
+{
+	"file_path": "C:\\Users\\SatchTFF\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)/loot_tables/Cannon Turret/cannon_turret.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "45e0c1ac_4d09_4120_b579_34992779712b",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"weight": 20,
+									"pools": [
+										{
+											"rolls": 1,
+											"entries": [
+												{
+													"type": "item",
+													"name": "defensive:cannon_head",
+													"weight": 20
+												},
+												{
+													"type": "item",
+													"name": "defensive:unfinished_cannon_head",
+													"weight": 50
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "item",
+									"weight": 40,
+									"pools": [
+										{
+											"rolls": 1,
+											"entries": [
+												{
+													"type": "item",
+													"name": "minecraft:iron_nugget",
+													"weight": 40,
+													"functions": [
+														{
+															"function": "set_count",
+															"count": {
+																"min": 5,
+																"max": 9
+															}
+														}
+													]
+												},
+												{
+													"type": "item",
+													"name": "minecraft:iron_ingot",
+													"weight": 30,
+													"functions": [
+														{
+															"function": "set_count",
+															"count": {
+																"min": 1,
+																"max": 3
+															}
+														}
+													]
+												},
+												{
+													"type": "item",
+													"weight": 30,
+													"pools": [
+														{
+															"rolls": 2,
+															"entries": [
+																{
+																	"type": "item",
+																	"name": "minecraft:iron_ingot",
+																	"functions": [
+																		{
+																			"function": "set_count",
+																			"count": {
+																				"min": 1,
+																				"max": 2
+																			}
+																		}
+																	]
+																},
+																{
+																	"type": "item",
+																	"name": "minecraft:iron_nugget",
+																	"functions": [
+																		{
+																			"function": "set_count",
+																			"count": {
+																				"min": 1,
+																				"max": 5
+																			}
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:stone",
+									"weight": 1,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 0,
+												"max": 3
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:wooden_slab",
+									"weight": 1,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 0,
+												"max": 3
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"weight": 20,
+										"pools": [
+											{
+												"rolls": 1,
+												"entries": [
+													{
+														"type": "item",
+														"name": "defensive:cannon_head",
+														"weight": 20
+													},
+													{
+														"type": "item",
+														"name": "defensive:unfinished_cannon_head",
+														"weight": 50
+													}
+												]
+											}
+										]
+									},
+									{
+										"type": "item",
+										"weight": 40,
+										"pools": [
+											{
+												"rolls": 1,
+												"entries": [
+													{
+														"type": "item",
+														"name": "minecraft:iron_nugget",
+														"weight": 40,
+														"functions": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 5,
+																	"max": 9
+																}
+															}
+														]
+													},
+													{
+														"type": "item",
+														"name": "minecraft:iron_ingot",
+														"weight": 30,
+														"functions": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 1,
+																	"max": 3
+																}
+															}
+														]
+													},
+													{
+														"type": "item",
+														"weight": 30,
+														"pools": [
+															{
+																"rolls": 2,
+																"entries": [
+																	{
+																		"type": "item",
+																		"name": "minecraft:iron_ingot",
+																		"functions": [
+																			{
+																				"function": "set_count",
+																				"count": {
+																					"min": 1,
+																					"max": 2
+																				}
+																			}
+																		]
+																	},
+																	{
+																		"type": "item",
+																		"name": "minecraft:iron_nugget",
+																		"functions": [
+																			{
+																				"function": "set_count",
+																				"count": {
+																					"min": 1,
+																					"max": 5
+																				}
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:stone",
+										"weight": 1,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 0,
+													"max": 3
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:wooden_slab",
+										"weight": 1,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 0,
+													"max": 3
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"weight": 20,
+											"pools": [
+												{
+													"rolls": 1,
+													"entries": [
+														{
+															"type": "item",
+															"name": "defensive:cannon_head",
+															"weight": 20
+														},
+														{
+															"type": "item",
+															"name": "defensive:unfinished_cannon_head",
+															"weight": 50
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "item",
+											"weight": 40,
+											"pools": [
+												{
+													"rolls": 1,
+													"entries": [
+														{
+															"type": "item",
+															"name": "minecraft:iron_nugget",
+															"weight": 40,
+															"functions": [
+																{
+																	"function": "set_count",
+																	"count": {
+																		"min": 5,
+																		"max": 9
+																	}
+																}
+															]
+														},
+														{
+															"type": "item",
+															"name": "minecraft:iron_ingot",
+															"weight": 30,
+															"functions": [
+																{
+																	"function": "set_count",
+																	"count": {
+																		"min": 1,
+																		"max": 3
+																	}
+																}
+															]
+														},
+														{
+															"type": "item",
+															"weight": 30,
+															"pools": [
+																{
+																	"rolls": 2,
+																	"entries": [
+																		{
+																			"type": "item",
+																			"name": "minecraft:iron_ingot",
+																			"functions": [
+																				{
+																					"function": "set_count",
+																					"count": {
+																						"min": 1,
+																						"max": 2
+																					}
+																				}
+																			]
+																		},
+																		{
+																			"type": "item",
+																			"name": "minecraft:iron_nugget",
+																			"functions": [
+																				{
+																					"function": "set_count",
+																					"count": {
+																						"min": 1,
+																						"max": 5
+																					}
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"weight": 20,
+												"pools": [
+													{
+														"rolls": 1,
+														"entries": [
+															{
+																"type": "item",
+																"name": "defensive:cannon_head",
+																"weight": 20
+															},
+															{
+																"type": "item",
+																"name": "defensive:unfinished_cannon_head",
+																"weight": 50
+															}
+														]
+													}
+												]
+											},
+											{
+												"type": "item",
+												"weight": 40,
+												"pools": [
+													{
+														"rolls": 1,
+														"entries": [
+															{
+																"type": "item",
+																"name": "minecraft:iron_nugget",
+																"weight": 40,
+																"functions": [
+																	{
+																		"function": "set_count",
+																		"count": {
+																			"min": 5,
+																			"max": 9
+																		}
+																	}
+																]
+															},
+															{
+																"type": "item",
+																"name": "minecraft:iron_ingot",
+																"weight": 30,
+																"functions": [
+																	{
+																		"function": "set_count",
+																		"count": {
+																			"min": 1,
+																			"max": 3
+																		}
+																	}
+																]
+															},
+															{
+																"type": "item",
+																"weight": 30,
+																"pools": [
+																	{
+																		"rolls": 2,
+																		"entries": [
+																			{
+																				"type": "item",
+																				"name": "minecraft:iron_ingot",
+																				"functions": [
+																					{
+																						"function": "set_count",
+																						"count": {
+																							"min": 1,
+																							"max": 2
+																						}
+																					}
+																				]
+																			},
+																			{
+																				"type": "item",
+																				"name": "minecraft:iron_nugget",
+																				"functions": [
+																					{
+																						"function": "set_count",
+																						"count": {
+																							"min": 1,
+																							"max": 5
+																						}
+																					}
+																				]
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										],
+										"children": [
+											{
+												"data": "item",
+												"key": "type"
+											},
+											{
+												"data": "20",
+												"key": "weight"
+											},
+											{
+												"key": "pools",
+												"children": [
+													{
+														"open": [
+															{
+																"rolls": 1,
+																"entries": [
+																	{
+																		"type": "item",
+																		"name": "defensive:cannon_head",
+																		"weight": 20
+																	},
+																	{
+																		"type": "item",
+																		"name": "defensive:unfinished_cannon_head",
+																		"weight": 50
+																	}
+																]
+															}
+														],
+														"children": [
+															{
+																"data": "1",
+																"key": "rolls"
+															},
+															{
+																"open": {
+																	"rolls": 1,
+																	"entries": [
+																		{
+																			"type": "item",
+																			"name": "defensive:cannon_head",
+																			"weight": 20
+																		},
+																		{
+																			"type": "item",
+																			"name": "defensive:unfinished_cannon_head",
+																			"weight": 50
+																		}
+																	]
+																},
+																"key": "entries",
+																"children": [
+																	{
+																		"open": [
+																			{
+																				"type": "item",
+																				"name": "defensive:cannon_head",
+																				"weight": 20
+																			},
+																			{
+																				"type": "item",
+																				"name": "defensive:unfinished_cannon_head",
+																				"weight": 50
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"type": "item",
+																			"name": "defensive:cannon_head",
+																			"weight": 20
+																		}
+																	},
+																	{
+																		"open": [
+																			{
+																				"type": "item",
+																				"name": "defensive:cannon_head",
+																				"weight": 20
+																			},
+																			{
+																				"type": "item",
+																				"name": "defensive:unfinished_cannon_head",
+																				"weight": 50
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"type": "item",
+																			"name": "defensive:unfinished_cannon_head",
+																			"weight": 50
+																		}
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": [
+											{
+												"type": "item",
+												"weight": 20,
+												"pools": [
+													{
+														"rolls": 1,
+														"entries": [
+															{
+																"type": "item",
+																"name": "defensive:cannon_head",
+																"weight": 20
+															},
+															{
+																"type": "item",
+																"name": "defensive:unfinished_cannon_head",
+																"weight": 50
+															}
+														]
+													}
+												]
+											},
+											{
+												"type": "item",
+												"weight": 40,
+												"pools": [
+													{
+														"rolls": 1,
+														"entries": [
+															{
+																"type": "item",
+																"name": "minecraft:iron_nugget",
+																"weight": 40,
+																"functions": [
+																	{
+																		"function": "set_count",
+																		"count": {
+																			"min": 5,
+																			"max": 9
+																		}
+																	}
+																]
+															},
+															{
+																"type": "item",
+																"name": "minecraft:iron_ingot",
+																"weight": 30,
+																"functions": [
+																	{
+																		"function": "set_count",
+																		"count": {
+																			"min": 1,
+																			"max": 3
+																		}
+																	}
+																]
+															},
+															{
+																"type": "item",
+																"weight": 30,
+																"pools": [
+																	{
+																		"rolls": 2,
+																		"entries": [
+																			{
+																				"type": "item",
+																				"name": "minecraft:iron_ingot",
+																				"functions": [
+																					{
+																						"function": "set_count",
+																						"count": {
+																							"min": 1,
+																							"max": 2
+																						}
+																					}
+																				]
+																			},
+																			{
+																				"type": "item",
+																				"name": "minecraft:iron_nugget",
+																				"functions": [
+																					{
+																						"function": "set_count",
+																						"count": {
+																							"min": 1,
+																							"max": 5
+																						}
+																					}
+																				]
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										],
+										"children": [
+											{
+												"data": "item",
+												"key": "type"
+											},
+											{
+												"data": "40",
+												"key": "weight"
+											},
+											{
+												"open": {
+													"type": "item",
+													"weight": 40,
+													"pools": [
+														{
+															"rolls": 1,
+															"entries": [
+																{
+																	"type": "item",
+																	"name": "minecraft:iron_nugget",
+																	"weight": 40,
+																	"functions": [
+																		{
+																			"function": "set_count",
+																			"count": {
+																				"min": 5,
+																				"max": 9
+																			}
+																		}
+																	]
+																},
+																{
+																	"type": "item",
+																	"name": "minecraft:iron_ingot",
+																	"weight": 30,
+																	"functions": [
+																		{
+																			"function": "set_count",
+																			"count": {
+																				"min": 1,
+																				"max": 3
+																			}
+																		}
+																	]
+																},
+																{
+																	"type": "item",
+																	"weight": 30,
+																	"pools": [
+																		{
+																			"rolls": 2,
+																			"entries": [
+																				{
+																					"type": "item",
+																					"name": "minecraft:iron_ingot",
+																					"functions": [
+																						{
+																							"function": "set_count",
+																							"count": {
+																								"min": 1,
+																								"max": 2
+																							}
+																						}
+																					]
+																				},
+																				{
+																					"type": "item",
+																					"name": "minecraft:iron_nugget",
+																					"functions": [
+																						{
+																							"function": "set_count",
+																							"count": {
+																								"min": 1,
+																								"max": 5
+																							}
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												"key": "pools",
+												"children": [
+													{
+														"open": [
+															{
+																"rolls": 1,
+																"entries": [
+																	{
+																		"type": "item",
+																		"name": "minecraft:iron_nugget",
+																		"weight": 40,
+																		"functions": [
+																			{
+																				"function": "set_count",
+																				"count": {
+																					"min": 5,
+																					"max": 9
+																				}
+																			}
+																		]
+																	},
+																	{
+																		"type": "item",
+																		"name": "minecraft:iron_ingot",
+																		"weight": 30,
+																		"functions": [
+																			{
+																				"function": "set_count",
+																				"count": {
+																					"min": 1,
+																					"max": 3
+																				}
+																			}
+																		]
+																	},
+																	{
+																		"type": "item",
+																		"weight": 30,
+																		"pools": [
+																			{
+																				"rolls": 2,
+																				"entries": [
+																					{
+																						"type": "item",
+																						"name": "minecraft:iron_ingot",
+																						"functions": [
+																							{
+																								"function": "set_count",
+																								"count": {
+																									"min": 1,
+																									"max": 2
+																								}
+																							}
+																						]
+																					},
+																					{
+																						"type": "item",
+																						"name": "minecraft:iron_nugget",
+																						"functions": [
+																							{
+																								"function": "set_count",
+																								"count": {
+																									"min": 1,
+																									"max": 5
+																								}
+																							}
+																						]
+																					}
+																				]
+																			}
+																		]
+																	}
+																]
+															}
+														],
+														"children": [
+															{
+																"data": "1",
+																"key": "rolls"
+															},
+															{
+																"open": {
+																	"rolls": 1,
+																	"entries": [
+																		{
+																			"type": "item",
+																			"name": "minecraft:iron_nugget",
+																			"weight": 40,
+																			"functions": [
+																				{
+																					"function": "set_count",
+																					"count": {
+																						"min": 5,
+																						"max": 9
+																					}
+																				}
+																			]
+																		},
+																		{
+																			"type": "item",
+																			"name": "minecraft:iron_ingot",
+																			"weight": 30,
+																			"functions": [
+																				{
+																					"function": "set_count",
+																					"count": {
+																						"min": 1,
+																						"max": 3
+																					}
+																				}
+																			]
+																		},
+																		{
+																			"type": "item",
+																			"weight": 30,
+																			"pools": [
+																				{
+																					"rolls": 2,
+																					"entries": [
+																						{
+																							"type": "item",
+																							"name": "minecraft:iron_ingot",
+																							"functions": [
+																								{
+																									"function": "set_count",
+																									"count": {
+																										"min": 1,
+																										"max": 2
+																									}
+																								}
+																							]
+																						},
+																						{
+																							"type": "item",
+																							"name": "minecraft:iron_nugget",
+																							"functions": [
+																								{
+																									"function": "set_count",
+																									"count": {
+																										"min": 1,
+																										"max": 5
+																									}
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																"key": "entries",
+																"children": [
+																	{
+																		"open": [
+																			{
+																				"type": "item",
+																				"name": "minecraft:iron_nugget",
+																				"weight": 40,
+																				"functions": [
+																					{
+																						"function": "set_count",
+																						"count": {
+																							"min": 5,
+																							"max": 9
+																						}
+																					}
+																				]
+																			},
+																			{
+																				"type": "item",
+																				"name": "minecraft:iron_ingot",
+																				"weight": 30,
+																				"functions": [
+																					{
+																						"function": "set_count",
+																						"count": {
+																							"min": 1,
+																							"max": 3
+																						}
+																					}
+																				]
+																			},
+																			{
+																				"type": "item",
+																				"weight": 30,
+																				"pools": [
+																					{
+																						"rolls": 2,
+																						"entries": [
+																							{
+																								"type": "item",
+																								"name": "minecraft:iron_ingot",
+																								"functions": [
+																									{
+																										"function": "set_count",
+																										"count": {
+																											"min": 1,
+																											"max": 2
+																										}
+																									}
+																								]
+																							},
+																							{
+																								"type": "item",
+																								"name": "minecraft:iron_nugget",
+																								"functions": [
+																									{
+																										"function": "set_count",
+																										"count": {
+																											"min": 1,
+																											"max": 5
+																										}
+																									}
+																								]
+																							}
+																						]
+																					}
+																				]
+																			}
+																		],
+																		"children": [
+																			{
+																				"data": "item",
+																				"key": "type"
+																			},
+																			{
+																				"data": "minecraft:iron_nugget",
+																				"key": "name"
+																			},
+																			{
+																				"data": "40",
+																				"key": "weight"
+																			},
+																			{
+																				"key": "functions",
+																				"children": [
+																					{
+																						"open": [
+																							{
+																								"function": "set_count",
+																								"count": {
+																									"min": 5,
+																									"max": 9
+																								}
+																							}
+																						],
+																						"children": [
+																							{
+																								"data": "set_count",
+																								"key": "function"
+																							},
+																							{
+																								"open": {
+																									"function": "set_count",
+																									"count": {
+																										"min": 5,
+																										"max": 9
+																									}
+																								},
+																								"key": "count",
+																								"is_minified": true,
+																								"children": {
+																									"min": 5,
+																									"max": 9
+																								}
+																							}
+																						]
+																					}
+																				]
+																			}
+																		]
+																	},
+																	{
+																		"open": [
+																			{
+																				"type": "item",
+																				"name": "minecraft:iron_nugget",
+																				"weight": 40,
+																				"functions": [
+																					{
+																						"function": "set_count",
+																						"count": {
+																							"min": 5,
+																							"max": 9
+																						}
+																					}
+																				]
+																			},
+																			{
+																				"type": "item",
+																				"name": "minecraft:iron_ingot",
+																				"weight": 30,
+																				"functions": [
+																					{
+																						"function": "set_count",
+																						"count": {
+																							"min": 1,
+																							"max": 3
+																						}
+																					}
+																				]
+																			},
+																			{
+																				"type": "item",
+																				"weight": 30,
+																				"pools": [
+																					{
+																						"rolls": 2,
+																						"entries": [
+																							{
+																								"type": "item",
+																								"name": "minecraft:iron_ingot",
+																								"functions": [
+																									{
+																										"function": "set_count",
+																										"count": {
+																											"min": 1,
+																											"max": 2
+																										}
+																									}
+																								]
+																							},
+																							{
+																								"type": "item",
+																								"name": "minecraft:iron_nugget",
+																								"functions": [
+																									{
+																										"function": "set_count",
+																										"count": {
+																											"min": 1,
+																											"max": 5
+																										}
+																									}
+																								]
+																							}
+																						]
+																					}
+																				]
+																			}
+																		],
+																		"children": [
+																			{
+																				"data": "item",
+																				"key": "type"
+																			},
+																			{
+																				"data": "minecraft:iron_ingot",
+																				"key": "name"
+																			},
+																			{
+																				"data": "30",
+																				"key": "weight"
+																			},
+																			{
+																				"key": "functions",
+																				"children": [
+																					{
+																						"open": [
+																							{
+																								"function": "set_count",
+																								"count": {
+																									"min": 1,
+																									"max": 3
+																								}
+																							}
+																						],
+																						"children": [
+																							{
+																								"data": "set_count",
+																								"key": "function"
+																							},
+																							{
+																								"open": {
+																									"function": "set_count",
+																									"count": {
+																										"min": 1,
+																										"max": 3
+																									}
+																								},
+																								"key": "count",
+																								"is_minified": true,
+																								"children": {
+																									"min": 1,
+																									"max": 3
+																								}
+																							}
+																						]
+																					}
+																				]
+																			}
+																		]
+																	},
+																	{
+																		"open": [
+																			{
+																				"type": "item",
+																				"name": "minecraft:iron_nugget",
+																				"weight": 40,
+																				"functions": [
+																					{
+																						"function": "set_count",
+																						"count": {
+																							"min": 5,
+																							"max": 9
+																						}
+																					}
+																				]
+																			},
+																			{
+																				"type": "item",
+																				"name": "minecraft:iron_ingot",
+																				"weight": 30,
+																				"functions": [
+																					{
+																						"function": "set_count",
+																						"count": {
+																							"min": 1,
+																							"max": 3
+																						}
+																					}
+																				]
+																			},
+																			{
+																				"type": "item",
+																				"weight": 30,
+																				"pools": [
+																					{
+																						"rolls": 2,
+																						"entries": [
+																							{
+																								"type": "item",
+																								"name": "minecraft:iron_ingot",
+																								"functions": [
+																									{
+																										"function": "set_count",
+																										"count": {
+																											"min": 1,
+																											"max": 2
+																										}
+																									}
+																								]
+																							},
+																							{
+																								"type": "item",
+																								"name": "minecraft:iron_nugget",
+																								"functions": [
+																									{
+																										"function": "set_count",
+																										"count": {
+																											"min": 1,
+																											"max": 5
+																										}
+																									}
+																								]
+																							}
+																						]
+																					}
+																				]
+																			}
+																		],
+																		"children": [
+																			{
+																				"data": "item",
+																				"key": "type"
+																			},
+																			{
+																				"data": "30",
+																				"key": "weight"
+																			},
+																			{
+																				"open": {
+																					"type": "item",
+																					"weight": 30,
+																					"pools": [
+																						{
+																							"rolls": 2,
+																							"entries": [
+																								{
+																									"type": "item",
+																									"name": "minecraft:iron_ingot",
+																									"functions": [
+																										{
+																											"function": "set_count",
+																											"count": {
+																												"min": 1,
+																												"max": 2
+																											}
+																										}
+																									]
+																								},
+																								{
+																									"type": "item",
+																									"name": "minecraft:iron_nugget",
+																									"functions": [
+																										{
+																											"function": "set_count",
+																											"count": {
+																												"min": 1,
+																												"max": 5
+																											}
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				"key": "pools",
+																				"children": [
+																					{
+																						"open": [
+																							{
+																								"rolls": 2,
+																								"entries": [
+																									{
+																										"type": "item",
+																										"name": "minecraft:iron_ingot",
+																										"functions": [
+																											{
+																												"function": "set_count",
+																												"count": {
+																													"min": 1,
+																													"max": 2
+																												}
+																											}
+																										]
+																									},
+																									{
+																										"type": "item",
+																										"name": "minecraft:iron_nugget",
+																										"functions": [
+																											{
+																												"function": "set_count",
+																												"count": {
+																													"min": 1,
+																													"max": 5
+																												}
+																											}
+																										]
+																									}
+																								]
+																							}
+																						],
+																						"children": [
+																							{
+																								"data": "2",
+																								"key": "rolls"
+																							},
+																							{
+																								"open": {
+																									"rolls": 2,
+																									"entries": [
+																										{
+																											"type": "item",
+																											"name": "minecraft:iron_ingot",
+																											"functions": [
+																												{
+																													"function": "set_count",
+																													"count": {
+																														"min": 1,
+																														"max": 2
+																													}
+																												}
+																											]
+																										},
+																										{
+																											"type": "item",
+																											"name": "minecraft:iron_nugget",
+																											"functions": [
+																												{
+																													"function": "set_count",
+																													"count": {
+																														"min": 1,
+																														"max": 5
+																													}
+																												}
+																											]
+																										}
+																									]
+																								},
+																								"key": "entries",
+																								"children": [
+																									{
+																										"open": [
+																											{
+																												"type": "item",
+																												"name": "minecraft:iron_ingot",
+																												"functions": [
+																													{
+																														"function": "set_count",
+																														"count": {
+																															"min": 1,
+																															"max": 2
+																														}
+																													}
+																												]
+																											},
+																											{
+																												"type": "item",
+																												"name": "minecraft:iron_nugget",
+																												"functions": [
+																													{
+																														"function": "set_count",
+																														"count": {
+																															"min": 1,
+																															"max": 5
+																														}
+																													}
+																												]
+																											}
+																										],
+																										"children": [
+																											{
+																												"data": "item",
+																												"key": "type"
+																											},
+																											{
+																												"data": "minecraft:iron_ingot",
+																												"key": "name"
+																											},
+																											{
+																												"key": "functions",
+																												"children": [
+																													{
+																														"open": [
+																															{
+																																"function": "set_count",
+																																"count": {
+																																	"min": 1,
+																																	"max": 2
+																																}
+																															}
+																														],
+																														"children": [
+																															{
+																																"data": "set_count",
+																																"key": "function"
+																															},
+																															{
+																																"open": {
+																																	"function": "set_count",
+																																	"count": {
+																																		"min": 1,
+																																		"max": 2
+																																	}
+																																},
+																																"key": "count",
+																																"is_minified": true,
+																																"children": {
+																																	"min": 1,
+																																	"max": 2
+																																}
+																															}
+																														]
+																													}
+																												]
+																											}
+																										]
+																									},
+																									{
+																										"open": [
+																											{
+																												"type": "item",
+																												"name": "minecraft:iron_ingot",
+																												"functions": [
+																													{
+																														"function": "set_count",
+																														"count": {
+																															"min": 1,
+																															"max": 2
+																														}
+																													}
+																												]
+																											},
+																											{
+																												"type": "item",
+																												"name": "minecraft:iron_nugget",
+																												"functions": [
+																													{
+																														"function": "set_count",
+																														"count": {
+																															"min": 1,
+																															"max": 5
+																														}
+																													}
+																												]
+																											}
+																										],
+																										"children": [
+																											{
+																												"data": "item",
+																												"key": "type"
+																											},
+																											{
+																												"data": "minecraft:iron_nugget",
+																												"key": "name"
+																											},
+																											{
+																												"key": "functions",
+																												"children": [
+																													{
+																														"open": [
+																															{
+																																"function": "set_count",
+																																"count": {
+																																	"min": 1,
+																																	"max": 5
+																																}
+																															}
+																														],
+																														"children": [
+																															{
+																																"data": "set_count",
+																																"key": "function"
+																															},
+																															{
+																																"open": {
+																																	"function": "set_count",
+																																	"count": {
+																																		"min": 1,
+																																		"max": 5
+																																	}
+																																},
+																																"key": "count",
+																																"is_minified": true,
+																																"children": {
+																																	"min": 1,
+																																	"max": 5
+																																}
+																															}
+																														]
+																													}
+																												]
+																											}
+																										]
+																									}
+																								]
+																							}
+																						]
+																					}
+																				]
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"weight": 20,
+										"pools": [
+											{
+												"rolls": 1,
+												"entries": [
+													{
+														"type": "item",
+														"name": "defensive:cannon_head",
+														"weight": 20
+													},
+													{
+														"type": "item",
+														"name": "defensive:unfinished_cannon_head",
+														"weight": 50
+													}
+												]
+											}
+										]
+									},
+									{
+										"type": "item",
+										"weight": 40,
+										"pools": [
+											{
+												"rolls": 1,
+												"entries": [
+													{
+														"type": "item",
+														"name": "minecraft:iron_nugget",
+														"weight": 40,
+														"functions": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 5,
+																	"max": 9
+																}
+															}
+														]
+													},
+													{
+														"type": "item",
+														"name": "minecraft:iron_ingot",
+														"weight": 30,
+														"functions": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 1,
+																	"max": 3
+																}
+															}
+														]
+													},
+													{
+														"type": "item",
+														"weight": 30,
+														"pools": [
+															{
+																"rolls": 2,
+																"entries": [
+																	{
+																		"type": "item",
+																		"name": "minecraft:iron_ingot",
+																		"functions": [
+																			{
+																				"function": "set_count",
+																				"count": {
+																					"min": 1,
+																					"max": 2
+																				}
+																			}
+																		]
+																	},
+																	{
+																		"type": "item",
+																		"name": "minecraft:iron_nugget",
+																		"functions": [
+																			{
+																				"function": "set_count",
+																				"count": {
+																					"min": 1,
+																					"max": 5
+																				}
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:stone",
+										"weight": 1,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 0,
+													"max": 3
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:wooden_slab",
+										"weight": 1,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 0,
+													"max": 3
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "minecraft:stone",
+											"weight": 1,
+											"functions": [
+												{
+													"function": "set_count",
+													"count": {
+														"min": 0,
+														"max": 3
+													}
+												}
+											]
+										},
+										{
+											"type": "item",
+											"name": "minecraft:wooden_slab",
+											"weight": 1,
+											"functions": [
+												{
+													"function": "set_count",
+													"count": {
+														"min": 0,
+														"max": 3
+													}
+												}
+											]
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "minecraft:stone",
+												"weight": 1,
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 0,
+															"max": 3
+														}
+													}
+												]
+											},
+											{
+												"type": "item",
+												"name": "minecraft:wooden_slab",
+												"weight": 1,
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 0,
+															"max": 3
+														}
+													}
+												]
+											}
+										],
+										"children": [
+											{
+												"data": "item",
+												"key": "type"
+											},
+											{
+												"data": "minecraft:stone",
+												"key": "name"
+											},
+											{
+												"data": "1",
+												"key": "weight"
+											},
+											{
+												"key": "functions",
+												"children": [
+													{
+														"open": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 0,
+																	"max": 3
+																}
+															}
+														],
+														"children": [
+															{
+																"data": "set_count",
+																"key": "function"
+															},
+															{
+																"open": {
+																	"function": "set_count",
+																	"count": {
+																		"min": 0,
+																		"max": 3
+																	}
+																},
+																"key": "count",
+																"is_minified": true,
+																"children": {
+																	"min": 0,
+																	"max": 3
+																}
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "minecraft:stone",
+												"weight": 1,
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 0,
+															"max": 3
+														}
+													}
+												]
+											},
+											{
+												"type": "item",
+												"name": "minecraft:wooden_slab",
+												"weight": 1,
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 0,
+															"max": 3
+														}
+													}
+												]
+											}
+										],
+										"children": [
+											{
+												"data": "item",
+												"key": "type"
+											},
+											{
+												"data": "minecraft:wooden_slab",
+												"key": "name"
+											},
+											{
+												"data": "1",
+												"key": "weight"
+											},
+											{
+												"key": "functions",
+												"children": [
+													{
+														"open": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 0,
+																	"max": 3
+																}
+															}
+														],
+														"children": [
+															{
+																"data": "set_count",
+																"key": "function"
+															},
+															{
+																"open": {
+																	"function": "set_count",
+																	"count": {
+																		"min": 0,
+																		"max": 3
+																	}
+																},
+																"key": "count",
+																"is_minified": true,
+																"children": {
+																	"min": 0,
+																	"max": 3
+																}
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
