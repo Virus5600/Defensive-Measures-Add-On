@@ -8,10 +8,12 @@
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
+			"minecraft:creative_category": {
+				"parent": "items"
+			},
 			"minecraft:icon": {
 				"texture": "cannon_head"
-			},
-			"minecraft:display_name": {}
+			}
 		},
 		"events": {}
 	}

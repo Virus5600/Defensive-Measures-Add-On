@@ -1,8 +1,8 @@
 {
 	"format_version": "1.8.0",
-	"geometry.cannon_turret" : {
-		"texture_width": 64,
-		"texture_height": 64,
+	"geometry.cannon_turret": {
+		"texturewidth": 64,
+		"textureheight": 64,
 		"visible_bounds_width": 3,
 		"visible_bounds_height": 2.5,
 		"visible_bounds_offset": [0, 0.75, 0],
@@ -17,6 +17,7 @@
 			{
 				"name": "stand",
 				"pivot": [0, 1, 0],
+				"rotation": [0, 180, 0],
 				"cubes": [
 					{"origin": [-6, 1, -6], "size": [12, 1, 12], "uv": [8, 33]}
 				]

@@ -61,15 +61,21 @@
 			],
 			"custom_commands": []
 		},
-		"BP/items/cannon_turret/cannon_base.json": {
-			"identifiers": [
-				"defensive:cannon_base"
-			],
-			"custom_commands": []
-		},
 		"BP/items/cannon_turret/cannon_stand.json": {
 			"identifiers": [
 				"defensive:cannon_stand"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cannon_turret/cannon_turret.json": {
+			"identifiers": [
+				"defensive:cannon_turret"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cannon_turret/cannon_base.json": {
+			"identifiers": [
+				"defensive:cannon_base"
 			],
 			"custom_commands": []
 		},
@@ -82,12 +88,6 @@
 		"BP/items/cannon_turret/cannon_head.json": {
 			"identifiers": [
 				"defensive:cannon_head"
-			],
-			"custom_commands": []
-		},
-		"BP/items/cannon_turret/cannon_turret.json": {
-			"identifiers": [
-				"defensive:cannon_turret"
 			],
 			"custom_commands": []
 		}
@@ -124,8 +124,15 @@
 			"identifiers": [
 				"defensive:cannon_turret"
 			],
-			"particle_references": [],
-			"animation_references": [],
+			"particle_references": [
+				"flash",
+				"fuse"
+			],
+			"animation_references": [
+				"idle",
+				"shoot",
+				"look_at_target"
+			],
 			"sound_references": [],
 			"texture_references": [
 				"default"
@@ -176,5 +183,6 @@
 				"controller.render.cannon_turret"
 			]
 		}
-	}
+	},
+	"rp_animation_controller": {}
 }

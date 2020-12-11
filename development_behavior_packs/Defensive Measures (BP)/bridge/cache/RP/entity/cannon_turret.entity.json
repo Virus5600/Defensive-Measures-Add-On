@@ -3,16 +3,16 @@
 	"file_type": "client_entity",
 	"format_version": 1,
 	"file_uuid": "9dc4df68_aec5_4c2a_8bf0_2825001a8289",
-	"file_version": 6,
+	"file_version": 26,
 	"cache_content": {
 		"children": [
 			{
-				"data": "1.16.100",
+				"data": "1.10.0",
 				"key": "format_version"
 			},
 			{
 				"open": {
-					"format_version": "1.16.100",
+					"format_version": "1.10.0",
 					"minecraft:client_entity": {
 						"description": {
 							"identifier": "defensive:cannon_turret",
@@ -25,8 +25,28 @@
 							"geometry": {
 								"default": "geometry.cannon_turret"
 							},
-							"spawn_egg": {
-								"texture": "cannon_turret"
+							"render_controllers": [
+								"controller.render.cannon_turret"
+							],
+							"animations": {
+								"idle": "animation.cannon_turret.idle",
+								"shoot": "animation.cannon_turret.shoot",
+								"look_at_target": "animation.cannon_turret.look_at_target"
+							},
+							"scripts": {
+								"animate": [
+									{
+										"idle": "!query.has_target"
+									},
+									"look_at_target",
+									{
+										"shoot": "query.has_target"
+									}
+								]
+							},
+							"particle_effects": {
+								"flash": "defensive:cannon_flash",
+								"fuse": "defensive:cannon_fuse"
 							}
 						}
 					}
@@ -46,8 +66,28 @@
 								"geometry": {
 									"default": "geometry.cannon_turret"
 								},
-								"spawn_egg": {
-									"texture": "cannon_turret"
+								"render_controllers": [
+									"controller.render.cannon_turret"
+								],
+								"animations": {
+									"idle": "animation.cannon_turret.idle",
+									"shoot": "animation.cannon_turret.shoot",
+									"look_at_target": "animation.cannon_turret.look_at_target"
+								},
+								"scripts": {
+									"animate": [
+										{
+											"idle": "!query.has_target"
+										},
+										"look_at_target",
+										{
+											"shoot": "query.has_target"
+										}
+									]
+								},
+								"particle_effects": {
+									"flash": "defensive:cannon_flash",
+									"fuse": "defensive:cannon_fuse"
 								}
 							}
 						},
@@ -69,8 +109,28 @@
 									"geometry": {
 										"default": "geometry.cannon_turret"
 									},
-									"spawn_egg": {
-										"texture": "cannon_turret"
+									"render_controllers": [
+										"controller.render.cannon_turret"
+									],
+									"animations": {
+										"idle": "animation.cannon_turret.idle",
+										"shoot": "animation.cannon_turret.shoot",
+										"look_at_target": "animation.cannon_turret.look_at_target"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"idle": "!query.has_target"
+											},
+											"look_at_target",
+											{
+												"shoot": "query.has_target"
+											}
+										]
+									},
+									"particle_effects": {
+										"flash": "defensive:cannon_flash",
+										"fuse": "defensive:cannon_fuse"
 									}
 								},
 								"key": "materials",
@@ -91,8 +151,28 @@
 									"geometry": {
 										"default": "geometry.cannon_turret"
 									},
-									"spawn_egg": {
-										"texture": "cannon_turret"
+									"render_controllers": [
+										"controller.render.cannon_turret"
+									],
+									"animations": {
+										"idle": "animation.cannon_turret.idle",
+										"shoot": "animation.cannon_turret.shoot",
+										"look_at_target": "animation.cannon_turret.look_at_target"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"idle": "!query.has_target"
+											},
+											"look_at_target",
+											{
+												"shoot": "query.has_target"
+											}
+										]
+									},
+									"particle_effects": {
+										"flash": "defensive:cannon_flash",
+										"fuse": "defensive:cannon_fuse"
 									}
 								},
 								"key": "textures",
@@ -113,8 +193,28 @@
 									"geometry": {
 										"default": "geometry.cannon_turret"
 									},
-									"spawn_egg": {
-										"texture": "cannon_turret"
+									"render_controllers": [
+										"controller.render.cannon_turret"
+									],
+									"animations": {
+										"idle": "animation.cannon_turret.idle",
+										"shoot": "animation.cannon_turret.shoot",
+										"look_at_target": "animation.cannon_turret.look_at_target"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"idle": "!query.has_target"
+											},
+											"look_at_target",
+											{
+												"shoot": "query.has_target"
+											}
+										]
+									},
+									"particle_effects": {
+										"flash": "defensive:cannon_flash",
+										"fuse": "defensive:cannon_fuse"
 									}
 								},
 								"key": "geometry",
@@ -135,14 +235,210 @@
 									"geometry": {
 										"default": "geometry.cannon_turret"
 									},
-									"spawn_egg": {
-										"texture": "cannon_turret"
+									"render_controllers": [
+										"controller.render.cannon_turret"
+									],
+									"animations": {
+										"idle": "animation.cannon_turret.idle",
+										"shoot": "animation.cannon_turret.shoot",
+										"look_at_target": "animation.cannon_turret.look_at_target"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"idle": "!query.has_target"
+											},
+											"look_at_target",
+											{
+												"shoot": "query.has_target"
+											}
+										]
+									},
+									"particle_effects": {
+										"flash": "defensive:cannon_flash",
+										"fuse": "defensive:cannon_fuse"
 									}
 								},
-								"key": "spawn_egg",
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.cannon_turret"
+								]
+							},
+							{
+								"open": {
+									"identifier": "defensive:cannon_turret",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/cannon_turret"
+									},
+									"geometry": {
+										"default": "geometry.cannon_turret"
+									},
+									"render_controllers": [
+										"controller.render.cannon_turret"
+									],
+									"animations": {
+										"idle": "animation.cannon_turret.idle",
+										"shoot": "animation.cannon_turret.shoot",
+										"look_at_target": "animation.cannon_turret.look_at_target"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"idle": "!query.has_target"
+											},
+											"look_at_target",
+											{
+												"shoot": "query.has_target"
+											}
+										]
+									},
+									"particle_effects": {
+										"flash": "defensive:cannon_flash",
+										"fuse": "defensive:cannon_fuse"
+									}
+								},
+								"key": "animations",
 								"is_minified": true,
 								"children": {
-									"texture": "cannon_turret"
+									"idle": "animation.cannon_turret.idle",
+									"shoot": "animation.cannon_turret.shoot",
+									"look_at_target": "animation.cannon_turret.look_at_target"
+								}
+							},
+							{
+								"open": {
+									"identifier": "defensive:cannon_turret",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/cannon_turret"
+									},
+									"geometry": {
+										"default": "geometry.cannon_turret"
+									},
+									"render_controllers": [
+										"controller.render.cannon_turret"
+									],
+									"animations": {
+										"idle": "animation.cannon_turret.idle",
+										"shoot": "animation.cannon_turret.shoot",
+										"look_at_target": "animation.cannon_turret.look_at_target"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"idle": "!query.has_target"
+											},
+											"look_at_target",
+											{
+												"shoot": "query.has_target"
+											}
+										]
+									},
+									"particle_effects": {
+										"flash": "defensive:cannon_flash",
+										"fuse": "defensive:cannon_fuse"
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												{
+													"idle": "!query.has_target"
+												},
+												"look_at_target",
+												{
+													"shoot": "query.has_target"
+												}
+											]
+										},
+										"key": "animate",
+										"children": [
+											{
+												"open": [
+													{
+														"idle": "!query.has_target"
+													},
+													"look_at_target",
+													{
+														"shoot": "query.has_target"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"idle": "!query.has_target"
+												}
+											},
+											{
+												"data": "look_at_target"
+											},
+											{
+												"open": [
+													{
+														"idle": "!query.has_target"
+													},
+													"look_at_target",
+													{
+														"shoot": "query.has_target"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"shoot": "query.has_target"
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "defensive:cannon_turret",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/cannon_turret"
+									},
+									"geometry": {
+										"default": "geometry.cannon_turret"
+									},
+									"render_controllers": [
+										"controller.render.cannon_turret"
+									],
+									"animations": {
+										"idle": "animation.cannon_turret.idle",
+										"shoot": "animation.cannon_turret.shoot",
+										"look_at_target": "animation.cannon_turret.look_at_target"
+									},
+									"scripts": {
+										"animate": [
+											{
+												"idle": "!query.has_target"
+											},
+											"look_at_target",
+											{
+												"shoot": "query.has_target"
+											}
+										]
+									},
+									"particle_effects": {
+										"flash": "defensive:cannon_flash",
+										"fuse": "defensive:cannon_fuse"
+									}
+								},
+								"key": "particle_effects",
+								"is_minified": true,
+								"children": {
+									"flash": "defensive:cannon_flash",
+									"fuse": "defensive:cannon_fuse"
 								}
 							}
 						]

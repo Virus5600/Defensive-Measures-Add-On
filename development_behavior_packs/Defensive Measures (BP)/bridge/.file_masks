@@ -113,19 +113,60 @@
 						}
 					}
 				}
+			},
+			"913bf53b_6547_49fb_8f98_36e750076426": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"6fef960c_ca82_46f6_99e0_6f1ea04b93d9": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"db2eb473_4c4a_489a_a174_4b507b5ef2dc": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"59db2e36_df8b_4a5c_bdcd_45dccacc7c6d": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"dcdfa66c_be3a_486d_8a17_e92113fcea46": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
 			}
 		}
 	},
-	"BP/items/cannon_turret/cannon_base.json": {
-		"data": {}
-	},
 	"BP/items/cannon_turret/cannon_stand.json": {
-		"data": {}
-	},
-	"BP/items/cannon_turret/unfinished_cannon_head.json": {
-		"data": {}
-	},
-	"BP/items/cannon_turret/cannon_head.json": {
 		"data": {}
 	},
 	"BP/items/cannon_turret/cannon_turret.json": {
@@ -135,6 +176,24 @@
 		"data": {}
 	},
 	"RP/models/entity/cannon_turret.geo.json": {
+		"data": {}
+	},
+	"BP/loot_tables/cannon_turret/cannon_turret.json": {
+		"data": {}
+	},
+	"BP/loot_tables/cannon_turret/cannon_turret.head_1.json": {
+		"data": {}
+	},
+	"BP/loot_tables/cannon_turret/cannon_turret.head_2.json": {
+		"data": {}
+	},
+	"BP/items/cannon_turret/cannon_base.json": {
+		"data": {}
+	},
+	"BP/items/cannon_turret/unfinished_cannon_head.json": {
+		"data": {}
+	},
+	"BP/items/cannon_turret/cannon_head.json": {
 		"data": {}
 	}
 }

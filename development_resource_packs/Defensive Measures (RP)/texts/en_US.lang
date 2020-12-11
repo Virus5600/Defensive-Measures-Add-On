@@ -1,11 +1,12 @@
-##bridge-file-version: #0
+##bridge-file-version: #11
 pack.name=Defensive Measures (RP)
 pack.description=The required Resource Pack for the Behavior Pack Defensive Measures.
 
-item.defensive:cannon_head.name=Cannon Head
 item.defensive:cannon_base.name=Cannon Base
 item.defensive:cannon_stand.name=Cannon Stand
 item.defensive:unfinished_cannon_head.name=Unfinished Cannon Head
+item.defensive:cannon_head.name=Cannon Head
 item.defensive:cannon_turret.name=Place Cannon Turret
+item.spawn_egg.entity.defensive:cannon_turret.name=Place Cannon Turret
 
 entity.defensive:cannon_turret.name=Cannon Turret

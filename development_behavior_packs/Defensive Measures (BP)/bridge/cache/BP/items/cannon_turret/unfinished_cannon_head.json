@@ -2,8 +2,8 @@
 	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\items\\cannon_turret\\unfinished_cannon_head.json",
 	"file_type": "item",
 	"format_version": 1,
-	"file_uuid": "010c920d_3936_4633_9eab_6472cb76f59c",
-	"file_version": 1,
+	"file_uuid": "dcdfa66c_be3a_486d_8a17_e92113fcea46",
+	"file_version": 0,
 	"cache_content": {
 		"children": [
 			{
@@ -20,10 +20,12 @@
 						},
 						"components": {
 							"minecraft:max_stack_size": 1,
+							"minecraft:creative_category": {
+								"parent": "items"
+							},
 							"minecraft:icon": {
 								"texture": "unfinished_cannon_head"
-							},
-							"minecraft:display_name": {}
+							}
 						}
 					}
 				},
@@ -37,10 +39,12 @@
 							},
 							"components": {
 								"minecraft:max_stack_size": 1,
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
 								"minecraft:icon": {
 									"texture": "unfinished_cannon_head"
-								},
-								"minecraft:display_name": {}
+								}
 							}
 						},
 						"key": "description",
@@ -58,21 +62,53 @@
 							},
 							"components": {
 								"minecraft:max_stack_size": 1,
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
 								"minecraft:icon": {
 									"texture": "unfinished_cannon_head"
-								},
-								"minecraft:display_name": {}
+								}
 							}
 						},
 						"key": "components",
-						"is_minified": true,
-						"children": {
-							"minecraft:max_stack_size": 1,
-							"minecraft:icon": {
-								"texture": "unfinished_cannon_head"
+						"children": [
+							{
+								"data": "1",
+								"key": "minecraft:max_stack_size"
 							},
-							"minecraft:display_name": {}
-						}
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:creative_category": {
+										"parent": "items"
+									},
+									"minecraft:icon": {
+										"texture": "unfinished_cannon_head"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "items"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:creative_category": {
+										"parent": "items"
+									},
+									"minecraft:icon": {
+										"texture": "unfinished_cannon_head"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "unfinished_cannon_head"
+								}
+							}
+						]
 					}
 				]
 			}

@@ -1,6 +1,6 @@
-//bridge-file-version: #6
+//bridge-file-version: #26
 {
-	"format_version": "1.16.100",
+	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
 			"identifier": "defensive:cannon_turret",
@@ -13,8 +13,28 @@
 			"geometry": {
 				"default": "geometry.cannon_turret"
 			},
-			"spawn_egg": {
-				"texture": "cannon_turret"
+			"render_controllers": [
+				"controller.render.cannon_turret"
+			],
+			"animations": {
+				"idle": "animation.cannon_turret.idle",
+				"shoot": "animation.cannon_turret.shoot",
+				"look_at_target": "animation.cannon_turret.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"idle": "!query.has_target"
+					},
+					"look_at_target",
+					{
+						"shoot": "query.has_target"
+					}
+				]
+			},
+			"particle_effects": {
+				"flash": "defensive:cannon_flash",
+				"fuse": "defensive:cannon_fuse"
 			}
 		}
 	}

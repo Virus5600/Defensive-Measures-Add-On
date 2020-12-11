@@ -2,8 +2,8 @@
 	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\items\\cannon_turret\\cannon_turret.json",
 	"file_type": "item",
 	"format_version": 1,
-	"file_uuid": "67db96c0_249e_40da_96ff_7816bf3aa9f4",
-	"file_version": 1,
+	"file_uuid": "59db2e36_df8b_4a5c_bdcd_45dccacc7c6d",
+	"file_version": 3,
 	"cache_content": {
 		"children": [
 			{
@@ -20,10 +20,15 @@
 						},
 						"components": {
 							"minecraft:max_stack_size": 16,
+							"minecraft:entity_placer": {
+								"entity": "defensive:cannon_turret"
+							},
+							"minecraft:creative_category": {
+								"parent": "equipment"
+							},
 							"minecraft:icon": {
 								"texture": "cannon_turret"
-							},
-							"minecraft:display_name": {}
+							}
 						}
 					}
 				},
@@ -37,10 +42,15 @@
 							},
 							"components": {
 								"minecraft:max_stack_size": 16,
+								"minecraft:entity_placer": {
+									"entity": "defensive:cannon_turret"
+								},
+								"minecraft:creative_category": {
+									"parent": "equipment"
+								},
 								"minecraft:icon": {
 									"texture": "cannon_turret"
-								},
-								"minecraft:display_name": {}
+								}
 							}
 						},
 						"key": "description",
@@ -58,10 +68,15 @@
 							},
 							"components": {
 								"minecraft:max_stack_size": 16,
+								"minecraft:entity_placer": {
+									"entity": "defensive:cannon_turret"
+								},
+								"minecraft:creative_category": {
+									"parent": "equipment"
+								},
 								"minecraft:icon": {
 									"texture": "cannon_turret"
-								},
-								"minecraft:display_name": {}
+								}
 							}
 						},
 						"key": "components",
@@ -73,21 +88,59 @@
 							{
 								"open": {
 									"minecraft:max_stack_size": 16,
+									"minecraft:entity_placer": {
+										"entity": "defensive:cannon_turret"
+									},
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
 									"minecraft:icon": {
 										"texture": "cannon_turret"
+									}
+								},
+								"key": "minecraft:entity_placer",
+								"is_minified": true,
+								"children": {
+									"entity": "defensive:cannon_turret"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 16,
+									"minecraft:entity_placer": {
+										"entity": "defensive:cannon_turret"
 									},
-									"minecraft:display_name": {}
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:icon": {
+										"texture": "cannon_turret"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "equipment"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 16,
+									"minecraft:entity_placer": {
+										"entity": "defensive:cannon_turret"
+									},
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:icon": {
+										"texture": "cannon_turret"
+									}
 								},
 								"key": "minecraft:icon",
 								"is_minified": true,
 								"children": {
 									"texture": "cannon_turret"
 								}
-							},
-							{
-								"key": "minecraft:display_name",
-								"is_minified": true,
-								"children": {}
 							}
 						]
 					}

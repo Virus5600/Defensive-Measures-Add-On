@@ -2,8 +2,8 @@
 	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\items\\cannon_turret\\cannon_stand.json",
 	"file_type": "item",
 	"format_version": 1,
-	"file_uuid": "be99fb53_9c25_43f9_be61_6abc8216c6df",
-	"file_version": 2,
+	"file_uuid": "db2eb473_4c4a_489a_a174_4b507b5ef2dc",
+	"file_version": 0,
 	"cache_content": {
 		"children": [
 			{
@@ -20,13 +20,15 @@
 						},
 						"components": {
 							"minecraft:max_stack_size": 16,
-							"minecraft:icon": {
-								"texture": "cannon_stand"
-							},
 							"minecraft:fuel": {
 								"duration": 30
 							},
-							"minecraft:display_name": {}
+							"minecraft:creative_category": {
+								"parent": "items"
+							},
+							"minecraft:icon": {
+								"texture": "cannon_stand"
+							}
 						}
 					}
 				},
@@ -40,13 +42,15 @@
 							},
 							"components": {
 								"minecraft:max_stack_size": 16,
-								"minecraft:icon": {
-									"texture": "cannon_stand"
-								},
 								"minecraft:fuel": {
 									"duration": 30
 								},
-								"minecraft:display_name": {}
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
+								"minecraft:icon": {
+									"texture": "cannon_stand"
+								}
 							}
 						},
 						"key": "description",
@@ -64,13 +68,15 @@
 							},
 							"components": {
 								"minecraft:max_stack_size": 16,
-								"minecraft:icon": {
-									"texture": "cannon_stand"
-								},
 								"minecraft:fuel": {
 									"duration": 30
 								},
-								"minecraft:display_name": {}
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
+								"minecraft:icon": {
+									"texture": "cannon_stand"
+								}
 							}
 						},
 						"key": "components",
@@ -80,22 +86,17 @@
 								"key": "minecraft:max_stack_size"
 							},
 							{
-								"key": "minecraft:icon",
-								"is_minified": true,
-								"children": {
-									"texture": "cannon_stand"
-								}
-							},
-							{
 								"open": {
 									"minecraft:max_stack_size": 16,
-									"minecraft:icon": {
-										"texture": "cannon_stand"
-									},
 									"minecraft:fuel": {
 										"duration": 30
 									},
-									"minecraft:display_name": {}
+									"minecraft:creative_category": {
+										"parent": "items"
+									},
+									"minecraft:icon": {
+										"texture": "cannon_stand"
+									}
 								},
 								"key": "minecraft:fuel",
 								"is_minified": true,
@@ -104,9 +105,42 @@
 								}
 							},
 							{
-								"key": "minecraft:display_name",
+								"open": {
+									"minecraft:max_stack_size": 16,
+									"minecraft:fuel": {
+										"duration": 30
+									},
+									"minecraft:creative_category": {
+										"parent": "items"
+									},
+									"minecraft:icon": {
+										"texture": "cannon_stand"
+									}
+								},
+								"key": "minecraft:creative_category",
 								"is_minified": true,
-								"children": {}
+								"children": {
+									"parent": "items"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 16,
+									"minecraft:fuel": {
+										"duration": 30
+									},
+									"minecraft:creative_category": {
+										"parent": "items"
+									},
+									"minecraft:icon": {
+										"texture": "cannon_stand"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "cannon_stand"
+								}
 							}
 						]
 					}

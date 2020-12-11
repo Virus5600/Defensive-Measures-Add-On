@@ -2,8 +2,8 @@
 	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\items\\cannon_turret\\cannon_base.json",
 	"file_type": "item",
 	"format_version": 1,
-	"file_uuid": "f055e0fb_258b_40cd_94dd_3c02a58c0614",
-	"file_version": 3,
+	"file_uuid": "913bf53b_6547_49fb_8f98_36e750076426",
+	"file_version": 1,
 	"cache_content": {
 		"children": [
 			{
@@ -20,10 +20,12 @@
 						},
 						"components": {
 							"minecraft:max_stack_size": 16,
+							"minecraft:creative_category": {
+								"parent": "items"
+							},
 							"minecraft:icon": {
 								"texture": "cannon_base"
-							},
-							"minecraft:display_name": {}
+							}
 						}
 					}
 				},
@@ -37,10 +39,12 @@
 							},
 							"components": {
 								"minecraft:max_stack_size": 16,
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
 								"minecraft:icon": {
 									"texture": "cannon_base"
-								},
-								"minecraft:display_name": {}
+								}
 							}
 						},
 						"key": "description",
@@ -58,20 +62,24 @@
 							},
 							"components": {
 								"minecraft:max_stack_size": 16,
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
 								"minecraft:icon": {
 									"texture": "cannon_base"
-								},
-								"minecraft:display_name": {}
+								}
 							}
 						},
 						"key": "components",
 						"is_minified": true,
 						"children": {
 							"minecraft:max_stack_size": 16,
+							"minecraft:creative_category": {
+								"parent": "items"
+							},
 							"minecraft:icon": {
 								"texture": "cannon_base"
-							},
-							"minecraft:display_name": {}
+							}
 						}
 					}
 				]
