@@ -1,4 +1,4 @@
-//bridge-file-version: #26
+//bridge-file-version: #49
 {
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
@@ -17,18 +17,21 @@
 				"controller.render.cannon_turret"
 			],
 			"animations": {
-				"idle": "animation.cannon_turret.idle",
+				"setup": "animation.cannon_turret.setup",
 				"shoot": "animation.cannon_turret.shoot",
-				"look_at_target": "animation.cannon_turret.look_at_target"
+				"look_at_target": "animation.cannon_turret.look_at_target",
+				"death": "animation.cannon_turret.death",
+				"firing_sequence": "controller.animation.firing_sequence"
 			},
 			"scripts": {
 				"animate": [
-					{
-						"idle": "!query.has_target"
-					},
+					"setup",
 					"look_at_target",
 					{
-						"shoot": "query.has_target"
+						"firing_sequence": "query.mark_variant == 1"
+					},
+					{
+						"death": "!query.is_alive"
 					}
 				]
 			},

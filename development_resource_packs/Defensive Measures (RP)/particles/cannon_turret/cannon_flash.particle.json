@@ -35,8 +35,8 @@
 				"rotation_drag_coefficient": "Math.random(0, 360)"
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": ["Math.random(0.2, 0.4)", "Math.random(0.2, 0.4)"],
-				"facing_camera_mode": "rotate_xyz",
+				"size": ["Math.random(0.075, 0.15)", "Math.random(0.075, 0.15)"],
+				"facing_camera_mode": "lookat_xyz",
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,

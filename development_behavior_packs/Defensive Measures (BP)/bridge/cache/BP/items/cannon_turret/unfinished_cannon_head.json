@@ -3,7 +3,7 @@
 	"file_type": "item",
 	"format_version": 1,
 	"file_uuid": "dcdfa66c_be3a_486d_8a17_e92113fcea46",
-	"file_version": 0,
+	"file_version": 1,
 	"cache_content": {
 		"children": [
 			{
@@ -25,7 +25,8 @@
 							},
 							"minecraft:icon": {
 								"texture": "unfinished_cannon_head"
-							}
+							},
+							"minecraft:display_name": {}
 						}
 					}
 				},
@@ -44,7 +45,8 @@
 								},
 								"minecraft:icon": {
 									"texture": "unfinished_cannon_head"
-								}
+								},
+								"minecraft:display_name": {}
 							}
 						},
 						"key": "description",
@@ -67,7 +69,8 @@
 								},
 								"minecraft:icon": {
 									"texture": "unfinished_cannon_head"
-								}
+								},
+								"minecraft:display_name": {}
 							}
 						},
 						"key": "components",
@@ -84,7 +87,8 @@
 									},
 									"minecraft:icon": {
 										"texture": "unfinished_cannon_head"
-									}
+									},
+									"minecraft:display_name": {}
 								},
 								"key": "minecraft:creative_category",
 								"is_minified": true,
@@ -100,13 +104,19 @@
 									},
 									"minecraft:icon": {
 										"texture": "unfinished_cannon_head"
-									}
+									},
+									"minecraft:display_name": {}
 								},
 								"key": "minecraft:icon",
 								"is_minified": true,
 								"children": {
 									"texture": "unfinished_cannon_head"
 								}
+							},
+							{
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {}
 							}
 						]
 					}

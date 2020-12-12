@@ -1,4 +1,4 @@
-//bridge-file-version: #1
+//bridge-file-version: #6
 {
 	"format_version": "1.8.0",
 	"render_controllers": {
@@ -11,7 +11,19 @@
 			],
 			"textures": [
 				"Texture.default"
-			]
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0.125,
+				"b": 0.125,
+				"a": 0.125
+			},
+			"on_fire_color": {
+				"r": 1,
+				"g": 0.125,
+				"b": 0.125,
+				"a": 0.25
+			}
 		}
 	}
 }

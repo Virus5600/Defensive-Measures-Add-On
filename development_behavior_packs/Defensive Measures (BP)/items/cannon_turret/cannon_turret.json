@@ -1,4 +1,4 @@
-//bridge-file-version: #3
+//bridge-file-version: #4
 {
 	"format_version": "1.16.100",
 	"minecraft:item": {
@@ -16,7 +16,8 @@
 			},
 			"minecraft:icon": {
 				"texture": "cannon_turret"
-			}
+			},
+			"minecraft:display_name": {}
 		},
 		"events": {}
 	}

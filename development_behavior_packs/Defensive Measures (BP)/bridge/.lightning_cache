@@ -19,13 +19,19 @@
 			"custom_components": []
 		},
 		"BP/entities/cannon_turret.json": {
-			"events": [],
+			"events": [
+				"targetAcquired",
+				"targetLost"
+			],
 			"bridge_core_tags": [],
 			"identifiers": [
 				"defensive:cannon_turret"
 			],
 			"animation_references": [],
-			"families": [],
+			"families": [
+				"cannon",
+				"turret"
+			],
 			"custom_commands": [],
 			"custom_components": []
 		}
@@ -129,9 +135,11 @@
 				"fuse"
 			],
 			"animation_references": [
-				"idle",
+				"setup",
 				"shoot",
-				"look_at_target"
+				"look_at_target",
+				"death",
+				"firing_sequence"
 			],
 			"sound_references": [],
 			"texture_references": [
@@ -184,5 +192,14 @@
 			]
 		}
 	},
-	"rp_animation_controller": {}
+	"rp_animation_controller": {
+		"RP/animation_controllers/cannon_turret.animation_controller.json": {
+			"ids": [
+				"controller.animation.firing_sequence"
+			]
+		}
+	},
+	"function": {
+		"d7595a9a_260a_402d_a8fe_d437aebac80b": {}
+	}
 }

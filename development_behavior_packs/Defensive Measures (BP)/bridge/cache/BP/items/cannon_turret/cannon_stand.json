@@ -3,7 +3,7 @@
 	"file_type": "item",
 	"format_version": 1,
 	"file_uuid": "db2eb473_4c4a_489a_a174_4b507b5ef2dc",
-	"file_version": 0,
+	"file_version": 1,
 	"cache_content": {
 		"children": [
 			{
@@ -28,7 +28,8 @@
 							},
 							"minecraft:icon": {
 								"texture": "cannon_stand"
-							}
+							},
+							"minecraft:display_name": {}
 						}
 					}
 				},
@@ -50,7 +51,8 @@
 								},
 								"minecraft:icon": {
 									"texture": "cannon_stand"
-								}
+								},
+								"minecraft:display_name": {}
 							}
 						},
 						"key": "description",
@@ -76,7 +78,8 @@
 								},
 								"minecraft:icon": {
 									"texture": "cannon_stand"
-								}
+								},
+								"minecraft:display_name": {}
 							}
 						},
 						"key": "components",
@@ -96,7 +99,8 @@
 									},
 									"minecraft:icon": {
 										"texture": "cannon_stand"
-									}
+									},
+									"minecraft:display_name": {}
 								},
 								"key": "minecraft:fuel",
 								"is_minified": true,
@@ -115,7 +119,8 @@
 									},
 									"minecraft:icon": {
 										"texture": "cannon_stand"
-									}
+									},
+									"minecraft:display_name": {}
 								},
 								"key": "minecraft:creative_category",
 								"is_minified": true,
@@ -134,13 +139,19 @@
 									},
 									"minecraft:icon": {
 										"texture": "cannon_stand"
-									}
+									},
+									"minecraft:display_name": {}
 								},
 								"key": "minecraft:icon",
 								"is_minified": true,
 								"children": {
 									"texture": "cannon_stand"
 								}
+							},
+							{
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {}
 							}
 						]
 					}

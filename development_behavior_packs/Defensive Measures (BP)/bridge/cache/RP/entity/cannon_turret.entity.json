@@ -3,7 +3,7 @@
 	"file_type": "client_entity",
 	"format_version": 1,
 	"file_uuid": "9dc4df68_aec5_4c2a_8bf0_2825001a8289",
-	"file_version": 26,
+	"file_version": 49,
 	"cache_content": {
 		"children": [
 			{
@@ -29,18 +29,21 @@
 								"controller.render.cannon_turret"
 							],
 							"animations": {
-								"idle": "animation.cannon_turret.idle",
+								"setup": "animation.cannon_turret.setup",
 								"shoot": "animation.cannon_turret.shoot",
-								"look_at_target": "animation.cannon_turret.look_at_target"
+								"look_at_target": "animation.cannon_turret.look_at_target",
+								"death": "animation.cannon_turret.death",
+								"firing_sequence": "controller.animation.firing_sequence"
 							},
 							"scripts": {
 								"animate": [
-									{
-										"idle": "!query.has_target"
-									},
+									"setup",
 									"look_at_target",
 									{
-										"shoot": "query.has_target"
+										"firing_sequence": "query.mark_variant == 1"
+									},
+									{
+										"death": "!query.is_alive"
 									}
 								]
 							},
@@ -70,18 +73,21 @@
 									"controller.render.cannon_turret"
 								],
 								"animations": {
-									"idle": "animation.cannon_turret.idle",
+									"setup": "animation.cannon_turret.setup",
 									"shoot": "animation.cannon_turret.shoot",
-									"look_at_target": "animation.cannon_turret.look_at_target"
+									"look_at_target": "animation.cannon_turret.look_at_target",
+									"death": "animation.cannon_turret.death",
+									"firing_sequence": "controller.animation.firing_sequence"
 								},
 								"scripts": {
 									"animate": [
-										{
-											"idle": "!query.has_target"
-										},
+										"setup",
 										"look_at_target",
 										{
-											"shoot": "query.has_target"
+											"firing_sequence": "query.mark_variant == 1"
+										},
+										{
+											"death": "!query.is_alive"
 										}
 									]
 								},
@@ -98,41 +104,6 @@
 								"key": "identifier"
 							},
 							{
-								"open": {
-									"identifier": "defensive:cannon_turret",
-									"materials": {
-										"default": "entity"
-									},
-									"textures": {
-										"default": "textures/entity/cannon_turret"
-									},
-									"geometry": {
-										"default": "geometry.cannon_turret"
-									},
-									"render_controllers": [
-										"controller.render.cannon_turret"
-									],
-									"animations": {
-										"idle": "animation.cannon_turret.idle",
-										"shoot": "animation.cannon_turret.shoot",
-										"look_at_target": "animation.cannon_turret.look_at_target"
-									},
-									"scripts": {
-										"animate": [
-											{
-												"idle": "!query.has_target"
-											},
-											"look_at_target",
-											{
-												"shoot": "query.has_target"
-											}
-										]
-									},
-									"particle_effects": {
-										"flash": "defensive:cannon_flash",
-										"fuse": "defensive:cannon_fuse"
-									}
-								},
 								"key": "materials",
 								"is_minified": true,
 								"children": {
@@ -140,41 +111,6 @@
 								}
 							},
 							{
-								"open": {
-									"identifier": "defensive:cannon_turret",
-									"materials": {
-										"default": "entity"
-									},
-									"textures": {
-										"default": "textures/entity/cannon_turret"
-									},
-									"geometry": {
-										"default": "geometry.cannon_turret"
-									},
-									"render_controllers": [
-										"controller.render.cannon_turret"
-									],
-									"animations": {
-										"idle": "animation.cannon_turret.idle",
-										"shoot": "animation.cannon_turret.shoot",
-										"look_at_target": "animation.cannon_turret.look_at_target"
-									},
-									"scripts": {
-										"animate": [
-											{
-												"idle": "!query.has_target"
-											},
-											"look_at_target",
-											{
-												"shoot": "query.has_target"
-											}
-										]
-									},
-									"particle_effects": {
-										"flash": "defensive:cannon_flash",
-										"fuse": "defensive:cannon_fuse"
-									}
-								},
 								"key": "textures",
 								"is_minified": true,
 								"children": {
@@ -182,41 +118,6 @@
 								}
 							},
 							{
-								"open": {
-									"identifier": "defensive:cannon_turret",
-									"materials": {
-										"default": "entity"
-									},
-									"textures": {
-										"default": "textures/entity/cannon_turret"
-									},
-									"geometry": {
-										"default": "geometry.cannon_turret"
-									},
-									"render_controllers": [
-										"controller.render.cannon_turret"
-									],
-									"animations": {
-										"idle": "animation.cannon_turret.idle",
-										"shoot": "animation.cannon_turret.shoot",
-										"look_at_target": "animation.cannon_turret.look_at_target"
-									},
-									"scripts": {
-										"animate": [
-											{
-												"idle": "!query.has_target"
-											},
-											"look_at_target",
-											{
-												"shoot": "query.has_target"
-											}
-										]
-									},
-									"particle_effects": {
-										"flash": "defensive:cannon_flash",
-										"fuse": "defensive:cannon_fuse"
-									}
-								},
 								"key": "geometry",
 								"is_minified": true,
 								"children": {
@@ -224,41 +125,6 @@
 								}
 							},
 							{
-								"open": {
-									"identifier": "defensive:cannon_turret",
-									"materials": {
-										"default": "entity"
-									},
-									"textures": {
-										"default": "textures/entity/cannon_turret"
-									},
-									"geometry": {
-										"default": "geometry.cannon_turret"
-									},
-									"render_controllers": [
-										"controller.render.cannon_turret"
-									],
-									"animations": {
-										"idle": "animation.cannon_turret.idle",
-										"shoot": "animation.cannon_turret.shoot",
-										"look_at_target": "animation.cannon_turret.look_at_target"
-									},
-									"scripts": {
-										"animate": [
-											{
-												"idle": "!query.has_target"
-											},
-											"look_at_target",
-											{
-												"shoot": "query.has_target"
-											}
-										]
-									},
-									"particle_effects": {
-										"flash": "defensive:cannon_flash",
-										"fuse": "defensive:cannon_fuse"
-									}
-								},
 								"key": "render_controllers",
 								"is_minified": true,
 								"children": [
@@ -281,18 +147,21 @@
 										"controller.render.cannon_turret"
 									],
 									"animations": {
-										"idle": "animation.cannon_turret.idle",
+										"setup": "animation.cannon_turret.setup",
 										"shoot": "animation.cannon_turret.shoot",
-										"look_at_target": "animation.cannon_turret.look_at_target"
+										"look_at_target": "animation.cannon_turret.look_at_target",
+										"death": "animation.cannon_turret.death",
+										"firing_sequence": "controller.animation.firing_sequence"
 									},
 									"scripts": {
 										"animate": [
-											{
-												"idle": "!query.has_target"
-											},
+											"setup",
 											"look_at_target",
 											{
-												"shoot": "query.has_target"
+												"firing_sequence": "query.mark_variant == 1"
+											},
+											{
+												"death": "!query.is_alive"
 											}
 										]
 									},
@@ -304,9 +173,11 @@
 								"key": "animations",
 								"is_minified": true,
 								"children": {
-									"idle": "animation.cannon_turret.idle",
+									"setup": "animation.cannon_turret.setup",
 									"shoot": "animation.cannon_turret.shoot",
-									"look_at_target": "animation.cannon_turret.look_at_target"
+									"look_at_target": "animation.cannon_turret.look_at_target",
+									"death": "animation.cannon_turret.death",
+									"firing_sequence": "controller.animation.firing_sequence"
 								}
 							},
 							{
@@ -325,18 +196,21 @@
 										"controller.render.cannon_turret"
 									],
 									"animations": {
-										"idle": "animation.cannon_turret.idle",
+										"setup": "animation.cannon_turret.setup",
 										"shoot": "animation.cannon_turret.shoot",
-										"look_at_target": "animation.cannon_turret.look_at_target"
+										"look_at_target": "animation.cannon_turret.look_at_target",
+										"death": "animation.cannon_turret.death",
+										"firing_sequence": "controller.animation.firing_sequence"
 									},
 									"scripts": {
 										"animate": [
-											{
-												"idle": "!query.has_target"
-											},
+											"setup",
 											"look_at_target",
 											{
-												"shoot": "query.has_target"
+												"firing_sequence": "query.mark_variant == 1"
+											},
+											{
+												"death": "!query.is_alive"
 											}
 										]
 									},
@@ -350,48 +224,54 @@
 									{
 										"open": {
 											"animate": [
-												{
-													"idle": "!query.has_target"
-												},
+												"setup",
 												"look_at_target",
 												{
-													"shoot": "query.has_target"
+													"firing_sequence": "query.mark_variant == 1"
+												},
+												{
+													"death": "!query.is_alive"
 												}
 											]
 										},
 										"key": "animate",
 										"children": [
 											{
-												"open": [
-													{
-														"idle": "!query.has_target"
-													},
-													"look_at_target",
-													{
-														"shoot": "query.has_target"
-													}
-												],
-												"is_minified": true,
-												"children": {
-													"idle": "!query.has_target"
-												}
+												"data": "setup"
 											},
 											{
 												"data": "look_at_target"
 											},
 											{
 												"open": [
-													{
-														"idle": "!query.has_target"
-													},
+													"setup",
 													"look_at_target",
 													{
-														"shoot": "query.has_target"
+														"firing_sequence": "query.mark_variant == 1"
+													},
+													{
+														"death": "!query.is_alive"
 													}
 												],
 												"is_minified": true,
 												"children": {
-													"shoot": "query.has_target"
+													"firing_sequence": "query.mark_variant == 1"
+												}
+											},
+											{
+												"open": [
+													"setup",
+													"look_at_target",
+													{
+														"firing_sequence": "query.mark_variant == 1"
+													},
+													{
+														"death": "!query.is_alive"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"death": "!query.is_alive"
 												}
 											}
 										]
@@ -414,18 +294,21 @@
 										"controller.render.cannon_turret"
 									],
 									"animations": {
-										"idle": "animation.cannon_turret.idle",
+										"setup": "animation.cannon_turret.setup",
 										"shoot": "animation.cannon_turret.shoot",
-										"look_at_target": "animation.cannon_turret.look_at_target"
+										"look_at_target": "animation.cannon_turret.look_at_target",
+										"death": "animation.cannon_turret.death",
+										"firing_sequence": "controller.animation.firing_sequence"
 									},
 									"scripts": {
 										"animate": [
-											{
-												"idle": "!query.has_target"
-											},
+											"setup",
 											"look_at_target",
 											{
-												"shoot": "query.has_target"
+												"firing_sequence": "query.mark_variant == 1"
+											},
+											{
+												"death": "!query.is_alive"
 											}
 										]
 									},

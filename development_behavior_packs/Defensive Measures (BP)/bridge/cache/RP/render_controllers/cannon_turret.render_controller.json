@@ -3,7 +3,7 @@
 	"file_type": "render_controller",
 	"format_version": 1,
 	"file_uuid": "797849d0_30e7_418c_b1dd_6ac34fc46712",
-	"file_version": 1,
+	"file_version": 6,
 	"cache_content": {
 		"children": [
 			{
@@ -23,7 +23,19 @@
 							],
 							"textures": [
 								"Texture.default"
-							]
+							],
+							"is_hurt_color": {
+								"r": 1,
+								"g": 0.125,
+								"b": 0.125,
+								"a": 0.125
+							},
+							"on_fire_color": {
+								"r": 1,
+								"g": 0.125,
+								"b": 0.125,
+								"a": 0.25
+							}
 						}
 					}
 				},
@@ -40,7 +52,19 @@
 								],
 								"textures": [
 									"Texture.default"
-								]
+								],
+								"is_hurt_color": {
+									"r": 1,
+									"g": 0.125,
+									"b": 0.125,
+									"a": 0.125
+								},
+								"on_fire_color": {
+									"r": 1,
+									"g": 0.125,
+									"b": 0.125,
+									"a": 0.25
+								}
 							}
 						},
 						"key": "controller.render.cannon_turret",
@@ -59,7 +83,19 @@
 									],
 									"textures": [
 										"Texture.default"
-									]
+									],
+									"is_hurt_color": {
+										"r": 1,
+										"g": 0.125,
+										"b": 0.125,
+										"a": 0.125
+									},
+									"on_fire_color": {
+										"r": 1,
+										"g": 0.125,
+										"b": 0.125,
+										"a": 0.25
+									}
 								},
 								"key": "materials",
 								"children": [
@@ -86,13 +122,91 @@
 									],
 									"textures": [
 										"Texture.default"
-									]
+									],
+									"is_hurt_color": {
+										"r": 1,
+										"g": 0.125,
+										"b": 0.125,
+										"a": 0.125
+									},
+									"on_fire_color": {
+										"r": 1,
+										"g": 0.125,
+										"b": 0.125,
+										"a": 0.25
+									}
 								},
 								"key": "textures",
 								"is_minified": true,
 								"children": [
 									"Texture.default"
 								]
+							},
+							{
+								"open": {
+									"geometry": "Geometry.default",
+									"materials": [
+										{
+											"*": "Material.default"
+										}
+									],
+									"textures": [
+										"Texture.default"
+									],
+									"is_hurt_color": {
+										"r": 1,
+										"g": 0.125,
+										"b": 0.125,
+										"a": 0.125
+									},
+									"on_fire_color": {
+										"r": 1,
+										"g": 0.125,
+										"b": 0.125,
+										"a": 0.25
+									}
+								},
+								"key": "is_hurt_color",
+								"is_minified": true,
+								"children": {
+									"r": 1,
+									"g": 0.125,
+									"b": 0.125,
+									"a": 0.125
+								}
+							},
+							{
+								"open": {
+									"geometry": "Geometry.default",
+									"materials": [
+										{
+											"*": "Material.default"
+										}
+									],
+									"textures": [
+										"Texture.default"
+									],
+									"is_hurt_color": {
+										"r": 1,
+										"g": 0.125,
+										"b": 0.125,
+										"a": 0.125
+									},
+									"on_fire_color": {
+										"r": 1,
+										"g": 0.125,
+										"b": 0.125,
+										"a": 0.25
+									}
+								},
+								"key": "on_fire_color",
+								"is_minified": true,
+								"children": {
+									"r": 1,
+									"g": 0.125,
+									"b": 0.125,
+									"a": 0.25
+								}
 							}
 						]
 					}

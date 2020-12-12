@@ -1,0 +1,47 @@
+//bridge-file-version: #18
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.firing_sequence": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"fuse": "query.mark_variant == 1"
+						}
+					]
+				},
+				"fuse": {
+					"transitions": [
+						{
+							"shoot": "query.any_animation_finished"
+						}
+					],
+					"particle_effects": [
+						{
+							"effect": "fuse",
+							"locator": "fuse"
+						}
+					]
+				},
+				"shoot": {
+					"animations": [
+						"shoot"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"particle_effects": [
+						{
+							"effect": "flash",
+							"locator": "barrel"
+						}
+					]
+				}
+			}
+		}
+	}
+}

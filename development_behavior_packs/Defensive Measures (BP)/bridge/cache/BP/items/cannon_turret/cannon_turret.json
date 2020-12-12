@@ -3,7 +3,7 @@
 	"file_type": "item",
 	"format_version": 1,
 	"file_uuid": "59db2e36_df8b_4a5c_bdcd_45dccacc7c6d",
-	"file_version": 3,
+	"file_version": 4,
 	"cache_content": {
 		"children": [
 			{
@@ -28,7 +28,8 @@
 							},
 							"minecraft:icon": {
 								"texture": "cannon_turret"
-							}
+							},
+							"minecraft:display_name": {}
 						}
 					}
 				},
@@ -50,7 +51,8 @@
 								},
 								"minecraft:icon": {
 									"texture": "cannon_turret"
-								}
+								},
+								"minecraft:display_name": {}
 							}
 						},
 						"key": "description",
@@ -76,7 +78,8 @@
 								},
 								"minecraft:icon": {
 									"texture": "cannon_turret"
-								}
+								},
+								"minecraft:display_name": {}
 							}
 						},
 						"key": "components",
@@ -96,7 +99,8 @@
 									},
 									"minecraft:icon": {
 										"texture": "cannon_turret"
-									}
+									},
+									"minecraft:display_name": {}
 								},
 								"key": "minecraft:entity_placer",
 								"is_minified": true,
@@ -115,7 +119,8 @@
 									},
 									"minecraft:icon": {
 										"texture": "cannon_turret"
-									}
+									},
+									"minecraft:display_name": {}
 								},
 								"key": "minecraft:creative_category",
 								"is_minified": true,
@@ -134,13 +139,19 @@
 									},
 									"minecraft:icon": {
 										"texture": "cannon_turret"
-									}
+									},
+									"minecraft:display_name": {}
 								},
 								"key": "minecraft:icon",
 								"is_minified": true,
 								"children": {
 									"texture": "cannon_turret"
 								}
+							},
+							{
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {}
 							}
 						]
 					}
