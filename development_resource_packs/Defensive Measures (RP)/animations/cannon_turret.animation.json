@@ -3,32 +3,34 @@
 	"animations": {
 		"animation.cannon_turret.setup": {
 			"loop": true,
-			"animation_length": 2.5,
-			"override_previous_animation": true,
 			"bones": {
 				"base": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"2.5": [0, 0, 0]
-					}
-				},
-				"entity": {
-					"rotation": [0, 0, 0]
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": [0, "-query.body_y_rotation", 0]
 				}
 			}
 		},
 		"animation.cannon_turret.shoot": {
+			"override_previous_animation": true,
 			"animation_length": 0.52,
 			"bones": {
 				"base": {
+					"relative_to": {
+						"rotation": "entity"
+					},
 					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.04": ["Math.random(-0.5,0.5)", 0, "Math.random(-0.5,0.5)"],
-						"0.24": ["Math.random(-0.25,0.25)", 0, "Math.random(-0.25,0.25)"],
-						"0.52": [0, 0, 0]
+						"0.0": [0, "-query.body_y_rotation", 0],
+						"0.04": ["Math.random(-0.5,0.5)", "-query.body_y_rotation", "Math.random(-0.5,0.5)"],
+						"0.24": ["Math.random(-0.25,0.25)", "-query.body_y_rotation", "Math.random(-0.25,0.25)"],
+						"0.52": [0, "-query.body_y_rotation", 0]
 					}
 				},
 				"stand": {
+					"relative_to": {
+						"rotation": "entity"
+					},
 					"rotation": {
 						"0.0": [0, "query.target_y_rotation", 0],
 						"0.04": ["Math.random(-0.25, 0.25)", "query.target_y_rotation + Math.random(-0.25, 0.25)", "Math.random(-0.25, 0.25)"],
@@ -39,13 +41,13 @@
 				"head": {
 					"rotation": {
 						"0.0": ["query.target_x_rotation", 0, 0],
-						"0.04": ["query.target_x_rotation - 0.5", 0, 0],
-						"0.08": ["query.target_x_rotation + 7.5", 0, 0],
+						"0.04": ["query.target_x_rotation + 0.5", 0, 0],
+						"0.08": ["query.target_x_rotation - 7.5", 0, 0],
 						"0.52": ["query.target_x_rotation", 0, 0]
 					},
 					"position": {
 						"0.0": [0, 0, 0],
-						"0.08": [0, 0, -1],
+						"0.08": [0, 0, 1],
 						"0.52": [0, 0, 0]
 					}
 				}
@@ -61,13 +63,22 @@
 			"loop": true,
 			"bones": {
 				"base": {
+					"relative_to": {
+						"rotation": "entity"
+					},
 					"rotation": [0, 0, 0]
 				},
 				"stand": {
+					"relative_to": {
+						"rotation": "entity"
+					},
 					"rotation": [0, "query.target_y_rotation", 0]
 				},
 				"head": {
-					"rotation": ["query.target_x_rotation > 30 ? 30: query.target_x_rotation < -30 ? -30 : query.target_x_rotation", 0, 0]
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": ["query.target_x_rotation > 30 ? 30 : query.target_x_rotation < -30 ? -30 : query.target_x_rotation", "query.target_y_rotation", 0]
 				}
 			},
 			"particle_effects": {
@@ -81,10 +92,16 @@
 			"animation_length": 1,
 			"bones": {
 				"base": {
+					"relative_to": {
+						"rotation": "entity"
+					},
 					"rotation": ["this", "this", "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"]
 				},
 				"stand": {
-					"rotation": ["this", "this", "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"]
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": ["this", "-query.body_y_rotation", "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"]
 				},
 				"rightstand": {
 					"rotation": {
@@ -129,11 +146,11 @@
 					"rotation": {
 						"0.0": [0, 0, 0],
 						"0.08": [0, 0, 0],
-						"0.24": [-15, 0, 0],
-						"0.32": [-18.5, 0, 0],
-						"0.44": [-15, 0, 0],
-						"0.56": [-12.5, 0, 0],
-						"0.72": [-15, 0, 0]
+						"0.24": [15, 0, 0],
+						"0.32": [18.5, 0, 0],
+						"0.44": [15, 0, 0],
+						"0.56": [12.5, 0, 0],
+						"0.72": [15, 0, 0]
 					},
 					"position": {
 						"0.0": [0, 0, 0],
@@ -145,6 +162,15 @@
 						},
 						"0.72": [0, -1, 0]
 					}
+				}
+			}
+		},
+		"animation.cannon_turret.fuse": {
+			"animation_length": 4.48,
+			"particle_effects": {
+				"0.0": {
+					"effect": "fuse",
+					"locator": "fuse"
 				}
 			}
 		}

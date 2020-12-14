@@ -20,8 +20,7 @@
 		},
 		"BP/entities/cannon_turret.json": {
 			"events": [
-				"targetAcquired",
-				"targetLost"
+				"removeTurret"
 			],
 			"bridge_core_tags": [],
 			"identifiers": [
@@ -96,6 +95,12 @@
 				"defensive:cannon_head"
 			],
 			"custom_commands": []
+		},
+		"BP/items/turret_remover.json": {
+			"identifiers": [
+				"defensive:turret_remover"
+			],
+			"custom_commands": []
 		}
 	},
 	"recipe": {
@@ -123,6 +128,41 @@
 			"tags": [
 				"crafting_table"
 			]
+		},
+		"BP/recipes/turret_remover.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/cannon_base.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/cannon_stand.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/unfinished_cannon_head.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/cannon_head.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/cannon_turret.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/cannon_turret.shortcut.json": {
+			"tags": [
+				"crafting_table"
+			]
 		}
 	},
 	"client_entity": {
@@ -136,10 +176,11 @@
 			],
 			"animation_references": [
 				"setup",
-				"shoot",
 				"look_at_target",
-				"death",
-				"firing_sequence"
+				"fuse",
+				"shoot",
+				"firing_sequence",
+				"death"
 			],
 			"sound_references": [],
 			"texture_references": [
@@ -167,9 +208,11 @@
 	"rp_animation": {
 		"RP/animations/cannon_turret.animation.json": {
 			"ids": [
+				"animation.cannon_turret.setup",
+				"animation.cannon_turret.look_at_target",
+				"animation.cannon_turret.fuse",
 				"animation.cannon_turret.shoot",
-				"animation.cannon_turret.idle",
-				"animation.cannon_turret.destroyed"
+				"animation.cannon_turret.death"
 			]
 		}
 	},
@@ -195,7 +238,7 @@
 	"rp_animation_controller": {
 		"RP/animation_controllers/cannon_turret.animation_controller.json": {
 			"ids": [
-				"controller.animation.firing_sequence"
+				"controller.animation.cannon_turret.firing_sequence"
 			]
 		}
 	},

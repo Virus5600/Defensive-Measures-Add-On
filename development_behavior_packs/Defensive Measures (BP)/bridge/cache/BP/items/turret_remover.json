@@ -1,0 +1,382 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)/items/turret_remover.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "6ca119ab_cd37_44b2_aeeb_0ce10468c3f5",
+	"file_version": 6,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "defensive:turret_remover",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:use_duration": 2,
+							"minecraft:max_stack_size": 1,
+							"minecraft:hand_equipped": true,
+							"minecraft:can_destroy_in_creative": false,
+							"minecraft:durability": {
+								"max_durability": 100,
+								"damage_chance": {
+									"min": 1,
+									"max": 1
+								}
+							},
+							"minecraft:enchantable": {
+								"slot": "shears"
+							},
+							"minecraft:repairable": {
+								"repair_items": [
+									{
+										"items": [
+											"minecraft:gold_nugget",
+											"minecraft:iron_nugget"
+										],
+										"repair_amount": 2
+									},
+									{
+										"items": [
+											"minecraft:gold_ingot",
+											"minecraft:iron_ingot",
+											"minecraft:redstone"
+										],
+										"repair_amount": 20
+									},
+									{
+										"items": [
+											"minecraft:redstone_block"
+										],
+										"repair_amount": 100
+									}
+								]
+							},
+							"minecraft:icon": {
+								"texture": "turret_remover"
+							},
+							"minecraft:display_name": {}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:turret_remover",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2,
+								"minecraft:max_stack_size": 1,
+								"minecraft:hand_equipped": true,
+								"minecraft:can_destroy_in_creative": false,
+								"minecraft:durability": {
+									"max_durability": 100,
+									"damage_chance": {
+										"min": 1,
+										"max": 1
+									}
+								},
+								"minecraft:enchantable": {
+									"slot": "shears"
+								},
+								"minecraft:repairable": {
+									"repair_items": [
+										{
+											"items": [
+												"minecraft:gold_nugget",
+												"minecraft:iron_nugget"
+											],
+											"repair_amount": 2
+										},
+										{
+											"items": [
+												"minecraft:gold_ingot",
+												"minecraft:iron_ingot",
+												"minecraft:redstone"
+											],
+											"repair_amount": 20
+										},
+										{
+											"items": [
+												"minecraft:redstone_block"
+											],
+											"repair_amount": 100
+										}
+									]
+								},
+								"minecraft:icon": {
+									"texture": "turret_remover"
+								},
+								"minecraft:display_name": {}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "defensive:turret_remover",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:turret_remover",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:use_duration": 2,
+								"minecraft:max_stack_size": 1,
+								"minecraft:hand_equipped": true,
+								"minecraft:can_destroy_in_creative": false,
+								"minecraft:durability": {
+									"max_durability": 100,
+									"damage_chance": {
+										"min": 1,
+										"max": 1
+									}
+								},
+								"minecraft:enchantable": {
+									"slot": "shears"
+								},
+								"minecraft:repairable": {
+									"repair_items": [
+										{
+											"items": [
+												"minecraft:gold_nugget",
+												"minecraft:iron_nugget"
+											],
+											"repair_amount": 2
+										},
+										{
+											"items": [
+												"minecraft:gold_ingot",
+												"minecraft:iron_ingot",
+												"minecraft:redstone"
+											],
+											"repair_amount": 20
+										},
+										{
+											"items": [
+												"minecraft:redstone_block"
+											],
+											"repair_amount": 100
+										}
+									]
+								},
+								"minecraft:icon": {
+									"texture": "turret_remover"
+								},
+								"minecraft:display_name": {}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "2",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "1",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:hand_equipped"
+							},
+							{
+								"data": "false",
+								"key": "minecraft:can_destroy_in_creative"
+							},
+							{
+								"key": "minecraft:durability",
+								"is_minified": true,
+								"children": {
+									"max_durability": 100,
+									"damage_chance": {
+										"min": 1,
+										"max": 1
+									}
+								}
+							},
+							{
+								"key": "minecraft:enchantable",
+								"is_minified": true,
+								"children": {
+									"slot": "shears"
+								}
+							},
+							{
+								"open": {
+									"minecraft:use_duration": 2,
+									"minecraft:max_stack_size": 1,
+									"minecraft:hand_equipped": true,
+									"minecraft:can_destroy_in_creative": false,
+									"minecraft:durability": {
+										"max_durability": 100,
+										"damage_chance": {
+											"min": 1,
+											"max": 1
+										}
+									},
+									"minecraft:enchantable": {
+										"slot": "shears"
+									},
+									"minecraft:repairable": {
+										"repair_items": [
+											{
+												"items": [
+													"minecraft:gold_nugget",
+													"minecraft:iron_nugget"
+												],
+												"repair_amount": 2
+											},
+											{
+												"items": [
+													"minecraft:gold_ingot",
+													"minecraft:iron_ingot",
+													"minecraft:redstone"
+												],
+												"repair_amount": 20
+											},
+											{
+												"items": [
+													"minecraft:redstone_block"
+												],
+												"repair_amount": 100
+											}
+										]
+									},
+									"minecraft:icon": {
+										"texture": "turret_remover"
+									},
+									"minecraft:display_name": {}
+								},
+								"key": "minecraft:repairable",
+								"children": [
+									{
+										"open": {
+											"repair_items": [
+												{
+													"items": [
+														"minecraft:gold_nugget",
+														"minecraft:iron_nugget"
+													],
+													"repair_amount": 2
+												},
+												{
+													"items": [
+														"minecraft:gold_ingot",
+														"minecraft:iron_ingot",
+														"minecraft:redstone"
+													],
+													"repair_amount": 20
+												},
+												{
+													"items": [
+														"minecraft:redstone_block"
+													],
+													"repair_amount": 100
+												}
+											]
+										},
+										"key": "repair_items",
+										"children": [
+											{
+												"is_minified": true,
+												"children": {
+													"items": [
+														"minecraft:gold_nugget",
+														"minecraft:iron_nugget"
+													],
+													"repair_amount": 2
+												}
+											},
+											{
+												"open": [
+													{
+														"items": [
+															"minecraft:gold_nugget",
+															"minecraft:iron_nugget"
+														],
+														"repair_amount": 2
+													},
+													{
+														"items": [
+															"minecraft:gold_ingot",
+															"minecraft:iron_ingot",
+															"minecraft:redstone"
+														],
+														"repair_amount": 20
+													},
+													{
+														"items": [
+															"minecraft:redstone_block"
+														],
+														"repair_amount": 100
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"items": [
+																"minecraft:gold_ingot",
+																"minecraft:iron_ingot",
+																"minecraft:redstone"
+															],
+															"repair_amount": 20
+														},
+														"key": "items",
+														"is_minified": true,
+														"children": [
+															"minecraft:gold_ingot",
+															"minecraft:iron_ingot",
+															"minecraft:redstone"
+														]
+													},
+													{
+														"data": "20",
+														"key": "repair_amount"
+													}
+												]
+											},
+											{
+												"is_minified": true,
+												"children": {
+													"items": [
+														"minecraft:redstone_block"
+													],
+													"repair_amount": 100
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "turret_remover"
+								}
+							},
+							{
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

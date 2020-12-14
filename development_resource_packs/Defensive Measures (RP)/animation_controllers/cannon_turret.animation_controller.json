@@ -1,27 +1,32 @@
-//bridge-file-version: #18
+//bridge-file-version: #12
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.firing_sequence": {
+		"controller.animation.cannon_turret.firing_sequence": {
 			"initial_state": "default",
 			"states": {
 				"default": {
+					"animations": [
+						"look_at_target"
+					],
 					"transitions": [
 						{
-							"fuse": "query.mark_variant == 1"
+							"fuse": "query.has_target"
 						}
 					]
 				},
 				"fuse": {
-					"transitions": [
+					"animations": [
 						{
-							"shoot": "query.any_animation_finished"
+							"fuse": "query.has_target"
 						}
 					],
-					"particle_effects": [
+					"transitions": [
 						{
-							"effect": "fuse",
-							"locator": "fuse"
+							"default": "!query.has_target"
+						},
+						{
+							"shoot": "query.is_charged"
 						}
 					]
 				},
@@ -31,13 +36,10 @@
 					],
 					"transitions": [
 						{
-							"default": "query.all_animations_finished"
-						}
-					],
-					"particle_effects": [
+							"default": "!query.has_target"
+						},
 						{
-							"effect": "flash",
-							"locator": "barrel"
+							"fuse": "!query.is_charged && query.any_animation_finished"
 						}
 					]
 				}

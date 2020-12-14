@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\animation_controllers\\cannon_turret.animation_controller.json",
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)/animation_controllers/cannon_turret.animation_controller.json",
 	"file_type": "rp_animation_controller",
 	"format_version": 1,
-	"file_uuid": "08dd080c_5daf_479f_b942_9b9c0000cbf9",
-	"file_version": 18,
+	"file_uuid": "11c409ee_82ee_45c9_a00a_1fb8362a6db1",
+	"file_version": 12,
 	"cache_content": {
 		"children": [
 			{
@@ -14,26 +14,31 @@
 				"open": {
 					"format_version": "1.10.0",
 					"animation_controllers": {
-						"controller.animation.firing_sequence": {
+						"controller.animation.cannon_turret.firing_sequence": {
 							"initial_state": "default",
 							"states": {
 								"default": {
+									"animations": [
+										"look_at_target"
+									],
 									"transitions": [
 										{
-											"fuse": "query.mark_variant == 1"
+											"fuse": "query.has_target"
 										}
 									]
 								},
 								"fuse": {
-									"transitions": [
+									"animations": [
 										{
-											"shoot": "query.any_animation_finished"
+											"fuse": "query.has_target"
 										}
 									],
-									"particle_effects": [
+									"transitions": [
 										{
-											"effect": "fuse",
-											"locator": "fuse"
+											"default": "!query.has_target"
+										},
+										{
+											"shoot": "query.is_charged"
 										}
 									]
 								},
@@ -43,13 +48,10 @@
 									],
 									"transitions": [
 										{
-											"default": "query.all_animations_finished"
-										}
-									],
-									"particle_effects": [
+											"default": "!query.has_target"
+										},
 										{
-											"effect": "flash",
-											"locator": "barrel"
+											"fuse": "!query.is_charged && query.any_animation_finished"
 										}
 									]
 								}
@@ -61,26 +63,31 @@
 				"children": [
 					{
 						"open": {
-							"controller.animation.firing_sequence": {
+							"controller.animation.cannon_turret.firing_sequence": {
 								"initial_state": "default",
 								"states": {
 									"default": {
+										"animations": [
+											"look_at_target"
+										],
 										"transitions": [
 											{
-												"fuse": "query.mark_variant == 1"
+												"fuse": "query.has_target"
 											}
 										]
 									},
 									"fuse": {
-										"transitions": [
+										"animations": [
 											{
-												"shoot": "query.any_animation_finished"
+												"fuse": "query.has_target"
 											}
 										],
-										"particle_effects": [
+										"transitions": [
 											{
-												"effect": "fuse",
-												"locator": "fuse"
+												"default": "!query.has_target"
+											},
+											{
+												"shoot": "query.is_charged"
 											}
 										]
 									},
@@ -90,20 +97,17 @@
 										],
 										"transitions": [
 											{
-												"default": "query.all_animations_finished"
-											}
-										],
-										"particle_effects": [
+												"default": "!query.has_target"
+											},
 											{
-												"effect": "flash",
-												"locator": "barrel"
+												"fuse": "!query.is_charged && query.any_animation_finished"
 											}
 										]
 									}
 								}
 							}
 						},
-						"key": "controller.animation.firing_sequence",
+						"key": "controller.animation.cannon_turret.firing_sequence",
 						"children": [
 							{
 								"data": "default",
@@ -114,22 +118,27 @@
 									"initial_state": "default",
 									"states": {
 										"default": {
+											"animations": [
+												"look_at_target"
+											],
 											"transitions": [
 												{
-													"fuse": "query.mark_variant == 1"
+													"fuse": "query.has_target"
 												}
 											]
 										},
 										"fuse": {
-											"transitions": [
+											"animations": [
 												{
-													"shoot": "query.any_animation_finished"
+													"fuse": "query.has_target"
 												}
 											],
-											"particle_effects": [
+											"transitions": [
 												{
-													"effect": "fuse",
-													"locator": "fuse"
+													"default": "!query.has_target"
+												},
+												{
+													"shoot": "query.is_charged"
 												}
 											]
 										},
@@ -139,13 +148,10 @@
 											],
 											"transitions": [
 												{
-													"default": "query.all_animations_finished"
-												}
-											],
-											"particle_effects": [
+													"default": "!query.has_target"
+												},
 												{
-													"effect": "flash",
-													"locator": "barrel"
+													"fuse": "!query.is_charged && query.any_animation_finished"
 												}
 											]
 										}
@@ -156,22 +162,27 @@
 									{
 										"open": {
 											"default": {
+												"animations": [
+													"look_at_target"
+												],
 												"transitions": [
 													{
-														"fuse": "query.mark_variant == 1"
+														"fuse": "query.has_target"
 													}
 												]
 											},
 											"fuse": {
-												"transitions": [
+												"animations": [
 													{
-														"shoot": "query.any_animation_finished"
+														"fuse": "query.has_target"
 													}
 												],
-												"particle_effects": [
+												"transitions": [
 													{
-														"effect": "fuse",
-														"locator": "fuse"
+														"default": "!query.has_target"
+													},
+													{
+														"shoot": "query.is_charged"
 													}
 												]
 											},
@@ -181,13 +192,10 @@
 												],
 												"transitions": [
 													{
-														"default": "query.all_animations_finished"
-													}
-												],
-												"particle_effects": [
+														"default": "!query.has_target"
+													},
 													{
-														"effect": "flash",
-														"locator": "barrel"
+														"fuse": "!query.is_charged && query.any_animation_finished"
 													}
 												]
 											}
@@ -196,9 +204,29 @@
 										"children": [
 											{
 												"open": {
+													"animations": [
+														"look_at_target"
+													],
 													"transitions": [
 														{
-															"fuse": "query.mark_variant == 1"
+															"fuse": "query.has_target"
+														}
+													]
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"look_at_target"
+												]
+											},
+											{
+												"open": {
+													"animations": [
+														"look_at_target"
+													],
+													"transitions": [
+														{
+															"fuse": "query.has_target"
 														}
 													]
 												},
@@ -207,12 +235,12 @@
 													{
 														"open": [
 															{
-																"fuse": "query.mark_variant == 1"
+																"fuse": "query.has_target"
 															}
 														],
 														"is_minified": true,
 														"children": {
-															"fuse": "query.mark_variant == 1"
+															"fuse": "query.has_target"
 														}
 													}
 												]
@@ -222,22 +250,27 @@
 									{
 										"open": {
 											"default": {
+												"animations": [
+													"look_at_target"
+												],
 												"transitions": [
 													{
-														"fuse": "query.mark_variant == 1"
+														"fuse": "query.has_target"
 													}
 												]
 											},
 											"fuse": {
-												"transitions": [
+												"animations": [
 													{
-														"shoot": "query.any_animation_finished"
+														"fuse": "query.has_target"
 													}
 												],
-												"particle_effects": [
+												"transitions": [
 													{
-														"effect": "fuse",
-														"locator": "fuse"
+														"default": "!query.has_target"
+													},
+													{
+														"shoot": "query.is_charged"
 													}
 												]
 											},
@@ -247,13 +280,10 @@
 												],
 												"transitions": [
 													{
-														"default": "query.all_animations_finished"
-													}
-												],
-												"particle_effects": [
+														"default": "!query.has_target"
+													},
 													{
-														"effect": "flash",
-														"locator": "barrel"
+														"fuse": "!query.is_charged && query.any_animation_finished"
 													}
 												]
 											}
@@ -262,15 +292,48 @@
 										"children": [
 											{
 												"open": {
-													"transitions": [
+													"animations": [
 														{
-															"shoot": "query.any_animation_finished"
+															"fuse": "query.has_target"
 														}
 													],
-													"particle_effects": [
+													"transitions": [
 														{
-															"effect": "fuse",
-															"locator": "fuse"
+															"default": "!query.has_target"
+														},
+														{
+															"shoot": "query.is_charged"
+														}
+													]
+												},
+												"key": "animations",
+												"children": [
+													{
+														"open": [
+															{
+																"fuse": "query.has_target"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"fuse": "query.has_target"
+														}
+													}
+												]
+											},
+											{
+												"open": {
+													"animations": [
+														{
+															"fuse": "query.has_target"
+														}
+													],
+													"transitions": [
+														{
+															"default": "!query.has_target"
+														},
+														{
+															"shoot": "query.is_charged"
 														}
 													]
 												},
@@ -279,43 +342,29 @@
 													{
 														"open": [
 															{
-																"shoot": "query.any_animation_finished"
+																"default": "!query.has_target"
+															},
+															{
+																"shoot": "query.is_charged"
 															}
 														],
 														"is_minified": true,
 														"children": {
-															"shoot": "query.any_animation_finished"
+															"default": "!query.has_target"
 														}
-													}
-												]
-											},
-											{
-												"open": {
-													"transitions": [
-														{
-															"shoot": "query.any_animation_finished"
-														}
-													],
-													"particle_effects": [
-														{
-															"effect": "fuse",
-															"locator": "fuse"
-														}
-													]
-												},
-												"key": "particle_effects",
-												"children": [
+													},
 													{
 														"open": [
 															{
-																"effect": "fuse",
-																"locator": "fuse"
+																"default": "!query.has_target"
+															},
+															{
+																"shoot": "query.is_charged"
 															}
 														],
 														"is_minified": true,
 														"children": {
-															"effect": "fuse",
-															"locator": "fuse"
+															"shoot": "query.is_charged"
 														}
 													}
 												]
@@ -325,22 +374,27 @@
 									{
 										"open": {
 											"default": {
+												"animations": [
+													"look_at_target"
+												],
 												"transitions": [
 													{
-														"fuse": "query.mark_variant == 1"
+														"fuse": "query.has_target"
 													}
 												]
 											},
 											"fuse": {
-												"transitions": [
+												"animations": [
 													{
-														"shoot": "query.any_animation_finished"
+														"fuse": "query.has_target"
 													}
 												],
-												"particle_effects": [
+												"transitions": [
 													{
-														"effect": "fuse",
-														"locator": "fuse"
+														"default": "!query.has_target"
+													},
+													{
+														"shoot": "query.is_charged"
 													}
 												]
 											},
@@ -350,13 +404,10 @@
 												],
 												"transitions": [
 													{
-														"default": "query.all_animations_finished"
-													}
-												],
-												"particle_effects": [
+														"default": "!query.has_target"
+													},
 													{
-														"effect": "flash",
-														"locator": "barrel"
+														"fuse": "!query.is_charged && query.any_animation_finished"
 													}
 												]
 											}
@@ -370,13 +421,10 @@
 													],
 													"transitions": [
 														{
-															"default": "query.all_animations_finished"
-														}
-													],
-													"particle_effects": [
+															"default": "!query.has_target"
+														},
 														{
-															"effect": "flash",
-															"locator": "barrel"
+															"fuse": "!query.is_charged && query.any_animation_finished"
 														}
 													]
 												},
@@ -393,13 +441,10 @@
 													],
 													"transitions": [
 														{
-															"default": "query.all_animations_finished"
-														}
-													],
-													"particle_effects": [
+															"default": "!query.has_target"
+														},
 														{
-															"effect": "flash",
-															"locator": "barrel"
+															"fuse": "!query.is_charged && query.any_animation_finished"
 														}
 													]
 												},
@@ -408,46 +453,29 @@
 													{
 														"open": [
 															{
-																"default": "query.all_animations_finished"
+																"default": "!query.has_target"
+															},
+															{
+																"fuse": "!query.is_charged && query.any_animation_finished"
 															}
 														],
 														"is_minified": true,
 														"children": {
-															"default": "query.all_animations_finished"
+															"default": "!query.has_target"
 														}
-													}
-												]
-											},
-											{
-												"open": {
-													"animations": [
-														"shoot"
-													],
-													"transitions": [
-														{
-															"default": "query.all_animations_finished"
-														}
-													],
-													"particle_effects": [
-														{
-															"effect": "flash",
-															"locator": "barrel"
-														}
-													]
-												},
-												"key": "particle_effects",
-												"children": [
+													},
 													{
 														"open": [
 															{
-																"effect": "flash",
-																"locator": "barrel"
+																"default": "!query.has_target"
+															},
+															{
+																"fuse": "!query.is_charged && query.any_animation_finished"
 															}
 														],
 														"is_minified": true,
 														"children": {
-															"effect": "flash",
-															"locator": "barrel"
+															"fuse": "!query.is_charged && query.any_animation_finished"
 														}
 													}
 												]

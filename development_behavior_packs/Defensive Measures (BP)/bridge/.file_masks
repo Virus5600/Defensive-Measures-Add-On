@@ -163,6 +163,16 @@
 						}
 					}
 				}
+			},
+			"6ca119ab_cd37_44b2_aeeb_0ce10468c3f5": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
 			}
 		}
 	},
@@ -194,6 +204,33 @@
 		"data": {}
 	},
 	"BP/items/cannon_turret/cannon_head.json": {
+		"data": {}
+	},
+	"BP/items/turret_remover.json": {
+		"data": {}
+	},
+	"BP/loot_tables/cannon_turret/cannon_turret.drop.json": {
+		"data": {}
+	},
+	"BP/recipes/turret_remover.json": {
+		"data": {}
+	},
+	"BP/recipes/cannon_turret/cannon_base.json": {
+		"data": {}
+	},
+	"BP/recipes/cannon_turret/cannon_stand.json": {
+		"data": {}
+	},
+	"BP/recipes/cannon_turret/unfinished_cannon_head.json": {
+		"data": {}
+	},
+	"BP/recipes/cannon_turret/cannon_head.json": {
+		"data": {}
+	},
+	"BP/recipes/cannon_turret/cannon_turret.json": {
+		"data": {}
+	},
+	"BP/recipes/cannon_turret/cannon_turret.shortcut.json": {
 		"data": {}
 	},
 	"RP/animation_controllers/cannon_turret.animation_controller.json": {

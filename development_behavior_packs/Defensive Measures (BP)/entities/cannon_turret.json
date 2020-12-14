@@ -1,4 +1,4 @@
-//bridge-file-version: #49
+//bridge-file-version: #115
 {
 	"format_version": "1.16.100",
 	"minecraft:entity": {
@@ -41,11 +41,8 @@
 			},
 			"minecraft:behavior.ranged_attack": {
 				"priority": 0,
-				"burst_interval": 0,
-				"charge_charged_trigger": 20,
-				"charge_shoot_trigger": 1,
-				"attack_interval_min": 3,
-				"attack_interval_max": 3,
+				"charge_charged_trigger": 4.9,
+				"charge_shoot_trigger": 5,
 				"attack_radius": 16
 			},
 			"minecraft:collision_box": {
@@ -133,56 +130,40 @@
 					"turret"
 				]
 			},
-			"minecraft:environment_sensor": {
-				"triggers": [
+			"minecraft:interact": {
+				"interactions": [
 					{
-						"event": "targetAcquired",
-						"filters": {
-							"test": "has_target",
-							"subject": "self",
-							"value": true
-						}
-					},
-					{
-						"event": "targetLost",
-						"filters": {
-							"test": "has_target",
-							"subject": "self",
-							"value": false
-						}
+						"interact_text": "Remove Turret",
+						"on_interact": {
+							"target": "self",
+							"event": "removeTurret",
+							"filters": {
+								"domain": "hand",
+								"test": "has_equipment",
+								"value": "defensive:turret_remover",
+								"subject": "other"
+							}
+						},
+						"spawn_items": {
+							"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+						},
+						"hurt_item": 1
 					}
 				]
-			},
-			"minecraft:mark_variant": {
-				"value": 0
 			}
 		},
 		"events": {
-			"targetAcquired": {
+			"removeTurret": {
 				"add": {
 					"component_groups": [
-						"attackVariant"
-					]
-				}
-			},
-			"targetLost": {
-				"add": {
-					"component_groups": [
-						"passiveVariant"
+						"despawn"
 					]
 				}
 			}
 		},
 		"component_groups": {
-			"passiveVariant": {
-				"minecraft:mark_variant": {
-					"value": 0
-				}
-			},
-			"attackVariant": {
-				"minecraft:mark_variant": {
-					"value": 1
-				}
+			"despawn": {
+				"minecraft:instant_despawn": {}
 			}
 		}
 	}

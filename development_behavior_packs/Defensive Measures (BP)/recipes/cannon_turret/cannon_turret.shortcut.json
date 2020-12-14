@@ -1,0 +1,37 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "defensive:cannon_turret.shortcut"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"shs",
+			"ppp",
+			"SSS"
+		],
+		"key": {
+			"s": {
+				"item": "defensive:cannon_stand"
+			},
+			"h": {
+				"item": "defensive:cannon_head"
+			},
+			"p": {
+				"item": "minecraft:wooden_slab"
+			},
+			"S": {
+				"item": "minecraft:stone_slab"
+			}
+		},
+		"result": [
+			{
+				"item": "defensive:cannon_turret",
+				"count": 1
+			}
+		]
+	}
+}

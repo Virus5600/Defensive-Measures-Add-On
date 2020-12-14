@@ -1,29 +1,32 @@
-//bridge-file-version: #0
+//bridge-file-version: #1
 {
 	"format_version": "1.16.100",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "defensive:unfinished_cannon_head"
+			"identifier": "defensive:turret_remover"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			"III",
-			"IG ",
-			"III"
+			" i ",
+			"g i",
+			"rg"
 		],
 		"key": {
-			"I": {
+			"r": {
+				"item": "minecraft:redstone_block"
+			},
+			"i": {
 				"item": "minecraft:iron_ingot"
 			},
-			"G": {
-				"item": "minecraft:gunpowder"
+			"g": {
+				"item": "minecraft:gold_ingot"
 			}
 		},
 		"result": [
 			{
-				"item": "defensive:unfinished_cannon_head",
+				"item": "defensive:turret_remover",
 				"count": 1
 			}
 		]

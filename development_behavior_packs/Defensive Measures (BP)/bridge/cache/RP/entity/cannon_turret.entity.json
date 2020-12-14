@@ -3,7 +3,7 @@
 	"file_type": "client_entity",
 	"format_version": 1,
 	"file_uuid": "9dc4df68_aec5_4c2a_8bf0_2825001a8289",
-	"file_version": 49,
+	"file_version": 68,
 	"cache_content": {
 		"children": [
 			{
@@ -30,18 +30,17 @@
 							],
 							"animations": {
 								"setup": "animation.cannon_turret.setup",
-								"shoot": "animation.cannon_turret.shoot",
 								"look_at_target": "animation.cannon_turret.look_at_target",
-								"death": "animation.cannon_turret.death",
-								"firing_sequence": "controller.animation.firing_sequence"
+								"fuse": "animation.cannon_turret.fuse",
+								"shoot": "animation.cannon_turret.shoot",
+								"firing_sequence": "controller.animation.cannon_turret.firing_sequence",
+								"death": "animation.cannon_turret.death"
 							},
 							"scripts": {
 								"animate": [
 									"setup",
 									"look_at_target",
-									{
-										"firing_sequence": "query.mark_variant == 1"
-									},
+									"firing_sequence",
 									{
 										"death": "!query.is_alive"
 									}
@@ -74,18 +73,17 @@
 								],
 								"animations": {
 									"setup": "animation.cannon_turret.setup",
-									"shoot": "animation.cannon_turret.shoot",
 									"look_at_target": "animation.cannon_turret.look_at_target",
-									"death": "animation.cannon_turret.death",
-									"firing_sequence": "controller.animation.firing_sequence"
+									"fuse": "animation.cannon_turret.fuse",
+									"shoot": "animation.cannon_turret.shoot",
+									"firing_sequence": "controller.animation.cannon_turret.firing_sequence",
+									"death": "animation.cannon_turret.death"
 								},
 								"scripts": {
 									"animate": [
 										"setup",
 										"look_at_target",
-										{
-											"firing_sequence": "query.mark_variant == 1"
-										},
+										"firing_sequence",
 										{
 											"death": "!query.is_alive"
 										}
@@ -148,18 +146,17 @@
 									],
 									"animations": {
 										"setup": "animation.cannon_turret.setup",
-										"shoot": "animation.cannon_turret.shoot",
 										"look_at_target": "animation.cannon_turret.look_at_target",
-										"death": "animation.cannon_turret.death",
-										"firing_sequence": "controller.animation.firing_sequence"
+										"fuse": "animation.cannon_turret.fuse",
+										"shoot": "animation.cannon_turret.shoot",
+										"firing_sequence": "controller.animation.cannon_turret.firing_sequence",
+										"death": "animation.cannon_turret.death"
 									},
 									"scripts": {
 										"animate": [
 											"setup",
 											"look_at_target",
-											{
-												"firing_sequence": "query.mark_variant == 1"
-											},
+											"firing_sequence",
 											{
 												"death": "!query.is_alive"
 											}
@@ -174,10 +171,11 @@
 								"is_minified": true,
 								"children": {
 									"setup": "animation.cannon_turret.setup",
-									"shoot": "animation.cannon_turret.shoot",
 									"look_at_target": "animation.cannon_turret.look_at_target",
-									"death": "animation.cannon_turret.death",
-									"firing_sequence": "controller.animation.firing_sequence"
+									"fuse": "animation.cannon_turret.fuse",
+									"shoot": "animation.cannon_turret.shoot",
+									"firing_sequence": "controller.animation.cannon_turret.firing_sequence",
+									"death": "animation.cannon_turret.death"
 								}
 							},
 							{
@@ -197,18 +195,17 @@
 									],
 									"animations": {
 										"setup": "animation.cannon_turret.setup",
-										"shoot": "animation.cannon_turret.shoot",
 										"look_at_target": "animation.cannon_turret.look_at_target",
-										"death": "animation.cannon_turret.death",
-										"firing_sequence": "controller.animation.firing_sequence"
+										"fuse": "animation.cannon_turret.fuse",
+										"shoot": "animation.cannon_turret.shoot",
+										"firing_sequence": "controller.animation.cannon_turret.firing_sequence",
+										"death": "animation.cannon_turret.death"
 									},
 									"scripts": {
 										"animate": [
 											"setup",
 											"look_at_target",
-											{
-												"firing_sequence": "query.mark_variant == 1"
-											},
+											"firing_sequence",
 											{
 												"death": "!query.is_alive"
 											}
@@ -226,9 +223,7 @@
 											"animate": [
 												"setup",
 												"look_at_target",
-												{
-													"firing_sequence": "query.mark_variant == 1"
-												},
+												"firing_sequence",
 												{
 													"death": "!query.is_alive"
 												}
@@ -246,25 +241,18 @@
 												"open": [
 													"setup",
 													"look_at_target",
-													{
-														"firing_sequence": "query.mark_variant == 1"
-													},
+													"firing_sequence",
 													{
 														"death": "!query.is_alive"
 													}
 												],
-												"is_minified": true,
-												"children": {
-													"firing_sequence": "query.mark_variant == 1"
-												}
+												"data": "firing_sequence"
 											},
 											{
 												"open": [
 													"setup",
 													"look_at_target",
-													{
-														"firing_sequence": "query.mark_variant == 1"
-													},
+													"firing_sequence",
 													{
 														"death": "!query.is_alive"
 													}
@@ -295,18 +283,17 @@
 									],
 									"animations": {
 										"setup": "animation.cannon_turret.setup",
-										"shoot": "animation.cannon_turret.shoot",
 										"look_at_target": "animation.cannon_turret.look_at_target",
-										"death": "animation.cannon_turret.death",
-										"firing_sequence": "controller.animation.firing_sequence"
+										"fuse": "animation.cannon_turret.fuse",
+										"shoot": "animation.cannon_turret.shoot",
+										"firing_sequence": "controller.animation.cannon_turret.firing_sequence",
+										"death": "animation.cannon_turret.death"
 									},
 									"scripts": {
 										"animate": [
 											"setup",
 											"look_at_target",
-											{
-												"firing_sequence": "query.mark_variant == 1"
-											},
+											"firing_sequence",
 											{
 												"death": "!query.is_alive"
 											}
