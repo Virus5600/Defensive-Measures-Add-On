@@ -5,9 +5,6 @@
 	"RP/textures/terrain_texture.json": {
 		"data": {}
 	},
-	"BP/entities/player.json": {
-		"data": {}
-	},
 	"BP/items/Cannon Turret/cannon_head.json": {
 		"data": {}
 	},
@@ -234,6 +231,102 @@
 		"data": {}
 	},
 	"RP/animation_controllers/cannon_turret.animation_controller.json": {
+		"data": {}
+	},
+	"RP/models/entity/cannonball.geo.json": {
+		"data": {}
+	},
+	"RP/entity/cannonball.entity.json": {
+		"data": {}
+	},
+	"RP/render_controllers/cannonball.render_controller.json": {
+		"data": {}
+	},
+	"BP/entities/cannonball.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/zombie.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/blaze.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/cave_spider.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/drowned.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/elder_guardian.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/endermite.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/evocation_illager.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/ghast.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/guardian.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/husk.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/magma_cube.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/phantom.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/piglin_brute.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/pillager.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/ravager.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/shulker.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/silverfish.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/skeleton.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/slime.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/spider.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/stray.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/vex.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/vindicator.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/witch.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/wither_skeleton.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/zombie_villager.json": {
+		"data": {}
+	},
+	"BP/entities/vanilla/zombie_villager_v2.json": {
+		"data": {}
+	},
+	"BP/entities/player.json": {
 		"data": {}
 	}
 }

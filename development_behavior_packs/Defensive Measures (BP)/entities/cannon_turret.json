@@ -1,4 +1,4 @@
-//bridge-file-version: #115
+//bridge-file-version: #126
 {
 	"format_version": "1.16.100",
 	"minecraft:entity": {
@@ -16,8 +16,7 @@
 							"test": "is_family",
 							"value": "monster"
 						},
-						"max_dist": 16,
-						"must_see": true
+						"max_dist": 16
 					}
 				],
 				"must_see": true,
@@ -93,7 +92,7 @@
 				"is_pushable_by_piston": true
 			},
 			"minecraft:shooter": {
-				"def": "minecraft:fireball"
+				"def": "defensive:cannonball"
 			},
 			"minecraft:variant": {
 				"value": 0
@@ -150,7 +149,8 @@
 						"hurt_item": 1
 					}
 				]
-			}
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
 		},
 		"events": {
 			"removeTurret": {

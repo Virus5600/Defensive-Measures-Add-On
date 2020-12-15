@@ -3,7 +3,7 @@
 	"file_type": "client_sound",
 	"format_version": 1,
 	"file_uuid": "13ad1a00_3daf_477c_8e08_3f8f48d1c09d",
-	"file_version": 2,
+	"file_version": 3,
 	"cache_content": {
 		"children": [
 			{
@@ -115,6 +115,14 @@
 										"pitch": [
 											0.75,
 											1.25
+										]
+									},
+									"hurt": {
+										"sound": "cannon.hit",
+										"volume": 1,
+										"pitch": [
+											0.875,
+											1.125
 										]
 									}
 								}
@@ -289,6 +297,14 @@
 												0.75,
 												1.25
 											]
+										},
+										"hurt": {
+											"sound": "cannon.hit",
+											"volume": 1,
+											"pitch": [
+												0.875,
+												1.125
+											]
 										}
 									}
 								}
@@ -319,6 +335,14 @@
 												"pitch": [
 													0.75,
 													1.25
+												]
+											},
+											"hurt": {
+												"sound": "cannon.hit",
+												"volume": 1,
+												"pitch": [
+													0.875,
+													1.125
 												]
 											}
 										}
@@ -361,6 +385,14 @@
 														0.75,
 														1.25
 													]
+												},
+												"hurt": {
+													"sound": "cannon.hit",
+													"volume": 1,
+													"pitch": [
+														0.875,
+														1.125
+													]
 												}
 											}
 										},
@@ -382,6 +414,14 @@
 														"pitch": [
 															0.75,
 															1.25
+														]
+													},
+													"hurt": {
+														"sound": "cannon.hit",
+														"volume": 1,
+														"pitch": [
+															0.875,
+															1.125
 														]
 													}
 												},
@@ -430,6 +470,14 @@
 															0.75,
 															1.25
 														]
+													},
+													"hurt": {
+														"sound": "cannon.hit",
+														"volume": 1,
+														"pitch": [
+															0.875,
+															1.125
+														]
 													}
 												},
 												"key": "death",
@@ -456,6 +504,61 @@
 														"children": [
 															0.75,
 															1.25
+														]
+													}
+												]
+											},
+											{
+												"open": {
+													"shoot": {
+														"sound": "cannon.shoot",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													},
+													"death": {
+														"sound": "cannon.destroyed",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													},
+													"hurt": {
+														"sound": "cannon.hit",
+														"volume": 1,
+														"pitch": [
+															0.875,
+															1.125
+														]
+													}
+												},
+												"key": "hurt",
+												"children": [
+													{
+														"data": "cannon.hit",
+														"key": "sound"
+													},
+													{
+														"data": "1",
+														"key": "volume"
+													},
+													{
+														"open": {
+															"sound": "cannon.hit",
+															"volume": 1,
+															"pitch": [
+																0.875,
+																1.125
+															]
+														},
+														"key": "pitch",
+														"is_minified": true,
+														"children": [
+															0.875,
+															1.125
 														]
 													}
 												]

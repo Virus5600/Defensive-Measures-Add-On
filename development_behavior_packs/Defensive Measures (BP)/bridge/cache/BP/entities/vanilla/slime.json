@@ -1,0 +1,1001 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\entities\\vanilla\\slime.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "7e038738_acb6_4c48_a860_cece3c935981",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "minecraft:slime",
+							"is_spawnable": true,
+							"is_summonable": true,
+							"is_experimental": false
+						},
+						"component_groups": {
+							"minecraft:slime_large": {
+								"minecraft:collision_box": {
+									"width": 2.08,
+									"height": 2.08
+								},
+								"minecraft:health": {
+									"value": 16,
+									"max": 16
+								},
+								"minecraft:movement": {
+									"value": 0.6
+								},
+								"minecraft:attack": {
+									"damage": 4
+								}
+							},
+							"minecraft:slime_medium": {
+								"minecraft:collision_box": {
+									"width": 1.04,
+									"height": 1.04
+								},
+								"minecraft:health": {
+									"value": 4,
+									"max": 4
+								},
+								"minecraft:movement": {
+									"value": 0.4
+								},
+								"minecraft:attack": {
+									"damage": 2
+								}
+							},
+							"minecraft:slime_small": {
+								"minecraft:collision_box": {
+									"width": 0.52,
+									"height": 0.52
+								},
+								"minecraft:health": {
+									"value": 1,
+									"max": 1
+								},
+								"minecraft:movement": {
+									"value": 0.3
+								},
+								"minecraft:attack": {
+									"damage": 0
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/entities/slime.json"
+								}
+							},
+							"minecraft:slime_calm": {
+								"minecraft:movement.jump": {
+									"jump_delay": [
+										0.5,
+										1.5
+									]
+								}
+							},
+							"minecraft:slime_aggressive": {
+								"minecraft:movement.jump": {
+									"jump_delay": [
+										0.16,
+										0.5
+									]
+								}
+							}
+						},
+						"components": {
+							"minecraft:experience_reward": {
+								"on_death": "query.last_hit_by_player ? query.variant : 0"
+							},
+							"minecraft:type_family": {
+								"family": [
+									"slime",
+									"monster",
+									"mob"
+								]
+							},
+							"minecraft:breathable": {
+								"total_supply": 15,
+								"suffocate_time": 0
+							},
+							"minecraft:navigation.walk": {
+								"can_path_over_water": true,
+								"avoid_water": true
+							},
+							"minecraft:jump.static": {},
+							"minecraft:can_climb": {},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:movement.jump": {
+								"jump_delay": [
+									0.5,
+									1.5
+								]
+							},
+							"minecraft:on_target_acquired": {
+								"event": "minecraft:become_aggressive",
+								"target": "self"
+							},
+							"minecraft:on_target_escape": {
+								"event": "minecraft:become_calm",
+								"target": "self"
+							},
+							"minecraft:nameable": {},
+							"minecraft:despawn": {
+								"despawn_from_distance": {}
+							},
+							"minecraft:behavior.slime_float": {
+								"priority": 1,
+								"jump_chance_percentage": 0.8,
+								"speed_multiplier": 1.2
+							},
+							"minecraft:behavior.slime_attack": {
+								"priority": 3
+							},
+							"minecraft:behavior.slime_random_direction": {
+								"priority": 4,
+								"add_random_time_range": 3,
+								"turn_range": 360,
+								"min_change_direction_time": 2
+							},
+							"minecraft:behavior.slime_keep_on_jumping": {
+								"priority": 5,
+								"speed_multiplier": 1
+							},
+							"minecraft:behavior.nearest_attackable_target": {
+								"priority": 2,
+								"entity_types": [
+									{
+										"filters": {
+											"any_of": [
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "player"
+												},
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "snowgolem"
+												},
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "irongolem"
+												},
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "turret"
+												},
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "wall"
+												}
+											]
+										},
+										"max_dist": 16
+									}
+								],
+								"must_see": true
+							},
+							"minecraft:physics": {},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:conditional_bandwidth_optimization": {}
+						},
+						"events": {
+							"minecraft:entity_spawned": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_calm"
+									]
+								}
+							},
+							"minecraft:become_calm": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_calm"
+									]
+								}
+							},
+							"minecraft:become_aggressive": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_aggressive"
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:slime",
+							"is_spawnable": true,
+							"is_summonable": true,
+							"is_experimental": false
+						}
+					},
+					{
+						"key": "component_groups",
+						"is_minified": true,
+						"children": {
+							"minecraft:slime_large": {
+								"minecraft:collision_box": {
+									"width": 2.08,
+									"height": 2.08
+								},
+								"minecraft:health": {
+									"value": 16,
+									"max": 16
+								},
+								"minecraft:movement": {
+									"value": 0.6
+								},
+								"minecraft:attack": {
+									"damage": 4
+								}
+							},
+							"minecraft:slime_medium": {
+								"minecraft:collision_box": {
+									"width": 1.04,
+									"height": 1.04
+								},
+								"minecraft:health": {
+									"value": 4,
+									"max": 4
+								},
+								"minecraft:movement": {
+									"value": 0.4
+								},
+								"minecraft:attack": {
+									"damage": 2
+								}
+							},
+							"minecraft:slime_small": {
+								"minecraft:collision_box": {
+									"width": 0.52,
+									"height": 0.52
+								},
+								"minecraft:health": {
+									"value": 1,
+									"max": 1
+								},
+								"minecraft:movement": {
+									"value": 0.3
+								},
+								"minecraft:attack": {
+									"damage": 0
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/entities/slime.json"
+								}
+							},
+							"minecraft:slime_calm": {
+								"minecraft:movement.jump": {
+									"jump_delay": [
+										0.5,
+										1.5
+									]
+								}
+							},
+							"minecraft:slime_aggressive": {
+								"minecraft:movement.jump": {
+									"jump_delay": [
+										0.16,
+										0.5
+									]
+								}
+							}
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:slime",
+								"is_spawnable": true,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"minecraft:slime_large": {
+									"minecraft:collision_box": {
+										"width": 2.08,
+										"height": 2.08
+									},
+									"minecraft:health": {
+										"value": 16,
+										"max": 16
+									},
+									"minecraft:movement": {
+										"value": 0.6
+									},
+									"minecraft:attack": {
+										"damage": 4
+									}
+								},
+								"minecraft:slime_medium": {
+									"minecraft:collision_box": {
+										"width": 1.04,
+										"height": 1.04
+									},
+									"minecraft:health": {
+										"value": 4,
+										"max": 4
+									},
+									"minecraft:movement": {
+										"value": 0.4
+									},
+									"minecraft:attack": {
+										"damage": 2
+									}
+								},
+								"minecraft:slime_small": {
+									"minecraft:collision_box": {
+										"width": 0.52,
+										"height": 0.52
+									},
+									"minecraft:health": {
+										"value": 1,
+										"max": 1
+									},
+									"minecraft:movement": {
+										"value": 0.3
+									},
+									"minecraft:attack": {
+										"damage": 0
+									},
+									"minecraft:loot": {
+										"table": "loot_tables/entities/slime.json"
+									}
+								},
+								"minecraft:slime_calm": {
+									"minecraft:movement.jump": {
+										"jump_delay": [
+											0.5,
+											1.5
+										]
+									}
+								},
+								"minecraft:slime_aggressive": {
+									"minecraft:movement.jump": {
+										"jump_delay": [
+											0.16,
+											0.5
+										]
+									}
+								}
+							},
+							"components": {
+								"minecraft:experience_reward": {
+									"on_death": "query.last_hit_by_player ? query.variant : 0"
+								},
+								"minecraft:type_family": {
+									"family": [
+										"slime",
+										"monster",
+										"mob"
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0
+								},
+								"minecraft:navigation.walk": {
+									"can_path_over_water": true,
+									"avoid_water": true
+								},
+								"minecraft:jump.static": {},
+								"minecraft:can_climb": {},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:movement.jump": {
+									"jump_delay": [
+										0.5,
+										1.5
+									]
+								},
+								"minecraft:on_target_acquired": {
+									"event": "minecraft:become_aggressive",
+									"target": "self"
+								},
+								"minecraft:on_target_escape": {
+									"event": "minecraft:become_calm",
+									"target": "self"
+								},
+								"minecraft:nameable": {},
+								"minecraft:despawn": {
+									"despawn_from_distance": {}
+								},
+								"minecraft:behavior.slime_float": {
+									"priority": 1,
+									"jump_chance_percentage": 0.8,
+									"speed_multiplier": 1.2
+								},
+								"minecraft:behavior.slime_attack": {
+									"priority": 3
+								},
+								"minecraft:behavior.slime_random_direction": {
+									"priority": 4,
+									"add_random_time_range": 3,
+									"turn_range": 360,
+									"min_change_direction_time": 2
+								},
+								"minecraft:behavior.slime_keep_on_jumping": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.nearest_attackable_target": {
+									"priority": 2,
+									"entity_types": [
+										{
+											"filters": {
+												"any_of": [
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "player"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "snowgolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "irongolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "turret"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "wall"
+													}
+												]
+											},
+											"max_dist": 16
+										}
+									],
+									"must_see": true
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:conditional_bandwidth_optimization": {}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"add": {
+										"component_groups": [
+											"minecraft:slime_calm"
+										]
+									}
+								},
+								"minecraft:become_calm": {
+									"add": {
+										"component_groups": [
+											"minecraft:slime_calm"
+										]
+									}
+								},
+								"minecraft:become_aggressive": {
+									"add": {
+										"component_groups": [
+											"minecraft:slime_aggressive"
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"key": "minecraft:experience_reward",
+								"is_minified": true,
+								"children": {
+									"on_death": "query.last_hit_by_player ? query.variant : 0"
+								}
+							},
+							{
+								"key": "minecraft:type_family",
+								"is_minified": true,
+								"children": {
+									"family": [
+										"slime",
+										"monster",
+										"mob"
+									]
+								}
+							},
+							{
+								"key": "minecraft:breathable",
+								"is_minified": true,
+								"children": {
+									"total_supply": 15,
+									"suffocate_time": 0
+								}
+							},
+							{
+								"key": "minecraft:navigation.walk",
+								"is_minified": true,
+								"children": {
+									"can_path_over_water": true,
+									"avoid_water": true
+								}
+							},
+							{
+								"key": "minecraft:jump.static",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:can_climb",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:hurt_on_condition",
+								"is_minified": true,
+								"children": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								}
+							},
+							{
+								"key": "minecraft:movement.jump",
+								"is_minified": true,
+								"children": {
+									"jump_delay": [
+										0.5,
+										1.5
+									]
+								}
+							},
+							{
+								"key": "minecraft:on_target_acquired",
+								"is_minified": true,
+								"children": {
+									"event": "minecraft:become_aggressive",
+									"target": "self"
+								}
+							},
+							{
+								"key": "minecraft:on_target_escape",
+								"is_minified": true,
+								"children": {
+									"event": "minecraft:become_calm",
+									"target": "self"
+								}
+							},
+							{
+								"key": "minecraft:nameable",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:despawn",
+								"is_minified": true,
+								"children": {
+									"despawn_from_distance": {}
+								}
+							},
+							{
+								"key": "minecraft:behavior.slime_float",
+								"is_minified": true,
+								"children": {
+									"priority": 1,
+									"jump_chance_percentage": 0.8,
+									"speed_multiplier": 1.2
+								}
+							},
+							{
+								"key": "minecraft:behavior.slime_attack",
+								"is_minified": true,
+								"children": {
+									"priority": 3
+								}
+							},
+							{
+								"key": "minecraft:behavior.slime_random_direction",
+								"is_minified": true,
+								"children": {
+									"priority": 4,
+									"add_random_time_range": 3,
+									"turn_range": 360,
+									"min_change_direction_time": 2
+								}
+							},
+							{
+								"key": "minecraft:behavior.slime_keep_on_jumping",
+								"is_minified": true,
+								"children": {
+									"priority": 5,
+									"speed_multiplier": 1
+								}
+							},
+							{
+								"open": {
+									"minecraft:experience_reward": {
+										"on_death": "query.last_hit_by_player ? query.variant : 0"
+									},
+									"minecraft:type_family": {
+										"family": [
+											"slime",
+											"monster",
+											"mob"
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0
+									},
+									"minecraft:navigation.walk": {
+										"can_path_over_water": true,
+										"avoid_water": true
+									},
+									"minecraft:jump.static": {},
+									"minecraft:can_climb": {},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:movement.jump": {
+										"jump_delay": [
+											0.5,
+											1.5
+										]
+									},
+									"minecraft:on_target_acquired": {
+										"event": "minecraft:become_aggressive",
+										"target": "self"
+									},
+									"minecraft:on_target_escape": {
+										"event": "minecraft:become_calm",
+										"target": "self"
+									},
+									"minecraft:nameable": {},
+									"minecraft:despawn": {
+										"despawn_from_distance": {}
+									},
+									"minecraft:behavior.slime_float": {
+										"priority": 1,
+										"jump_chance_percentage": 0.8,
+										"speed_multiplier": 1.2
+									},
+									"minecraft:behavior.slime_attack": {
+										"priority": 3
+									},
+									"minecraft:behavior.slime_random_direction": {
+										"priority": 4,
+										"add_random_time_range": 3,
+										"turn_range": 360,
+										"min_change_direction_time": 2
+									},
+									"minecraft:behavior.slime_keep_on_jumping": {
+										"priority": 5,
+										"speed_multiplier": 1
+									},
+									"minecraft:behavior.nearest_attackable_target": {
+										"priority": 2,
+										"entity_types": [
+											{
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "snowgolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "irongolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "turret"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "wall"
+														}
+													]
+												},
+												"max_dist": 16
+											}
+										],
+										"must_see": true
+									},
+									"minecraft:physics": {},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:conditional_bandwidth_optimization": {}
+								},
+								"key": "minecraft:behavior.nearest_attackable_target",
+								"children": [
+									{
+										"data": "2",
+										"key": "priority"
+									},
+									{
+										"open": {
+											"priority": 2,
+											"entity_types": [
+												{
+													"filters": {
+														"any_of": [
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "player"
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "snowgolem"
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "irongolem"
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "turret"
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "wall"
+															}
+														]
+													},
+													"max_dist": 16
+												}
+											],
+											"must_see": true
+										},
+										"key": "entity_types",
+										"children": [
+											{
+												"open": [
+													{
+														"filters": {
+															"any_of": [
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "player"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "snowgolem"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "irongolem"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "turret"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "wall"
+																}
+															]
+														},
+														"max_dist": 16
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"any_of": [
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "player"
+																	},
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "snowgolem"
+																	},
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "irongolem"
+																	},
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "turret"
+																	},
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "wall"
+																	}
+																]
+															},
+															"max_dist": 16
+														},
+														"key": "filters",
+														"is_minified": true,
+														"children": {
+															"any_of": [
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "player"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "snowgolem"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "irongolem"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "turret"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "wall"
+																}
+															]
+														}
+													},
+													{
+														"data": "16",
+														"key": "max_dist"
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": "true",
+										"key": "must_see"
+									}
+								]
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:pushable",
+								"is_minified": true,
+								"children": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								}
+							},
+							{
+								"key": "minecraft:conditional_bandwidth_optimization",
+								"is_minified": true,
+								"children": {}
+							}
+						]
+					},
+					{
+						"key": "events",
+						"is_minified": true,
+						"children": {
+							"minecraft:entity_spawned": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_calm"
+									]
+								}
+							},
+							"minecraft:become_calm": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_calm"
+									]
+								}
+							},
+							"minecraft:become_aggressive": {
+								"add": {
+									"component_groups": [
+										"minecraft:slime_aggressive"
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

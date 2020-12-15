@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)/recipes/turret_remover.json",
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\recipes\\turret_remover.json",
 	"file_type": "recipe",
 	"format_version": 1,
 	"file_uuid": "052e54b1_cf5c_492d_b94a_8645a2f08105",
-	"file_version": 1,
+	"file_version": 3,
 	"cache_content": {
 		"children": [
 			{
@@ -22,15 +22,15 @@
 						],
 						"pattern": [
 							" i ",
-							"g i",
-							"rg"
+							" gi",
+							"r  "
 						],
 						"key": {
 							"r": {
 								"item": "minecraft:redstone_block"
 							},
 							"i": {
-								"item": "minecraft:iron_ingot"
+								"item": "minecraft:iron_nugget"
 							},
 							"g": {
 								"item": "minecraft:gold_ingot"
@@ -56,15 +56,15 @@
 							],
 							"pattern": [
 								" i ",
-								"g i",
-								"rg"
+								" gi",
+								"r  "
 							],
 							"key": {
 								"r": {
 									"item": "minecraft:redstone_block"
 								},
 								"i": {
-									"item": "minecraft:iron_ingot"
+									"item": "minecraft:iron_nugget"
 								},
 								"g": {
 									"item": "minecraft:gold_ingot"
@@ -93,15 +93,15 @@
 							],
 							"pattern": [
 								" i ",
-								"g i",
-								"rg"
+								" gi",
+								"r  "
 							],
 							"key": {
 								"r": {
 									"item": "minecraft:redstone_block"
 								},
 								"i": {
-									"item": "minecraft:iron_ingot"
+									"item": "minecraft:iron_nugget"
 								},
 								"g": {
 									"item": "minecraft:gold_ingot"
@@ -130,15 +130,15 @@
 							],
 							"pattern": [
 								" i ",
-								"g i",
-								"rg"
+								" gi",
+								"r  "
 							],
 							"key": {
 								"r": {
 									"item": "minecraft:redstone_block"
 								},
 								"i": {
-									"item": "minecraft:iron_ingot"
+									"item": "minecraft:iron_nugget"
 								},
 								"g": {
 									"item": "minecraft:gold_ingot"
@@ -155,8 +155,8 @@
 						"is_minified": true,
 						"children": [
 							" i ",
-							"g i",
-							"rg"
+							" gi",
+							"r  "
 						]
 					},
 					{
@@ -169,15 +169,15 @@
 							],
 							"pattern": [
 								" i ",
-								"g i",
-								"rg"
+								" gi",
+								"r  "
 							],
 							"key": {
 								"r": {
 									"item": "minecraft:redstone_block"
 								},
 								"i": {
-									"item": "minecraft:iron_ingot"
+									"item": "minecraft:iron_nugget"
 								},
 								"g": {
 									"item": "minecraft:gold_ingot"
@@ -198,7 +198,7 @@
 										"item": "minecraft:redstone_block"
 									},
 									"i": {
-										"item": "minecraft:iron_ingot"
+										"item": "minecraft:iron_nugget"
 									},
 									"g": {
 										"item": "minecraft:gold_ingot"
@@ -216,7 +216,7 @@
 										"item": "minecraft:redstone_block"
 									},
 									"i": {
-										"item": "minecraft:iron_ingot"
+										"item": "minecraft:iron_nugget"
 									},
 									"g": {
 										"item": "minecraft:gold_ingot"
@@ -225,7 +225,7 @@
 								"key": "i",
 								"is_minified": true,
 								"children": {
-									"item": "minecraft:iron_ingot"
+									"item": "minecraft:iron_nugget"
 								}
 							},
 							{
@@ -234,7 +234,7 @@
 										"item": "minecraft:redstone_block"
 									},
 									"i": {
-										"item": "minecraft:iron_ingot"
+										"item": "minecraft:iron_nugget"
 									},
 									"g": {
 										"item": "minecraft:gold_ingot"
@@ -258,15 +258,15 @@
 							],
 							"pattern": [
 								" i ",
-								"g i",
-								"rg"
+								" gi",
+								"r  "
 							],
 							"key": {
 								"r": {
 									"item": "minecraft:redstone_block"
 								},
 								"i": {
-									"item": "minecraft:iron_ingot"
+									"item": "minecraft:iron_nugget"
 								},
 								"g": {
 									"item": "minecraft:gold_ingot"

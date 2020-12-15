@@ -1,0 +1,888 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\entities\\vanilla\\elder_guardian.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "92502b80_928a_478d_9213_8cd2c9d4cb18",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "minecraft:elder_guardian",
+							"is_spawnable": true,
+							"is_summonable": true,
+							"is_experimental": false
+						},
+						"components": {
+							"minecraft:experience_reward": {
+								"on_death": "query.last_hit_by_player ? 10 : 0"
+							},
+							"minecraft:collision_box": {
+								"width": 1.99,
+								"height": 1.99
+							},
+							"minecraft:nameable": {},
+							"minecraft:loot": {
+								"table": "loot_tables/entities/elder_guardian.json"
+							},
+							"minecraft:navigation.generic": {
+								"is_amphibious": true,
+								"can_path_over_water": false,
+								"can_swim": true,
+								"can_walk": false,
+								"can_breach": true
+							},
+							"minecraft:movement.sway": {},
+							"minecraft:jump.static": {},
+							"minecraft:health": {
+								"value": 80,
+								"max": 80
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:movement": {
+								"value": 0.3
+							},
+							"minecraft:underwater_movement": {
+								"value": 0.3
+							},
+							"minecraft:attack": {
+								"damage": 5
+							},
+							"minecraft:follow_range": {
+								"value": 16,
+								"max": 16
+							},
+							"minecraft:breathable": {
+								"breathes_water": true
+							},
+							"minecraft:home": {
+								"restriction_radius": 16
+							},
+							"minecraft:behavior.nearest_attackable_target": {
+								"priority": 1,
+								"entity_types": [
+									{
+										"filters": {
+											"any_of": [
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "player"
+												},
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "snowgolem"
+												},
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "irongolem"
+												},
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "turret"
+												},
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "wall"
+												},
+												{
+													"test": "is_family",
+													"subject": "other",
+													"value": "squid"
+												}
+											]
+										},
+										"max_dist": 16
+									}
+								],
+								"attack_interval_min": 1,
+								"must_see": true
+							},
+							"minecraft:behavior.guardian_attack": {
+								"priority": 4
+							},
+							"minecraft:behavior.move_towards_home_restriction": {
+								"priority": 5,
+								"speed_multiplier": 1
+							},
+							"minecraft:behavior.random_swim": {
+								"priority": 7,
+								"speed_multiplier": 0.5,
+								"avoid_surface": false
+							},
+							"minecraft:behavior.look_at_player": {
+								"priority": 8,
+								"look_distance": 12,
+								"probability": 0.01
+							},
+							"minecraft:behavior.random_look_around": {
+								"priority": 9
+							},
+							"minecraft:type_family": {
+								"family": [
+									"guardian_elder",
+									"monster",
+									"mob"
+								]
+							},
+							"minecraft:physics": {},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:conditional_bandwidth_optimization": {}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:elder_guardian",
+							"is_spawnable": true,
+							"is_summonable": true,
+							"is_experimental": false
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:elder_guardian",
+								"is_spawnable": true,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"components": {
+								"minecraft:experience_reward": {
+									"on_death": "query.last_hit_by_player ? 10 : 0"
+								},
+								"minecraft:collision_box": {
+									"width": 1.99,
+									"height": 1.99
+								},
+								"minecraft:nameable": {},
+								"minecraft:loot": {
+									"table": "loot_tables/entities/elder_guardian.json"
+								},
+								"minecraft:navigation.generic": {
+									"is_amphibious": true,
+									"can_path_over_water": false,
+									"can_swim": true,
+									"can_walk": false,
+									"can_breach": true
+								},
+								"minecraft:movement.sway": {},
+								"minecraft:jump.static": {},
+								"minecraft:health": {
+									"value": 80,
+									"max": 80
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:movement": {
+									"value": 0.3
+								},
+								"minecraft:underwater_movement": {
+									"value": 0.3
+								},
+								"minecraft:attack": {
+									"damage": 5
+								},
+								"minecraft:follow_range": {
+									"value": 16,
+									"max": 16
+								},
+								"minecraft:breathable": {
+									"breathes_water": true
+								},
+								"minecraft:home": {
+									"restriction_radius": 16
+								},
+								"minecraft:behavior.nearest_attackable_target": {
+									"priority": 1,
+									"entity_types": [
+										{
+											"filters": {
+												"any_of": [
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "player"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "snowgolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "irongolem"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "turret"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "wall"
+													},
+													{
+														"test": "is_family",
+														"subject": "other",
+														"value": "squid"
+													}
+												]
+											},
+											"max_dist": 16
+										}
+									],
+									"attack_interval_min": 1,
+									"must_see": true
+								},
+								"minecraft:behavior.guardian_attack": {
+									"priority": 4
+								},
+								"minecraft:behavior.move_towards_home_restriction": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.random_swim": {
+									"priority": 7,
+									"speed_multiplier": 0.5,
+									"avoid_surface": false
+								},
+								"minecraft:behavior.look_at_player": {
+									"priority": 8,
+									"look_distance": 12,
+									"probability": 0.01
+								},
+								"minecraft:behavior.random_look_around": {
+									"priority": 9
+								},
+								"minecraft:type_family": {
+									"family": [
+										"guardian_elder",
+										"monster",
+										"mob"
+									]
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:conditional_bandwidth_optimization": {}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"key": "minecraft:experience_reward",
+								"is_minified": true,
+								"children": {
+									"on_death": "query.last_hit_by_player ? 10 : 0"
+								}
+							},
+							{
+								"key": "minecraft:collision_box",
+								"is_minified": true,
+								"children": {
+									"width": 1.99,
+									"height": 1.99
+								}
+							},
+							{
+								"key": "minecraft:nameable",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:loot",
+								"is_minified": true,
+								"children": {
+									"table": "loot_tables/entities/elder_guardian.json"
+								}
+							},
+							{
+								"key": "minecraft:navigation.generic",
+								"is_minified": true,
+								"children": {
+									"is_amphibious": true,
+									"can_path_over_water": false,
+									"can_swim": true,
+									"can_walk": false,
+									"can_breach": true
+								}
+							},
+							{
+								"key": "minecraft:movement.sway",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:jump.static",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 80,
+									"max": 80
+								}
+							},
+							{
+								"key": "minecraft:hurt_on_condition",
+								"is_minified": true,
+								"children": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								}
+							},
+							{
+								"key": "minecraft:movement",
+								"is_minified": true,
+								"children": {
+									"value": 0.3
+								}
+							},
+							{
+								"key": "minecraft:underwater_movement",
+								"is_minified": true,
+								"children": {
+									"value": 0.3
+								}
+							},
+							{
+								"key": "minecraft:attack",
+								"is_minified": true,
+								"children": {
+									"damage": 5
+								}
+							},
+							{
+								"key": "minecraft:follow_range",
+								"is_minified": true,
+								"children": {
+									"value": 16,
+									"max": 16
+								}
+							},
+							{
+								"key": "minecraft:breathable",
+								"is_minified": true,
+								"children": {
+									"breathes_water": true
+								}
+							},
+							{
+								"key": "minecraft:home",
+								"is_minified": true,
+								"children": {
+									"restriction_radius": 16
+								}
+							},
+							{
+								"open": {
+									"minecraft:experience_reward": {
+										"on_death": "query.last_hit_by_player ? 10 : 0"
+									},
+									"minecraft:collision_box": {
+										"width": 1.99,
+										"height": 1.99
+									},
+									"minecraft:nameable": {},
+									"minecraft:loot": {
+										"table": "loot_tables/entities/elder_guardian.json"
+									},
+									"minecraft:navigation.generic": {
+										"is_amphibious": true,
+										"can_path_over_water": false,
+										"can_swim": true,
+										"can_walk": false,
+										"can_breach": true
+									},
+									"minecraft:movement.sway": {},
+									"minecraft:jump.static": {},
+									"minecraft:health": {
+										"value": 80,
+										"max": 80
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:movement": {
+										"value": 0.3
+									},
+									"minecraft:underwater_movement": {
+										"value": 0.3
+									},
+									"minecraft:attack": {
+										"damage": 5
+									},
+									"minecraft:follow_range": {
+										"value": 16,
+										"max": 16
+									},
+									"minecraft:breathable": {
+										"breathes_water": true
+									},
+									"minecraft:home": {
+										"restriction_radius": 16
+									},
+									"minecraft:behavior.nearest_attackable_target": {
+										"priority": 1,
+										"entity_types": [
+											{
+												"filters": {
+													"any_of": [
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "player"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "snowgolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "irongolem"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "turret"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "wall"
+														},
+														{
+															"test": "is_family",
+															"subject": "other",
+															"value": "squid"
+														}
+													]
+												},
+												"max_dist": 16
+											}
+										],
+										"attack_interval_min": 1,
+										"must_see": true
+									},
+									"minecraft:behavior.guardian_attack": {
+										"priority": 4
+									},
+									"minecraft:behavior.move_towards_home_restriction": {
+										"priority": 5,
+										"speed_multiplier": 1
+									},
+									"minecraft:behavior.random_swim": {
+										"priority": 7,
+										"speed_multiplier": 0.5,
+										"avoid_surface": false
+									},
+									"minecraft:behavior.look_at_player": {
+										"priority": 8,
+										"look_distance": 12,
+										"probability": 0.01
+									},
+									"minecraft:behavior.random_look_around": {
+										"priority": 9
+									},
+									"minecraft:type_family": {
+										"family": [
+											"guardian_elder",
+											"monster",
+											"mob"
+										]
+									},
+									"minecraft:physics": {},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:conditional_bandwidth_optimization": {}
+								},
+								"key": "minecraft:behavior.nearest_attackable_target",
+								"children": [
+									{
+										"data": "1",
+										"key": "priority"
+									},
+									{
+										"open": {
+											"priority": 1,
+											"entity_types": [
+												{
+													"filters": {
+														"any_of": [
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "player"
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "snowgolem"
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "irongolem"
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "turret"
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "wall"
+															},
+															{
+																"test": "is_family",
+																"subject": "other",
+																"value": "squid"
+															}
+														]
+													},
+													"max_dist": 16
+												}
+											],
+											"attack_interval_min": 1,
+											"must_see": true
+										},
+										"key": "entity_types",
+										"children": [
+											{
+												"open": [
+													{
+														"filters": {
+															"any_of": [
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "player"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "snowgolem"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "irongolem"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "turret"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "wall"
+																},
+																{
+																	"test": "is_family",
+																	"subject": "other",
+																	"value": "squid"
+																}
+															]
+														},
+														"max_dist": 16
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"any_of": [
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "player"
+																	},
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "snowgolem"
+																	},
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "irongolem"
+																	},
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "turret"
+																	},
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "wall"
+																	},
+																	{
+																		"test": "is_family",
+																		"subject": "other",
+																		"value": "squid"
+																	}
+																]
+															},
+															"max_dist": 16
+														},
+														"key": "filters",
+														"children": [
+															{
+																"key": "any_of",
+																"children": [
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "player"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "snowgolem"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "irongolem"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "turret"
+																		}
+																	},
+																	{
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "wall"
+																		}
+																	},
+																	{
+																		"open": [
+																			{
+																				"test": "is_family",
+																				"subject": "other",
+																				"value": "player"
+																			},
+																			{
+																				"test": "is_family",
+																				"subject": "other",
+																				"value": "snowgolem"
+																			},
+																			{
+																				"test": "is_family",
+																				"subject": "other",
+																				"value": "irongolem"
+																			},
+																			{
+																				"test": "is_family",
+																				"subject": "other",
+																				"value": "turret"
+																			},
+																			{
+																				"test": "is_family",
+																				"subject": "other",
+																				"value": "wall"
+																			},
+																			{
+																				"test": "is_family",
+																				"subject": "other",
+																				"value": "squid"
+																			}
+																		],
+																		"is_minified": true,
+																		"children": {
+																			"test": "is_family",
+																			"subject": "other",
+																			"value": "squid"
+																		}
+																	}
+																]
+															}
+														]
+													},
+													{
+														"data": "16",
+														"key": "max_dist"
+													}
+												]
+											}
+										]
+									},
+									{
+										"data": "1",
+										"key": "attack_interval_min"
+									},
+									{
+										"data": "true",
+										"key": "must_see"
+									}
+								]
+							},
+							{
+								"key": "minecraft:behavior.guardian_attack",
+								"is_minified": true,
+								"children": {
+									"priority": 4
+								}
+							},
+							{
+								"key": "minecraft:behavior.move_towards_home_restriction",
+								"is_minified": true,
+								"children": {
+									"priority": 5,
+									"speed_multiplier": 1
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_swim",
+								"is_minified": true,
+								"children": {
+									"priority": 7,
+									"speed_multiplier": 0.5,
+									"avoid_surface": false
+								}
+							},
+							{
+								"key": "minecraft:behavior.look_at_player",
+								"is_minified": true,
+								"children": {
+									"priority": 8,
+									"look_distance": 12,
+									"probability": 0.01
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_look_around",
+								"is_minified": true,
+								"children": {
+									"priority": 9
+								}
+							},
+							{
+								"key": "minecraft:type_family",
+								"is_minified": true,
+								"children": {
+									"family": [
+										"guardian_elder",
+										"monster",
+										"mob"
+									]
+								}
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:pushable",
+								"is_minified": true,
+								"children": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								}
+							},
+							{
+								"key": "minecraft:conditional_bandwidth_optimization",
+								"is_minified": true,
+								"children": {}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

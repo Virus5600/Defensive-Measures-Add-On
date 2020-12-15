@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)/items/turret_remover.json",
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\items\\turret_remover.json",
 	"file_type": "item",
 	"format_version": 1,
 	"file_uuid": "6ca119ab_cd37_44b2_aeeb_0ce10468c3f5",
-	"file_version": 6,
+	"file_version": 15,
 	"cache_content": {
 		"children": [
 			{
@@ -19,7 +19,6 @@
 							"category": "equipment"
 						},
 						"components": {
-							"minecraft:use_duration": 2,
 							"minecraft:max_stack_size": 1,
 							"minecraft:hand_equipped": true,
 							"minecraft:can_destroy_in_creative": false,
@@ -62,6 +61,25 @@
 								"texture": "turret_remover"
 							},
 							"minecraft:display_name": {}
+						},
+						"events": {
+							"preventUse": {
+								"swing": {},
+								"run_command": {
+									"target": "holder",
+									"command": [
+										"title @s actionbar §bPower §l§cdepleted§r§b. Re-charge using §4Redstone Block§r§b.§r"
+									]
+								}
+							},
+							"repaired": {
+								"run_command": {
+									"target": "holder",
+									"command": [
+										"title @s actionbar §bPower §l§arecharged§r§b.§r"
+									]
+								}
+							}
 						}
 					}
 				},
@@ -74,7 +92,6 @@
 								"category": "equipment"
 							},
 							"components": {
-								"minecraft:use_duration": 2,
 								"minecraft:max_stack_size": 1,
 								"minecraft:hand_equipped": true,
 								"minecraft:can_destroy_in_creative": false,
@@ -117,6 +134,25 @@
 									"texture": "turret_remover"
 								},
 								"minecraft:display_name": {}
+							},
+							"events": {
+								"preventUse": {
+									"swing": {},
+									"run_command": {
+										"target": "holder",
+										"command": [
+											"title @s actionbar §bPower §l§cdepleted§r§b. Re-charge using §4Redstone Block§r§b.§r"
+										]
+									}
+								},
+								"repaired": {
+									"run_command": {
+										"target": "holder",
+										"command": [
+											"title @s actionbar §bPower §l§arecharged§r§b.§r"
+										]
+									}
+								}
 							}
 						},
 						"key": "description",
@@ -133,7 +169,6 @@
 								"category": "equipment"
 							},
 							"components": {
-								"minecraft:use_duration": 2,
 								"minecraft:max_stack_size": 1,
 								"minecraft:hand_equipped": true,
 								"minecraft:can_destroy_in_creative": false,
@@ -176,14 +211,29 @@
 									"texture": "turret_remover"
 								},
 								"minecraft:display_name": {}
+							},
+							"events": {
+								"preventUse": {
+									"swing": {},
+									"run_command": {
+										"target": "holder",
+										"command": [
+											"title @s actionbar §bPower §l§cdepleted§r§b. Re-charge using §4Redstone Block§r§b.§r"
+										]
+									}
+								},
+								"repaired": {
+									"run_command": {
+										"target": "holder",
+										"command": [
+											"title @s actionbar §bPower §l§arecharged§r§b.§r"
+										]
+									}
+								}
 							}
 						},
 						"key": "components",
 						"children": [
-							{
-								"data": "2",
-								"key": "minecraft:use_duration"
-							},
 							{
 								"data": "1",
 								"key": "minecraft:max_stack_size"
@@ -216,7 +266,6 @@
 							},
 							{
 								"open": {
-									"minecraft:use_duration": 2,
 									"minecraft:max_stack_size": 1,
 									"minecraft:hand_equipped": true,
 									"minecraft:can_destroy_in_creative": false,
@@ -291,6 +340,29 @@
 										"key": "repair_items",
 										"children": [
 											{
+												"open": [
+													{
+														"items": [
+															"minecraft:gold_nugget",
+															"minecraft:iron_nugget"
+														],
+														"repair_amount": 2
+													},
+													{
+														"items": [
+															"minecraft:gold_ingot",
+															"minecraft:iron_ingot",
+															"minecraft:redstone"
+														],
+														"repair_amount": 20
+													},
+													{
+														"items": [
+															"minecraft:redstone_block"
+														],
+														"repair_amount": 100
+													}
+												],
 												"is_minified": true,
 												"children": {
 													"items": [
@@ -324,31 +396,40 @@
 														"repair_amount": 100
 													}
 												],
-												"children": [
+												"is_minified": true,
+												"children": {
+													"items": [
+														"minecraft:gold_ingot",
+														"minecraft:iron_ingot",
+														"minecraft:redstone"
+													],
+													"repair_amount": 20
+												}
+											},
+											{
+												"open": [
 													{
-														"open": {
-															"items": [
-																"minecraft:gold_ingot",
-																"minecraft:iron_ingot",
-																"minecraft:redstone"
-															],
-															"repair_amount": 20
-														},
-														"key": "items",
-														"is_minified": true,
-														"children": [
+														"items": [
+															"minecraft:gold_nugget",
+															"minecraft:iron_nugget"
+														],
+														"repair_amount": 2
+													},
+													{
+														"items": [
 															"minecraft:gold_ingot",
 															"minecraft:iron_ingot",
 															"minecraft:redstone"
-														]
+														],
+														"repair_amount": 20
 													},
 													{
-														"data": "20",
-														"key": "repair_amount"
+														"items": [
+															"minecraft:redstone_block"
+														],
+														"repair_amount": 100
 													}
-												]
-											},
-											{
+												],
 												"is_minified": true,
 												"children": {
 													"items": [
@@ -369,9 +450,198 @@
 								}
 							},
 							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:hand_equipped": true,
+									"minecraft:can_destroy_in_creative": false,
+									"minecraft:durability": {
+										"max_durability": 100,
+										"damage_chance": {
+											"min": 1,
+											"max": 1
+										}
+									},
+									"minecraft:enchantable": {
+										"slot": "shears"
+									},
+									"minecraft:repairable": {
+										"repair_items": [
+											{
+												"items": [
+													"minecraft:gold_nugget",
+													"minecraft:iron_nugget"
+												],
+												"repair_amount": 2
+											},
+											{
+												"items": [
+													"minecraft:gold_ingot",
+													"minecraft:iron_ingot",
+													"minecraft:redstone"
+												],
+												"repair_amount": 20
+											},
+											{
+												"items": [
+													"minecraft:redstone_block"
+												],
+												"repair_amount": 100
+											}
+										]
+									},
+									"minecraft:icon": {
+										"texture": "turret_remover"
+									},
+									"minecraft:display_name": {}
+								},
 								"key": "minecraft:display_name",
 								"is_minified": true,
 								"children": {}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:turret_remover",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:hand_equipped": true,
+								"minecraft:can_destroy_in_creative": false,
+								"minecraft:durability": {
+									"max_durability": 100,
+									"damage_chance": {
+										"min": 1,
+										"max": 1
+									}
+								},
+								"minecraft:enchantable": {
+									"slot": "shears"
+								},
+								"minecraft:repairable": {
+									"repair_items": [
+										{
+											"items": [
+												"minecraft:gold_nugget",
+												"minecraft:iron_nugget"
+											],
+											"repair_amount": 2
+										},
+										{
+											"items": [
+												"minecraft:gold_ingot",
+												"minecraft:iron_ingot",
+												"minecraft:redstone"
+											],
+											"repair_amount": 20
+										},
+										{
+											"items": [
+												"minecraft:redstone_block"
+											],
+											"repair_amount": 100
+										}
+									]
+								},
+								"minecraft:icon": {
+									"texture": "turret_remover"
+								},
+								"minecraft:display_name": {}
+							},
+							"events": {
+								"preventUse": {
+									"swing": {},
+									"run_command": {
+										"target": "holder",
+										"command": [
+											"title @s actionbar §bPower §l§cdepleted§r§b. Re-charge using §4Redstone Block§r§b.§r"
+										]
+									}
+								},
+								"repaired": {
+									"run_command": {
+										"target": "holder",
+										"command": [
+											"title @s actionbar §bPower §l§arecharged§r§b.§r"
+										]
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"preventUse": {
+										"swing": {},
+										"run_command": {
+											"target": "holder",
+											"command": [
+												"title @s actionbar §bPower §l§cdepleted§r§b. Re-charge using §4Redstone Block§r§b.§r"
+											]
+										}
+									},
+									"repaired": {
+										"run_command": {
+											"target": "holder",
+											"command": [
+												"title @s actionbar §bPower §l§arecharged§r§b.§r"
+											]
+										}
+									}
+								},
+								"key": "preventUse",
+								"children": [
+									{
+										"key": "swing",
+										"is_minified": true,
+										"children": {}
+									},
+									{
+										"open": {
+											"swing": {},
+											"run_command": {
+												"target": "holder",
+												"command": [
+													"title @s actionbar §bPower §l§cdepleted§r§b. Re-charge using §4Redstone Block§r§b.§r"
+												]
+											}
+										},
+										"key": "run_command",
+										"is_minified": true,
+										"children": {
+											"target": "holder",
+											"command": [
+												"title @s actionbar §bPower §l§cdepleted§r§b. Re-charge using §4Redstone Block§r§b.§r"
+											]
+										}
+									}
+								]
+							},
+							{
+								"key": "repaired",
+								"children": [
+									{
+										"open": {
+											"run_command": {
+												"target": "holder",
+												"command": [
+													"title @s actionbar §bPower §l§arecharged§r§b.§r"
+												]
+											}
+										},
+										"key": "run_command",
+										"is_minified": true,
+										"children": {
+											"target": "holder",
+											"command": [
+												"title @s actionbar §bPower §l§arecharged§r§b.§r"
+											]
+										}
+									}
+								]
 							}
 						]
 					}
