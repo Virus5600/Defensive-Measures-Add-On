@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\SatchTFF\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\entities\\cannon_turret.json",
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\entities\\cannon_turret.json",
 	"file_type": "entity",
 	"format_version": 1,
-	"file_uuid": "c4afcd7d_b0e7_4b09_8449_8e5b08b26d1b",
-	"file_version": 8,
+	"file_uuid": "d7595a9a_260a_402d_a8fe_d437aebac80b",
+	"file_version": 126,
 	"cache_content": {
 		"children": [
 			{
@@ -16,51 +16,49 @@
 					"minecraft:entity": {
 						"description": {
 							"identifier": "defensive:cannon_turret",
-							"is_spawnable": true,
-							"is_summonable": true,
-							"is_experimental": true
+							"is_summonable": true
 						},
 						"components": {
-							"minecraft:behavior.defend_village_target": {
+							"minecraft:behavior.nearest_attackable_target": {
 								"priority": 2,
 								"entity_types": [
 									{
-										"max_dist": 16,
 										"filters": {
-											"subject": "target",
-											"test": "has_biome_tag",
-											"operator": "equals",
+											"subject": "other",
+											"test": "is_family",
 											"value": "monster"
-										}
+										},
+										"max_dist": 16
+									}
+								],
+								"must_see": true,
+								"within_radius": 16,
+								"persist_time": 2.5,
+								"attack_interval": 5
+							},
+							"minecraft:behavior.defend_village_target": {
+								"priority": 1,
+								"entity_types": [
+									{
+										"filters": {
+											"subject": "other",
+											"test": "is_family",
+											"value": "monster"
+										},
+										"max_dist": 16,
+										"must_see": true
 									}
 								]
 							},
-							"minecraft:behavior.nearest_attackable_target": {
-								"priority": 2,
-								"reselect_targets": true,
-								"entity_types": [
-									{
-										"max_dist": 16,
-										"filters": {
-											"subject": "target",
-											"test": "has_biome_tag",
-											"operator": "equals",
-											"value": "monster"
-										}
-									}
-								],
-								"persist_time": 2.5
-							},
 							"minecraft:behavior.ranged_attack": {
-								"attack_interval_min": 0,
-								"attack_interval_max": 0,
-								"attack_radius": 16,
-								"charge_charged_trigger": 0,
-								"charge_shoot_trigger": 2.5
+								"priority": 0,
+								"charge_charged_trigger": 4.9,
+								"charge_shoot_trigger": 5,
+								"attack_radius": 16
 							},
 							"minecraft:collision_box": {
-								"width": 1,
-								"height": 1
+								"width": 0.75,
+								"height": 0.75
 							},
 							"minecraft:fire_immune": true,
 							"minecraft:healable": {
@@ -71,11 +69,11 @@
 									},
 									{
 										"item": "minecraft:iron_nugget",
-										"heal_amount": 2
+										"heal_amount": 1
 									},
 									{
 										"item": "minecraft:iron_ingot",
-										"heal_amount": 20
+										"heal_amount": 10
 									},
 									{
 										"item": "minecraft:iron_block",
@@ -91,26 +89,93 @@
 								]
 							},
 							"minecraft:health": {
-								"value": 100,
-								"max": 100,
-								"min": 100
+								"value": 50
+							},
+							"minecraft:loot": {
+								"table": "loot_tables/cannon_turret/cannon_turret.json"
 							},
 							"minecraft:physics": {
 								"has_collision": true,
 								"has_gravity": true
 							},
+							"minecraft:persistent": {},
 							"minecraft:pushable": {
 								"is_pushable": false,
 								"is_pushable_by_piston": true
 							},
 							"minecraft:shooter": {
-								"def": "defensive:cannon_ball"
+								"def": "defensive:cannonball"
+							},
+							"minecraft:variant": {
+								"value": 0
+							},
+							"minecraft:knockback_resistance": {
+								"value": 1
+							},
+							"minecraft:movement": {
+								"value": 0,
+								"max": 0
+							},
+							"minecraft:movement.basic": {},
+							"minecraft:navigation.walk": {},
+							"minecraft:behavior.random_look_around": {
+								"priority": 8
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
 							},
 							"minecraft:type_family": {
 								"family": [
-									"turret",
-									"cannon"
+									"cannon",
+									"turret"
 								]
+							},
+							"minecraft:interact": {
+								"interactions": [
+									{
+										"interact_text": "Remove Turret",
+										"on_interact": {
+											"target": "self",
+											"event": "removeTurret",
+											"filters": {
+												"domain": "hand",
+												"test": "has_equipment",
+												"value": "defensive:turret_remover",
+												"subject": "other"
+											}
+										},
+										"spawn_items": {
+											"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+										},
+										"hurt_item": 1
+									}
+								]
+							},
+							"minecraft:conditional_bandwidth_optimization": {}
+						},
+						"events": {
+							"removeTurret": {
+								"add": {
+									"component_groups": [
+										"despawn"
+									]
+								}
+							}
+						},
+						"component_groups": {
+							"despawn": {
+								"minecraft:instant_despawn": {}
 							}
 						}
 					}
@@ -121,51 +186,49 @@
 						"open": {
 							"description": {
 								"identifier": "defensive:cannon_turret",
-								"is_spawnable": true,
-								"is_summonable": true,
-								"is_experimental": true
+								"is_summonable": true
 							},
 							"components": {
-								"minecraft:behavior.defend_village_target": {
+								"minecraft:behavior.nearest_attackable_target": {
 									"priority": 2,
 									"entity_types": [
 										{
-											"max_dist": 16,
 											"filters": {
-												"subject": "target",
-												"test": "has_biome_tag",
-												"operator": "equals",
+												"subject": "other",
+												"test": "is_family",
 												"value": "monster"
-											}
+											},
+											"max_dist": 16
+										}
+									],
+									"must_see": true,
+									"within_radius": 16,
+									"persist_time": 2.5,
+									"attack_interval": 5
+								},
+								"minecraft:behavior.defend_village_target": {
+									"priority": 1,
+									"entity_types": [
+										{
+											"filters": {
+												"subject": "other",
+												"test": "is_family",
+												"value": "monster"
+											},
+											"max_dist": 16,
+											"must_see": true
 										}
 									]
 								},
-								"minecraft:behavior.nearest_attackable_target": {
-									"priority": 2,
-									"reselect_targets": true,
-									"entity_types": [
-										{
-											"max_dist": 16,
-											"filters": {
-												"subject": "target",
-												"test": "has_biome_tag",
-												"operator": "equals",
-												"value": "monster"
-											}
-										}
-									],
-									"persist_time": 2.5
-								},
 								"minecraft:behavior.ranged_attack": {
-									"attack_interval_min": 0,
-									"attack_interval_max": 0,
-									"attack_radius": 16,
-									"charge_charged_trigger": 0,
-									"charge_shoot_trigger": 2.5
+									"priority": 0,
+									"charge_charged_trigger": 4.9,
+									"charge_shoot_trigger": 5,
+									"attack_radius": 16
 								},
 								"minecraft:collision_box": {
-									"width": 1,
-									"height": 1
+									"width": 0.75,
+									"height": 0.75
 								},
 								"minecraft:fire_immune": true,
 								"minecraft:healable": {
@@ -176,11 +239,11 @@
 										},
 										{
 											"item": "minecraft:iron_nugget",
-											"heal_amount": 2
+											"heal_amount": 1
 										},
 										{
 											"item": "minecraft:iron_ingot",
-											"heal_amount": 20
+											"heal_amount": 10
 										},
 										{
 											"item": "minecraft:iron_block",
@@ -196,26 +259,93 @@
 									]
 								},
 								"minecraft:health": {
-									"value": 100,
-									"max": 100,
-									"min": 100
+									"value": 50
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/cannon_turret/cannon_turret.json"
 								},
 								"minecraft:physics": {
 									"has_collision": true,
 									"has_gravity": true
 								},
+								"minecraft:persistent": {},
 								"minecraft:pushable": {
 									"is_pushable": false,
 									"is_pushable_by_piston": true
 								},
 								"minecraft:shooter": {
-									"def": "defensive:cannon_ball"
+									"def": "defensive:cannonball"
+								},
+								"minecraft:variant": {
+									"value": 0
+								},
+								"minecraft:knockback_resistance": {
+									"value": 1
+								},
+								"minecraft:movement": {
+									"value": 0,
+									"max": 0
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:navigation.walk": {},
+								"minecraft:behavior.random_look_around": {
+									"priority": 8
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
 								},
 								"minecraft:type_family": {
 									"family": [
-										"turret",
-										"cannon"
+										"cannon",
+										"turret"
 									]
+								},
+								"minecraft:interact": {
+									"interactions": [
+										{
+											"interact_text": "Remove Turret",
+											"on_interact": {
+												"target": "self",
+												"event": "removeTurret",
+												"filters": {
+													"domain": "hand",
+													"test": "has_equipment",
+													"value": "defensive:turret_remover",
+													"subject": "other"
+												}
+											},
+											"spawn_items": {
+												"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+											},
+											"hurt_item": 1
+										}
+									]
+								},
+								"minecraft:conditional_bandwidth_optimization": {}
+							},
+							"events": {
+								"removeTurret": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								}
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {}
 								}
 							}
 						},
@@ -223,60 +353,56 @@
 						"is_minified": true,
 						"children": {
 							"identifier": "defensive:cannon_turret",
-							"is_spawnable": true,
-							"is_summonable": true,
-							"is_experimental": true
+							"is_summonable": true
 						}
 					},
 					{
 						"open": {
 							"description": {
 								"identifier": "defensive:cannon_turret",
-								"is_spawnable": true,
-								"is_summonable": true,
-								"is_experimental": true
+								"is_summonable": true
 							},
 							"components": {
-								"minecraft:behavior.defend_village_target": {
+								"minecraft:behavior.nearest_attackable_target": {
 									"priority": 2,
 									"entity_types": [
 										{
-											"max_dist": 16,
 											"filters": {
-												"subject": "target",
-												"test": "has_biome_tag",
-												"operator": "equals",
+												"subject": "other",
+												"test": "is_family",
 												"value": "monster"
-											}
+											},
+											"max_dist": 16
+										}
+									],
+									"must_see": true,
+									"within_radius": 16,
+									"persist_time": 2.5,
+									"attack_interval": 5
+								},
+								"minecraft:behavior.defend_village_target": {
+									"priority": 1,
+									"entity_types": [
+										{
+											"filters": {
+												"subject": "other",
+												"test": "is_family",
+												"value": "monster"
+											},
+											"max_dist": 16,
+											"must_see": true
 										}
 									]
 								},
-								"minecraft:behavior.nearest_attackable_target": {
-									"priority": 2,
-									"reselect_targets": true,
-									"entity_types": [
-										{
-											"max_dist": 16,
-											"filters": {
-												"subject": "target",
-												"test": "has_biome_tag",
-												"operator": "equals",
-												"value": "monster"
-											}
-										}
-									],
-									"persist_time": 2.5
-								},
 								"minecraft:behavior.ranged_attack": {
-									"attack_interval_min": 0,
-									"attack_interval_max": 0,
-									"attack_radius": 16,
-									"charge_charged_trigger": 0,
-									"charge_shoot_trigger": 2.5
+									"priority": 0,
+									"charge_charged_trigger": 4.9,
+									"charge_shoot_trigger": 5,
+									"attack_radius": 16
 								},
 								"minecraft:collision_box": {
-									"width": 1,
-									"height": 1
+									"width": 0.75,
+									"height": 0.75
 								},
 								"minecraft:fire_immune": true,
 								"minecraft:healable": {
@@ -287,11 +413,11 @@
 										},
 										{
 											"item": "minecraft:iron_nugget",
-											"heal_amount": 2
+											"heal_amount": 1
 										},
 										{
 											"item": "minecraft:iron_ingot",
-											"heal_amount": 20
+											"heal_amount": 10
 										},
 										{
 											"item": "minecraft:iron_block",
@@ -307,73 +433,245 @@
 									]
 								},
 								"minecraft:health": {
-									"value": 100,
-									"max": 100,
-									"min": 100
+									"value": 50
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/cannon_turret/cannon_turret.json"
 								},
 								"minecraft:physics": {
 									"has_collision": true,
 									"has_gravity": true
 								},
+								"minecraft:persistent": {},
 								"minecraft:pushable": {
 									"is_pushable": false,
 									"is_pushable_by_piston": true
 								},
 								"minecraft:shooter": {
-									"def": "defensive:cannon_ball"
+									"def": "defensive:cannonball"
+								},
+								"minecraft:variant": {
+									"value": 0
+								},
+								"minecraft:knockback_resistance": {
+									"value": 1
+								},
+								"minecraft:movement": {
+									"value": 0,
+									"max": 0
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:navigation.walk": {},
+								"minecraft:behavior.random_look_around": {
+									"priority": 8
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
 								},
 								"minecraft:type_family": {
 									"family": [
-										"turret",
-										"cannon"
+										"cannon",
+										"turret"
 									]
+								},
+								"minecraft:interact": {
+									"interactions": [
+										{
+											"interact_text": "Remove Turret",
+											"on_interact": {
+												"target": "self",
+												"event": "removeTurret",
+												"filters": {
+													"domain": "hand",
+													"test": "has_equipment",
+													"value": "defensive:turret_remover",
+													"subject": "other"
+												}
+											},
+											"spawn_items": {
+												"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+											},
+											"hurt_item": 1
+										}
+									]
+								},
+								"minecraft:conditional_bandwidth_optimization": {}
+							},
+							"events": {
+								"removeTurret": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								}
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {}
 								}
 							}
 						},
 						"key": "components",
 						"children": [
 							{
-								"key": "minecraft:behavior.defend_village_target",
-								"children": [
-									{
-										"data": "2",
-										"key": "priority"
-									},
-									{
-										"key": "entity_types",
-										"children": [
+								"open": {
+									"minecraft:behavior.nearest_attackable_target": {
+										"priority": 2,
+										"entity_types": [
 											{
-												"children": [
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16
+											}
+										],
+										"must_see": true,
+										"within_radius": 16,
+										"persist_time": 2.5,
+										"attack_interval": 5
+									},
+									"minecraft:behavior.defend_village_target": {
+										"priority": 1,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16,
+												"must_see": true
+											}
+										]
+									},
+									"minecraft:behavior.ranged_attack": {
+										"priority": 0,
+										"charge_charged_trigger": 4.9,
+										"charge_shoot_trigger": 5,
+										"attack_radius": 16
+									},
+									"minecraft:collision_box": {
+										"width": 0.75,
+										"height": 0.75
+									},
+									"minecraft:fire_immune": true,
+									"minecraft:healable": {
+										"items": [
+											{
+												"item": "minecraft:planks",
+												"heal_amount": 1
+											},
+											{
+												"item": "minecraft:iron_nugget",
+												"heal_amount": 1
+											},
+											{
+												"item": "minecraft:iron_ingot",
+												"heal_amount": 10
+											},
+											{
+												"item": "minecraft:iron_block",
+												"heal_amount": 100,
+												"effects": [
 													{
-														"data": "16",
-														"key": "max_dist"
-													},
-													{
-														"open": {
-															"max_dist": 16,
-															"filters": {
-																"subject": "target",
-																"test": "has_biome_tag",
-																"operator": "equals",
-																"value": "monster"
-															}
-														},
-														"key": "filters",
-														"is_minified": true,
-														"children": {
-															"subject": "target",
-															"test": "has_biome_tag",
-															"operator": "equals",
-															"value": "monster"
-														}
+														"name": "absorption",
+														"duration": 60,
+														"amplifier": 2
 													}
 												]
 											}
 										]
-									}
-								]
-							},
-							{
+									},
+									"minecraft:health": {
+										"value": 50
+									},
+									"minecraft:loot": {
+										"table": "loot_tables/cannon_turret/cannon_turret.json"
+									},
+									"minecraft:physics": {
+										"has_collision": true,
+										"has_gravity": true
+									},
+									"minecraft:persistent": {},
+									"minecraft:pushable": {
+										"is_pushable": false,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:shooter": {
+										"def": "defensive:cannonball"
+									},
+									"minecraft:variant": {
+										"value": 0
+									},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:movement": {
+										"value": 0,
+										"max": 0
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:navigation.walk": {},
+									"minecraft:behavior.random_look_around": {
+										"priority": 8
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:type_family": {
+										"family": [
+											"cannon",
+											"turret"
+										]
+									},
+									"minecraft:interact": {
+										"interactions": [
+											{
+												"interact_text": "Remove Turret",
+												"on_interact": {
+													"target": "self",
+													"event": "removeTurret",
+													"filters": {
+														"domain": "hand",
+														"test": "has_equipment",
+														"value": "defensive:turret_remover",
+														"subject": "other"
+													}
+												},
+												"spawn_items": {
+													"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+												},
+												"hurt_item": 1
+											}
+										]
+									},
+									"minecraft:conditional_bandwidth_optimization": {}
+								},
 								"key": "minecraft:behavior.nearest_attackable_target",
 								"children": [
 									{
@@ -381,64 +679,311 @@
 										"key": "priority"
 									},
 									{
-										"data": "true",
-										"key": "reselect_targets"
-									},
-									{
+										"open": {
+											"priority": 2,
+											"entity_types": [
+												{
+													"filters": {
+														"subject": "other",
+														"test": "is_family",
+														"value": "monster"
+													},
+													"max_dist": 16
+												}
+											],
+											"must_see": true,
+											"within_radius": 16,
+											"persist_time": 2.5,
+											"attack_interval": 5
+										},
 										"key": "entity_types",
 										"children": [
 											{
+												"open": [
+													{
+														"filters": {
+															"subject": "other",
+															"test": "is_family",
+															"value": "monster"
+														},
+														"max_dist": 16
+													}
+												],
 												"children": [
 													{
-														"data": "16",
-														"key": "max_dist"
-													},
-													{
 														"open": {
-															"max_dist": 16,
 															"filters": {
-																"subject": "target",
-																"test": "has_biome_tag",
-																"operator": "equals",
+																"subject": "other",
+																"test": "is_family",
 																"value": "monster"
-															}
+															},
+															"max_dist": 16
 														},
 														"key": "filters",
 														"is_minified": true,
 														"children": {
-															"subject": "target",
-															"test": "has_biome_tag",
-															"operator": "equals",
+															"subject": "other",
+															"test": "is_family",
 															"value": "monster"
 														}
+													},
+													{
+														"data": "16",
+														"key": "max_dist"
 													}
 												]
 											}
 										]
 									},
 									{
+										"data": "true",
+										"key": "must_see"
+									},
+									{
+										"data": "16",
+										"key": "within_radius"
+									},
+									{
 										"data": "2.5",
 										"key": "persist_time"
+									},
+									{
+										"data": "5",
+										"key": "attack_interval"
 									}
 								]
 							},
 							{
+								"key": "minecraft:behavior.defend_village_target",
+								"children": [
+									{
+										"data": "1",
+										"key": "priority"
+									},
+									{
+										"open": {
+											"priority": 1,
+											"entity_types": [
+												{
+													"filters": {
+														"subject": "other",
+														"test": "is_family",
+														"value": "monster"
+													},
+													"max_dist": 16,
+													"must_see": true
+												}
+											]
+										},
+										"key": "entity_types",
+										"children": [
+											{
+												"open": [
+													{
+														"filters": {
+															"subject": "other",
+															"test": "is_family",
+															"value": "monster"
+														},
+														"max_dist": 16,
+														"must_see": true
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"filters": {
+																"subject": "other",
+																"test": "is_family",
+																"value": "monster"
+															},
+															"max_dist": 16,
+															"must_see": true
+														},
+														"key": "filters",
+														"is_minified": true,
+														"children": {
+															"subject": "other",
+															"test": "is_family",
+															"value": "monster"
+														}
+													},
+													{
+														"data": "16",
+														"key": "max_dist"
+													},
+													{
+														"data": "true",
+														"key": "must_see"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:behavior.nearest_attackable_target": {
+										"priority": 2,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16
+											}
+										],
+										"must_see": true,
+										"within_radius": 16,
+										"persist_time": 2.5,
+										"attack_interval": 5
+									},
+									"minecraft:behavior.defend_village_target": {
+										"priority": 1,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16,
+												"must_see": true
+											}
+										]
+									},
+									"minecraft:behavior.ranged_attack": {
+										"priority": 0,
+										"charge_charged_trigger": 4.9,
+										"charge_shoot_trigger": 5,
+										"attack_radius": 16
+									},
+									"minecraft:collision_box": {
+										"width": 0.75,
+										"height": 0.75
+									},
+									"minecraft:fire_immune": true,
+									"minecraft:healable": {
+										"items": [
+											{
+												"item": "minecraft:planks",
+												"heal_amount": 1
+											},
+											{
+												"item": "minecraft:iron_nugget",
+												"heal_amount": 1
+											},
+											{
+												"item": "minecraft:iron_ingot",
+												"heal_amount": 10
+											},
+											{
+												"item": "minecraft:iron_block",
+												"heal_amount": 100,
+												"effects": [
+													{
+														"name": "absorption",
+														"duration": 60,
+														"amplifier": 2
+													}
+												]
+											}
+										]
+									},
+									"minecraft:health": {
+										"value": 50
+									},
+									"minecraft:loot": {
+										"table": "loot_tables/cannon_turret/cannon_turret.json"
+									},
+									"minecraft:physics": {
+										"has_collision": true,
+										"has_gravity": true
+									},
+									"minecraft:persistent": {},
+									"minecraft:pushable": {
+										"is_pushable": false,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:shooter": {
+										"def": "defensive:cannonball"
+									},
+									"minecraft:variant": {
+										"value": 0
+									},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:movement": {
+										"value": 0,
+										"max": 0
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:navigation.walk": {},
+									"minecraft:behavior.random_look_around": {
+										"priority": 8
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:type_family": {
+										"family": [
+											"cannon",
+											"turret"
+										]
+									},
+									"minecraft:interact": {
+										"interactions": [
+											{
+												"interact_text": "Remove Turret",
+												"on_interact": {
+													"target": "self",
+													"event": "removeTurret",
+													"filters": {
+														"domain": "hand",
+														"test": "has_equipment",
+														"value": "defensive:turret_remover",
+														"subject": "other"
+													}
+												},
+												"spawn_items": {
+													"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+												},
+												"hurt_item": 1
+											}
+										]
+									},
+									"minecraft:conditional_bandwidth_optimization": {}
+								},
 								"key": "minecraft:behavior.ranged_attack",
 								"is_minified": true,
 								"children": {
-									"attack_interval_min": 0,
-									"attack_interval_max": 0,
-									"attack_radius": 16,
-									"charge_charged_trigger": 0,
-									"charge_shoot_trigger": 2.5
+									"priority": 0,
+									"charge_charged_trigger": 4.9,
+									"charge_shoot_trigger": 5,
+									"attack_radius": 16
 								}
 							},
 							{
 								"key": "minecraft:collision_box",
 								"is_minified": true,
 								"children": {
-									"width": 1,
-									"height": 1
+									"width": 0.75,
+									"height": 0.75
 								}
 							},
 							{
@@ -449,9 +994,61 @@
 								"key": "minecraft:healable",
 								"children": [
 									{
+										"open": {
+											"items": [
+												{
+													"item": "minecraft:planks",
+													"heal_amount": 1
+												},
+												{
+													"item": "minecraft:iron_nugget",
+													"heal_amount": 1
+												},
+												{
+													"item": "minecraft:iron_ingot",
+													"heal_amount": 10
+												},
+												{
+													"item": "minecraft:iron_block",
+													"heal_amount": 100,
+													"effects": [
+														{
+															"name": "absorption",
+															"duration": 60,
+															"amplifier": 2
+														}
+													]
+												}
+											]
+										},
 										"key": "items",
 										"children": [
 											{
+												"open": [
+													{
+														"item": "minecraft:planks",
+														"heal_amount": 1
+													},
+													{
+														"item": "minecraft:iron_nugget",
+														"heal_amount": 1
+													},
+													{
+														"item": "minecraft:iron_ingot",
+														"heal_amount": 10
+													},
+													{
+														"item": "minecraft:iron_block",
+														"heal_amount": 100,
+														"effects": [
+															{
+																"name": "absorption",
+																"duration": 60,
+																"amplifier": 2
+															}
+														]
+													}
+												],
 												"is_minified": true,
 												"children": {
 													"item": "minecraft:planks",
@@ -459,20 +1056,95 @@
 												}
 											},
 											{
+												"open": [
+													{
+														"item": "minecraft:planks",
+														"heal_amount": 1
+													},
+													{
+														"item": "minecraft:iron_nugget",
+														"heal_amount": 1
+													},
+													{
+														"item": "minecraft:iron_ingot",
+														"heal_amount": 10
+													},
+													{
+														"item": "minecraft:iron_block",
+														"heal_amount": 100,
+														"effects": [
+															{
+																"name": "absorption",
+																"duration": 60,
+																"amplifier": 2
+															}
+														]
+													}
+												],
 												"is_minified": true,
 												"children": {
 													"item": "minecraft:iron_nugget",
-													"heal_amount": 2
+													"heal_amount": 1
 												}
 											},
 											{
+												"open": [
+													{
+														"item": "minecraft:planks",
+														"heal_amount": 1
+													},
+													{
+														"item": "minecraft:iron_nugget",
+														"heal_amount": 1
+													},
+													{
+														"item": "minecraft:iron_ingot",
+														"heal_amount": 10
+													},
+													{
+														"item": "minecraft:iron_block",
+														"heal_amount": 100,
+														"effects": [
+															{
+																"name": "absorption",
+																"duration": 60,
+																"amplifier": 2
+															}
+														]
+													}
+												],
 												"is_minified": true,
 												"children": {
 													"item": "minecraft:iron_ingot",
-													"heal_amount": 20
+													"heal_amount": 10
 												}
 											},
 											{
+												"open": [
+													{
+														"item": "minecraft:planks",
+														"heal_amount": 1
+													},
+													{
+														"item": "minecraft:iron_nugget",
+														"heal_amount": 1
+													},
+													{
+														"item": "minecraft:iron_ingot",
+														"heal_amount": 10
+													},
+													{
+														"item": "minecraft:iron_block",
+														"heal_amount": 100,
+														"effects": [
+															{
+																"name": "absorption",
+																"duration": 60,
+																"amplifier": 2
+															}
+														]
+													}
+												],
 												"children": [
 													{
 														"data": "minecraft:iron_block",
@@ -483,17 +1155,6 @@
 														"key": "heal_amount"
 													},
 													{
-														"open": {
-															"item": "minecraft:iron_block",
-															"heal_amount": 100,
-															"effects": [
-																{
-																	"name": "absorption",
-																	"duration": 60,
-																	"amplifier": 2
-																}
-															]
-														},
 														"key": "effects",
 														"children": [
 															{
@@ -523,9 +1184,14 @@
 								"key": "minecraft:health",
 								"is_minified": true,
 								"children": {
-									"value": 100,
-									"max": 100,
-									"min": 100
+									"value": 50
+								}
+							},
+							{
+								"key": "minecraft:loot",
+								"is_minified": true,
+								"children": {
+									"table": "loot_tables/cannon_turret/cannon_turret.json"
 								}
 							},
 							{
@@ -537,6 +1203,11 @@
 								}
 							},
 							{
+								"key": "minecraft:persistent",
+								"is_minified": true,
+								"children": {}
+							},
+							{
 								"key": "minecraft:pushable",
 								"is_minified": true,
 								"children": {
@@ -545,23 +1216,579 @@
 								}
 							},
 							{
+								"open": {
+									"minecraft:behavior.nearest_attackable_target": {
+										"priority": 2,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16
+											}
+										],
+										"must_see": true,
+										"within_radius": 16,
+										"persist_time": 2.5,
+										"attack_interval": 5
+									},
+									"minecraft:behavior.defend_village_target": {
+										"priority": 1,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16,
+												"must_see": true
+											}
+										]
+									},
+									"minecraft:behavior.ranged_attack": {
+										"priority": 0,
+										"charge_charged_trigger": 4.9,
+										"charge_shoot_trigger": 5,
+										"attack_radius": 16
+									},
+									"minecraft:collision_box": {
+										"width": 0.75,
+										"height": 0.75
+									},
+									"minecraft:fire_immune": true,
+									"minecraft:healable": {
+										"items": [
+											{
+												"item": "minecraft:planks",
+												"heal_amount": 1
+											},
+											{
+												"item": "minecraft:iron_nugget",
+												"heal_amount": 1
+											},
+											{
+												"item": "minecraft:iron_ingot",
+												"heal_amount": 10
+											},
+											{
+												"item": "minecraft:iron_block",
+												"heal_amount": 100,
+												"effects": [
+													{
+														"name": "absorption",
+														"duration": 60,
+														"amplifier": 2
+													}
+												]
+											}
+										]
+									},
+									"minecraft:health": {
+										"value": 50
+									},
+									"minecraft:loot": {
+										"table": "loot_tables/cannon_turret/cannon_turret.json"
+									},
+									"minecraft:physics": {
+										"has_collision": true,
+										"has_gravity": true
+									},
+									"minecraft:persistent": {},
+									"minecraft:pushable": {
+										"is_pushable": false,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:shooter": {
+										"def": "defensive:cannonball"
+									},
+									"minecraft:variant": {
+										"value": 0
+									},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:movement": {
+										"value": 0,
+										"max": 0
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:navigation.walk": {},
+									"minecraft:behavior.random_look_around": {
+										"priority": 8
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:type_family": {
+										"family": [
+											"cannon",
+											"turret"
+										]
+									},
+									"minecraft:interact": {
+										"interactions": [
+											{
+												"interact_text": "Remove Turret",
+												"on_interact": {
+													"target": "self",
+													"event": "removeTurret",
+													"filters": {
+														"domain": "hand",
+														"test": "has_equipment",
+														"value": "defensive:turret_remover",
+														"subject": "other"
+													}
+												},
+												"spawn_items": {
+													"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+												},
+												"hurt_item": 1
+											}
+										]
+									},
+									"minecraft:conditional_bandwidth_optimization": {}
+								},
 								"key": "minecraft:shooter",
 								"is_minified": true,
 								"children": {
-									"def": "defensive:cannon_ball"
+									"def": "defensive:cannonball"
 								}
 							},
 							{
-								"key": "minecraft:type_family",
+								"key": "minecraft:variant",
 								"is_minified": true,
 								"children": {
-									"family": [
-										"turret",
-										"cannon"
-									]
+									"value": 0
 								}
+							},
+							{
+								"key": "minecraft:knockback_resistance",
+								"is_minified": true,
+								"children": {
+									"value": 1
+								}
+							},
+							{
+								"key": "minecraft:movement",
+								"is_minified": true,
+								"children": {
+									"value": 0,
+									"max": 0
+								}
+							},
+							{
+								"key": "minecraft:movement.basic",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"open": {
+									"minecraft:behavior.nearest_attackable_target": {
+										"priority": 2,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16
+											}
+										],
+										"must_see": true,
+										"within_radius": 16,
+										"persist_time": 2.5,
+										"attack_interval": 5
+									},
+									"minecraft:behavior.defend_village_target": {
+										"priority": 1,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16,
+												"must_see": true
+											}
+										]
+									},
+									"minecraft:behavior.ranged_attack": {
+										"priority": 0,
+										"charge_charged_trigger": 4.9,
+										"charge_shoot_trigger": 5,
+										"attack_radius": 16
+									},
+									"minecraft:collision_box": {
+										"width": 0.75,
+										"height": 0.75
+									},
+									"minecraft:fire_immune": true,
+									"minecraft:healable": {
+										"items": [
+											{
+												"item": "minecraft:planks",
+												"heal_amount": 1
+											},
+											{
+												"item": "minecraft:iron_nugget",
+												"heal_amount": 1
+											},
+											{
+												"item": "minecraft:iron_ingot",
+												"heal_amount": 10
+											},
+											{
+												"item": "minecraft:iron_block",
+												"heal_amount": 100,
+												"effects": [
+													{
+														"name": "absorption",
+														"duration": 60,
+														"amplifier": 2
+													}
+												]
+											}
+										]
+									},
+									"minecraft:health": {
+										"value": 50
+									},
+									"minecraft:loot": {
+										"table": "loot_tables/cannon_turret/cannon_turret.json"
+									},
+									"minecraft:physics": {
+										"has_collision": true,
+										"has_gravity": true
+									},
+									"minecraft:persistent": {},
+									"minecraft:pushable": {
+										"is_pushable": false,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:shooter": {
+										"def": "defensive:cannonball"
+									},
+									"minecraft:variant": {
+										"value": 0
+									},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:movement": {
+										"value": 0,
+										"max": 0
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:navigation.walk": {},
+									"minecraft:behavior.random_look_around": {
+										"priority": 8
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:type_family": {
+										"family": [
+											"cannon",
+											"turret"
+										]
+									},
+									"minecraft:interact": {
+										"interactions": [
+											{
+												"interact_text": "Remove Turret",
+												"on_interact": {
+													"target": "self",
+													"event": "removeTurret",
+													"filters": {
+														"domain": "hand",
+														"test": "has_equipment",
+														"value": "defensive:turret_remover",
+														"subject": "other"
+													}
+												},
+												"spawn_items": {
+													"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+												},
+												"hurt_item": 1
+											}
+										]
+									},
+									"minecraft:conditional_bandwidth_optimization": {}
+								},
+								"key": "minecraft:navigation.walk",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:behavior.random_look_around",
+								"is_minified": true,
+								"children": {
+									"priority": 8
+								}
+							},
+							{
+								"key": "minecraft:hurt_on_condition",
+								"children": [
+									{
+										"open": {
+											"damage_conditions": [
+												{
+													"filters": {
+														"test": "in_lava",
+														"subject": "self",
+														"operator": "==",
+														"value": true
+													},
+													"cause": "lava",
+													"damage_per_tick": 4
+												}
+											]
+										},
+										"key": "damage_conditions",
+										"children": [
+											{
+												"open": [
+													{
+														"filters": {
+															"test": "in_lava",
+															"subject": "self",
+															"operator": "==",
+															"value": true
+														},
+														"cause": "lava",
+														"damage_per_tick": 4
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"filters": {
+														"test": "in_lava",
+														"subject": "self",
+														"operator": "==",
+														"value": true
+													},
+													"cause": "lava",
+													"damage_per_tick": 4
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:type_family",
+								"children": [
+									{
+										"open": {
+											"family": [
+												"cannon",
+												"turret"
+											]
+										},
+										"key": "family",
+										"is_minified": true,
+										"children": [
+											"cannon",
+											"turret"
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:interact",
+								"children": [
+									{
+										"open": {
+											"interactions": [
+												{
+													"interact_text": "Remove Turret",
+													"on_interact": {
+														"target": "self",
+														"event": "removeTurret",
+														"filters": {
+															"domain": "hand",
+															"test": "has_equipment",
+															"value": "defensive:turret_remover",
+															"subject": "other"
+														}
+													},
+													"spawn_items": {
+														"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+													},
+													"hurt_item": 1
+												}
+											]
+										},
+										"key": "interactions",
+										"children": [
+											{
+												"open": [
+													{
+														"interact_text": "Remove Turret",
+														"on_interact": {
+															"target": "self",
+															"event": "removeTurret",
+															"filters": {
+																"domain": "hand",
+																"test": "has_equipment",
+																"value": "defensive:turret_remover",
+																"subject": "other"
+															}
+														},
+														"spawn_items": {
+															"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+														},
+														"hurt_item": 1
+													}
+												],
+												"children": [
+													{
+														"data": "Remove Turret",
+														"key": "interact_text"
+													},
+													{
+														"open": {
+															"interact_text": "Remove Turret",
+															"on_interact": {
+																"target": "self",
+																"event": "removeTurret",
+																"filters": {
+																	"domain": "hand",
+																	"test": "has_equipment",
+																	"value": "defensive:turret_remover",
+																	"subject": "other"
+																}
+															},
+															"spawn_items": {
+																"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+															},
+															"hurt_item": 1
+														},
+														"key": "on_interact",
+														"children": [
+															{
+																"data": "self",
+																"key": "target"
+															},
+															{
+																"data": "removeTurret",
+																"key": "event"
+															},
+															{
+																"open": {
+																	"target": "self",
+																	"event": "removeTurret",
+																	"filters": {
+																		"domain": "hand",
+																		"test": "has_equipment",
+																		"value": "defensive:turret_remover",
+																		"subject": "other"
+																	}
+																},
+																"key": "filters",
+																"is_minified": true,
+																"children": {
+																	"domain": "hand",
+																	"test": "has_equipment",
+																	"value": "defensive:turret_remover",
+																	"subject": "other"
+																}
+															}
+														]
+													},
+													{
+														"key": "spawn_items",
+														"is_minified": true,
+														"children": {
+															"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+														}
+													},
+													{
+														"data": "1",
+														"key": "hurt_item"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"key": "minecraft:conditional_bandwidth_optimization",
+								"is_minified": true,
+								"children": {}
 							}
 						]
+					},
+					{
+						"key": "events",
+						"children": [
+							{
+								"key": "removeTurret",
+								"children": [
+									{
+										"open": {
+											"add": {
+												"component_groups": [
+													"despawn"
+												]
+											}
+										},
+										"key": "add",
+										"children": [
+											{
+												"open": {
+													"component_groups": [
+														"despawn"
+													]
+												},
+												"key": "component_groups",
+												"is_minified": true,
+												"children": [
+													"despawn"
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"key": "component_groups",
+						"is_minified": true,
+						"children": {
+							"despawn": {
+								"minecraft:instant_despawn": {}
+							}
+						}
 					}
 				]
 			}

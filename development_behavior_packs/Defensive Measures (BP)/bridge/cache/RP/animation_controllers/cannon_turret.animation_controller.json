@@ -1,0 +1,493 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)/animation_controllers/cannon_turret.animation_controller.json",
+	"file_type": "rp_animation_controller",
+	"format_version": 1,
+	"file_uuid": "11c409ee_82ee_45c9_a00a_1fb8362a6db1",
+	"file_version": 12,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"animation_controllers": {
+						"controller.animation.cannon_turret.firing_sequence": {
+							"initial_state": "default",
+							"states": {
+								"default": {
+									"animations": [
+										"look_at_target"
+									],
+									"transitions": [
+										{
+											"fuse": "query.has_target"
+										}
+									]
+								},
+								"fuse": {
+									"animations": [
+										{
+											"fuse": "query.has_target"
+										}
+									],
+									"transitions": [
+										{
+											"default": "!query.has_target"
+										},
+										{
+											"shoot": "query.is_charged"
+										}
+									]
+								},
+								"shoot": {
+									"animations": [
+										"shoot"
+									],
+									"transitions": [
+										{
+											"default": "!query.has_target"
+										},
+										{
+											"fuse": "!query.is_charged && query.any_animation_finished"
+										}
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "animation_controllers",
+				"children": [
+					{
+						"open": {
+							"controller.animation.cannon_turret.firing_sequence": {
+								"initial_state": "default",
+								"states": {
+									"default": {
+										"animations": [
+											"look_at_target"
+										],
+										"transitions": [
+											{
+												"fuse": "query.has_target"
+											}
+										]
+									},
+									"fuse": {
+										"animations": [
+											{
+												"fuse": "query.has_target"
+											}
+										],
+										"transitions": [
+											{
+												"default": "!query.has_target"
+											},
+											{
+												"shoot": "query.is_charged"
+											}
+										]
+									},
+									"shoot": {
+										"animations": [
+											"shoot"
+										],
+										"transitions": [
+											{
+												"default": "!query.has_target"
+											},
+											{
+												"fuse": "!query.is_charged && query.any_animation_finished"
+											}
+										]
+									}
+								}
+							}
+						},
+						"key": "controller.animation.cannon_turret.firing_sequence",
+						"children": [
+							{
+								"data": "default",
+								"key": "initial_state"
+							},
+							{
+								"open": {
+									"initial_state": "default",
+									"states": {
+										"default": {
+											"animations": [
+												"look_at_target"
+											],
+											"transitions": [
+												{
+													"fuse": "query.has_target"
+												}
+											]
+										},
+										"fuse": {
+											"animations": [
+												{
+													"fuse": "query.has_target"
+												}
+											],
+											"transitions": [
+												{
+													"default": "!query.has_target"
+												},
+												{
+													"shoot": "query.is_charged"
+												}
+											]
+										},
+										"shoot": {
+											"animations": [
+												"shoot"
+											],
+											"transitions": [
+												{
+													"default": "!query.has_target"
+												},
+												{
+													"fuse": "!query.is_charged && query.any_animation_finished"
+												}
+											]
+										}
+									}
+								},
+								"key": "states",
+								"children": [
+									{
+										"open": {
+											"default": {
+												"animations": [
+													"look_at_target"
+												],
+												"transitions": [
+													{
+														"fuse": "query.has_target"
+													}
+												]
+											},
+											"fuse": {
+												"animations": [
+													{
+														"fuse": "query.has_target"
+													}
+												],
+												"transitions": [
+													{
+														"default": "!query.has_target"
+													},
+													{
+														"shoot": "query.is_charged"
+													}
+												]
+											},
+											"shoot": {
+												"animations": [
+													"shoot"
+												],
+												"transitions": [
+													{
+														"default": "!query.has_target"
+													},
+													{
+														"fuse": "!query.is_charged && query.any_animation_finished"
+													}
+												]
+											}
+										},
+										"key": "default",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														"look_at_target"
+													],
+													"transitions": [
+														{
+															"fuse": "query.has_target"
+														}
+													]
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"look_at_target"
+												]
+											},
+											{
+												"open": {
+													"animations": [
+														"look_at_target"
+													],
+													"transitions": [
+														{
+															"fuse": "query.has_target"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"fuse": "query.has_target"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"fuse": "query.has_target"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"animations": [
+													"look_at_target"
+												],
+												"transitions": [
+													{
+														"fuse": "query.has_target"
+													}
+												]
+											},
+											"fuse": {
+												"animations": [
+													{
+														"fuse": "query.has_target"
+													}
+												],
+												"transitions": [
+													{
+														"default": "!query.has_target"
+													},
+													{
+														"shoot": "query.is_charged"
+													}
+												]
+											},
+											"shoot": {
+												"animations": [
+													"shoot"
+												],
+												"transitions": [
+													{
+														"default": "!query.has_target"
+													},
+													{
+														"fuse": "!query.is_charged && query.any_animation_finished"
+													}
+												]
+											}
+										},
+										"key": "fuse",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														{
+															"fuse": "query.has_target"
+														}
+													],
+													"transitions": [
+														{
+															"default": "!query.has_target"
+														},
+														{
+															"shoot": "query.is_charged"
+														}
+													]
+												},
+												"key": "animations",
+												"children": [
+													{
+														"open": [
+															{
+																"fuse": "query.has_target"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"fuse": "query.has_target"
+														}
+													}
+												]
+											},
+											{
+												"open": {
+													"animations": [
+														{
+															"fuse": "query.has_target"
+														}
+													],
+													"transitions": [
+														{
+															"default": "!query.has_target"
+														},
+														{
+															"shoot": "query.is_charged"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "!query.has_target"
+															},
+															{
+																"shoot": "query.is_charged"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "!query.has_target"
+														}
+													},
+													{
+														"open": [
+															{
+																"default": "!query.has_target"
+															},
+															{
+																"shoot": "query.is_charged"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"shoot": "query.is_charged"
+														}
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": {
+											"default": {
+												"animations": [
+													"look_at_target"
+												],
+												"transitions": [
+													{
+														"fuse": "query.has_target"
+													}
+												]
+											},
+											"fuse": {
+												"animations": [
+													{
+														"fuse": "query.has_target"
+													}
+												],
+												"transitions": [
+													{
+														"default": "!query.has_target"
+													},
+													{
+														"shoot": "query.is_charged"
+													}
+												]
+											},
+											"shoot": {
+												"animations": [
+													"shoot"
+												],
+												"transitions": [
+													{
+														"default": "!query.has_target"
+													},
+													{
+														"fuse": "!query.is_charged && query.any_animation_finished"
+													}
+												]
+											}
+										},
+										"key": "shoot",
+										"children": [
+											{
+												"open": {
+													"animations": [
+														"shoot"
+													],
+													"transitions": [
+														{
+															"default": "!query.has_target"
+														},
+														{
+															"fuse": "!query.is_charged && query.any_animation_finished"
+														}
+													]
+												},
+												"key": "animations",
+												"is_minified": true,
+												"children": [
+													"shoot"
+												]
+											},
+											{
+												"open": {
+													"animations": [
+														"shoot"
+													],
+													"transitions": [
+														{
+															"default": "!query.has_target"
+														},
+														{
+															"fuse": "!query.is_charged && query.any_animation_finished"
+														}
+													]
+												},
+												"key": "transitions",
+												"children": [
+													{
+														"open": [
+															{
+																"default": "!query.has_target"
+															},
+															{
+																"fuse": "!query.is_charged && query.any_animation_finished"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"default": "!query.has_target"
+														}
+													},
+													{
+														"open": [
+															{
+																"default": "!query.has_target"
+															},
+															{
+																"fuse": "!query.is_charged && query.any_animation_finished"
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"fuse": "!query.is_charged && query.any_animation_finished"
+														}
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

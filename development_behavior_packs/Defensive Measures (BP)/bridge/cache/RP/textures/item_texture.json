@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\SatchTFF\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\textures\\item_texture.json",
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\textures\\item_texture.json",
 	"file_type": "item_texture",
 	"format_version": 1,
 	"file_uuid": "3cbfba58_111d_416f_8ce2_8e41381237de",
-	"file_version": 1,
+	"file_version": 2,
 	"cache_content": {
 		"children": [
 			{
@@ -19,6 +19,11 @@
 					"resource_pack_name": "Defensive Measures (RP)",
 					"texture_name": "atlas.items",
 					"texture_data": {
+						"turret_remover": {
+							"textures": [
+								"textures/items/turret_remover"
+							]
+						},
 						"cannon_turret": {
 							"textures": [
 								"textures/items/cannon/cannon_turret"
@@ -50,6 +55,60 @@
 				"children": [
 					{
 						"open": {
+							"turret_remover": {
+								"textures": [
+									"textures/items/turret_remover"
+								]
+							},
+							"cannon_turret": {
+								"textures": [
+									"textures/items/cannon/cannon_turret"
+								]
+							},
+							"cannon_base": {
+								"textures": [
+									"textures/items/cannon/cannon_base"
+								]
+							},
+							"cannon_stand": {
+								"textures": [
+									"textures/items/cannon/cannon_stand"
+								]
+							},
+							"unfinished_cannon_head": {
+								"textures": [
+									"textures/items/cannon/unfinished_cannon_head"
+								]
+							},
+							"cannon_head": {
+								"textures": [
+									"textures/items/cannon/cannon_head"
+								]
+							}
+						},
+						"key": "turret_remover",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/turret_remover"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/turret_remover"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"turret_remover": {
+								"textures": [
+									"textures/items/turret_remover"
+								]
+							},
 							"cannon_turret": {
 								"textures": [
 									"textures/items/cannon/cannon_turret"
@@ -94,6 +153,11 @@
 					},
 					{
 						"open": {
+							"turret_remover": {
+								"textures": [
+									"textures/items/turret_remover"
+								]
+							},
 							"cannon_turret": {
 								"textures": [
 									"textures/items/cannon/cannon_turret"
@@ -138,6 +202,11 @@
 					},
 					{
 						"open": {
+							"turret_remover": {
+								"textures": [
+									"textures/items/turret_remover"
+								]
+							},
 							"cannon_turret": {
 								"textures": [
 									"textures/items/cannon/cannon_turret"
@@ -182,6 +251,11 @@
 					},
 					{
 						"open": {
+							"turret_remover": {
+								"textures": [
+									"textures/items/turret_remover"
+								]
+							},
 							"cannon_turret": {
 								"textures": [
 									"textures/items/cannon/cannon_turret"
@@ -226,6 +300,11 @@
 					},
 					{
 						"open": {
+							"turret_remover": {
+								"textures": [
+									"textures/items/turret_remover"
+								]
+							},
 							"cannon_turret": {
 								"textures": [
 									"textures/items/cannon/cannon_turret"

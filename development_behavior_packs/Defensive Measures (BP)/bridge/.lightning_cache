@@ -1,5 +1,767 @@
 {
 	"entity": {
+		"BP/entities/cannon_turret.json": {
+			"events": [
+				"removeTurret"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"defensive:cannon_turret"
+			],
+			"animation_references": [],
+			"families": [
+				"cannon",
+				"turret"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/cannonball.json": {
+			"events": [
+				"minecraft:explode"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"defensive:cannonball"
+			],
+			"animation_references": [],
+			"families": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/zombie.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:as_adult",
+				"minecraft:as_baby",
+				"minecraft:start_transforming",
+				"minecraft:stop_transforming",
+				"minecraft:convert_to_drowned"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:zombie"
+			],
+			"animation_references": [],
+			"families": [
+				"zombie",
+				"undead",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/blaze.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"switch_to_melee",
+				"switch_to_ranged",
+				"minecraft:on_hurt_event"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:blaze"
+			],
+			"animation_references": [],
+			"families": [
+				"blaze",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/cave_spider.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:become_hostile",
+				"minecraft:become_neutral",
+				"minecraft:become_angry",
+				"minecraft:on_calm"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:cave_spider"
+			],
+			"animation_references": [],
+			"families": [
+				"cavespider",
+				"monster",
+				"arthropod",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/drowned.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:as_baby",
+				"minecraft:as_adult",
+				"minecraft:switch_to_melee",
+				"minecraft:switch_to_ranged",
+				"minecraft:has_target",
+				"minecraft:lost_target"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:drowned"
+			],
+			"animation_references": [],
+			"families": [
+				"drowned",
+				"zombie",
+				"undead",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/elder_guardian.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:elder_guardian"
+			],
+			"animation_references": [],
+			"families": [
+				"guardian_elder",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/endermite.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:endermite"
+			],
+			"animation_references": [],
+			"families": [
+				"endermite",
+				"arthropod",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/evocation_illager.json": {
+			"events": [
+				"minecraft:spawn_for_raid",
+				"minecraft:start_celebrating",
+				"minecraft:stop_celebrating"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:evocation_illager"
+			],
+			"animation_references": [],
+			"families": [
+				"evocation_illager",
+				"monster",
+				"illager",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/ghast.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:ghast"
+			],
+			"animation_references": [],
+			"families": [
+				"ghast",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/guardian.json": {
+			"events": [
+				"minecraft:target_too_close",
+				"minecraft:target_far_enough"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:guardian"
+			],
+			"animation_references": [],
+			"families": [
+				"guardian",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/husk.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:start_transforming",
+				"minecraft:stop_transforming",
+				"minecraft:convert_to_zombie"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:husk"
+			],
+			"animation_references": [],
+			"families": [
+				"husk",
+				"zombie",
+				"undead",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/magma_cube.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:become_calm",
+				"minecraft:become_aggressive"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:magma_cube"
+			],
+			"animation_references": [],
+			"families": [
+				"magmacube",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/phantom.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:phantom"
+			],
+			"animation_references": [],
+			"families": [
+				"phantom",
+				"undead",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/piglin_brute.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"stop_zombification_event",
+				"start_zombification_event",
+				"become_angry_event",
+				"become_calm_event",
+				"become_zombie_event",
+				"important_block_destroyed_event",
+				"go_back_to_spawn_failed"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:piglin_brute"
+			],
+			"animation_references": [],
+			"families": [
+				"piglin",
+				"adult_piglin",
+				"piglin_brute",
+				"monster"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/pillager.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:spawn_for_raid",
+				"minecraft:spawn_as_patrol_follower",
+				"minecraft:spawn_as_illager_captain",
+				"minecraft:promote_to_illager_captain",
+				"minecraft:promote_to_patrol_captain",
+				"minecraft:melee_mode",
+				"minecraft:ranged_mode",
+				"minecraft:start_celebrating",
+				"minecraft:stop_celebrating",
+				"minecraft:calm"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:pillager"
+			],
+			"animation_references": [],
+			"families": [
+				"pillager",
+				"monster",
+				"illager",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/ravager.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:spawn_for_raid",
+				"minecraft:spawn_for_raid_with_evoker_rider",
+				"minecraft:spawn_for_raid_with_pillager_rider",
+				"minecraft:spawn_with_pillager_rider",
+				"minecraft:spawn_with_pillager_captain_rider",
+				"minecraft:spawn_with_vindicator_rider",
+				"minecraft:spawn_with_vindicator_captain_rider",
+				"minecraft:become_stunned",
+				"minecraft:start_roar",
+				"minecraft:end_roar",
+				"minecraft:start_celebrating",
+				"minecraft:stop_celebrating"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:ravager"
+			],
+			"animation_references": [],
+			"families": [
+				"monster",
+				"illager",
+				"ravager",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/shulker.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:turn_purple",
+				"minecraft:turn_black",
+				"minecraft:turn_blue",
+				"minecraft:turn_brown",
+				"minecraft:turn_cyan",
+				"minecraft:turn_gray",
+				"minecraft:turn_green",
+				"minecraft:turn_light_blue",
+				"minecraft:turn_lime",
+				"minecraft:turn_magenta",
+				"minecraft:turn_orange",
+				"minecraft:turn_pink",
+				"minecraft:turn_red",
+				"minecraft:turn_silver",
+				"minecraft:turn_white",
+				"minecraft:turn_yellow"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:shulker"
+			],
+			"animation_references": [],
+			"families": [
+				"shulker",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/silverfish.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:become_angry",
+				"minecraft:on_calm"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:silverfish"
+			],
+			"animation_references": [],
+			"families": [
+				"silverfish",
+				"monster",
+				"mob",
+				"arthropod"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/skeleton.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:spring_trap",
+				"minecraft:melee_mode",
+				"minecraft:ranged_mode"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:skeleton"
+			],
+			"animation_references": [],
+			"families": [
+				"skeleton",
+				"undead",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/slime.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:become_calm",
+				"minecraft:become_aggressive"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:slime"
+			],
+			"animation_references": [],
+			"families": [
+				"slime",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/spider.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:become_hostile",
+				"minecraft:become_neutral",
+				"minecraft:become_angry",
+				"minecraft:become_calm"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:spider"
+			],
+			"animation_references": [],
+			"families": [
+				"spider",
+				"monster",
+				"mob",
+				"arthropod"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/stray.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"change_to_skeleton",
+				"minecraft:melee_mode",
+				"minecraft:ranged_mode"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:stray"
+			],
+			"animation_references": [],
+			"families": [
+				"stray",
+				"skeleton",
+				"monster",
+				"mob",
+				"undead"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/vex.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:vex"
+			],
+			"animation_references": [],
+			"families": [
+				"vex",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/vindicator.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"minecraft:spawn_as_patrol_follower",
+				"minecraft:become_aggro",
+				"minecraft:stop_aggro",
+				"minecraft:start_johnny",
+				"minecraft:stop_johnny",
+				"minecraft:spawn_for_raid",
+				"minecraft:spawn_as_illager_captain",
+				"minecraft:promote_to_illager_captain",
+				"minecraft:promote_to_patrol_captain",
+				"minecraft:start_celebrating",
+				"minecraft:stop_celebrating"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:vindicator"
+			],
+			"animation_references": [],
+			"families": [
+				"vindicator",
+				"monster",
+				"illager",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/witch.json": {
+			"events": [
+				"minecraft:spawn_for_raid",
+				"minecraft:start_celebrating",
+				"minecraft:stop_celebrating"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:witch"
+			],
+			"animation_references": [],
+			"families": [
+				"witch",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/wither_skeleton.json": {
+			"events": [
+				"minecraft:entity_spawned"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:wither_skeleton"
+			],
+			"animation_references": [],
+			"families": [
+				"wither",
+				"monster",
+				"undead",
+				"skeleton",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/zombie_villager.json": {
+			"events": [
+				"villager_converted",
+				"minecraft:entity_spawned",
+				"minecraft:entity_transformed",
+				"minecraft:become_cleric",
+				"from_village"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:zombie_villager"
+			],
+			"animation_references": [],
+			"families": [
+				"farmer",
+				"zombie",
+				"zombie_villager",
+				"undead",
+				"monster",
+				"mob",
+				"fisherman",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"shepherd",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"fletcher",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"librarian",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"cartographer",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"cleric",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"armorer",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"weaponsmith",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"toolsmith",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"butcher",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"leatherworker",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/vanilla/zombie_villager_v2.json": {
+			"events": [
+				"villager_converted",
+				"minecraft:entity_spawned",
+				"minecraft:spawn_skilled_adult",
+				"minecraft:entity_transformed",
+				"minecraft:become_cleric",
+				"from_village",
+				"minecraft:add_biome_and_skin"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:zombie_villager_v2"
+			],
+			"animation_references": [],
+			"families": [
+				"unskilled",
+				"zombie",
+				"zombie_villager",
+				"undead",
+				"monster",
+				"mob",
+				"nitwit",
+				"zombie",
+				"zombie_villager",
+				"undead",
+				"monster",
+				"mob",
+				"farmer",
+				"zombie",
+				"zombie_villager",
+				"undead",
+				"monster",
+				"mob",
+				"fisherman",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"shepherd",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"fletcher",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"librarian",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"cartographer",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"cleric",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"armorer",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"weaponsmith",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"toolsmith",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"butcher",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"leatherworker",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob",
+				"stone_mason",
+				"zombie_villager",
+				"zombie",
+				"undead",
+				"monster",
+				"mob"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
 		"BP/entities/player.json": {
 			"events": [
 				"minecraft:gain_bad_omen",
@@ -14,20 +776,6 @@
 			"animation_references": [],
 			"families": [
 				"player"
-			],
-			"custom_commands": [],
-			"custom_components": []
-		},
-		"BP/entities/cannon_turret.json": {
-			"events": [],
-			"bridge_core_tags": [],
-			"identifiers": [
-				"defensive:cannon_turret"
-			],
-			"animation_references": [],
-			"families": [
-				"turret",
-				"cannon"
 			],
 			"custom_commands": [],
 			"custom_components": []
@@ -63,6 +811,42 @@
 				"defensive:cannon_turret"
 			],
 			"custom_commands": []
+		},
+		"BP/items/cannon_turret/cannon_stand.json": {
+			"identifiers": [
+				"defensive:cannon_stand"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cannon_turret/cannon_turret.json": {
+			"identifiers": [
+				"defensive:cannon_turret"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cannon_turret/cannon_base.json": {
+			"identifiers": [
+				"defensive:cannon_base"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cannon_turret/unfinished_cannon_head.json": {
+			"identifiers": [
+				"defensive:unfinished_cannon_head"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cannon_turret/cannon_head.json": {
+			"identifiers": [
+				"defensive:cannon_head"
+			],
+			"custom_commands": []
+		},
+		"BP/items/turret_remover.json": {
+			"identifiers": [
+				"defensive:turret_remover"
+			],
+			"custom_commands": []
 		}
 	},
 	"recipe": {
@@ -90,6 +874,41 @@
 			"tags": [
 				"crafting_table"
 			]
+		},
+		"BP/recipes/turret_remover.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/cannon_base.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/cannon_stand.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/unfinished_cannon_head.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/cannon_head.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/cannon_turret.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/cannon_turret/cannon_turret.shortcut.json": {
+			"tags": [
+				"crafting_table"
+			]
 		}
 	},
 	"client_entity": {
@@ -98,18 +917,38 @@
 				"defensive:cannon_turret"
 			],
 			"particle_references": [
-				"muzzle_flash",
-				"lit_fuse"
+				"flash",
+				"fuse"
 			],
 			"animation_references": [
-				"idle",
+				"setup",
+				"look_at_target",
+				"fuse",
 				"shoot",
-				"destroyed"
+				"firing_sequence",
+				"death"
 			],
-			"sound_references": [
-				"shoot",
-				"destroyed"
+			"sound_references": [],
+			"texture_references": [
+				"default"
 			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		},
+		"RP/entity/cannonball.entity.json": {
+			"identifiers": [
+				"defensive:cannonball"
+			],
+			"particle_references": [],
+			"animation_references": [],
+			"sound_references": [],
 			"texture_references": [
 				"default"
 			],
@@ -128,16 +967,19 @@
 		"RP/sounds/sound_definitions.json": {
 			"ids": [
 				"cannon.shoot",
-				"cannon.destroyed"
+				"cannon.destroyed",
+				"cannon.hit"
 			]
 		}
 	},
 	"rp_animation": {
 		"RP/animations/cannon_turret.animation.json": {
 			"ids": [
+				"animation.cannon_turret.setup",
+				"animation.cannon_turret.look_at_target",
+				"animation.cannon_turret.fuse",
 				"animation.cannon_turret.shoot",
-				"animation.cannon_turret.idle",
-				"animation.cannon_turret.destroyed"
+				"animation.cannon_turret.death"
 			]
 		}
 	},
@@ -153,6 +995,27 @@
 			"ids": [
 				"controller.render.cannon_turret"
 			]
+		},
+		"RP/render_controllers/cannon_turret.render_controller.json": {
+			"ids": [
+				"controller.render.cannon_turret"
+			]
+		},
+		"RP/render_controllers/cannonball.render_controller.json": {
+			"ids": [
+				"controller.render.cannonball"
+			]
 		}
+	},
+	"rp_animation_controller": {
+		"RP/animation_controllers/cannon_turret.animation_controller.json": {
+			"ids": [
+				"controller.animation.cannon_turret.firing_sequence"
+			]
+		}
+	},
+	"function": {
+		"d7595a9a_260a_402d_a8fe_d437aebac80b": {},
+		"6ca119ab_cd37_44b2_aeeb_0ce10468c3f5": {}
 	}
 }

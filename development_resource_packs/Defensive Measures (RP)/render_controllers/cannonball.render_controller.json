@@ -1,0 +1,29 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.cannonball": {
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			],
+			"is_hurt_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"on_fire_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			}
+		}
+	}
+}
