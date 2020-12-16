@@ -19,7 +19,7 @@
 					"relative_to": {
 						"rotation": "entity"
 					},
-					"rotation": [0, "-query.body_y_rotation", 0]
+					"rotation": [0, 0, 0]
 				},
 				"stand": {
 					"relative_to": {
@@ -42,6 +42,7 @@
 			}
 		},
 		"animation.cannon_turret.shoot": {
+			"override_previous_animation": true,
 			"animation_length": 0.52,
 			"bones": {
 				"base": {

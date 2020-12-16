@@ -8,7 +8,7 @@
 					"relative_to": {
 						"rotation": "entity"
 					},
-					"rotation": [0, "this + query.anim_time", 0]
+					"rotation": [0, "-query.body_y_rotation", 0]
 				}
 			}
 		},
@@ -19,7 +19,7 @@
 					"relative_to": {
 						"rotation": "entity"
 					},
-					"rotation": [0, "-query.body_y_rotation", 0]
+					"rotation": [0, 0, 0]
 				},
 				"head": {
 					"relative_to": {
@@ -53,7 +53,7 @@
 					},
 					"rotation": {
 						"0.0": [0, "-query.target_y_rotation", 0],
-						"1.24": [0, "-query.target_y_rotation",0]
+						"1.24": [0, "-query.target_y_rotation", 0]
 					}
 				},
 				"leftside1": {
@@ -370,33 +370,60 @@
 			}
 		},
 		"animation.ballista.death": {
-			"animation_length": 1.25,
+			"animation_length": 1.5,
 			"bones": {
 				"base": {
 					"relative_to": {
 						"rotation": "entity"
 					},
-					"rotation": [0, 0, "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"]
+					"rotation": [0, "this", "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"]
 				},
 				"head": {
-					"rotation": [0, 0, "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"]
-				},
-				"bowhead": {
+					"relative_to": {
+						"rotation": "entity"
+					},
 					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.16": [-24, 0, 0],
-						"0.32": [-48, 0, 0],
-						"0.6": [0, 0, 0]
+						"0.0": [0, "-query.body_y_rotation", "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"],
+						"0.16": [-24, "-query.body_y_rotation", "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"],
+						"0.32": [-48, "-query.body_y_rotation", "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"],
+						"0.6": [0, "-query.body_y_rotation", "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"]
 					},
 					"position": {
 						"0.0": [0, 0, 0],
-						"0.08": [0, -0.13, 3.1625],
-						"0.16": [0, -0.9, 6.195],
-						"0.24": [0, -2.3, 9],
-						"0.32": [0, -4.25, 11.5],
-						"0.4": [0, -6.4, 14.57],
-						"0.48": [0, -8.54, 15.64],
+						"0.08": [0, -0.025, 2.125],
+						"0.16": [0, -0.5, 4.15],
+						"0.24": [0, -1.35, 6.075],
+						"0.32": [0, -2.55, 7.75],
+						"0.4": [0, -6.4, 12.57],
+						"0.48": [0, -8.54, 14.64],
 						"0.6": [0, -11, 15.5]
+					}
+				},
+				"bow": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": {
+						"0.0": [0, "this", "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"]
+					}
+				},
+				"stand": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.6": [-90, 0, 0],
+						"0.76": ["-90 + Math.random(-0.5, 0.5)", 0, 0],
+						"0.92": [-90, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.16": [0, 0.4, 0.1],
+						"0.32": [0, 0.75, 0.3],
+						"0.48": [0, 0.95, 0.7],
+						"0.6": [0, 1, 1],
+						"0.92": [0, 1, 1]
 					}
 				},
 				"leftside1": {
@@ -581,22 +608,6 @@
 					"scale": {
 						"0.68": [1, 1, 1],
 						"0.72": [0, 0, 0]
-					}
-				},
-				"stand": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.6": [-90, 0, 0],
-						"0.76": ["-90 + Math.random(-0.5, 0.5)", 0, 0],
-						"0.92": [-90, 0, 0]
-					},
-					"position": {
-						"0.0": [0, 0, 0],
-						"0.16": [0, 0.4, 0.1],
-						"0.32": [0, 0.75, 0.3],
-						"0.48": [0, 0.95, 0.7],
-						"0.6": [0, 1, 1],
-						"0.92": [0, 1, 1]
 					}
 				}
 			}

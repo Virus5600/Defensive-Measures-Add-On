@@ -1,17 +1,69 @@
 {
-	"file_path": "C:\\Users\\SatchTFF\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\textures\\terrain_texture.json",
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\textures\\terrain_texture.json",
 	"file_type": "terrain_texture",
 	"format_version": 1,
 	"file_uuid": "15c9e291_78c1_49e3_b2f0_320e89949d5a",
-	"file_version": 0,
+	"file_version": 2,
 	"cache_content": {
-		"is_minified": true,
-		"children": {
-			"resource_pack_name": "Defensive Measures (RP)",
-			"texture_name": "atlas.terrain",
-			"padding": 8,
-			"num_mip_levels": 4,
-			"texture_data": {}
-		}
+		"children": [
+			{
+				"data": "Defensive Measures (RP)",
+				"key": "resource_pack_name"
+			},
+			{
+				"data": "atlas.terrain",
+				"key": "texture_name"
+			},
+			{
+				"data": "8",
+				"key": "padding"
+			},
+			{
+				"data": "4",
+				"key": "num_mip_levels"
+			},
+			{
+				"open": {
+					"resource_pack_name": "Defensive Measures (RP)",
+					"texture_name": "atlas.terrain",
+					"padding": 8,
+					"num_mip_levels": 4,
+					"texture_data": {
+						"arrow_head": {
+							"textures": [
+								"textures/blocks/arrow_head"
+							]
+						}
+					}
+				},
+				"key": "texture_data",
+				"children": [
+					{
+						"open": {
+							"arrow_head": {
+								"textures": [
+									"textures/blocks/arrow_head"
+								]
+							}
+						},
+						"key": "arrow_head",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/blocks/arrow_head"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/blocks/arrow_head"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
 	}
 }

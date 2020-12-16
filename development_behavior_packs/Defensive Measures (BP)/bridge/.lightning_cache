@@ -1094,5 +1094,18 @@
 		"d7595a9a_260a_402d_a8fe_d437aebac80b": {},
 		"6ca119ab_cd37_44b2_aeeb_0ce10468c3f5": {},
 		"80f647b4_a3b8_44d9_afcd_63d9001eb047": {}
+	},
+	"block": {
+		"BP/blocks/arrow_head.json": {
+			"identifiers": [
+				"defensive:arrow_head"
+			],
+			"events": [
+				"dealDamage"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		}
 	}
 }

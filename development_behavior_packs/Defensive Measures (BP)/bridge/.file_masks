@@ -407,5 +407,11 @@
 	},
 	"RP/animation_controllers/ballista.animation_controller.json": {
 		"data": {}
+	},
+	"BP/blocks/arrow_head.json": {
+		"data": {}
+	},
+	"RP/models/blocks/arrow_head.geo.json": {
+		"data": {}
 	}
 }

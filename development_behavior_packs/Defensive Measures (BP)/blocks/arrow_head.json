@@ -1,0 +1,34 @@
+//bridge-file-version: #12
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "defensive:arrow_head",
+			"register_to_creative_menu": true
+		},
+		"components": {
+			"minecraft:destroy_time": 2.5,
+			"minecraft:geometry": "geometry.arrow_head",
+			"minecraft:on_step_on": {
+				"event": "dealDamage"
+			},
+			"minecraft:explosion_resistance": 1,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "arrow_head",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:display_name": {}
+		},
+		"events": {
+			"dealDamage": {
+				"damage": {
+					"target": "other",
+					"type": "contact",
+					"amount": 2
+				}
+			}
+		}
+	}
+}
