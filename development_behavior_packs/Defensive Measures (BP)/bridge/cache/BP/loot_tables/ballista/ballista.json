@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\loot_tables\\cannon_turret\\cannon_turret.json",
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\loot_tables\\ballista\\ballista.json",
 	"file_type": "loot_table",
 	"format_version": 1,
-	"file_uuid": "6bf6a3b3_6aca_4621_9e3d_21b9a21de8aa",
-	"file_version": 11,
+	"file_uuid": "d111f1d9_d7bd_4cab_b576_5fafc064b313",
+	"file_version": 1,
 	"cache_content": {
 		"children": [
 			{
@@ -15,12 +15,12 @@
 								{
 									"type": "loot_table",
 									"weight": 20,
-									"name": "loot_tables/ballista/ballista.head_1.json"
+									"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
 								},
 								{
 									"type": "loot_table",
 									"weight": 40,
-									"name": "loot_tables/cannon_turret/ballista.head_2.json"
+									"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
 								}
 							]
 						},
@@ -38,10 +38,6 @@
 												"min": 1,
 												"max": 1
 											}
-										},
-										{
-											"function": "set_data",
-											"data": 0
 										}
 									]
 								},
@@ -73,12 +69,12 @@
 									{
 										"type": "loot_table",
 										"weight": 20,
-										"name": "loot_tables/ballista/ballista.head_1.json"
+										"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
 									},
 									{
 										"type": "loot_table",
 										"weight": 40,
-										"name": "loot_tables/cannon_turret/ballista.head_2.json"
+										"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
 									}
 								]
 							},
@@ -96,10 +92,6 @@
 													"min": 1,
 													"max": 1
 												}
-											},
-											{
-												"function": "set_data",
-												"data": 0
 											}
 										]
 									},
@@ -132,12 +124,12 @@
 										{
 											"type": "loot_table",
 											"weight": 20,
-											"name": "loot_tables/ballista/ballista.head_1.json"
+											"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
 										},
 										{
 											"type": "loot_table",
 											"weight": 40,
-											"name": "loot_tables/cannon_turret/ballista.head_2.json"
+											"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
 										}
 									]
 								},
@@ -148,19 +140,19 @@
 											{
 												"type": "loot_table",
 												"weight": 20,
-												"name": "loot_tables/ballista/ballista.head_1.json"
+												"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
 											},
 											{
 												"type": "loot_table",
 												"weight": 40,
-												"name": "loot_tables/cannon_turret/ballista.head_2.json"
+												"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
 											}
 										],
 										"is_minified": true,
 										"children": {
 											"type": "loot_table",
 											"weight": 20,
-											"name": "loot_tables/ballista/ballista.head_1.json"
+											"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
 										}
 									},
 									{
@@ -168,19 +160,19 @@
 											{
 												"type": "loot_table",
 												"weight": 20,
-												"name": "loot_tables/ballista/ballista.head_1.json"
+												"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
 											},
 											{
 												"type": "loot_table",
 												"weight": 40,
-												"name": "loot_tables/cannon_turret/ballista.head_2.json"
+												"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
 											}
 										],
 										"is_minified": true,
 										"children": {
 											"type": "loot_table",
 											"weight": 40,
-											"name": "loot_tables/cannon_turret/ballista.head_2.json"
+											"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
 										}
 									}
 								]
@@ -195,12 +187,12 @@
 									{
 										"type": "loot_table",
 										"weight": 20,
-										"name": "loot_tables/ballista/ballista.head_1.json"
+										"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
 									},
 									{
 										"type": "loot_table",
 										"weight": 40,
-										"name": "loot_tables/cannon_turret/ballista.head_2.json"
+										"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
 									}
 								]
 							},
@@ -218,10 +210,6 @@
 													"min": 1,
 													"max": 1
 												}
-											},
-											{
-												"function": "set_data",
-												"data": 0
 											}
 										]
 									},
@@ -262,10 +250,6 @@
 														"min": 1,
 														"max": 1
 													}
-												},
-												{
-													"function": "set_data",
-													"data": 0
 												}
 											]
 										},
@@ -300,10 +284,6 @@
 															"min": 1,
 															"max": 1
 														}
-													},
-													{
-														"function": "set_data",
-														"data": 0
 													}
 												]
 											},
@@ -347,10 +327,6 @@
 																"min": 1,
 																"max": 1
 															}
-														},
-														{
-															"function": "set_data",
-															"data": 0
 														}
 													]
 												},
@@ -364,40 +340,29 @@
 																	"min": 1,
 																	"max": 1
 																}
-															},
-															{
-																"function": "set_data",
-																"data": 0
 															}
 														],
-														"is_minified": true,
-														"children": {
-															"function": "set_count",
-															"count": {
-																"min": 1,
-																"max": 1
-															}
-														}
-													},
-													{
-														"open": [
+														"children": [
 															{
-																"function": "set_count",
-																"count": {
+																"data": "set_count",
+																"key": "function"
+															},
+															{
+																"open": {
+																	"function": "set_count",
+																	"count": {
+																		"min": 1,
+																		"max": 1
+																	}
+																},
+																"key": "count",
+																"is_minified": true,
+																"children": {
 																	"min": 1,
 																	"max": 1
 																}
-															},
-															{
-																"function": "set_data",
-																"data": 0
 															}
-														],
-														"is_minified": true,
-														"children": {
-															"function": "set_data",
-															"data": 0
-														}
+														]
 													}
 												]
 											}
@@ -416,10 +381,6 @@
 															"min": 1,
 															"max": 1
 														}
-													},
-													{
-														"function": "set_data",
-														"data": 0
 													}
 												]
 											},

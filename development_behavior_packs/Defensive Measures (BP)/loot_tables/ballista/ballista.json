@@ -1,4 +1,4 @@
-//bridge-file-version: #11
+//bridge-file-version: #1
 {
 	"pools": [
 		{
@@ -7,12 +7,12 @@
 				{
 					"type": "loot_table",
 					"weight": 20,
-					"name": "loot_tables/ballista/ballista.head_1.json"
+					"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
 				},
 				{
 					"type": "loot_table",
 					"weight": 40,
-					"name": "loot_tables/cannon_turret/ballista.head_2.json"
+					"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
 				}
 			]
 		},
@@ -30,10 +30,6 @@
 								"min": 1,
 								"max": 1
 							}
-						},
-						{
-							"function": "set_data",
-							"data": 0
 						}
 					]
 				},

@@ -3,7 +3,7 @@
 	"file_type": "item_texture",
 	"format_version": 1,
 	"file_uuid": "3cbfba58_111d_416f_8ce2_8e41381237de",
-	"file_version": 2,
+	"file_version": 6,
 	"cache_content": {
 		"children": [
 			{
@@ -48,6 +48,26 @@
 							"textures": [
 								"textures/items/cannon/cannon_head"
 							]
+						},
+						"ballista": {
+							"textures": [
+								"textures/items/ballista/ballista_icon"
+							]
+						},
+						"ballista_base": {
+							"textures": [
+								"textures/items/ballista/ballista_base"
+							]
+						},
+						"ballista_base_with_stand": {
+							"textures": [
+								"textures/items/ballista/ballista_base_with_stand"
+							]
+						},
+						"ballista_bow": {
+							"textures": [
+								"textures/items/ballista/ballista_bow"
+							]
 						}
 					}
 				},
@@ -83,6 +103,26 @@
 							"cannon_head": {
 								"textures": [
 									"textures/items/cannon/cannon_head"
+								]
+							},
+							"ballista": {
+								"textures": [
+									"textures/items/ballista/ballista_icon"
+								]
+							},
+							"ballista_base": {
+								"textures": [
+									"textures/items/ballista/ballista_base"
+								]
+							},
+							"ballista_base_with_stand": {
+								"textures": [
+									"textures/items/ballista/ballista_base_with_stand"
+								]
+							},
+							"ballista_bow": {
+								"textures": [
+									"textures/items/ballista/ballista_bow"
 								]
 							}
 						},
@@ -133,6 +173,26 @@
 								"textures": [
 									"textures/items/cannon/cannon_head"
 								]
+							},
+							"ballista": {
+								"textures": [
+									"textures/items/ballista/ballista_icon"
+								]
+							},
+							"ballista_base": {
+								"textures": [
+									"textures/items/ballista/ballista_base"
+								]
+							},
+							"ballista_base_with_stand": {
+								"textures": [
+									"textures/items/ballista/ballista_base_with_stand"
+								]
+							},
+							"ballista_bow": {
+								"textures": [
+									"textures/items/ballista/ballista_bow"
+								]
 							}
 						},
 						"key": "cannon_turret",
@@ -181,6 +241,26 @@
 							"cannon_head": {
 								"textures": [
 									"textures/items/cannon/cannon_head"
+								]
+							},
+							"ballista": {
+								"textures": [
+									"textures/items/ballista/ballista_icon"
+								]
+							},
+							"ballista_base": {
+								"textures": [
+									"textures/items/ballista/ballista_base"
+								]
+							},
+							"ballista_base_with_stand": {
+								"textures": [
+									"textures/items/ballista/ballista_base_with_stand"
+								]
+							},
+							"ballista_bow": {
+								"textures": [
+									"textures/items/ballista/ballista_bow"
 								]
 							}
 						},
@@ -231,6 +311,26 @@
 								"textures": [
 									"textures/items/cannon/cannon_head"
 								]
+							},
+							"ballista": {
+								"textures": [
+									"textures/items/ballista/ballista_icon"
+								]
+							},
+							"ballista_base": {
+								"textures": [
+									"textures/items/ballista/ballista_base"
+								]
+							},
+							"ballista_base_with_stand": {
+								"textures": [
+									"textures/items/ballista/ballista_base_with_stand"
+								]
+							},
+							"ballista_bow": {
+								"textures": [
+									"textures/items/ballista/ballista_bow"
+								]
 							}
 						},
 						"key": "cannon_stand",
@@ -279,6 +379,26 @@
 							"cannon_head": {
 								"textures": [
 									"textures/items/cannon/cannon_head"
+								]
+							},
+							"ballista": {
+								"textures": [
+									"textures/items/ballista/ballista_icon"
+								]
+							},
+							"ballista_base": {
+								"textures": [
+									"textures/items/ballista/ballista_base"
+								]
+							},
+							"ballista_base_with_stand": {
+								"textures": [
+									"textures/items/ballista/ballista_base_with_stand"
+								]
+							},
+							"ballista_bow": {
+								"textures": [
+									"textures/items/ballista/ballista_bow"
 								]
 							}
 						},
@@ -329,6 +449,26 @@
 								"textures": [
 									"textures/items/cannon/cannon_head"
 								]
+							},
+							"ballista": {
+								"textures": [
+									"textures/items/ballista/ballista_icon"
+								]
+							},
+							"ballista_base": {
+								"textures": [
+									"textures/items/ballista/ballista_base"
+								]
+							},
+							"ballista_base_with_stand": {
+								"textures": [
+									"textures/items/ballista/ballista_base_with_stand"
+								]
+							},
+							"ballista_bow": {
+								"textures": [
+									"textures/items/ballista/ballista_bow"
+								]
 							}
 						},
 						"key": "cannon_head",
@@ -343,6 +483,282 @@
 								"is_minified": true,
 								"children": [
 									"textures/items/cannon/cannon_head"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"turret_remover": {
+								"textures": [
+									"textures/items/turret_remover"
+								]
+							},
+							"cannon_turret": {
+								"textures": [
+									"textures/items/cannon/cannon_turret"
+								]
+							},
+							"cannon_base": {
+								"textures": [
+									"textures/items/cannon/cannon_base"
+								]
+							},
+							"cannon_stand": {
+								"textures": [
+									"textures/items/cannon/cannon_stand"
+								]
+							},
+							"unfinished_cannon_head": {
+								"textures": [
+									"textures/items/cannon/unfinished_cannon_head"
+								]
+							},
+							"cannon_head": {
+								"textures": [
+									"textures/items/cannon/cannon_head"
+								]
+							},
+							"ballista": {
+								"textures": [
+									"textures/items/ballista/ballista_icon"
+								]
+							},
+							"ballista_base": {
+								"textures": [
+									"textures/items/ballista/ballista_base"
+								]
+							},
+							"ballista_base_with_stand": {
+								"textures": [
+									"textures/items/ballista/ballista_base_with_stand"
+								]
+							},
+							"ballista_bow": {
+								"textures": [
+									"textures/items/ballista/ballista_bow"
+								]
+							}
+						},
+						"key": "ballista",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/ballista/ballista_icon"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/ballista/ballista_icon"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"turret_remover": {
+								"textures": [
+									"textures/items/turret_remover"
+								]
+							},
+							"cannon_turret": {
+								"textures": [
+									"textures/items/cannon/cannon_turret"
+								]
+							},
+							"cannon_base": {
+								"textures": [
+									"textures/items/cannon/cannon_base"
+								]
+							},
+							"cannon_stand": {
+								"textures": [
+									"textures/items/cannon/cannon_stand"
+								]
+							},
+							"unfinished_cannon_head": {
+								"textures": [
+									"textures/items/cannon/unfinished_cannon_head"
+								]
+							},
+							"cannon_head": {
+								"textures": [
+									"textures/items/cannon/cannon_head"
+								]
+							},
+							"ballista": {
+								"textures": [
+									"textures/items/ballista/ballista_icon"
+								]
+							},
+							"ballista_base": {
+								"textures": [
+									"textures/items/ballista/ballista_base"
+								]
+							},
+							"ballista_base_with_stand": {
+								"textures": [
+									"textures/items/ballista/ballista_base_with_stand"
+								]
+							},
+							"ballista_bow": {
+								"textures": [
+									"textures/items/ballista/ballista_bow"
+								]
+							}
+						},
+						"key": "ballista_base",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/ballista/ballista_base"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/ballista/ballista_base"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"turret_remover": {
+								"textures": [
+									"textures/items/turret_remover"
+								]
+							},
+							"cannon_turret": {
+								"textures": [
+									"textures/items/cannon/cannon_turret"
+								]
+							},
+							"cannon_base": {
+								"textures": [
+									"textures/items/cannon/cannon_base"
+								]
+							},
+							"cannon_stand": {
+								"textures": [
+									"textures/items/cannon/cannon_stand"
+								]
+							},
+							"unfinished_cannon_head": {
+								"textures": [
+									"textures/items/cannon/unfinished_cannon_head"
+								]
+							},
+							"cannon_head": {
+								"textures": [
+									"textures/items/cannon/cannon_head"
+								]
+							},
+							"ballista": {
+								"textures": [
+									"textures/items/ballista/ballista_icon"
+								]
+							},
+							"ballista_base": {
+								"textures": [
+									"textures/items/ballista/ballista_base"
+								]
+							},
+							"ballista_base_with_stand": {
+								"textures": [
+									"textures/items/ballista/ballista_base_with_stand"
+								]
+							},
+							"ballista_bow": {
+								"textures": [
+									"textures/items/ballista/ballista_bow"
+								]
+							}
+						},
+						"key": "ballista_base_with_stand",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/ballista/ballista_base_with_stand"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/ballista/ballista_base_with_stand"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"turret_remover": {
+								"textures": [
+									"textures/items/turret_remover"
+								]
+							},
+							"cannon_turret": {
+								"textures": [
+									"textures/items/cannon/cannon_turret"
+								]
+							},
+							"cannon_base": {
+								"textures": [
+									"textures/items/cannon/cannon_base"
+								]
+							},
+							"cannon_stand": {
+								"textures": [
+									"textures/items/cannon/cannon_stand"
+								]
+							},
+							"unfinished_cannon_head": {
+								"textures": [
+									"textures/items/cannon/unfinished_cannon_head"
+								]
+							},
+							"cannon_head": {
+								"textures": [
+									"textures/items/cannon/cannon_head"
+								]
+							},
+							"ballista": {
+								"textures": [
+									"textures/items/ballista/ballista_icon"
+								]
+							},
+							"ballista_base": {
+								"textures": [
+									"textures/items/ballista/ballista_base"
+								]
+							},
+							"ballista_base_with_stand": {
+								"textures": [
+									"textures/items/ballista/ballista_base_with_stand"
+								]
+							},
+							"ballista_bow": {
+								"textures": [
+									"textures/items/ballista/ballista_bow"
+								]
+							}
+						},
+						"key": "ballista_bow",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/ballista/ballista_bow"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/ballista/ballista_bow"
 								]
 							}
 						]

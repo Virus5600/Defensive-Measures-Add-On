@@ -1,8 +1,8 @@
 {
-	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\items\\cannon_turret\\cannon_base.json",
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\items\\ballista\\ballista_bow.json",
 	"file_type": "item",
 	"format_version": 1,
-	"file_uuid": "913bf53b_6547_49fb_8f98_36e750076426",
+	"file_uuid": "cd25fef5_80a0_42ab_bc57_8ac3c54e1538",
 	"file_version": 4,
 	"cache_content": {
 		"children": [
@@ -15,7 +15,7 @@
 					"format_version": "1.16.100",
 					"minecraft:item": {
 						"description": {
-							"identifier": "defensive:cannon_base",
+							"identifier": "defensive:ballista_bow",
 							"category": "items"
 						},
 						"components": {
@@ -24,11 +24,11 @@
 								"parent": "items"
 							},
 							"minecraft:icon": {
-								"texture": "cannon_base"
+								"texture": "ballista_bow"
 							},
 							"minecraft:display_name": {},
 							"minecraft:fuel": {
-								"duration": 15
+								"duration": 20
 							}
 						}
 					}
@@ -38,7 +38,7 @@
 					{
 						"open": {
 							"description": {
-								"identifier": "defensive:cannon_base",
+								"identifier": "defensive:ballista_bow",
 								"category": "items"
 							},
 							"components": {
@@ -47,25 +47,25 @@
 									"parent": "items"
 								},
 								"minecraft:icon": {
-									"texture": "cannon_base"
+									"texture": "ballista_bow"
 								},
 								"minecraft:display_name": {},
 								"minecraft:fuel": {
-									"duration": 15
+									"duration": 20
 								}
 							}
 						},
 						"key": "description",
 						"is_minified": true,
 						"children": {
-							"identifier": "defensive:cannon_base",
+							"identifier": "defensive:ballista_bow",
 							"category": "items"
 						}
 					},
 					{
 						"open": {
 							"description": {
-								"identifier": "defensive:cannon_base",
+								"identifier": "defensive:ballista_bow",
 								"category": "items"
 							},
 							"components": {
@@ -74,11 +74,11 @@
 									"parent": "items"
 								},
 								"minecraft:icon": {
-									"texture": "cannon_base"
+									"texture": "ballista_bow"
 								},
 								"minecraft:display_name": {},
 								"minecraft:fuel": {
-									"duration": 15
+									"duration": 20
 								}
 							}
 						},
@@ -96,10 +96,23 @@
 								}
 							},
 							{
+								"open": {
+									"minecraft:max_stack_size": 16,
+									"minecraft:creative_category": {
+										"parent": "items"
+									},
+									"minecraft:icon": {
+										"texture": "ballista_bow"
+									},
+									"minecraft:display_name": {},
+									"minecraft:fuel": {
+										"duration": 20
+									}
+								},
 								"key": "minecraft:icon",
 								"is_minified": true,
 								"children": {
-									"texture": "cannon_base"
+									"texture": "ballista_bow"
 								}
 							},
 							{
@@ -114,17 +127,17 @@
 										"parent": "items"
 									},
 									"minecraft:icon": {
-										"texture": "cannon_base"
+										"texture": "ballista_bow"
 									},
 									"minecraft:display_name": {},
 									"minecraft:fuel": {
-										"duration": 15
+										"duration": 20
 									}
 								},
 								"key": "minecraft:fuel",
 								"is_minified": true,
 								"children": {
-									"duration": 15
+									"duration": 20
 								}
 							}
 						]

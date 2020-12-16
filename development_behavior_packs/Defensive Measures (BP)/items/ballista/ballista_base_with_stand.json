@@ -1,9 +1,9 @@
-//bridge-file-version: #4
+//bridge-file-version: #3
 {
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "defensive:cannon_base",
+			"identifier": "defensive:ballista_base_with_stand",
 			"category": "items"
 		},
 		"components": {
@@ -12,11 +12,11 @@
 				"parent": "items"
 			},
 			"minecraft:icon": {
-				"texture": "cannon_base"
+				"texture": "ballista_base_with_stand"
 			},
 			"minecraft:display_name": {},
 			"minecraft:fuel": {
-				"duration": 15
+				"duration": 25
 			}
 		},
 		"events": {}

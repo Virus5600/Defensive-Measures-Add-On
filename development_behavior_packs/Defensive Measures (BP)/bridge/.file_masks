@@ -170,6 +170,46 @@
 						}
 					}
 				}
+			},
+			"f2245761_48b2_4142_9385_62e2bdc83b08": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"1e137f70_f431_4270_b85c_58e60634010b": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"cd25fef5_80a0_42ab_bc57_8ac3c54e1538": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"acc1e3c6_d8fd_4e42_8a63_2b9da37ec91b": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
 			}
 		}
 	},
@@ -327,6 +367,45 @@
 		"data": {}
 	},
 	"BP/entities/player.json": {
+		"data": {}
+	},
+	"RP/render_controllers/ballista.render_controllers.json": {
+		"data": {}
+	},
+	"RP/entity/ballista.entity.json": {
+		"data": {}
+	},
+	"RP/models/entity/ballista.geo.json": {
+		"data": {}
+	},
+	"BP/entities/ballista.json": {
+		"data": {}
+	},
+	"BP/loot_tables/ballista/ballista.drop.json": {
+		"data": {}
+	},
+	"BP/loot_tables/ballista/ballista.head_2.json": {
+		"data": {}
+	},
+	"BP/loot_tables/ballista/ballista.head_1.json": {
+		"data": {}
+	},
+	"BP/loot_tables/ballista/ballista.json": {
+		"data": {}
+	},
+	"BP/items/ballista/ballista_base.json": {
+		"data": {}
+	},
+	"BP/items/ballista/ballista_base_with_stand.json": {
+		"data": {}
+	},
+	"BP/items/ballista/ballista_bow.json": {
+		"data": {}
+	},
+	"BP/items/ballista/ballista.json": {
+		"data": {}
+	},
+	"RP/animation_controllers/ballista.animation_controller.json": {
 		"data": {}
 	}
 }

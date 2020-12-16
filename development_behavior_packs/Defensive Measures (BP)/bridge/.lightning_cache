@@ -779,6 +779,22 @@
 			],
 			"custom_commands": [],
 			"custom_components": []
+		},
+		"BP/entities/ballista.json": {
+			"events": [
+				"removeTurret"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"defensive:ballista"
+			],
+			"animation_references": [],
+			"families": [
+				"ballista",
+				"turret"
+			],
+			"custom_commands": [],
+			"custom_components": []
 		}
 	},
 	"item": {
@@ -845,6 +861,30 @@
 		"BP/items/turret_remover.json": {
 			"identifiers": [
 				"defensive:turret_remover"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ballista/ballista_base.json": {
+			"identifiers": [
+				"defensive:ballista_base"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ballista/ballista_base_with_stand.json": {
+			"identifiers": [
+				"defensive:ballista_base_with_stand"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ballista/ballista_bow.json": {
+			"identifiers": [
+				"defensive:ballista_bow"
+			],
+			"custom_commands": []
+		},
+		"BP/items/ballista/ballista.json": {
+			"identifiers": [
+				"defensive:ballista"
 			],
 			"custom_commands": []
 		}
@@ -961,6 +1001,32 @@
 			"geometry_identifiers": [
 				"default"
 			]
+		},
+		"RP/entity/ballista.entity.json": {
+			"identifiers": [
+				"defensive:ballista"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"setup",
+				"look_at_target",
+				"shoot",
+				"firing_sequence",
+				"death"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
 		}
 	},
 	"sound_definition": {
@@ -1005,6 +1071,11 @@
 			"ids": [
 				"controller.render.cannonball"
 			]
+		},
+		"RP/render_controllers/ballista.render_controllers.json": {
+			"ids": [
+				"controller.render.ballista"
+			]
 		}
 	},
 	"rp_animation_controller": {
@@ -1012,10 +1083,16 @@
 			"ids": [
 				"controller.animation.cannon_turret.firing_sequence"
 			]
+		},
+		"RP/animation_controllers/ballista.animation_controller.json": {
+			"ids": [
+				"controller.animation.ballsita.firing_sequence"
+			]
 		}
 	},
 	"function": {
 		"d7595a9a_260a_402d_a8fe_d437aebac80b": {},
-		"6ca119ab_cd37_44b2_aeeb_0ce10468c3f5": {}
+		"6ca119ab_cd37_44b2_aeeb_0ce10468c3f5": {},
+		"80f647b4_a3b8_44d9_afcd_63d9001eb047": {}
 	}
 }
