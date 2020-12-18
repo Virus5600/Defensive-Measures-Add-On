@@ -25,7 +25,11 @@
 				"defensive:cannonball"
 			],
 			"animation_references": [],
-			"families": [],
+			"families": [
+				"projectile",
+				"cannonball",
+				"explosive"
+			],
 			"custom_commands": [],
 			"custom_components": []
 		},
@@ -795,6 +799,23 @@
 			],
 			"custom_commands": [],
 			"custom_components": []
+		},
+		"BP/entities/ballista_arrow.json": {
+			"events": [
+				"despawn"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"defensive:ballista_arrow"
+			],
+			"animation_references": [],
+			"families": [
+				"projectile",
+				"arrow",
+				"ballista_arrow"
+			],
+			"custom_commands": [],
+			"custom_components": []
 		}
 	},
 	"item": {
@@ -887,6 +908,12 @@
 				"defensive:ballista"
 			],
 			"custom_commands": []
+		},
+		"BP/items/ballista/ballista_arrow.json": {
+			"identifiers": [
+				"defensive:ballista_arrow"
+			],
+			"custom_commands": []
 		}
 	},
 	"recipe": {
@@ -946,6 +973,36 @@
 			]
 		},
 		"BP/recipes/cannon_turret/cannon_turret.shortcut.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ballista/ballista_base.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ballista/ballista_base_with_stand.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ballista/ballista_bow.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ballista/ballista_arrow_head.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ballista/ballista_arrow.json": {
+			"tags": [
+				"crafting_table"
+			]
+		},
+		"BP/recipes/ballista/ballista.json": {
 			"tags": [
 				"crafting_table"
 			]
@@ -1027,6 +1084,29 @@
 			"geometry_identifiers": [
 				"default"
 			]
+		},
+		"RP/entity/ballista_arrow.entity.json": {
+			"identifiers": [
+				"defensive:ballista_arrow"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"shake",
+				"move"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
 		}
 	},
 	"sound_definition": {
@@ -1076,6 +1156,11 @@
 			"ids": [
 				"controller.render.ballista"
 			]
+		},
+		"RP/render_controllers/ballista_arrow.render_controller.json": {
+			"ids": [
+				"controller.render.ballista_arrow"
+			]
 		}
 	},
 	"rp_animation_controller": {
@@ -1107,5 +1192,6 @@
 			"custom_commands": [],
 			"custom_components": []
 		}
-	}
+	},
+	"animation": {}
 }

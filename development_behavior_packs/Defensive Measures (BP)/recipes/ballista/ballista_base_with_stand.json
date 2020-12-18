@@ -1,0 +1,30 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "defensive:ballista_base_with_stand"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"f",
+			"s"
+		],
+		"key": {
+			"f": {
+				"item": "minecraft:fence"
+			},
+			"s": {
+				"item": "defensive:ballista_base"
+			}
+		},
+		"result": [
+			{
+				"item": "defensive:ballista_base_with_stand",
+				"count": 1
+			}
+		]
+	}
+}

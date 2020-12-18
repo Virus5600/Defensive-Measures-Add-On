@@ -3,7 +3,7 @@
 	"file_type": "loot_table",
 	"format_version": 1,
 	"file_uuid": "3347a8ce_6fbb_427b_8e81_7fdc0e4fe9d1",
-	"file_version": 0,
+	"file_version": 1,
 	"cache_content": {
 		"children": [
 			{
@@ -14,7 +14,7 @@
 							"entries": [
 								{
 									"type": "item",
-									"name": "defensive:cannon_turret",
+									"name": "defensive:ballista",
 									"functions": [
 										{
 											"function": "set_count",
@@ -39,7 +39,7 @@
 								"entries": [
 									{
 										"type": "item",
-										"name": "defensive:cannon_turret",
+										"name": "defensive:ballista",
 										"functions": [
 											{
 												"function": "set_count",
@@ -65,7 +65,7 @@
 									"entries": [
 										{
 											"type": "item",
-											"name": "defensive:cannon_turret",
+											"name": "defensive:ballista",
 											"functions": [
 												{
 													"function": "set_count",
@@ -85,7 +85,7 @@
 										"open": [
 											{
 												"type": "item",
-												"name": "defensive:cannon_turret",
+												"name": "defensive:ballista",
 												"functions": [
 													{
 														"function": "set_count",
@@ -101,7 +101,7 @@
 										"is_minified": true,
 										"children": {
 											"type": "item",
-											"name": "defensive:cannon_turret",
+											"name": "defensive:ballista",
 											"functions": [
 												{
 													"function": "set_count",

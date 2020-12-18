@@ -3,7 +3,7 @@
 	"file_type": "loot_table",
 	"format_version": 1,
 	"file_uuid": "1f75de19_4f24_4038_892a_b1b9f15a6e61",
-	"file_version": 2,
+	"file_version": 3,
 	"cache_content": {
 		"children": [
 			{
@@ -14,7 +14,7 @@
 							"entries": [
 								{
 									"type": "item",
-									"name": "defensive:cannon_head",
+									"name": "defensive:ballista_bow",
 									"functions": [
 										{
 											"function": "set_count",
@@ -50,7 +50,7 @@
 								"entries": [
 									{
 										"type": "item",
-										"name": "defensive:cannon_head",
+										"name": "defensive:ballista_bow",
 										"functions": [
 											{
 												"function": "set_count",
@@ -87,7 +87,7 @@
 									"entries": [
 										{
 											"type": "item",
-											"name": "defensive:cannon_head",
+											"name": "defensive:ballista_bow",
 											"functions": [
 												{
 													"function": "set_count",
@@ -118,7 +118,7 @@
 										"open": [
 											{
 												"type": "item",
-												"name": "defensive:cannon_head",
+												"name": "defensive:ballista_bow",
 												"functions": [
 													{
 														"function": "set_count",
@@ -145,7 +145,7 @@
 										"is_minified": true,
 										"children": {
 											"type": "item",
-											"name": "defensive:cannon_head",
+											"name": "defensive:ballista_bow",
 											"functions": [
 												{
 													"function": "set_count",
@@ -159,7 +159,7 @@
 										"open": [
 											{
 												"type": "item",
-												"name": "defensive:cannon_head",
+												"name": "defensive:ballista_bow",
 												"functions": [
 													{
 														"function": "set_count",

@@ -1,0 +1,23 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "defensive:ballista_arrow",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:fuel": {
+				"duration": 10
+			},
+			"minecraft:creative_category": {
+				"parent": "items"
+			},
+			"minecraft:icon": {
+				"texture": "ballista_arrow"
+			},
+			"minecraft:display_name": {}
+		},
+		"events": {}
+	}
+}

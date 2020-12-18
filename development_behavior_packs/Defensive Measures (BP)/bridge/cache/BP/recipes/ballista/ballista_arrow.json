@@ -1,0 +1,253 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\recipes\\ballista\\ballista_arrow.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "20412e07_3725_460b_98a0_870b90b15b09",
+	"file_version": 5,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "defensive:ballista_arrow"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							"h",
+							"s",
+							"s"
+						],
+						"key": {
+							"h": {
+								"item": "defensive:arrow_head"
+							},
+							"s": {
+								"item": "minecraft:stick"
+							}
+						},
+						"result": [
+							{
+								"item": "defensive:ballista_arrow"
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ballista_arrow"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"h",
+								"s",
+								"s"
+							],
+							"key": {
+								"h": {
+									"item": "defensive:arrow_head"
+								},
+								"s": {
+									"item": "minecraft:stick"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:ballista_arrow"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "defensive:ballista_arrow"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ballista_arrow"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"h",
+								"s",
+								"s"
+							],
+							"key": {
+								"h": {
+									"item": "defensive:arrow_head"
+								},
+								"s": {
+									"item": "minecraft:stick"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:ballista_arrow"
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ballista_arrow"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"h",
+								"s",
+								"s"
+							],
+							"key": {
+								"h": {
+									"item": "defensive:arrow_head"
+								},
+								"s": {
+									"item": "minecraft:stick"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:ballista_arrow"
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							"h",
+							"s",
+							"s"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ballista_arrow"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"h",
+								"s",
+								"s"
+							],
+							"key": {
+								"h": {
+									"item": "defensive:arrow_head"
+								},
+								"s": {
+									"item": "minecraft:stick"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:ballista_arrow"
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"h": {
+										"item": "defensive:arrow_head"
+									},
+									"s": {
+										"item": "minecraft:stick"
+									}
+								},
+								"key": "h",
+								"is_minified": true,
+								"children": {
+									"item": "defensive:arrow_head"
+								}
+							},
+							{
+								"open": {
+									"h": {
+										"item": "defensive:arrow_head"
+									},
+									"s": {
+										"item": "minecraft:stick"
+									}
+								},
+								"key": "s",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:stick"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ballista_arrow"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								"h",
+								"s",
+								"s"
+							],
+							"key": {
+								"h": {
+									"item": "defensive:arrow_head"
+								},
+								"s": {
+									"item": "minecraft:stick"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:ballista_arrow"
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "defensive:ballista_arrow"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "defensive:ballista_arrow"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

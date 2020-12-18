@@ -210,6 +210,16 @@
 						}
 					}
 				}
+			},
+			"0c49e667_0ddc_4dd8_bc53_386d18bd06aa": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
 			}
 		}
 	},
@@ -412,6 +422,39 @@
 		"data": {}
 	},
 	"RP/models/blocks/arrow_head.geo.json": {
+		"data": {}
+	},
+	"RP/blocks.json": {
+		"data": {}
+	},
+	"BP/recipes/ballista/ballista_base.json": {
+		"data": {}
+	},
+	"RP/render_controllers/ballista_arrow.render_controller.json": {
+		"data": {}
+	},
+	"RP/entity/ballista_arrow.entity.json": {
+		"data": {}
+	},
+	"BP/entities/ballista_arrow.json": {
+		"data": {}
+	},
+	"BP/items/ballista/ballista_arrow.json": {
+		"data": {}
+	},
+	"BP/recipes/ballista/ballista_base_with_stand.json": {
+		"data": {}
+	},
+	"BP/recipes/ballista/ballista_bow.json": {
+		"data": {}
+	},
+	"BP/recipes/ballista/ballista_arrow_head.json": {
+		"data": {}
+	},
+	"BP/recipes/ballista/ballista_arrow.json": {
+		"data": {}
+	},
+	"BP/recipes/ballista/ballista.json": {
 		"data": {}
 	}
 }

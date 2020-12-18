@@ -1,13 +1,37 @@
-//bridge-file-version: #12
+//bridge-file-version: #55
 {
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "defensive:arrow_head",
-			"register_to_creative_menu": true
+			"identifier": "defensive:arrow_head"
 		},
 		"components": {
-			"minecraft:destroy_time": 2.5,
+			"minecraft:block_light_absorption": 1,
+			"minecraft:destroy_time": 1.5,
+			"minecraft:entity_collision": {
+				"origin": [
+					-2,
+					0,
+					-2
+				],
+				"size": [
+					4,
+					4,
+					4
+				]
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-2,
+					0,
+					-2
+				],
+				"size": [
+					4,
+					4,
+					4
+				]
+			},
 			"minecraft:geometry": "geometry.arrow_head",
 			"minecraft:on_step_on": {
 				"event": "dealDamage"
@@ -18,8 +42,7 @@
 					"texture": "arrow_head",
 					"render_method": "blend"
 				}
-			},
-			"minecraft:display_name": {}
+			}
 		},
 		"events": {
 			"dealDamage": {

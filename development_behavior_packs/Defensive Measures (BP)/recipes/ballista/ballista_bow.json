@@ -1,0 +1,37 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "defensive:ballista_bow"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"tst",
+			"sbt",
+			"wst"
+		],
+		"key": {
+			"t": {
+				"item": "minecraft:stick"
+			},
+			"s": {
+				"item": "minecraft:string"
+			},
+			"b": {
+				"item": "minecraft:wooden_button"
+			},
+			"w": {
+				"item": "minecraft:wooden_slab"
+			}
+		},
+		"result": [
+			{
+				"item": "defensive:ballista_bow",
+				"count": 1
+			}
+		]
+	}
+}
