@@ -12,6 +12,35 @@
 				}
 			}
 		},
+		"animation.cannon_turret.look_at_target": {
+			"loop": true,
+			"bones": {
+				"base": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": [0, 0, 0]
+				},
+				"stand": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": [0, "query.target_y_rotation", 0]
+				},
+				"head": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": ["query.target_x_rotation > 30 ? 30 : query.target_x_rotation < -30 ? -30 : query.target_x_rotation > 180 ? -30 : query.target_x_rotation < -180 ? 30 : query.target_x_rotation", "query.target_y_rotation", 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "fuse",
+					"locator": "fuse"
+				}
+			}
+		},
 		"animation.cannon_turret.shoot": {
 			"override_previous_animation": true,
 			"animation_length": 0.52,
@@ -56,35 +85,6 @@
 				"0.04": {
 					"effect": "flash",
 					"locator": "barrel"
-				}
-			}
-		},
-		"animation.cannon_turret.look_at_target": {
-			"loop": true,
-			"bones": {
-				"base": {
-					"relative_to": {
-						"rotation": "entity"
-					},
-					"rotation": [0, 0, 0]
-				},
-				"stand": {
-					"relative_to": {
-						"rotation": "entity"
-					},
-					"rotation": [0, "query.target_y_rotation", 0]
-				},
-				"head": {
-					"relative_to": {
-						"rotation": "entity"
-					},
-					"rotation": ["query.target_x_rotation > 30 ? 30 : query.target_x_rotation < -30 ? -30 : query.target_x_rotation > 180 ? -30 : query.target_x_rotation < -180 ? 30 : query.target_x_rotation", "query.target_y_rotation", 0]
-				}
-			},
-			"particle_effects": {
-				"0.0": {
-					"effect": "fuse",
-					"locator": "fuse"
 				}
 			}
 		},

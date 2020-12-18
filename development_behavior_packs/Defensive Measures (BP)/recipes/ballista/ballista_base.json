@@ -1,0 +1,28 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "defensive:ballista_base"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" s ",
+			"sss",
+			" s "
+		],
+		"key": {
+			"s": {
+				"item": "minecraft:wooden_slab"
+			}
+		},
+		"result": [
+			{
+				"item": "defensive:ballista_base",
+				"count": 1
+			}
+		]
+	}
+}

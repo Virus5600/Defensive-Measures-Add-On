@@ -1,0 +1,350 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\entity\\ballista.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "1496923e_7e77_47e7_9c60_f9769b2a9c7b",
+	"file_version": 13,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "defensive:ballista",
+							"materials": {
+								"default": "entity"
+							},
+							"textures": {
+								"default": "textures/entity/ballista"
+							},
+							"geometry": {
+								"default": "geometry.ballista"
+							},
+							"render_controllers": [
+								"controller.render.ballista"
+							],
+							"animations": {
+								"setup": "animation.ballista.setup",
+								"look_at_target": "animation.ballista.look_at_target",
+								"shoot": "animation.ballista.shoot",
+								"firing_sequence": "controller.animation.ballsita.firing_sequence",
+								"death": "animation.ballista.death"
+							},
+							"scripts": {
+								"animate": [
+									"setup",
+									"look_at_target",
+									"firing_sequence",
+									{
+										"death": "!query.is_alive"
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ballista",
+								"materials": {
+									"default": "entity"
+								},
+								"textures": {
+									"default": "textures/entity/ballista"
+								},
+								"geometry": {
+									"default": "geometry.ballista"
+								},
+								"render_controllers": [
+									"controller.render.ballista"
+								],
+								"animations": {
+									"setup": "animation.ballista.setup",
+									"look_at_target": "animation.ballista.look_at_target",
+									"shoot": "animation.ballista.shoot",
+									"firing_sequence": "controller.animation.ballsita.firing_sequence",
+									"death": "animation.ballista.death"
+								},
+								"scripts": {
+									"animate": [
+										"setup",
+										"look_at_target",
+										"firing_sequence",
+										{
+											"death": "!query.is_alive"
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "defensive:ballista",
+								"key": "identifier"
+							},
+							{
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "entity"
+								}
+							},
+							{
+								"open": {
+									"identifier": "defensive:ballista",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/ballista"
+									},
+									"geometry": {
+										"default": "geometry.ballista"
+									},
+									"render_controllers": [
+										"controller.render.ballista"
+									],
+									"animations": {
+										"setup": "animation.ballista.setup",
+										"look_at_target": "animation.ballista.look_at_target",
+										"shoot": "animation.ballista.shoot",
+										"firing_sequence": "controller.animation.ballsita.firing_sequence",
+										"death": "animation.ballista.death"
+									},
+									"scripts": {
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									}
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/ballista"
+								}
+							},
+							{
+								"open": {
+									"identifier": "defensive:ballista",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/ballista"
+									},
+									"geometry": {
+										"default": "geometry.ballista"
+									},
+									"render_controllers": [
+										"controller.render.ballista"
+									],
+									"animations": {
+										"setup": "animation.ballista.setup",
+										"look_at_target": "animation.ballista.look_at_target",
+										"shoot": "animation.ballista.shoot",
+										"firing_sequence": "controller.animation.ballsita.firing_sequence",
+										"death": "animation.ballista.death"
+									},
+									"scripts": {
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									}
+								},
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.ballista"
+								}
+							},
+							{
+								"open": {
+									"identifier": "defensive:ballista",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/ballista"
+									},
+									"geometry": {
+										"default": "geometry.ballista"
+									},
+									"render_controllers": [
+										"controller.render.ballista"
+									],
+									"animations": {
+										"setup": "animation.ballista.setup",
+										"look_at_target": "animation.ballista.look_at_target",
+										"shoot": "animation.ballista.shoot",
+										"firing_sequence": "controller.animation.ballsita.firing_sequence",
+										"death": "animation.ballista.death"
+									},
+									"scripts": {
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.ballista"
+								]
+							},
+							{
+								"open": {
+									"identifier": "defensive:ballista",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/ballista"
+									},
+									"geometry": {
+										"default": "geometry.ballista"
+									},
+									"render_controllers": [
+										"controller.render.ballista"
+									],
+									"animations": {
+										"setup": "animation.ballista.setup",
+										"look_at_target": "animation.ballista.look_at_target",
+										"shoot": "animation.ballista.shoot",
+										"firing_sequence": "controller.animation.ballsita.firing_sequence",
+										"death": "animation.ballista.death"
+									},
+									"scripts": {
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"setup": "animation.ballista.setup",
+									"look_at_target": "animation.ballista.look_at_target",
+									"shoot": "animation.ballista.shoot",
+									"firing_sequence": "controller.animation.ballsita.firing_sequence",
+									"death": "animation.ballista.death"
+								}
+							},
+							{
+								"open": {
+									"identifier": "defensive:ballista",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/ballista"
+									},
+									"geometry": {
+										"default": "geometry.ballista"
+									},
+									"render_controllers": [
+										"controller.render.ballista"
+									],
+									"animations": {
+										"setup": "animation.ballista.setup",
+										"look_at_target": "animation.ballista.look_at_target",
+										"shoot": "animation.ballista.shoot",
+										"firing_sequence": "controller.animation.ballsita.firing_sequence",
+										"death": "animation.ballista.death"
+									},
+									"scripts": {
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"open": {
+											"animate": [
+												"setup",
+												"look_at_target",
+												"firing_sequence",
+												{
+													"death": "!query.is_alive"
+												}
+											]
+										},
+										"key": "animate",
+										"children": [
+											{
+												"data": "setup"
+											},
+											{
+												"data": "look_at_target"
+											},
+											{
+												"open": [
+													"setup",
+													"look_at_target",
+													"firing_sequence",
+													{
+														"death": "!query.is_alive"
+													}
+												],
+												"data": "firing_sequence"
+											},
+											{
+												"open": [
+													"setup",
+													"look_at_target",
+													"firing_sequence",
+													{
+														"death": "!query.is_alive"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"death": "!query.is_alive"
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

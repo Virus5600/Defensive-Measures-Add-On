@@ -1,4 +1,4 @@
-##bridge-file-version: #14
+##bridge-file-version: #20
 pack.name=Defensive Measures (RP)
 pack.description=The required Resource Pack for the Behavior Pack Defensive Measures.
 
@@ -10,5 +10,12 @@ item.defensive:unfinished_cannon_head.name=Unfinished Cannon Head
 item.defensive:cannon_head.name=Cannon Head
 item.defensive:cannon_turret.name=Place Cannon Turret
 
+item.defensive:ballista_base.name=Ballista Base
+item.defensive:ballista_base_with_stand.name=Ballista Base With Stand
+item.defensive:ballista_bow.name=Ballista Bow
+item.defensive:ballista.name=Place Ballista
+
 entity.defensive:cannon_turret.name=Cannon Turret
 entity.defensive:cannonball.name=Cannon ball
+
+entity.defensive:ballista.name=Ballista

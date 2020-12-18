@@ -3,7 +3,7 @@
 	"file_type": "item",
 	"format_version": 1,
 	"file_uuid": "913bf53b_6547_49fb_8f98_36e750076426",
-	"file_version": 2,
+	"file_version": 4,
 	"cache_content": {
 		"children": [
 			{
@@ -26,7 +26,10 @@
 							"minecraft:icon": {
 								"texture": "cannon_base"
 							},
-							"minecraft:display_name": {}
+							"minecraft:display_name": {},
+							"minecraft:fuel": {
+								"duration": 15
+							}
 						}
 					}
 				},
@@ -46,7 +49,10 @@
 								"minecraft:icon": {
 									"texture": "cannon_base"
 								},
-								"minecraft:display_name": {}
+								"minecraft:display_name": {},
+								"minecraft:fuel": {
+									"duration": 15
+								}
 							}
 						},
 						"key": "description",
@@ -70,21 +76,58 @@
 								"minecraft:icon": {
 									"texture": "cannon_base"
 								},
-								"minecraft:display_name": {}
+								"minecraft:display_name": {},
+								"minecraft:fuel": {
+									"duration": 15
+								}
 							}
 						},
 						"key": "components",
-						"is_minified": true,
-						"children": {
-							"minecraft:max_stack_size": 16,
-							"minecraft:creative_category": {
-								"parent": "items"
+						"children": [
+							{
+								"data": "16",
+								"key": "minecraft:max_stack_size"
 							},
-							"minecraft:icon": {
-								"texture": "cannon_base"
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "items"
+								}
 							},
-							"minecraft:display_name": {}
-						}
+							{
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "cannon_base"
+								}
+							},
+							{
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 16,
+									"minecraft:creative_category": {
+										"parent": "items"
+									},
+									"minecraft:icon": {
+										"texture": "cannon_base"
+									},
+									"minecraft:display_name": {},
+									"minecraft:fuel": {
+										"duration": 15
+									}
+								},
+								"key": "minecraft:fuel",
+								"is_minified": true,
+								"children": {
+									"duration": 15
+								}
+							}
+						]
 					}
 				]
 			}

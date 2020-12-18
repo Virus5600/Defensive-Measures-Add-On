@@ -3,7 +3,7 @@
 	"file_type": "loot_table",
 	"format_version": 1,
 	"file_uuid": "6bf6a3b3_6aca_4621_9e3d_21b9a21de8aa",
-	"file_version": 7,
+	"file_version": 11,
 	"cache_content": {
 		"children": [
 			{
@@ -15,12 +15,12 @@
 								{
 									"type": "loot_table",
 									"weight": 20,
-									"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
+									"name": "loot_tables/ballista/ballista.head_1.json"
 								},
 								{
 									"type": "loot_table",
 									"weight": 40,
-									"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
+									"name": "loot_tables/cannon_turret/ballista.head_2.json"
 								}
 							]
 						},
@@ -29,15 +29,19 @@
 							"entries": [
 								{
 									"type": "item",
-									"name": "minecraft:stone",
+									"name": "minecraft:fence",
 									"weight": 1,
 									"functions": [
 										{
 											"function": "set_count",
 											"count": {
-												"min": 0,
-												"max": 3
+												"min": 1,
+												"max": 1
 											}
+										},
+										{
+											"function": "set_data",
+											"data": 0
 										}
 									]
 								},
@@ -69,12 +73,12 @@
 									{
 										"type": "loot_table",
 										"weight": 20,
-										"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
+										"name": "loot_tables/ballista/ballista.head_1.json"
 									},
 									{
 										"type": "loot_table",
 										"weight": 40,
-										"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
+										"name": "loot_tables/cannon_turret/ballista.head_2.json"
 									}
 								]
 							},
@@ -83,15 +87,19 @@
 								"entries": [
 									{
 										"type": "item",
-										"name": "minecraft:stone",
+										"name": "minecraft:fence",
 										"weight": 1,
 										"functions": [
 											{
 												"function": "set_count",
 												"count": {
-													"min": 0,
-													"max": 3
+													"min": 1,
+													"max": 1
 												}
+											},
+											{
+												"function": "set_data",
+												"data": 0
 											}
 										]
 									},
@@ -124,12 +132,12 @@
 										{
 											"type": "loot_table",
 											"weight": 20,
-											"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
+											"name": "loot_tables/ballista/ballista.head_1.json"
 										},
 										{
 											"type": "loot_table",
 											"weight": 40,
-											"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
+											"name": "loot_tables/cannon_turret/ballista.head_2.json"
 										}
 									]
 								},
@@ -140,19 +148,19 @@
 											{
 												"type": "loot_table",
 												"weight": 20,
-												"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
+												"name": "loot_tables/ballista/ballista.head_1.json"
 											},
 											{
 												"type": "loot_table",
 												"weight": 40,
-												"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
+												"name": "loot_tables/cannon_turret/ballista.head_2.json"
 											}
 										],
 										"is_minified": true,
 										"children": {
 											"type": "loot_table",
 											"weight": 20,
-											"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
+											"name": "loot_tables/ballista/ballista.head_1.json"
 										}
 									},
 									{
@@ -160,19 +168,19 @@
 											{
 												"type": "loot_table",
 												"weight": 20,
-												"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
+												"name": "loot_tables/ballista/ballista.head_1.json"
 											},
 											{
 												"type": "loot_table",
 												"weight": 40,
-												"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
+												"name": "loot_tables/cannon_turret/ballista.head_2.json"
 											}
 										],
 										"is_minified": true,
 										"children": {
 											"type": "loot_table",
 											"weight": 40,
-											"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
+											"name": "loot_tables/cannon_turret/ballista.head_2.json"
 										}
 									}
 								]
@@ -187,12 +195,12 @@
 									{
 										"type": "loot_table",
 										"weight": 20,
-										"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
+										"name": "loot_tables/ballista/ballista.head_1.json"
 									},
 									{
 										"type": "loot_table",
 										"weight": 40,
-										"name": "loot_tables/cannon_turret/cannon_turret.head_2.json"
+										"name": "loot_tables/cannon_turret/ballista.head_2.json"
 									}
 								]
 							},
@@ -201,15 +209,19 @@
 								"entries": [
 									{
 										"type": "item",
-										"name": "minecraft:stone",
+										"name": "minecraft:fence",
 										"weight": 1,
 										"functions": [
 											{
 												"function": "set_count",
 												"count": {
-													"min": 0,
-													"max": 3
+													"min": 1,
+													"max": 1
 												}
+											},
+											{
+												"function": "set_data",
+												"data": 0
 											}
 										]
 									},
@@ -241,15 +253,19 @@
 									"entries": [
 										{
 											"type": "item",
-											"name": "minecraft:stone",
+											"name": "minecraft:fence",
 											"weight": 1,
 											"functions": [
 												{
 													"function": "set_count",
 													"count": {
-														"min": 0,
-														"max": 3
+														"min": 1,
+														"max": 1
 													}
+												},
+												{
+													"function": "set_data",
+													"data": 0
 												}
 											]
 										},
@@ -275,15 +291,19 @@
 										"open": [
 											{
 												"type": "item",
-												"name": "minecraft:stone",
+												"name": "minecraft:fence",
 												"weight": 1,
 												"functions": [
 													{
 														"function": "set_count",
 														"count": {
-															"min": 0,
-															"max": 3
+															"min": 1,
+															"max": 1
 														}
+													},
+													{
+														"function": "set_data",
+														"data": 0
 													}
 												]
 											},
@@ -302,23 +322,122 @@
 												]
 											}
 										],
-										"is_minified": true,
-										"children": {
-											"type": "item",
-											"name": "minecraft:stone",
-											"weight": 1,
-											"functions": [
-												{
-													"function": "set_count",
-													"count": {
-														"min": 0,
-														"max": 3
+										"children": [
+											{
+												"data": "item",
+												"key": "type"
+											},
+											{
+												"data": "minecraft:fence",
+												"key": "name"
+											},
+											{
+												"data": "1",
+												"key": "weight"
+											},
+											{
+												"open": {
+													"type": "item",
+													"name": "minecraft:fence",
+													"weight": 1,
+													"functions": [
+														{
+															"function": "set_count",
+															"count": {
+																"min": 1,
+																"max": 1
+															}
+														},
+														{
+															"function": "set_data",
+															"data": 0
+														}
+													]
+												},
+												"key": "functions",
+												"children": [
+													{
+														"open": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 1,
+																	"max": 1
+																}
+															},
+															{
+																"function": "set_data",
+																"data": 0
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"function": "set_count",
+															"count": {
+																"min": 1,
+																"max": 1
+															}
+														}
+													},
+													{
+														"open": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 1,
+																	"max": 1
+																}
+															},
+															{
+																"function": "set_data",
+																"data": 0
+															}
+														],
+														"is_minified": true,
+														"children": {
+															"function": "set_data",
+															"data": 0
+														}
 													}
-												}
-											]
-										}
+												]
+											}
+										]
 									},
 									{
+										"open": [
+											{
+												"type": "item",
+												"name": "minecraft:fence",
+												"weight": 1,
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 1,
+															"max": 1
+														}
+													},
+													{
+														"function": "set_data",
+														"data": 0
+													}
+												]
+											},
+											{
+												"type": "item",
+												"name": "minecraft:wooden_slab",
+												"weight": 1,
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 0,
+															"max": 3
+														}
+													}
+												]
+											}
+										],
 										"is_minified": true,
 										"children": {
 											"type": "item",

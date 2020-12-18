@@ -1,0 +1,225 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\recipes\\ballista\\ballista_base.json",
+	"file_type": "recipe",
+	"format_version": 1,
+	"file_uuid": "96946120_f099_49db_9830_02e2d2a5bc46",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:recipe_shaped": {
+						"description": {
+							"identifier": "defensive:ballista_base"
+						},
+						"tags": [
+							"crafting_table"
+						],
+						"pattern": [
+							" s ",
+							"sss",
+							" s "
+						],
+						"key": {
+							"s": {
+								"item": "minecraft:wooden_slab"
+							}
+						},
+						"result": [
+							{
+								"item": "defensive:ballista_base",
+								"count": 1
+							}
+						]
+					}
+				},
+				"key": "minecraft:recipe_shaped",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ballista_base"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" s ",
+								"sss",
+								" s "
+							],
+							"key": {
+								"s": {
+									"item": "minecraft:wooden_slab"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:ballista_base",
+									"count": 1
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "defensive:ballista_base"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ballista_base"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" s ",
+								"sss",
+								" s "
+							],
+							"key": {
+								"s": {
+									"item": "minecraft:wooden_slab"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:ballista_base",
+									"count": 1
+								}
+							]
+						},
+						"key": "tags",
+						"is_minified": true,
+						"children": [
+							"crafting_table"
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ballista_base"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" s ",
+								"sss",
+								" s "
+							],
+							"key": {
+								"s": {
+									"item": "minecraft:wooden_slab"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:ballista_base",
+									"count": 1
+								}
+							]
+						},
+						"key": "pattern",
+						"is_minified": true,
+						"children": [
+							" s ",
+							"sss",
+							" s "
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ballista_base"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" s ",
+								"sss",
+								" s "
+							],
+							"key": {
+								"s": {
+									"item": "minecraft:wooden_slab"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:ballista_base",
+									"count": 1
+								}
+							]
+						},
+						"key": "key",
+						"children": [
+							{
+								"open": {
+									"s": {
+										"item": "minecraft:wooden_slab"
+									}
+								},
+								"key": "s",
+								"is_minified": true,
+								"children": {
+									"item": "minecraft:wooden_slab"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ballista_base"
+							},
+							"tags": [
+								"crafting_table"
+							],
+							"pattern": [
+								" s ",
+								"sss",
+								" s "
+							],
+							"key": {
+								"s": {
+									"item": "minecraft:wooden_slab"
+								}
+							},
+							"result": [
+								{
+									"item": "defensive:ballista_base",
+									"count": 1
+								}
+							]
+						},
+						"key": "result",
+						"children": [
+							{
+								"open": [
+									{
+										"item": "defensive:ballista_base",
+										"count": 1
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"item": "defensive:ballista_base",
+									"count": 1
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

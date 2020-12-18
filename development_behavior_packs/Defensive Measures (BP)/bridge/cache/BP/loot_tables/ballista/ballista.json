@@ -1,0 +1,412 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\loot_tables\\ballista\\ballista.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "d111f1d9_d7bd_4cab_b576_5fafc064b313",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "loot_table",
+									"weight": 20,
+									"name": "loot_tables/ballista/ballista.head_1.json"
+								},
+								{
+									"type": "loot_table",
+									"weight": 40,
+									"name": "loot_tables/ballista/ballista.head_2.json"
+								}
+							]
+						},
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:fence",
+									"weight": 1,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 1
+											}
+										}
+									]
+								},
+								{
+									"type": "item",
+									"name": "minecraft:wooden_slab",
+									"weight": 1,
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 0,
+												"max": 3
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "loot_table",
+										"weight": 20,
+										"name": "loot_tables/ballista/ballista.head_1.json"
+									},
+									{
+										"type": "loot_table",
+										"weight": 40,
+										"name": "loot_tables/ballista/ballista.head_2.json"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:fence",
+										"weight": 1,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 1
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:wooden_slab",
+										"weight": 1,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 0,
+													"max": 3
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "loot_table",
+											"weight": 20,
+											"name": "loot_tables/ballista/ballista.head_1.json"
+										},
+										{
+											"type": "loot_table",
+											"weight": 40,
+											"name": "loot_tables/ballista/ballista.head_2.json"
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "loot_table",
+												"weight": 20,
+												"name": "loot_tables/ballista/ballista.head_1.json"
+											},
+											{
+												"type": "loot_table",
+												"weight": 40,
+												"name": "loot_tables/ballista/ballista.head_2.json"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "loot_table",
+											"weight": 20,
+											"name": "loot_tables/ballista/ballista.head_1.json"
+										}
+									},
+									{
+										"open": [
+											{
+												"type": "loot_table",
+												"weight": 20,
+												"name": "loot_tables/ballista/ballista.head_1.json"
+											},
+											{
+												"type": "loot_table",
+												"weight": 40,
+												"name": "loot_tables/ballista/ballista.head_2.json"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "loot_table",
+											"weight": 40,
+											"name": "loot_tables/ballista/ballista.head_2.json"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "loot_table",
+										"weight": 20,
+										"name": "loot_tables/ballista/ballista.head_1.json"
+									},
+									{
+										"type": "loot_table",
+										"weight": 40,
+										"name": "loot_tables/ballista/ballista.head_2.json"
+									}
+								]
+							},
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "minecraft:fence",
+										"weight": 1,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 1
+												}
+											}
+										]
+									},
+									{
+										"type": "item",
+										"name": "minecraft:wooden_slab",
+										"weight": 1,
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 0,
+													"max": 3
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "minecraft:fence",
+											"weight": 1,
+											"functions": [
+												{
+													"function": "set_count",
+													"count": {
+														"min": 1,
+														"max": 1
+													}
+												}
+											]
+										},
+										{
+											"type": "item",
+											"name": "minecraft:wooden_slab",
+											"weight": 1,
+											"functions": [
+												{
+													"function": "set_count",
+													"count": {
+														"min": 0,
+														"max": 3
+													}
+												}
+											]
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "minecraft:fence",
+												"weight": 1,
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 1,
+															"max": 1
+														}
+													}
+												]
+											},
+											{
+												"type": "item",
+												"name": "minecraft:wooden_slab",
+												"weight": 1,
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 0,
+															"max": 3
+														}
+													}
+												]
+											}
+										],
+										"children": [
+											{
+												"data": "item",
+												"key": "type"
+											},
+											{
+												"data": "minecraft:fence",
+												"key": "name"
+											},
+											{
+												"data": "1",
+												"key": "weight"
+											},
+											{
+												"key": "functions",
+												"children": [
+													{
+														"open": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 1,
+																	"max": 1
+																}
+															}
+														],
+														"children": [
+															{
+																"data": "set_count",
+																"key": "function"
+															},
+															{
+																"open": {
+																	"function": "set_count",
+																	"count": {
+																		"min": 1,
+																		"max": 1
+																	}
+																},
+																"key": "count",
+																"is_minified": true,
+																"children": {
+																	"min": 1,
+																	"max": 1
+																}
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "minecraft:fence",
+												"weight": 1,
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 1,
+															"max": 1
+														}
+													}
+												]
+											},
+											{
+												"type": "item",
+												"name": "minecraft:wooden_slab",
+												"weight": 1,
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 0,
+															"max": 3
+														}
+													}
+												]
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "minecraft:wooden_slab",
+											"weight": 1,
+											"functions": [
+												{
+													"function": "set_count",
+													"count": {
+														"min": 0,
+														"max": 3
+													}
+												}
+											]
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

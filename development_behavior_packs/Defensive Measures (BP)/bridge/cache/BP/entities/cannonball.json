@@ -3,7 +3,7 @@
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "e56acdfc_971f_4184_a066_e67a613f5c06",
-	"file_version": 52,
+	"file_version": 53,
 	"cache_content": {
 		"children": [
 			{
@@ -30,6 +30,13 @@
 							}
 						},
 						"components": {
+							"minecraft:type_family": {
+								"family": [
+									"projectile",
+									"cannonball",
+									"explosive"
+								]
+							},
 							"minecraft:collision_box": {
 								"width": 0.25,
 								"height": 0.25
@@ -84,64 +91,6 @@
 						}
 					},
 					{
-						"open": {
-							"description": {
-								"identifier": "defensive:cannonball",
-								"is_spawnable": false,
-								"is_summonable": true
-							},
-							"component_groups": {
-								"minecraft:exploding": {
-									"minecraft:explode": {
-										"fuse_length": 0,
-										"fuse_lit": true,
-										"power": 1.25,
-										"breaks_blocks": false
-									}
-								}
-							},
-							"components": {
-								"minecraft:collision_box": {
-									"width": 0.25,
-									"height": 0.25
-								},
-								"minecraft:projectile": {
-									"on_hit": {
-										"definition_event": {
-											"affect_projectile": true,
-											"event_trigger": {
-												"event": "minecraft:explode",
-												"target": "self"
-											}
-										}
-									},
-									"power": 1.75,
-									"hit_sound": "random.explode",
-									"inertia": 0.875,
-									"gravity": 0.1,
-									"is_dangerous": true,
-									"liquid_inertia": 0.75,
-									"hit_ground_sound": "random.explode",
-									"multiple_targets": false,
-									"reflect_on_hurt": false,
-									"anchor": 1
-								},
-								"minecraft:physics": {},
-								"minecraft:pushable": {
-									"is_pushable": true,
-									"is_pushable_by_piston": true
-								}
-							},
-							"events": {
-								"minecraft:explode": {
-									"add": {
-										"component_groups": [
-											"minecraft:exploding"
-										]
-									}
-								}
-							}
-						},
 						"key": "component_groups",
 						"children": [
 							{
@@ -197,6 +146,13 @@
 								}
 							},
 							"components": {
+								"minecraft:type_family": {
+									"family": [
+										"projectile",
+										"cannonball",
+										"explosive"
+									]
+								},
 								"minecraft:collision_box": {
 									"width": 0.25,
 									"height": 0.25
@@ -242,6 +198,13 @@
 						"children": [
 							{
 								"open": {
+									"minecraft:type_family": {
+										"family": [
+											"projectile",
+											"cannonball",
+											"explosive"
+										]
+									},
 									"minecraft:collision_box": {
 										"width": 0.25,
 										"height": 0.25
@@ -273,6 +236,27 @@
 										"is_pushable_by_piston": true
 									}
 								},
+								"key": "minecraft:type_family",
+								"children": [
+									{
+										"open": {
+											"family": [
+												"projectile",
+												"cannonball",
+												"explosive"
+											]
+										},
+										"key": "family",
+										"is_minified": true,
+										"children": [
+											"projectile",
+											"cannonball",
+											"explosive"
+										]
+									}
+								]
+							},
+							{
 								"key": "minecraft:collision_box",
 								"is_minified": true,
 								"children": {
@@ -281,38 +265,6 @@
 								}
 							},
 							{
-								"open": {
-									"minecraft:collision_box": {
-										"width": 0.25,
-										"height": 0.25
-									},
-									"minecraft:projectile": {
-										"on_hit": {
-											"definition_event": {
-												"affect_projectile": true,
-												"event_trigger": {
-													"event": "minecraft:explode",
-													"target": "self"
-												}
-											}
-										},
-										"power": 1.75,
-										"hit_sound": "random.explode",
-										"inertia": 0.875,
-										"gravity": 0.1,
-										"is_dangerous": true,
-										"liquid_inertia": 0.75,
-										"hit_ground_sound": "random.explode",
-										"multiple_targets": false,
-										"reflect_on_hurt": false,
-										"anchor": 1
-									},
-									"minecraft:physics": {},
-									"minecraft:pushable": {
-										"is_pushable": true,
-										"is_pushable_by_piston": true
-									}
-								},
 								"key": "minecraft:projectile",
 								"children": [
 									{
@@ -422,38 +374,6 @@
 								"children": {}
 							},
 							{
-								"open": {
-									"minecraft:collision_box": {
-										"width": 0.25,
-										"height": 0.25
-									},
-									"minecraft:projectile": {
-										"on_hit": {
-											"definition_event": {
-												"affect_projectile": true,
-												"event_trigger": {
-													"event": "minecraft:explode",
-													"target": "self"
-												}
-											}
-										},
-										"power": 1.75,
-										"hit_sound": "random.explode",
-										"inertia": 0.875,
-										"gravity": 0.1,
-										"is_dangerous": true,
-										"liquid_inertia": 0.75,
-										"hit_ground_sound": "random.explode",
-										"multiple_targets": false,
-										"reflect_on_hurt": false,
-										"anchor": 1
-									},
-									"minecraft:physics": {},
-									"minecraft:pushable": {
-										"is_pushable": true,
-										"is_pushable_by_piston": true
-									}
-								},
 								"key": "minecraft:pushable",
 								"is_minified": true,
 								"children": {
@@ -481,6 +401,13 @@
 								}
 							},
 							"components": {
+								"minecraft:type_family": {
+									"family": [
+										"projectile",
+										"cannonball",
+										"explosive"
+									]
+								},
 								"minecraft:collision_box": {
 									"width": 0.25,
 									"height": 0.25

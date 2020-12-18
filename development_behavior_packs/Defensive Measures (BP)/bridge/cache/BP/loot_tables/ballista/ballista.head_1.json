@@ -1,0 +1,246 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\loot_tables\\ballista\\ballista.head_1.json",
+	"file_type": "loot_table",
+	"format_version": 1,
+	"file_uuid": "1f75de19_4f24_4038_892a_b1b9f15a6e61",
+	"file_version": 3,
+	"cache_content": {
+		"children": [
+			{
+				"open": {
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "defensive:ballista_bow",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": 1
+										}
+									],
+									"weight": 35
+								},
+								{
+									"type": "item",
+									"name": "minecraft:string",
+									"functions": [
+										{
+											"function": "set_count",
+											"count": {
+												"min": 1,
+												"max": 3
+											}
+										}
+									],
+									"weight": 65
+								}
+							]
+						}
+					]
+				},
+				"key": "pools",
+				"children": [
+					{
+						"open": [
+							{
+								"rolls": 1,
+								"entries": [
+									{
+										"type": "item",
+										"name": "defensive:ballista_bow",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": 1
+											}
+										],
+										"weight": 35
+									},
+									{
+										"type": "item",
+										"name": "minecraft:string",
+										"functions": [
+											{
+												"function": "set_count",
+												"count": {
+													"min": 1,
+													"max": 3
+												}
+											}
+										],
+										"weight": 65
+									}
+								]
+							}
+						],
+						"children": [
+							{
+								"data": "1",
+								"key": "rolls"
+							},
+							{
+								"open": {
+									"rolls": 1,
+									"entries": [
+										{
+											"type": "item",
+											"name": "defensive:ballista_bow",
+											"functions": [
+												{
+													"function": "set_count",
+													"count": 1
+												}
+											],
+											"weight": 35
+										},
+										{
+											"type": "item",
+											"name": "minecraft:string",
+											"functions": [
+												{
+													"function": "set_count",
+													"count": {
+														"min": 1,
+														"max": 3
+													}
+												}
+											],
+											"weight": 65
+										}
+									]
+								},
+								"key": "entries",
+								"children": [
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "defensive:ballista_bow",
+												"functions": [
+													{
+														"function": "set_count",
+														"count": 1
+													}
+												],
+												"weight": 35
+											},
+											{
+												"type": "item",
+												"name": "minecraft:string",
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 1,
+															"max": 3
+														}
+													}
+												],
+												"weight": 65
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"type": "item",
+											"name": "defensive:ballista_bow",
+											"functions": [
+												{
+													"function": "set_count",
+													"count": 1
+												}
+											],
+											"weight": 35
+										}
+									},
+									{
+										"open": [
+											{
+												"type": "item",
+												"name": "defensive:ballista_bow",
+												"functions": [
+													{
+														"function": "set_count",
+														"count": 1
+													}
+												],
+												"weight": 35
+											},
+											{
+												"type": "item",
+												"name": "minecraft:string",
+												"functions": [
+													{
+														"function": "set_count",
+														"count": {
+															"min": 1,
+															"max": 3
+														}
+													}
+												],
+												"weight": 65
+											}
+										],
+										"children": [
+											{
+												"data": "item",
+												"key": "type"
+											},
+											{
+												"data": "minecraft:string",
+												"key": "name"
+											},
+											{
+												"key": "functions",
+												"children": [
+													{
+														"open": [
+															{
+																"function": "set_count",
+																"count": {
+																	"min": 1,
+																	"max": 3
+																}
+															}
+														],
+														"children": [
+															{
+																"data": "set_count",
+																"key": "function"
+															},
+															{
+																"open": {
+																	"function": "set_count",
+																	"count": {
+																		"min": 1,
+																		"max": 3
+																	}
+																},
+																"key": "count",
+																"is_minified": true,
+																"children": {
+																	"min": 1,
+																	"max": 3
+																}
+															}
+														]
+													}
+												]
+											},
+											{
+												"data": "65",
+												"key": "weight"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

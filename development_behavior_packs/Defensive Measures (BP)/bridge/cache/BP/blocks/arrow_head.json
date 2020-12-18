@@ -1,0 +1,487 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\blocks\\arrow_head.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "8f8b8d57_ecbd_4d60_b8ff_435e654fd241",
+	"file_version": 55,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:block": {
+						"description": {
+							"identifier": "defensive:arrow_head"
+						},
+						"components": {
+							"minecraft:block_light_absorption": 1,
+							"minecraft:destroy_time": 1.5,
+							"minecraft:entity_collision": {
+								"origin": [
+									-2,
+									0,
+									-2
+								],
+								"size": [
+									4,
+									4,
+									4
+								]
+							},
+							"minecraft:pick_collision": {
+								"origin": [
+									-2,
+									0,
+									-2
+								],
+								"size": [
+									4,
+									4,
+									4
+								]
+							},
+							"minecraft:geometry": "geometry.arrow_head",
+							"minecraft:on_step_on": {
+								"event": "dealDamage"
+							},
+							"minecraft:explosion_resistance": 1,
+							"minecraft:material_instances": {
+								"*": {
+									"texture": "arrow_head",
+									"render_method": "blend"
+								}
+							}
+						},
+						"events": {
+							"dealDamage": {
+								"damage": {
+									"target": "other",
+									"type": "contact",
+									"amount": 2
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:arrow_head"
+							},
+							"components": {
+								"minecraft:block_light_absorption": 1,
+								"minecraft:destroy_time": 1.5,
+								"minecraft:entity_collision": {
+									"origin": [
+										-2,
+										0,
+										-2
+									],
+									"size": [
+										4,
+										4,
+										4
+									]
+								},
+								"minecraft:pick_collision": {
+									"origin": [
+										-2,
+										0,
+										-2
+									],
+									"size": [
+										4,
+										4,
+										4
+									]
+								},
+								"minecraft:geometry": "geometry.arrow_head",
+								"minecraft:on_step_on": {
+									"event": "dealDamage"
+								},
+								"minecraft:explosion_resistance": 1,
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "arrow_head",
+										"render_method": "blend"
+									}
+								}
+							},
+							"events": {
+								"dealDamage": {
+									"damage": {
+										"target": "other",
+										"type": "contact",
+										"amount": 2
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "defensive:arrow_head"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:arrow_head"
+							},
+							"components": {
+								"minecraft:block_light_absorption": 1,
+								"minecraft:destroy_time": 1.5,
+								"minecraft:entity_collision": {
+									"origin": [
+										-2,
+										0,
+										-2
+									],
+									"size": [
+										4,
+										4,
+										4
+									]
+								},
+								"minecraft:pick_collision": {
+									"origin": [
+										-2,
+										0,
+										-2
+									],
+									"size": [
+										4,
+										4,
+										4
+									]
+								},
+								"minecraft:geometry": "geometry.arrow_head",
+								"minecraft:on_step_on": {
+									"event": "dealDamage"
+								},
+								"minecraft:explosion_resistance": 1,
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "arrow_head",
+										"render_method": "blend"
+									}
+								}
+							},
+							"events": {
+								"dealDamage": {
+									"damage": {
+										"target": "other",
+										"type": "contact",
+										"amount": 2
+									}
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1",
+								"key": "minecraft:block_light_absorption"
+							},
+							{
+								"data": "1.5",
+								"key": "minecraft:destroy_time"
+							},
+							{
+								"open": {
+									"minecraft:block_light_absorption": 1,
+									"minecraft:destroy_time": 1.5,
+									"minecraft:entity_collision": {
+										"origin": [
+											-2,
+											0,
+											-2
+										],
+										"size": [
+											4,
+											4,
+											4
+										]
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-2,
+											0,
+											-2
+										],
+										"size": [
+											4,
+											4,
+											4
+										]
+									},
+									"minecraft:geometry": "geometry.arrow_head",
+									"minecraft:on_step_on": {
+										"event": "dealDamage"
+									},
+									"minecraft:explosion_resistance": 1,
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "arrow_head",
+											"render_method": "blend"
+										}
+									}
+								},
+								"key": "minecraft:entity_collision",
+								"children": [
+									{
+										"open": {
+											"origin": [
+												-2,
+												0,
+												-2
+											],
+											"size": [
+												4,
+												4,
+												4
+											]
+										},
+										"key": "origin",
+										"is_minified": true,
+										"children": [
+											-2,
+											0,
+											-2
+										]
+									},
+									{
+										"open": {
+											"origin": [
+												-2,
+												0,
+												-2
+											],
+											"size": [
+												4,
+												4,
+												4
+											]
+										},
+										"key": "size",
+										"is_minified": true,
+										"children": [
+											4,
+											4,
+											4
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:block_light_absorption": 1,
+									"minecraft:destroy_time": 1.5,
+									"minecraft:entity_collision": {
+										"origin": [
+											-2,
+											0,
+											-2
+										],
+										"size": [
+											4,
+											4,
+											4
+										]
+									},
+									"minecraft:pick_collision": {
+										"origin": [
+											-2,
+											0,
+											-2
+										],
+										"size": [
+											4,
+											4,
+											4
+										]
+									},
+									"minecraft:geometry": "geometry.arrow_head",
+									"minecraft:on_step_on": {
+										"event": "dealDamage"
+									},
+									"minecraft:explosion_resistance": 1,
+									"minecraft:material_instances": {
+										"*": {
+											"texture": "arrow_head",
+											"render_method": "blend"
+										}
+									}
+								},
+								"key": "minecraft:pick_collision",
+								"children": [
+									{
+										"open": {
+											"origin": [
+												-2,
+												0,
+												-2
+											],
+											"size": [
+												4,
+												4,
+												4
+											]
+										},
+										"key": "origin",
+										"is_minified": true,
+										"children": [
+											-2,
+											0,
+											-2
+										]
+									},
+									{
+										"open": {
+											"origin": [
+												-2,
+												0,
+												-2
+											],
+											"size": [
+												4,
+												4,
+												4
+											]
+										},
+										"key": "size",
+										"is_minified": true,
+										"children": [
+											4,
+											4,
+											4
+										]
+									}
+								]
+							},
+							{
+								"data": "geometry.arrow_head",
+								"key": "minecraft:geometry"
+							},
+							{
+								"key": "minecraft:on_step_on",
+								"is_minified": true,
+								"children": {
+									"event": "dealDamage"
+								}
+							},
+							{
+								"data": "1.0",
+								"key": "minecraft:explosion_resistance"
+							},
+							{
+								"key": "minecraft:material_instances",
+								"children": [
+									{
+										"open": {
+											"*": {
+												"texture": "arrow_head",
+												"render_method": "blend"
+											}
+										},
+										"key": "*",
+										"is_minified": true,
+										"children": {
+											"texture": "arrow_head",
+											"render_method": "blend"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:arrow_head"
+							},
+							"components": {
+								"minecraft:block_light_absorption": 1,
+								"minecraft:destroy_time": 1.5,
+								"minecraft:entity_collision": {
+									"origin": [
+										-2,
+										0,
+										-2
+									],
+									"size": [
+										4,
+										4,
+										4
+									]
+								},
+								"minecraft:pick_collision": {
+									"origin": [
+										-2,
+										0,
+										-2
+									],
+									"size": [
+										4,
+										4,
+										4
+									]
+								},
+								"minecraft:geometry": "geometry.arrow_head",
+								"minecraft:on_step_on": {
+									"event": "dealDamage"
+								},
+								"minecraft:explosion_resistance": 1,
+								"minecraft:material_instances": {
+									"*": {
+										"texture": "arrow_head",
+										"render_method": "blend"
+									}
+								}
+							},
+							"events": {
+								"dealDamage": {
+									"damage": {
+										"target": "other",
+										"type": "contact",
+										"amount": 2
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"key": "dealDamage",
+								"children": [
+									{
+										"open": {
+											"damage": {
+												"target": "other",
+												"type": "contact",
+												"amount": 2
+											}
+										},
+										"key": "damage",
+										"is_minified": true,
+										"children": {
+											"target": "other",
+											"type": "contact",
+											"amount": 2
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
