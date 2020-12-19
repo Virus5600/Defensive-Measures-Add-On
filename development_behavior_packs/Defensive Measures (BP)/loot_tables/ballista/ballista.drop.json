@@ -1,4 +1,4 @@
-//bridge-file-version: #0
+//bridge-file-version: #1
 {
 	"pools": [
 		{
@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "defensive:cannon_turret",
+					"name": "defensive:ballista",
 					"functions": [
 						{
 							"function": "set_count",

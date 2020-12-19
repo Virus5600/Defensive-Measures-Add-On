@@ -1,4 +1,4 @@
-//bridge-file-version: #6
+//bridge-file-version: #7
 {
 	"resource_pack_name": "Defensive Measures (RP)",
 	"texture_name": "atlas.items",
@@ -51,6 +51,11 @@
 		"ballista_bow": {
 			"textures": [
 				"textures/items/ballista/ballista_bow"
+			]
+		},
+		"ballista_arrow": {
+			"textures": [
+				"textures/items/ballista/ballista_arrow"
 			]
 		}
 	}

@@ -1,4 +1,4 @@
-//bridge-file-version: #52
+//bridge-file-version: #53
 {
 	"format_version": "1.16.100",
 	"minecraft:entity": {
@@ -18,6 +18,13 @@
 			}
 		},
 		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"projectile",
+					"cannonball",
+					"explosive"
+				]
+			},
 			"minecraft:collision_box": {
 				"width": 0.25,
 				"height": 0.25

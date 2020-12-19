@@ -3,7 +3,7 @@
 	"file_type": "client_sound",
 	"format_version": 1,
 	"file_uuid": "13ad1a00_3daf_477c_8e08_3f8f48d1c09d",
-	"file_version": 3,
+	"file_version": 13,
 	"cache_content": {
 		"children": [
 			{
@@ -111,6 +111,39 @@
 									},
 									"death": {
 										"sound": "cannon.destroyed",
+										"volume": 1,
+										"pitch": [
+											0.75,
+											1.25
+										]
+									},
+									"hurt": {
+										"sound": "cannon.hit",
+										"volume": 1,
+										"pitch": [
+											0.875,
+											1.125
+										]
+									}
+								}
+							},
+							"defensive:ballista": {
+								"volume": 1,
+								"pitch": [
+									0.5,
+									1.5
+								],
+								"events": {
+									"shoot": {
+										"sound": "crossbow.shoot",
+										"volume": 1,
+										"pitch": [
+											0.75,
+											1.25
+										]
+									},
+									"death": {
+										"sound": "mob.zombie.woodbreak",
 										"volume": 1,
 										"pitch": [
 											0.75,
@@ -307,6 +340,39 @@
 											]
 										}
 									}
+								},
+								"defensive:ballista": {
+									"volume": 1,
+									"pitch": [
+										0.5,
+										1.5
+									],
+									"events": {
+										"shoot": {
+											"sound": "crossbow.shoot",
+											"volume": 1,
+											"pitch": [
+												0.75,
+												1.25
+											]
+										},
+										"death": {
+											"sound": "mob.zombie.woodbreak",
+											"volume": 1,
+											"pitch": [
+												0.75,
+												1.25
+											]
+										},
+										"hurt": {
+											"sound": "cannon.hit",
+											"volume": 1,
+											"pitch": [
+												0.875,
+												1.125
+											]
+										}
+									}
 								}
 							}
 						},
@@ -346,6 +412,39 @@
 												]
 											}
 										}
+									},
+									"defensive:ballista": {
+										"volume": 1,
+										"pitch": [
+											0.5,
+											1.5
+										],
+										"events": {
+											"shoot": {
+												"sound": "crossbow.shoot",
+												"volume": 1,
+												"pitch": [
+													0.75,
+													1.25
+												]
+											},
+											"death": {
+												"sound": "mob.zombie.woodbreak",
+												"volume": 1,
+												"pitch": [
+													0.75,
+													1.25
+												]
+											},
+											"hurt": {
+												"sound": "cannon.hit",
+												"volume": 1,
+												"pitch": [
+													0.875,
+													1.125
+												]
+											}
+										}
 									}
 								},
 								"key": "defensive:cannon_turret",
@@ -363,39 +462,6 @@
 										]
 									},
 									{
-										"open": {
-											"volume": 1,
-											"pitch": [
-												0.5,
-												1.5
-											],
-											"events": {
-												"shoot": {
-													"sound": "cannon.shoot",
-													"volume": 1,
-													"pitch": [
-														0.75,
-														1.25
-													]
-												},
-												"death": {
-													"sound": "cannon.destroyed",
-													"volume": 1,
-													"pitch": [
-														0.75,
-														1.25
-													]
-												},
-												"hurt": {
-													"sound": "cannon.hit",
-													"volume": 1,
-													"pitch": [
-														0.875,
-														1.125
-													]
-												}
-											}
-										},
 										"key": "events",
 										"children": [
 											{
@@ -562,6 +628,243 @@
 														]
 													}
 												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"defensive:cannon_turret": {
+										"volume": 1,
+										"pitch": [
+											0.5,
+											1.5
+										],
+										"events": {
+											"shoot": {
+												"sound": "cannon.shoot",
+												"volume": 1,
+												"pitch": [
+													0.75,
+													1.25
+												]
+											},
+											"death": {
+												"sound": "cannon.destroyed",
+												"volume": 1,
+												"pitch": [
+													0.75,
+													1.25
+												]
+											},
+											"hurt": {
+												"sound": "cannon.hit",
+												"volume": 1,
+												"pitch": [
+													0.875,
+													1.125
+												]
+											}
+										}
+									},
+									"defensive:ballista": {
+										"volume": 1,
+										"pitch": [
+											0.5,
+											1.5
+										],
+										"events": {
+											"shoot": {
+												"sound": "crossbow.shoot",
+												"volume": 1,
+												"pitch": [
+													0.75,
+													1.25
+												]
+											},
+											"death": {
+												"sound": "mob.zombie.woodbreak",
+												"volume": 1,
+												"pitch": [
+													0.75,
+													1.25
+												]
+											},
+											"hurt": {
+												"sound": "cannon.hit",
+												"volume": 1,
+												"pitch": [
+													0.875,
+													1.125
+												]
+											}
+										}
+									}
+								},
+								"key": "defensive:ballista",
+								"children": [
+									{
+										"data": "1",
+										"key": "volume"
+									},
+									{
+										"key": "pitch",
+										"is_minified": true,
+										"children": [
+											0.5,
+											1.5
+										]
+									},
+									{
+										"open": {
+											"volume": 1,
+											"pitch": [
+												0.5,
+												1.5
+											],
+											"events": {
+												"shoot": {
+													"sound": "crossbow.shoot",
+													"volume": 1,
+													"pitch": [
+														0.75,
+														1.25
+													]
+												},
+												"death": {
+													"sound": "mob.zombie.woodbreak",
+													"volume": 1,
+													"pitch": [
+														0.75,
+														1.25
+													]
+												},
+												"hurt": {
+													"sound": "cannon.hit",
+													"volume": 1,
+													"pitch": [
+														0.875,
+														1.125
+													]
+												}
+											}
+										},
+										"key": "events",
+										"children": [
+											{
+												"open": {
+													"shoot": {
+														"sound": "crossbow.shoot",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													},
+													"death": {
+														"sound": "mob.zombie.woodbreak",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													},
+													"hurt": {
+														"sound": "cannon.hit",
+														"volume": 1,
+														"pitch": [
+															0.875,
+															1.125
+														]
+													}
+												},
+												"key": "shoot",
+												"is_minified": true,
+												"children": {
+													"sound": "crossbow.shoot",
+													"volume": 1,
+													"pitch": [
+														0.75,
+														1.25
+													]
+												}
+											},
+											{
+												"open": {
+													"shoot": {
+														"sound": "crossbow.shoot",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													},
+													"death": {
+														"sound": "mob.zombie.woodbreak",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													},
+													"hurt": {
+														"sound": "cannon.hit",
+														"volume": 1,
+														"pitch": [
+															0.875,
+															1.125
+														]
+													}
+												},
+												"key": "death",
+												"is_minified": true,
+												"children": {
+													"sound": "mob.zombie.woodbreak",
+													"volume": 1,
+													"pitch": [
+														0.75,
+														1.25
+													]
+												}
+											},
+											{
+												"open": {
+													"shoot": {
+														"sound": "crossbow.shoot",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													},
+													"death": {
+														"sound": "mob.zombie.woodbreak",
+														"volume": 1,
+														"pitch": [
+															0.75,
+															1.25
+														]
+													},
+													"hurt": {
+														"sound": "cannon.hit",
+														"volume": 1,
+														"pitch": [
+															0.875,
+															1.125
+														]
+													}
+												},
+												"key": "hurt",
+												"is_minified": true,
+												"children": {
+													"sound": "cannon.hit",
+													"volume": 1,
+													"pitch": [
+														0.875,
+														1.125
+													]
+												}
 											}
 										]
 									}

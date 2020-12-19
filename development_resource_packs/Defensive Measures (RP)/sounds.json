@@ -1,4 +1,4 @@
-//bridge-file-version: #3
+//bridge-file-version: #13
 {
 	"individual_event_sounds": {
 		"events": {}
@@ -91,6 +91,39 @@
 					},
 					"death": {
 						"sound": "cannon.destroyed",
+						"volume": 1,
+						"pitch": [
+							0.75,
+							1.25
+						]
+					},
+					"hurt": {
+						"sound": "cannon.hit",
+						"volume": 1,
+						"pitch": [
+							0.875,
+							1.125
+						]
+					}
+				}
+			},
+			"defensive:ballista": {
+				"volume": 1,
+				"pitch": [
+					0.5,
+					1.5
+				],
+				"events": {
+					"shoot": {
+						"sound": "crossbow.shoot",
+						"volume": 1,
+						"pitch": [
+							0.75,
+							1.25
+						]
+					},
+					"death": {
+						"sound": "mob.zombie.woodbreak",
 						"volume": 1,
 						"pitch": [
 							0.75,

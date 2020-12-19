@@ -1,4 +1,4 @@
-//bridge-file-version: #41
+//bridge-file-version: #50
 {
 	"format_version": "1.16.100",
 	"minecraft:entity": {
@@ -73,7 +73,7 @@
 				"value": 25
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/cannon_turret/ballista.json"
+				"table": "loot_tables/ballista/ballista.json"
 			},
 			"minecraft:physics": {
 				"has_collision": true,
@@ -137,7 +137,7 @@
 							}
 						},
 						"spawn_items": {
-							"table": "loot_tables/cannon_turret/cannon_turret.drop.json"
+							"table": "loot_tables/ballista/ballista.drop.json"
 						},
 						"hurt_item": 1
 					}

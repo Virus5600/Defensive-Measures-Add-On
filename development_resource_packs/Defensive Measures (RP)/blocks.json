@@ -1,3 +1,12 @@
+//bridge-file-version: #1
 {
-  "format_version": [1, 1, 0]
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"defensive:arrow_head": {
+		"textures": "arrow_head",
+		"sound": "stone"
+	}
 }
