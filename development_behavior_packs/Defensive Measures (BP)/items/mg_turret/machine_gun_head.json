@@ -1,0 +1,21 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "defensive:machine_gun_head",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:max_stack_size": 16,
+			"minecraft:creative_category": {
+				"parent": "items"
+			},
+			"minecraft:icon": {
+				"texture": "machine_gun_head"
+			},
+			"minecraft:display_name": {}
+		},
+		"events": {}
+	}
+}

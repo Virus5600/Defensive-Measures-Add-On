@@ -816,6 +816,20 @@
 			],
 			"custom_commands": [],
 			"custom_components": []
+		},
+		"BP/entities/mg_turret.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"defensive:mg_turret"
+			],
+			"animation_references": [],
+			"families": [
+				"ballista",
+				"turret"
+			],
+			"custom_commands": [],
+			"custom_components": []
 		}
 	},
 	"item": {
@@ -912,6 +926,42 @@
 		"BP/items/ballista/ballista_arrow.json": {
 			"identifiers": [
 				"defensive:ballista_arrow"
+			],
+			"custom_commands": []
+		},
+		"BP/items/mg_turret/mg_turret.json": {
+			"identifiers": [
+				"defensive:mg_turret"
+			],
+			"custom_commands": []
+		},
+		"BP/items/mg_turret/ammo_case.json": {
+			"identifiers": [
+				"defensive:ammo_case"
+			],
+			"custom_commands": []
+		},
+		"BP/items/mg_turret/ammo_rounds.json": {
+			"identifiers": [
+				"defensive:ammo_rounds"
+			],
+			"custom_commands": []
+		},
+		"BP/items/mg_turret/machine_gun_base.json": {
+			"identifiers": [
+				"defensive:machine_gun_base"
+			],
+			"custom_commands": []
+		},
+		"BP/items/mg_turret/machine_gun_head.json": {
+			"identifiers": [
+				"defensive:machine_gun_head"
+			],
+			"custom_commands": []
+		},
+		"BP/items/mg_turret/machine_gun_stand.json": {
+			"identifiers": [
+				"defensive:machine_gun_stand"
 			],
 			"custom_commands": []
 		}
@@ -1107,6 +1157,34 @@
 			"geometry_identifiers": [
 				"default"
 			]
+		},
+		"RP/entity/mg_turret.entity.json": {
+			"identifiers": [
+				"defensive:mg_turret"
+			],
+			"particle_references": [
+				"muzzle_flash"
+			],
+			"animation_references": [
+				"setup",
+				"look_at_target",
+				"shoot",
+				"death",
+				"firing_sequence"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
 		}
 	},
 	"sound_definition": {
@@ -1133,6 +1211,11 @@
 		"RP/particles/cannon_fuse.particle.json": {
 			"ids": [
 				"defensive:cannon_fuse"
+			]
+		},
+		"RP/particles/muzzle_flash.particle.json": {
+			"ids": [
+				"defensive:muzzle_flash"
 			]
 		}
 	},
@@ -1161,6 +1244,11 @@
 			"ids": [
 				"controller.render.ballista_arrow"
 			]
+		},
+		"RP/render_controllers/mg_turret.render_controllers.json": {
+			"ids": [
+				"controller.render.machine_gun_turret"
+			]
 		}
 	},
 	"rp_animation_controller": {
@@ -1172,6 +1260,11 @@
 		"RP/animation_controllers/ballista.animation_controller.json": {
 			"ids": [
 				"controller.animation.ballsita.firing_sequence"
+			]
+		},
+		"RP/animation_controllers/mg_turret.animation_controller.json": {
+			"ids": [
+				"controller.animation.machine_gun_turret.firing_sequence"
 			]
 		}
 	},

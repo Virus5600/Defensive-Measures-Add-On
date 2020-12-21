@@ -1,0 +1,117 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\items\\mg_turret\\machine_gun_head.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "ff5cdb2e_f49b_4753_b85b_4dc83bcb3dc8",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "defensive:machine_gun_head",
+							"category": "items"
+						},
+						"components": {
+							"minecraft:max_stack_size": 16,
+							"minecraft:creative_category": {
+								"parent": "items"
+							},
+							"minecraft:icon": {
+								"texture": "machine_gun_head"
+							},
+							"minecraft:display_name": {}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:machine_gun_head",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:max_stack_size": 16,
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
+								"minecraft:icon": {
+									"texture": "machine_gun_head"
+								},
+								"minecraft:display_name": {}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "defensive:machine_gun_head",
+							"category": "items"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:machine_gun_head",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:max_stack_size": 16,
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
+								"minecraft:icon": {
+									"texture": "machine_gun_head"
+								},
+								"minecraft:display_name": {}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "16",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "items"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 16,
+									"minecraft:creative_category": {
+										"parent": "items"
+									},
+									"minecraft:icon": {
+										"texture": "machine_gun_head"
+									},
+									"minecraft:display_name": {}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "machine_gun_head"
+								}
+							},
+							{
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

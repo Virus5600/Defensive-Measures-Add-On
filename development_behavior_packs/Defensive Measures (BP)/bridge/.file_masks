@@ -220,6 +220,66 @@
 						}
 					}
 				}
+			},
+			"f4823069_1df9_49b9_a2fa_f685fb80f362": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"5c37f738_8c8e_4207_aadf_50bd8d16bc86": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"86a844d8_27c6_49a4_bba4_bad8e74f6da5": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"75aeda64_949f_4da5_868e_ffd455dc6129": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"ff5cdb2e_f49b_4753_b85b_4dc83bcb3dc8": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"2872b6f2_7fc3_428c_b7de_30d3b496e3fb": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
 			}
 		}
 	},
@@ -455,6 +515,54 @@
 		"data": {}
 	},
 	"BP/recipes/ballista/ballista.json": {
+		"data": {}
+	},
+	"RP/particles/muzzle_flash.particle.json": {
+		"data": {}
+	},
+	"RP/entity/mg_turret.entity.json": {
+		"data": {}
+	},
+	"RP/animation_controllers/mg_turret.animation_controller.json": {
+		"data": {}
+	},
+	"RP/render_controllers/mg_turret.render_controllers.json": {
+		"data": {}
+	},
+	"BP/entities/mg_turret.json": {
+		"data": {}
+	},
+	"BP/items/mg_turret/mg_turret.json": {
+		"data": {}
+	},
+	"BP/items/mg_turret/ammo_case.json": {
+		"data": {}
+	},
+	"BP/items/mg_turret/ammo_rounds.json": {
+		"data": {}
+	},
+	"BP/items/mg_turret/machine_gun_base.json": {
+		"data": {}
+	},
+	"BP/items/mg_turret/machine_gun_head.json": {
+		"data": {}
+	},
+	"BP/items/mg_turret/machine_gun_stand.json": {
+		"data": {}
+	},
+	"BP/loot_tables/mg_turret/mg_turret.json": {
+		"data": {}
+	},
+	"BP/loot_tables/mg_turret.drop.json": {
+		"data": {}
+	},
+	"BP/loot_tables/mg_turret.json": {
+		"data": {}
+	},
+	"BP/loot_tables/mg_turret.head_2.json": {
+		"data": {}
+	},
+	"BP/loot_tables/mg_turret.head_1.json": {
 		"data": {}
 	}
 }

@@ -1,0 +1,42 @@
+//bridge-file-version: #21
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "defensive:mg_turret",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/machine_gun_turret"
+			},
+			"geometry": {
+				"default": "geometry.machine_gun_turret"
+			},
+			"animations": {
+				"setup": "animation.machine_gun_turret.setup",
+				"look_at_target": "animation.machine_gun_turret.look_at_target",
+				"shoot": "animation.machine_gun_turret.shoot",
+				"death": "animation.machine_gun_turret.death",
+				"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+			},
+			"scripts": {
+				"scale": 0.5,
+				"animate": [
+					"setup",
+					"look_at_target",
+					"firing_sequence",
+					{
+						"death": "!query.is_alive"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.machine_gun_turret"
+			],
+			"particle_effects": {
+				"muzzle_flash": "defensive:muzzle_flash"
+			}
+		}
+	}
+}

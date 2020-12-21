@@ -1,9 +1,9 @@
-//bridge-file-version: #51
+//bridge-file-version: #24
 {
 	"format_version": "1.16.100",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "defensive:ballista",
+			"identifier": "defensive:mg_turret",
 			"is_summonable": true
 		},
 		"components": {
@@ -40,40 +40,44 @@
 			},
 			"minecraft:behavior.ranged_attack": {
 				"priority": 0,
-				"charge_charged_trigger": 1.15,
-				"charge_shoot_trigger": 1.25,
-				"attack_radius": 16
+				"charge_charged_trigger": 2.4,
+				"charge_shoot_trigger": 2.5,
+				"attack_radius": 24,
+				"burst_shots": 10,
+				"burst_interval": 0.1
 			},
 			"minecraft:collision_box": {
 				"width": 0.75,
 				"height": 0.75
 			},
-			"minecraft:fire_immune": false,
 			"minecraft:healable": {
 				"items": [
 					{
-						"item": "minecraft:stick",
+						"item": "minecraft:iron_nugget",
 						"heal_amount": 1
 					},
 					{
-						"item": "minecraft:planks",
-						"heal_amount": 3
+						"item": "minecraft:iron_ingot",
+						"heal_amount": 10
 					},
 					{
-						"item": "minecraft:string",
-						"heal_amount": 1
-					},
-					{
-						"item": "minecraft:wood",
-						"heal_amount": 15
+						"item": "minecraft:iron_block",
+						"heal_amount": 100,
+						"effects": [
+							{
+								"name": "absorption",
+								"duration": 60,
+								"amplifier": 2
+							}
+						]
 					}
 				]
 			},
 			"minecraft:health": {
-				"value": 25
+				"value": 75
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/ballista/ballista.json"
+				"table": "loot_tables/mg_turret/mg_turret.json"
 			},
 			"minecraft:physics": {
 				"has_collision": true,
@@ -99,9 +103,6 @@
 			},
 			"minecraft:movement.basic": {},
 			"minecraft:navigation.walk": {},
-			"minecraft:behavior.random_look_around": {
-				"priority": 8
-			},
 			"minecraft:hurt_on_condition": {
 				"damage_conditions": [
 					{
@@ -137,7 +138,7 @@
 							}
 						},
 						"spawn_items": {
-							"table": "loot_tables/ballista/ballista.drop.json"
+							"table": "loot_tables/mg_turret/mg_turret.drop.json"
 						},
 						"hurt_item": 1
 					}
@@ -145,19 +146,7 @@
 			},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
-		"events": {
-			"removeTurret": {
-				"add": {
-					"component_groups": [
-						"despawn"
-					]
-				}
-			}
-		},
-		"component_groups": {
-			"despawn": {
-				"minecraft:instant_despawn": {}
-			}
-		}
+		"component_groups": {},
+		"events": {}
 	}
 }

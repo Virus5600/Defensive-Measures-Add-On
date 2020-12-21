@@ -3,7 +3,7 @@
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "80f647b4_a3b8_44d9_afcd_63d9001eb047",
-	"file_version": 50,
+	"file_version": 51,
 	"cache_content": {
 		"children": [
 			{
@@ -19,6 +19,20 @@
 							"is_summonable": true
 						},
 						"components": {
+							"minecraft:behavior.defend_village_target": {
+								"priority": 1,
+								"entity_types": [
+									{
+										"filters": {
+											"subject": "other",
+											"test": "is_family",
+											"value": "monster"
+										},
+										"max_dist": 16,
+										"must_see": true
+									}
+								]
+							},
 							"minecraft:behavior.nearest_attackable_target": {
 								"priority": 2,
 								"entity_types": [
@@ -35,20 +49,6 @@
 								"within_radius": 16,
 								"persist_time": 2.5,
 								"attack_interval": 2.5
-							},
-							"minecraft:behavior.defend_village_target": {
-								"priority": 1,
-								"entity_types": [
-									{
-										"filters": {
-											"subject": "other",
-											"test": "is_family",
-											"value": "monster"
-										},
-										"max_dist": 16,
-										"must_see": true
-									}
-								]
 							},
 							"minecraft:behavior.ranged_attack": {
 								"priority": 0,
@@ -182,6 +182,20 @@
 								"is_summonable": true
 							},
 							"components": {
+								"minecraft:behavior.defend_village_target": {
+									"priority": 1,
+									"entity_types": [
+										{
+											"filters": {
+												"subject": "other",
+												"test": "is_family",
+												"value": "monster"
+											},
+											"max_dist": 16,
+											"must_see": true
+										}
+									]
+								},
 								"minecraft:behavior.nearest_attackable_target": {
 									"priority": 2,
 									"entity_types": [
@@ -198,20 +212,6 @@
 									"within_radius": 16,
 									"persist_time": 2.5,
 									"attack_interval": 2.5
-								},
-								"minecraft:behavior.defend_village_target": {
-									"priority": 1,
-									"entity_types": [
-										{
-											"filters": {
-												"subject": "other",
-												"test": "is_family",
-												"value": "monster"
-											},
-											"max_dist": 16,
-											"must_see": true
-										}
-									]
 								},
 								"minecraft:behavior.ranged_attack": {
 									"priority": 0,
@@ -349,6 +349,20 @@
 								"is_summonable": true
 							},
 							"components": {
+								"minecraft:behavior.defend_village_target": {
+									"priority": 1,
+									"entity_types": [
+										{
+											"filters": {
+												"subject": "other",
+												"test": "is_family",
+												"value": "monster"
+											},
+											"max_dist": 16,
+											"must_see": true
+										}
+									]
+								},
 								"minecraft:behavior.nearest_attackable_target": {
 									"priority": 2,
 									"entity_types": [
@@ -365,20 +379,6 @@
 									"within_radius": 16,
 									"persist_time": 2.5,
 									"attack_interval": 2.5
-								},
-								"minecraft:behavior.defend_village_target": {
-									"priority": 1,
-									"entity_types": [
-										{
-											"filters": {
-												"subject": "other",
-												"test": "is_family",
-												"value": "monster"
-											},
-											"max_dist": 16,
-											"must_see": true
-										}
-									]
 								},
 								"minecraft:behavior.ranged_attack": {
 									"priority": 0,
@@ -505,6 +505,24 @@
 						"key": "components",
 						"children": [
 							{
+								"key": "minecraft:behavior.defend_village_target",
+								"is_minified": true,
+								"children": {
+									"priority": 1,
+									"entity_types": [
+										{
+											"filters": {
+												"subject": "other",
+												"test": "is_family",
+												"value": "monster"
+											},
+											"max_dist": 16,
+											"must_see": true
+										}
+									]
+								}
+							},
+							{
 								"key": "minecraft:behavior.nearest_attackable_target",
 								"is_minified": true,
 								"children": {
@@ -526,25 +544,21 @@
 								}
 							},
 							{
-								"key": "minecraft:behavior.defend_village_target",
-								"is_minified": true,
-								"children": {
-									"priority": 1,
-									"entity_types": [
-										{
-											"filters": {
-												"subject": "other",
-												"test": "is_family",
-												"value": "monster"
-											},
-											"max_dist": 16,
-											"must_see": true
-										}
-									]
-								}
-							},
-							{
 								"open": {
+									"minecraft:behavior.defend_village_target": {
+										"priority": 1,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16,
+												"must_see": true
+											}
+										]
+									},
 									"minecraft:behavior.nearest_attackable_target": {
 										"priority": 2,
 										"entity_types": [
@@ -561,20 +575,6 @@
 										"within_radius": 16,
 										"persist_time": 2.5,
 										"attack_interval": 2.5
-									},
-									"minecraft:behavior.defend_village_target": {
-										"priority": 1,
-										"entity_types": [
-											{
-												"filters": {
-													"subject": "other",
-													"test": "is_family",
-													"value": "monster"
-												},
-												"max_dist": 16,
-												"must_see": true
-											}
-										]
 									},
 									"minecraft:behavior.ranged_attack": {
 										"priority": 0,
@@ -843,6 +843,20 @@
 							},
 							{
 								"open": {
+									"minecraft:behavior.defend_village_target": {
+										"priority": 1,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16,
+												"must_see": true
+											}
+										]
+									},
 									"minecraft:behavior.nearest_attackable_target": {
 										"priority": 2,
 										"entity_types": [
@@ -859,20 +873,6 @@
 										"within_radius": 16,
 										"persist_time": 2.5,
 										"attack_interval": 2.5
-									},
-									"minecraft:behavior.defend_village_target": {
-										"priority": 1,
-										"entity_types": [
-											{
-												"filters": {
-													"subject": "other",
-													"test": "is_family",
-													"value": "monster"
-												},
-												"max_dist": 16,
-												"must_see": true
-											}
-										]
 									},
 									"minecraft:behavior.ranged_attack": {
 										"priority": 0,
@@ -1010,6 +1010,20 @@
 							},
 							{
 								"open": {
+									"minecraft:behavior.defend_village_target": {
+										"priority": 1,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16,
+												"must_see": true
+											}
+										]
+									},
 									"minecraft:behavior.nearest_attackable_target": {
 										"priority": 2,
 										"entity_types": [
@@ -1026,20 +1040,6 @@
 										"within_radius": 16,
 										"persist_time": 2.5,
 										"attack_interval": 2.5
-									},
-									"minecraft:behavior.defend_village_target": {
-										"priority": 1,
-										"entity_types": [
-											{
-												"filters": {
-													"subject": "other",
-													"test": "is_family",
-													"value": "monster"
-												},
-												"max_dist": 16,
-												"must_see": true
-											}
-										]
 									},
 									"minecraft:behavior.ranged_attack": {
 										"priority": 0,
@@ -1254,6 +1254,20 @@
 							},
 							{
 								"open": {
+									"minecraft:behavior.defend_village_target": {
+										"priority": 1,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16,
+												"must_see": true
+											}
+										]
+									},
 									"minecraft:behavior.nearest_attackable_target": {
 										"priority": 2,
 										"entity_types": [
@@ -1270,20 +1284,6 @@
 										"within_radius": 16,
 										"persist_time": 2.5,
 										"attack_interval": 2.5
-									},
-									"minecraft:behavior.defend_village_target": {
-										"priority": 1,
-										"entity_types": [
-											{
-												"filters": {
-													"subject": "other",
-													"test": "is_family",
-													"value": "monster"
-												},
-												"max_dist": 16,
-												"must_see": true
-											}
-										]
 									},
 									"minecraft:behavior.ranged_attack": {
 										"priority": 0,
@@ -1493,6 +1493,20 @@
 							},
 							{
 								"open": {
+									"minecraft:behavior.defend_village_target": {
+										"priority": 1,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16,
+												"must_see": true
+											}
+										]
+									},
 									"minecraft:behavior.nearest_attackable_target": {
 										"priority": 2,
 										"entity_types": [
@@ -1509,20 +1523,6 @@
 										"within_radius": 16,
 										"persist_time": 2.5,
 										"attack_interval": 2.5
-									},
-									"minecraft:behavior.defend_village_target": {
-										"priority": 1,
-										"entity_types": [
-											{
-												"filters": {
-													"subject": "other",
-													"test": "is_family",
-													"value": "monster"
-												},
-												"max_dist": 16,
-												"must_see": true
-											}
-										]
 									},
 									"minecraft:behavior.ranged_attack": {
 										"priority": 0,
@@ -1678,6 +1678,20 @@
 								"is_summonable": true
 							},
 							"components": {
+								"minecraft:behavior.defend_village_target": {
+									"priority": 1,
+									"entity_types": [
+										{
+											"filters": {
+												"subject": "other",
+												"test": "is_family",
+												"value": "monster"
+											},
+											"max_dist": 16,
+											"must_see": true
+										}
+									]
+								},
 								"minecraft:behavior.nearest_attackable_target": {
 									"priority": 2,
 									"entity_types": [
@@ -1694,20 +1708,6 @@
 									"within_radius": 16,
 									"persist_time": 2.5,
 									"attack_interval": 2.5
-								},
-								"minecraft:behavior.defend_village_target": {
-									"priority": 1,
-									"entity_types": [
-										{
-											"filters": {
-												"subject": "other",
-												"test": "is_family",
-												"value": "monster"
-											},
-											"max_dist": 16,
-											"must_see": true
-										}
-									]
 								},
 								"minecraft:behavior.ranged_attack": {
 									"priority": 0,

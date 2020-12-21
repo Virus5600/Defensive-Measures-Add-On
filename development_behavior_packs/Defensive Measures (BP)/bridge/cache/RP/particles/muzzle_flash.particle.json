@@ -1,0 +1,230 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\particles\\muzzle_flash.particle.json",
+	"file_type": "particle",
+	"format_version": 1,
+	"file_uuid": "4babb4f0_fa7b_41a4_801e_4f354bbbfb59",
+	"file_version": 2,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"particle_effect": {
+						"description": {
+							"identifier": "defensive:muzzle_flash",
+							"basic_render_parameters": {
+								"material": "particles_alpha",
+								"texture": "textures/particles/muzzle_flash"
+							}
+						},
+						"components": {
+							"minecraft:emitter_local_space": {
+								"position": true,
+								"rotation": true
+							},
+							"minecraft:emitter_rate_steady": {
+								"spawn_rate": 1,
+								"max_particles": 10
+							},
+							"minecraft:emitter_lifetime_once": {
+								"active_time": 0.1
+							},
+							"minecraft:emitter_shape_point": {},
+							"minecraft:particle_lifetime_expression": {
+								"max_lifetime": 1
+							},
+							"minecraft:particle_initial_speed": 0,
+							"minecraft:particle_motion_dynamic": {},
+							"minecraft:particle_appearance_billboard": {
+								"size": [
+									0.2,
+									0.2
+								],
+								"facing_camera_mode": "rotate_xyz",
+								"uv": {
+									"texture_width": 16,
+									"texture_height": 16,
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									]
+								}
+							}
+						}
+					}
+				},
+				"key": "particle_effect",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:muzzle_flash",
+								"basic_render_parameters": {
+									"material": "particles_alpha",
+									"texture": "textures/particles/muzzle_flash"
+								}
+							},
+							"components": {
+								"minecraft:emitter_local_space": {
+									"position": true,
+									"rotation": true
+								},
+								"minecraft:emitter_rate_steady": {
+									"spawn_rate": 1,
+									"max_particles": 10
+								},
+								"minecraft:emitter_lifetime_once": {
+									"active_time": 0.1
+								},
+								"minecraft:emitter_shape_point": {},
+								"minecraft:particle_lifetime_expression": {
+									"max_lifetime": 1
+								},
+								"minecraft:particle_initial_speed": 0,
+								"minecraft:particle_motion_dynamic": {},
+								"minecraft:particle_appearance_billboard": {
+									"size": [
+										0.2,
+										0.2
+									],
+									"facing_camera_mode": "rotate_xyz",
+									"uv": {
+										"texture_width": 16,
+										"texture_height": 16,
+										"uv": [
+											0,
+											0
+										],
+										"uv_size": [
+											16,
+											16
+										]
+									}
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "defensive:muzzle_flash",
+								"key": "identifier"
+							},
+							{
+								"open": {
+									"identifier": "defensive:muzzle_flash",
+									"basic_render_parameters": {
+										"material": "particles_alpha",
+										"texture": "textures/particles/muzzle_flash"
+									}
+								},
+								"key": "basic_render_parameters",
+								"is_minified": true,
+								"children": {
+									"material": "particles_alpha",
+									"texture": "textures/particles/muzzle_flash"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:muzzle_flash",
+								"basic_render_parameters": {
+									"material": "particles_alpha",
+									"texture": "textures/particles/muzzle_flash"
+								}
+							},
+							"components": {
+								"minecraft:emitter_local_space": {
+									"position": true,
+									"rotation": true
+								},
+								"minecraft:emitter_rate_steady": {
+									"spawn_rate": 1,
+									"max_particles": 10
+								},
+								"minecraft:emitter_lifetime_once": {
+									"active_time": 0.1
+								},
+								"minecraft:emitter_shape_point": {},
+								"minecraft:particle_lifetime_expression": {
+									"max_lifetime": 1
+								},
+								"minecraft:particle_initial_speed": 0,
+								"minecraft:particle_motion_dynamic": {},
+								"minecraft:particle_appearance_billboard": {
+									"size": [
+										0.2,
+										0.2
+									],
+									"facing_camera_mode": "rotate_xyz",
+									"uv": {
+										"texture_width": 16,
+										"texture_height": 16,
+										"uv": [
+											0,
+											0
+										],
+										"uv_size": [
+											16,
+											16
+										]
+									}
+								}
+							}
+						},
+						"key": "components",
+						"is_minified": true,
+						"children": {
+							"minecraft:emitter_local_space": {
+								"position": true,
+								"rotation": true
+							},
+							"minecraft:emitter_rate_steady": {
+								"spawn_rate": 1,
+								"max_particles": 10
+							},
+							"minecraft:emitter_lifetime_once": {
+								"active_time": 0.1
+							},
+							"minecraft:emitter_shape_point": {},
+							"minecraft:particle_lifetime_expression": {
+								"max_lifetime": 1
+							},
+							"minecraft:particle_initial_speed": 0,
+							"minecraft:particle_motion_dynamic": {},
+							"minecraft:particle_appearance_billboard": {
+								"size": [
+									0.2,
+									0.2
+								],
+								"facing_camera_mode": "rotate_xyz",
+								"uv": {
+									"texture_width": 16,
+									"texture_height": 16,
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,4 +1,4 @@
-//bridge-file-version: #7
+//bridge-file-version: #13
 {
 	"resource_pack_name": "Defensive Measures (RP)",
 	"texture_name": "atlas.items",
@@ -56,6 +56,36 @@
 		"ballista_arrow": {
 			"textures": [
 				"textures/items/ballista/ballista_arrow"
+			]
+		},
+		"ammo_case": {
+			"textures": [
+				"textures/items/machine_gun/ammo_case"
+			]
+		},
+		"ammo_rounds": {
+			"textures": [
+				"textures/items/machine_gun/ammo_rounds"
+			]
+		},
+		"machine_gun_base": {
+			"textures": [
+				"textures/items/machine_gun/machine_gun_base"
+			]
+		},
+		"machine_gun_head": {
+			"textures": [
+				"textures/items/machine_gun/machine_gun_head"
+			]
+		},
+		"machine_gun_stand": {
+			"textures": [
+				"textures/items/machine_gun/machine_gun_stand"
+			]
+		},
+		"machine_gun_turret": {
+			"textures": [
+				"textures/items/machine_gun/machine_gun_turret_icon"
 			]
 		}
 	}

@@ -1,0 +1,117 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Defensive Measures (BP)\\items\\mg_turret\\ammo_rounds.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "86a844d8_27c6_49a4_bba4_bad8e74f6da5",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "defensive:ammo_rounds",
+							"category": "items"
+						},
+						"components": {
+							"minecraft:max_stack_size": 32,
+							"minecraft:creative_category": {
+								"parent": "items"
+							},
+							"minecraft:icon": {
+								"texture": "ammo_rounds"
+							},
+							"minecraft:display_name": {}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ammo_rounds",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:max_stack_size": 32,
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
+								"minecraft:icon": {
+									"texture": "ammo_rounds"
+								},
+								"minecraft:display_name": {}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "defensive:ammo_rounds",
+							"category": "items"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:ammo_rounds",
+								"category": "items"
+							},
+							"components": {
+								"minecraft:max_stack_size": 32,
+								"minecraft:creative_category": {
+									"parent": "items"
+								},
+								"minecraft:icon": {
+									"texture": "ammo_rounds"
+								},
+								"minecraft:display_name": {}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "32",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "items"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 32,
+									"minecraft:creative_category": {
+										"parent": "items"
+									},
+									"minecraft:icon": {
+										"texture": "ammo_rounds"
+									},
+									"minecraft:display_name": {}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "ammo_rounds"
+								}
+							},
+							{
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

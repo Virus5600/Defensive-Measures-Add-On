@@ -1,0 +1,454 @@
+{
+	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\entity\\mg_turret.entity.json",
+	"file_type": "client_entity",
+	"format_version": 1,
+	"file_uuid": "864571c8_a3c5_4535_8fed_d6c4ed05901d",
+	"file_version": 21,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.10.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.10.0",
+					"minecraft:client_entity": {
+						"description": {
+							"identifier": "defensive:mg_turret",
+							"materials": {
+								"default": "entity"
+							},
+							"textures": {
+								"default": "textures/entity/machine_gun_turret"
+							},
+							"geometry": {
+								"default": "geometry.machine_gun_turret"
+							},
+							"animations": {
+								"setup": "animation.machine_gun_turret.setup",
+								"look_at_target": "animation.machine_gun_turret.look_at_target",
+								"shoot": "animation.machine_gun_turret.shoot",
+								"death": "animation.machine_gun_turret.death",
+								"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+							},
+							"scripts": {
+								"scale": 0.5,
+								"animate": [
+									"setup",
+									"look_at_target",
+									"firing_sequence",
+									{
+										"death": "!query.is_alive"
+									}
+								]
+							},
+							"render_controllers": [
+								"controller.render.machine_gun_turret"
+							],
+							"particle_effects": {
+								"muzzle_flash": "defensive:muzzle_flash"
+							}
+						}
+					}
+				},
+				"key": "minecraft:client_entity",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "defensive:mg_turret",
+								"materials": {
+									"default": "entity"
+								},
+								"textures": {
+									"default": "textures/entity/machine_gun_turret"
+								},
+								"geometry": {
+									"default": "geometry.machine_gun_turret"
+								},
+								"animations": {
+									"setup": "animation.machine_gun_turret.setup",
+									"look_at_target": "animation.machine_gun_turret.look_at_target",
+									"shoot": "animation.machine_gun_turret.shoot",
+									"death": "animation.machine_gun_turret.death",
+									"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+								},
+								"scripts": {
+									"scale": 0.5,
+									"animate": [
+										"setup",
+										"look_at_target",
+										"firing_sequence",
+										{
+											"death": "!query.is_alive"
+										}
+									]
+								},
+								"render_controllers": [
+									"controller.render.machine_gun_turret"
+								],
+								"particle_effects": {
+									"muzzle_flash": "defensive:muzzle_flash"
+								}
+							}
+						},
+						"key": "description",
+						"children": [
+							{
+								"data": "defensive:mg_turret",
+								"key": "identifier"
+							},
+							{
+								"open": {
+									"identifier": "defensive:mg_turret",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/machine_gun_turret"
+									},
+									"geometry": {
+										"default": "geometry.machine_gun_turret"
+									},
+									"animations": {
+										"setup": "animation.machine_gun_turret.setup",
+										"look_at_target": "animation.machine_gun_turret.look_at_target",
+										"shoot": "animation.machine_gun_turret.shoot",
+										"death": "animation.machine_gun_turret.death",
+										"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+									},
+									"scripts": {
+										"scale": 0.5,
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									},
+									"render_controllers": [
+										"controller.render.machine_gun_turret"
+									],
+									"particle_effects": {
+										"muzzle_flash": "defensive:muzzle_flash"
+									}
+								},
+								"key": "materials",
+								"is_minified": true,
+								"children": {
+									"default": "entity"
+								}
+							},
+							{
+								"open": {
+									"identifier": "defensive:mg_turret",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/machine_gun_turret"
+									},
+									"geometry": {
+										"default": "geometry.machine_gun_turret"
+									},
+									"animations": {
+										"setup": "animation.machine_gun_turret.setup",
+										"look_at_target": "animation.machine_gun_turret.look_at_target",
+										"shoot": "animation.machine_gun_turret.shoot",
+										"death": "animation.machine_gun_turret.death",
+										"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+									},
+									"scripts": {
+										"scale": 0.5,
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									},
+									"render_controllers": [
+										"controller.render.machine_gun_turret"
+									],
+									"particle_effects": {
+										"muzzle_flash": "defensive:muzzle_flash"
+									}
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": {
+									"default": "textures/entity/machine_gun_turret"
+								}
+							},
+							{
+								"open": {
+									"identifier": "defensive:mg_turret",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/machine_gun_turret"
+									},
+									"geometry": {
+										"default": "geometry.machine_gun_turret"
+									},
+									"animations": {
+										"setup": "animation.machine_gun_turret.setup",
+										"look_at_target": "animation.machine_gun_turret.look_at_target",
+										"shoot": "animation.machine_gun_turret.shoot",
+										"death": "animation.machine_gun_turret.death",
+										"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+									},
+									"scripts": {
+										"scale": 0.5,
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									},
+									"render_controllers": [
+										"controller.render.machine_gun_turret"
+									],
+									"particle_effects": {
+										"muzzle_flash": "defensive:muzzle_flash"
+									}
+								},
+								"key": "geometry",
+								"is_minified": true,
+								"children": {
+									"default": "geometry.machine_gun_turret"
+								}
+							},
+							{
+								"open": {
+									"identifier": "defensive:mg_turret",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/machine_gun_turret"
+									},
+									"geometry": {
+										"default": "geometry.machine_gun_turret"
+									},
+									"animations": {
+										"setup": "animation.machine_gun_turret.setup",
+										"look_at_target": "animation.machine_gun_turret.look_at_target",
+										"shoot": "animation.machine_gun_turret.shoot",
+										"death": "animation.machine_gun_turret.death",
+										"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+									},
+									"scripts": {
+										"scale": 0.5,
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									},
+									"render_controllers": [
+										"controller.render.machine_gun_turret"
+									],
+									"particle_effects": {
+										"muzzle_flash": "defensive:muzzle_flash"
+									}
+								},
+								"key": "animations",
+								"is_minified": true,
+								"children": {
+									"setup": "animation.machine_gun_turret.setup",
+									"look_at_target": "animation.machine_gun_turret.look_at_target",
+									"shoot": "animation.machine_gun_turret.shoot",
+									"death": "animation.machine_gun_turret.death",
+									"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+								}
+							},
+							{
+								"open": {
+									"identifier": "defensive:mg_turret",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/machine_gun_turret"
+									},
+									"geometry": {
+										"default": "geometry.machine_gun_turret"
+									},
+									"animations": {
+										"setup": "animation.machine_gun_turret.setup",
+										"look_at_target": "animation.machine_gun_turret.look_at_target",
+										"shoot": "animation.machine_gun_turret.shoot",
+										"death": "animation.machine_gun_turret.death",
+										"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+									},
+									"scripts": {
+										"scale": 0.5,
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									},
+									"render_controllers": [
+										"controller.render.machine_gun_turret"
+									],
+									"particle_effects": {
+										"muzzle_flash": "defensive:muzzle_flash"
+									}
+								},
+								"key": "scripts",
+								"children": [
+									{
+										"data": "0.5",
+										"key": "scale"
+									},
+									{
+										"open": {
+											"scale": 0.5,
+											"animate": [
+												"setup",
+												"look_at_target",
+												"firing_sequence",
+												{
+													"death": "!query.is_alive"
+												}
+											]
+										},
+										"key": "animate",
+										"children": [
+											{
+												"data": "setup"
+											},
+											{
+												"data": "look_at_target"
+											},
+											{
+												"data": "firing_sequence"
+											},
+											{
+												"open": [
+													"setup",
+													"look_at_target",
+													"firing_sequence",
+													{
+														"death": "!query.is_alive"
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"death": "!query.is_alive"
+												}
+											}
+										]
+									}
+								]
+							},
+							{
+								"open": {
+									"identifier": "defensive:mg_turret",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/machine_gun_turret"
+									},
+									"geometry": {
+										"default": "geometry.machine_gun_turret"
+									},
+									"animations": {
+										"setup": "animation.machine_gun_turret.setup",
+										"look_at_target": "animation.machine_gun_turret.look_at_target",
+										"shoot": "animation.machine_gun_turret.shoot",
+										"death": "animation.machine_gun_turret.death",
+										"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+									},
+									"scripts": {
+										"scale": 0.5,
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									},
+									"render_controllers": [
+										"controller.render.machine_gun_turret"
+									],
+									"particle_effects": {
+										"muzzle_flash": "defensive:muzzle_flash"
+									}
+								},
+								"key": "render_controllers",
+								"is_minified": true,
+								"children": [
+									"controller.render.machine_gun_turret"
+								]
+							},
+							{
+								"open": {
+									"identifier": "defensive:mg_turret",
+									"materials": {
+										"default": "entity"
+									},
+									"textures": {
+										"default": "textures/entity/machine_gun_turret"
+									},
+									"geometry": {
+										"default": "geometry.machine_gun_turret"
+									},
+									"animations": {
+										"setup": "animation.machine_gun_turret.setup",
+										"look_at_target": "animation.machine_gun_turret.look_at_target",
+										"shoot": "animation.machine_gun_turret.shoot",
+										"death": "animation.machine_gun_turret.death",
+										"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+									},
+									"scripts": {
+										"scale": 0.5,
+										"animate": [
+											"setup",
+											"look_at_target",
+											"firing_sequence",
+											{
+												"death": "!query.is_alive"
+											}
+										]
+									},
+									"render_controllers": [
+										"controller.render.machine_gun_turret"
+									],
+									"particle_effects": {
+										"muzzle_flash": "defensive:muzzle_flash"
+									}
+								},
+								"key": "particle_effects",
+								"is_minified": true,
+								"children": {
+									"muzzle_flash": "defensive:muzzle_flash"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
