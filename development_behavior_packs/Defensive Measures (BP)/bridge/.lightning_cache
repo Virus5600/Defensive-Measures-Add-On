@@ -1056,6 +1056,11 @@
 			"tags": [
 				"crafting_table"
 			]
+		},
+		"BP/recipes/mg_turret/ammo_case.json": {
+			"tags": [
+				"crafting_table"
+			]
 		}
 	},
 	"client_entity": {
@@ -1201,9 +1206,9 @@
 			"ids": [
 				"animation.cannon_turret.setup",
 				"animation.cannon_turret.look_at_target",
-				"animation.cannon_turret.fuse",
 				"animation.cannon_turret.shoot",
-				"animation.cannon_turret.death"
+				"animation.cannon_turret.death",
+				"animation.cannon_turret.fuse"
 			]
 		}
 	},

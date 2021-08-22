@@ -3,7 +3,7 @@
 	"file_type": "item",
 	"format_version": 1,
 	"file_uuid": "5c37f738_8c8e_4207_aadf_50bd8d16bc86",
-	"file_version": 4,
+	"file_version": 5,
 	"cache_content": {
 		"children": [
 			{
@@ -24,7 +24,7 @@
 								"parent": "items"
 							},
 							"minecraft:icon": {
-								"texture": "cannon_head"
+								"texture": "ammo_case"
 							},
 							"minecraft:display_name": {}
 						}
@@ -44,7 +44,7 @@
 									"parent": "items"
 								},
 								"minecraft:icon": {
-									"texture": "cannon_head"
+									"texture": "ammo_case"
 								},
 								"minecraft:display_name": {}
 							}
@@ -68,7 +68,7 @@
 									"parent": "items"
 								},
 								"minecraft:icon": {
-									"texture": "cannon_head"
+									"texture": "ammo_case"
 								},
 								"minecraft:display_name": {}
 							}
@@ -81,7 +81,7 @@
 								"parent": "items"
 							},
 							"minecraft:icon": {
-								"texture": "cannon_head"
+								"texture": "ammo_case"
 							},
 							"minecraft:display_name": {}
 						}

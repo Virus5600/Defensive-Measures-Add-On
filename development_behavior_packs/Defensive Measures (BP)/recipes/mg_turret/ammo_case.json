@@ -1,0 +1,28 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "defensive:ammo_case"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ii",
+			"i i",
+			"iii"
+		],
+		"key": {
+			"i": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "defensive:ammo_case",
+				"count": 1
+			}
+		]
+	}
+}

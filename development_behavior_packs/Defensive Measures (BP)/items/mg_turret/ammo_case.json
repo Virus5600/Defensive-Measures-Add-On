@@ -1,4 +1,4 @@
-//bridge-file-version: #4
+//bridge-file-version: #5
 {
 	"format_version": "1.16.100",
 	"minecraft:item": {
@@ -12,7 +12,7 @@
 				"parent": "items"
 			},
 			"minecraft:icon": {
-				"texture": "cannon_head"
+				"texture": "ammo_case"
 			},
 			"minecraft:display_name": {}
 		},

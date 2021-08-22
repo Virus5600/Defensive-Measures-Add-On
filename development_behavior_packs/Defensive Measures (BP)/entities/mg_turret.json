@@ -1,4 +1,4 @@
-//bridge-file-version: #24
+//bridge-file-version: #26
 {
 	"format_version": "1.16.100",
 	"minecraft:entity": {
@@ -103,6 +103,9 @@
 			},
 			"minecraft:movement.basic": {},
 			"minecraft:navigation.walk": {},
+			"minecraft:behavior.random_look_around": {
+				"priority": 8
+			},
 			"minecraft:hurt_on_condition": {
 				"damage_conditions": [
 					{
@@ -144,7 +147,10 @@
 					}
 				]
 			},
-			"minecraft:conditional_bandwidth_optimization": {}
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:scale": {
+				"value": 0.5
+			}
 		},
 		"component_groups": {},
 		"events": {}

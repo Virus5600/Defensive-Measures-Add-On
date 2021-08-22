@@ -564,5 +564,8 @@
 	},
 	"BP/loot_tables/mg_turret.head_1.json": {
 		"data": {}
+	},
+	"BP/recipes/mg_turret/ammo_case.json": {
+		"data": {}
 	}
 }

@@ -2,7 +2,7 @@
 	"file_path": "C:\\Users\\karls\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Defensive Measures (RP)\\animations\\cannon_turret.animation.json",
 	"file_type": "rp_animation",
 	"format_version": 1,
-	"file_uuid": "7b7afb8f_24a7_4fb0_8952_146fb9a4a44e",
+	"file_uuid": "070db991_8da7_4369_be8f_d0ddfec63d39",
 	"file_version": 0,
 	"cache_content": {
 		"children": [
@@ -53,22 +53,16 @@
 									}
 								},
 								"head": {
+									"relative_to": {
+										"rotation": "entity"
+									},
 									"rotation": {
-										"0": "-query.target_x_rotation > 30 ? 30 : -query.target_x_rotation < -30 ? -30 : query.target_x_rotation",
-										"1": 0,
+										"0": "-query.target_x_rotation > 30 ? 30 : -query.target_x_rotation < -30 ? -30 : -query.target_x_rotation",
+										"1": "query.target_y_rotation",
 										"2": 0
 									}
 								}
 							},
-							"particle_effects": {
-								"0.0": {
-									"effect": "fuse",
-									"locator": "fuse"
-								}
-							}
-						},
-						"animation.cannon_turret.fuse": {
-							"animation_length": 4,
 							"particle_effects": {
 								"0.0": {
 									"effect": "fuse",
@@ -108,6 +102,9 @@
 									}
 								},
 								"stand": {
+									"relative_to": {
+										"rotation": "entity"
+									},
 									"rotation": {
 										"0.0": [
 											0,
@@ -396,396 +393,1396 @@
 									}
 								}
 							}
+						},
+						"animation.cannon_turret.fuse": {
+							"animation_length": 4.48,
+							"particle_effects": {
+								"0.0": {
+									"effect": "fuse",
+									"locator": "fuse"
+								}
+							}
 						}
 					}
 				},
 				"key": "animations",
-				"is_minified": true,
-				"children": {
-					"animation.cannon_turret.setup": {
-						"loop": true,
-						"bones": {
-							"base": {
-								"relative_to": {
-									"rotation": "entity"
-								},
-								"rotation": {
-									"0": 0,
-									"1": "-query.body_y_rotation",
-									"2": 0
-								}
-							}
-						}
-					},
-					"animation.cannon_turret.look_at_target": {
-						"loop": true,
-						"bones": {
-							"base": {
-								"relative_to": {
-									"rotation": "entity"
-								},
-								"rotation": {
-									"0": 0,
-									"1": 0,
-									"2": 0
+				"children": [
+					{
+						"open": {
+							"animation.cannon_turret.setup": {
+								"loop": true,
+								"bones": {
+									"base": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": 0,
+											"1": "-query.body_y_rotation",
+											"2": 0
+										}
+									}
 								}
 							},
-							"stand": {
-								"relative_to": {
-									"rotation": "entity"
+							"animation.cannon_turret.look_at_target": {
+								"loop": true,
+								"bones": {
+									"base": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": 0,
+											"1": 0,
+											"2": 0
+										}
+									},
+									"stand": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": 0,
+											"1": "query.target_y_rotation",
+											"2": 0
+										}
+									},
+									"head": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": "-query.target_x_rotation > 30 ? 30 : -query.target_x_rotation < -30 ? -30 : -query.target_x_rotation",
+											"1": "query.target_y_rotation",
+											"2": 0
+										}
+									}
 								},
-								"rotation": {
-									"0": 0,
-									"1": "query.target_y_rotation",
-									"2": 0
+								"particle_effects": {
+									"0.0": {
+										"effect": "fuse",
+										"locator": "fuse"
+									}
 								}
 							},
-							"head": {
-								"rotation": {
-									"0": "-query.target_x_rotation > 30 ? 30 : -query.target_x_rotation < -30 ? -30 : query.target_x_rotation",
-									"1": 0,
-									"2": 0
+							"animation.cannon_turret.shoot": {
+								"override_previous_animation": true,
+								"animation_length": 0.52,
+								"bones": {
+									"base": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0.0": [
+												0,
+												"-query.body_y_rotation",
+												0
+											],
+											"0.04": [
+												"Math.random(-0.5,0.5)",
+												"-query.body_y_rotation",
+												"Math.random(-0.5,0.5)"
+											],
+											"0.24": [
+												"Math.random(-0.25,0.25)",
+												"-query.body_y_rotation",
+												"Math.random(-0.25,0.25)"
+											],
+											"0.52": [
+												0,
+												"-query.body_y_rotation",
+												0
+											]
+										}
+									},
+									"stand": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0.0": [
+												0,
+												"query.target_y_rotation",
+												0
+											],
+											"0.04": [
+												"Math.random(-0.25, 0.25)",
+												"query.target_y_rotation + Math.random(-0.25, 0.25)",
+												"Math.random(-0.25, 0.25)"
+											],
+											"0.24": [
+												"Math.random(-0.125, 0.125)",
+												"query.target_y_rotation + Math.random(-0.125, 0.125)",
+												"Math.random(-0.125, 0.125)"
+											],
+											"0.52": [
+												0,
+												"query.target_y_rotation",
+												0
+											]
+										}
+									},
+									"head": {
+										"rotation": {
+											"0.0": [
+												"query.target_x_rotation",
+												0,
+												0
+											],
+											"0.04": [
+												"query.target_x_rotation + 0.5",
+												0,
+												0
+											],
+											"0.08": [
+												"query.target_x_rotation - 7.5",
+												0,
+												0
+											],
+											"0.52": [
+												"query.target_x_rotation",
+												0,
+												0
+											]
+										},
+										"position": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.08": [
+												0,
+												0,
+												1
+											],
+											"0.52": [
+												0,
+												0,
+												0
+											]
+										}
+									}
+								},
+								"particle_effects": {
+									"0.04": {
+										"effect": "flash",
+										"locator": "barrel"
+									}
+								}
+							},
+							"animation.cannon_turret.death": {
+								"animation_length": 1,
+								"bones": {
+									"base": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": "this",
+											"1": "this",
+											"2": "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"
+										}
+									},
+									"stand": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": "this",
+											"1": "-query.body_y_rotation",
+											"2": "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"
+										}
+									},
+									"rightstand": {
+										"rotation": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.28": [
+												0,
+												0,
+												-110
+											],
+											"0.36": {
+												"post": [
+													0,
+													0,
+													-105
+												],
+												"lerp_mode": "catmullrom"
+											},
+											"0.44": [
+												0,
+												0,
+												-110
+											],
+											"0.72": [
+												0,
+												0,
+												-104
+											]
+										},
+										"position": {
+											"0.44": [
+												0,
+												0,
+												0
+											],
+											"0.72": [
+												-1,
+												-0.6,
+												0
+											]
+										}
+									},
+									"leftstand": {
+										"rotation": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.08": [
+												0,
+												-25,
+												0
+											],
+											"0.2": [
+												10,
+												-15.62,
+												0
+											],
+											"0.24": [
+												10,
+												-12.5,
+												0
+											],
+											"0.32": [
+												4,
+												-9.41,
+												24.69
+											],
+											"0.56": [
+												0,
+												0,
+												100
+											],
+											"0.64": {
+												"post": [
+													0,
+													0,
+													95
+												],
+												"lerp_mode": "catmullrom"
+											},
+											"0.72": [
+												0,
+												0,
+												100
+											]
+										},
+										"position": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.08": [
+												1,
+												0,
+												1
+											],
+											"0.12": [
+												1.37,
+												-0.25,
+												1.18
+											],
+											"0.2": [
+												1.75,
+												-0.3,
+												1.37
+											],
+											"0.24": [
+												2,
+												-0.3,
+												1.5
+											],
+											"0.56": [
+												2,
+												-1,
+												1.5
+											]
+										}
+									},
+									"head": {
+										"rotation": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.08": [
+												0,
+												0,
+												0
+											],
+											"0.24": [
+												15,
+												0,
+												0
+											],
+											"0.32": [
+												18.5,
+												0,
+												0
+											],
+											"0.44": [
+												15,
+												0,
+												0
+											],
+											"0.56": [
+												12.5,
+												0,
+												0
+											],
+											"0.72": [
+												15,
+												0,
+												0
+											]
+										},
+										"position": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.08": [
+												0,
+												-0.5,
+												0
+											],
+											"0.24": [
+												0,
+												-1,
+												0
+											],
+											"0.48": {
+												"post": [
+													0,
+													-0.65,
+													0
+												],
+												"lerp_mode": "catmullrom"
+											},
+											"0.72": [
+												0,
+												-1,
+												0
+											]
+										}
+									}
+								}
+							},
+							"animation.cannon_turret.fuse": {
+								"animation_length": 4.48,
+								"particle_effects": {
+									"0.0": {
+										"effect": "fuse",
+										"locator": "fuse"
+									}
 								}
 							}
 						},
-						"particle_effects": {
-							"0.0": {
-								"effect": "fuse",
-								"locator": "fuse"
-							}
-						}
-					},
-					"animation.cannon_turret.fuse": {
-						"animation_length": 4,
-						"particle_effects": {
-							"0.0": {
-								"effect": "fuse",
-								"locator": "fuse"
-							}
-						}
-					},
-					"animation.cannon_turret.shoot": {
-						"override_previous_animation": true,
-						"animation_length": 0.52,
-						"bones": {
-							"base": {
-								"relative_to": {
-									"rotation": "entity"
+						"key": "animation.cannon_turret.setup",
+						"children": [
+							{
+								"data": "true",
+								"key": "loop"
+							},
+							{
+								"open": {
+									"loop": true,
+									"bones": {
+										"base": {
+											"relative_to": {
+												"rotation": "entity"
+											},
+											"rotation": {
+												"0": 0,
+												"1": "-query.body_y_rotation",
+												"2": 0
+											}
+										}
+									}
 								},
-								"rotation": {
-									"0.0": [
-										0,
-										"-query.body_y_rotation",
-										0
-									],
-									"0.04": [
-										"Math.random(-0.5,0.5)",
-										"-query.body_y_rotation",
-										"Math.random(-0.5,0.5)"
-									],
-									"0.24": [
-										"Math.random(-0.25,0.25)",
-										"-query.body_y_rotation",
-										"Math.random(-0.25,0.25)"
-									],
-									"0.52": [
-										0,
-										"-query.body_y_rotation",
-										0
-									]
+								"key": "bones",
+								"children": [
+									{
+										"open": {
+											"base": {
+												"relative_to": {
+													"rotation": "entity"
+												},
+												"rotation": {
+													"0": 0,
+													"1": "-query.body_y_rotation",
+													"2": 0
+												}
+											}
+										},
+										"key": "base",
+										"children": [
+											{
+												"open": {
+													"relative_to": {
+														"rotation": "entity"
+													},
+													"rotation": {
+														"0": 0,
+														"1": "-query.body_y_rotation",
+														"2": 0
+													}
+												},
+												"key": "relative_to",
+												"is_minified": true,
+												"children": {
+													"rotation": "entity"
+												}
+											},
+											{
+												"open": {
+													"relative_to": {
+														"rotation": "entity"
+													},
+													"rotation": {
+														"0": 0,
+														"1": "-query.body_y_rotation",
+														"2": 0
+													}
+												},
+												"key": "rotation",
+												"is_minified": true,
+												"children": {
+													"0": 0,
+													"1": "-query.body_y_rotation",
+													"2": 0
+												}
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"animation.cannon_turret.setup": {
+								"loop": true,
+								"bones": {
+									"base": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": 0,
+											"1": "-query.body_y_rotation",
+											"2": 0
+										}
+									}
 								}
 							},
-							"stand": {
-								"rotation": {
-									"0.0": [
-										0,
-										"query.target_y_rotation",
-										0
-									],
-									"0.04": [
-										"Math.random(-0.25, 0.25)",
-										"query.target_y_rotation + Math.random(-0.25, 0.25)",
-										"Math.random(-0.25, 0.25)"
-									],
-									"0.24": [
-										"Math.random(-0.125, 0.125)",
-										"query.target_y_rotation + Math.random(-0.125, 0.125)",
-										"Math.random(-0.125, 0.125)"
-									],
-									"0.52": [
-										0,
-										"query.target_y_rotation",
-										0
-									]
+							"animation.cannon_turret.look_at_target": {
+								"loop": true,
+								"bones": {
+									"base": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": 0,
+											"1": 0,
+											"2": 0
+										}
+									},
+									"stand": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": 0,
+											"1": "query.target_y_rotation",
+											"2": 0
+										}
+									},
+									"head": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": "-query.target_x_rotation > 30 ? 30 : -query.target_x_rotation < -30 ? -30 : -query.target_x_rotation",
+											"1": "query.target_y_rotation",
+											"2": 0
+										}
+									}
+								},
+								"particle_effects": {
+									"0.0": {
+										"effect": "fuse",
+										"locator": "fuse"
+									}
 								}
 							},
-							"head": {
-								"rotation": {
-									"0.0": [
-										"query.target_x_rotation",
-										0,
-										0
-									],
-									"0.04": [
-										"query.target_x_rotation + 0.5",
-										0,
-										0
-									],
-									"0.08": [
-										"query.target_x_rotation - 7.5",
-										0,
-										0
-									],
-									"0.52": [
-										"query.target_x_rotation",
-										0,
-										0
-									]
+							"animation.cannon_turret.shoot": {
+								"override_previous_animation": true,
+								"animation_length": 0.52,
+								"bones": {
+									"base": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0.0": [
+												0,
+												"-query.body_y_rotation",
+												0
+											],
+											"0.04": [
+												"Math.random(-0.5,0.5)",
+												"-query.body_y_rotation",
+												"Math.random(-0.5,0.5)"
+											],
+											"0.24": [
+												"Math.random(-0.25,0.25)",
+												"-query.body_y_rotation",
+												"Math.random(-0.25,0.25)"
+											],
+											"0.52": [
+												0,
+												"-query.body_y_rotation",
+												0
+											]
+										}
+									},
+									"stand": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0.0": [
+												0,
+												"query.target_y_rotation",
+												0
+											],
+											"0.04": [
+												"Math.random(-0.25, 0.25)",
+												"query.target_y_rotation + Math.random(-0.25, 0.25)",
+												"Math.random(-0.25, 0.25)"
+											],
+											"0.24": [
+												"Math.random(-0.125, 0.125)",
+												"query.target_y_rotation + Math.random(-0.125, 0.125)",
+												"Math.random(-0.125, 0.125)"
+											],
+											"0.52": [
+												0,
+												"query.target_y_rotation",
+												0
+											]
+										}
+									},
+									"head": {
+										"rotation": {
+											"0.0": [
+												"query.target_x_rotation",
+												0,
+												0
+											],
+											"0.04": [
+												"query.target_x_rotation + 0.5",
+												0,
+												0
+											],
+											"0.08": [
+												"query.target_x_rotation - 7.5",
+												0,
+												0
+											],
+											"0.52": [
+												"query.target_x_rotation",
+												0,
+												0
+											]
+										},
+										"position": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.08": [
+												0,
+												0,
+												1
+											],
+											"0.52": [
+												0,
+												0,
+												0
+											]
+										}
+									}
 								},
-								"position": {
-									"0.0": [
-										0,
-										0,
-										0
-									],
-									"0.08": [
-										0,
-										0,
-										1
-									],
-									"0.52": [
-										0,
-										0,
-										0
-									]
+								"particle_effects": {
+									"0.04": {
+										"effect": "flash",
+										"locator": "barrel"
+									}
+								}
+							},
+							"animation.cannon_turret.death": {
+								"animation_length": 1,
+								"bones": {
+									"base": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": "this",
+											"1": "this",
+											"2": "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"
+										}
+									},
+									"stand": {
+										"relative_to": {
+											"rotation": "entity"
+										},
+										"rotation": {
+											"0": "this",
+											"1": "-query.body_y_rotation",
+											"2": "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"
+										}
+									},
+									"rightstand": {
+										"rotation": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.28": [
+												0,
+												0,
+												-110
+											],
+											"0.36": {
+												"post": [
+													0,
+													0,
+													-105
+												],
+												"lerp_mode": "catmullrom"
+											},
+											"0.44": [
+												0,
+												0,
+												-110
+											],
+											"0.72": [
+												0,
+												0,
+												-104
+											]
+										},
+										"position": {
+											"0.44": [
+												0,
+												0,
+												0
+											],
+											"0.72": [
+												-1,
+												-0.6,
+												0
+											]
+										}
+									},
+									"leftstand": {
+										"rotation": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.08": [
+												0,
+												-25,
+												0
+											],
+											"0.2": [
+												10,
+												-15.62,
+												0
+											],
+											"0.24": [
+												10,
+												-12.5,
+												0
+											],
+											"0.32": [
+												4,
+												-9.41,
+												24.69
+											],
+											"0.56": [
+												0,
+												0,
+												100
+											],
+											"0.64": {
+												"post": [
+													0,
+													0,
+													95
+												],
+												"lerp_mode": "catmullrom"
+											},
+											"0.72": [
+												0,
+												0,
+												100
+											]
+										},
+										"position": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.08": [
+												1,
+												0,
+												1
+											],
+											"0.12": [
+												1.37,
+												-0.25,
+												1.18
+											],
+											"0.2": [
+												1.75,
+												-0.3,
+												1.37
+											],
+											"0.24": [
+												2,
+												-0.3,
+												1.5
+											],
+											"0.56": [
+												2,
+												-1,
+												1.5
+											]
+										}
+									},
+									"head": {
+										"rotation": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.08": [
+												0,
+												0,
+												0
+											],
+											"0.24": [
+												15,
+												0,
+												0
+											],
+											"0.32": [
+												18.5,
+												0,
+												0
+											],
+											"0.44": [
+												15,
+												0,
+												0
+											],
+											"0.56": [
+												12.5,
+												0,
+												0
+											],
+											"0.72": [
+												15,
+												0,
+												0
+											]
+										},
+										"position": {
+											"0.0": [
+												0,
+												0,
+												0
+											],
+											"0.08": [
+												0,
+												-0.5,
+												0
+											],
+											"0.24": [
+												0,
+												-1,
+												0
+											],
+											"0.48": {
+												"post": [
+													0,
+													-0.65,
+													0
+												],
+												"lerp_mode": "catmullrom"
+											},
+											"0.72": [
+												0,
+												-1,
+												0
+											]
+										}
+									}
+								}
+							},
+							"animation.cannon_turret.fuse": {
+								"animation_length": 4.48,
+								"particle_effects": {
+									"0.0": {
+										"effect": "fuse",
+										"locator": "fuse"
+									}
 								}
 							}
 						},
-						"particle_effects": {
-							"0.04": {
-								"effect": "flash",
-								"locator": "barrel"
+						"key": "animation.cannon_turret.look_at_target",
+						"children": [
+							{
+								"data": "true",
+								"key": "loop"
+							},
+							{
+								"open": {
+									"loop": true,
+									"bones": {
+										"base": {
+											"relative_to": {
+												"rotation": "entity"
+											},
+											"rotation": {
+												"0": 0,
+												"1": 0,
+												"2": 0
+											}
+										},
+										"stand": {
+											"relative_to": {
+												"rotation": "entity"
+											},
+											"rotation": {
+												"0": 0,
+												"1": "query.target_y_rotation",
+												"2": 0
+											}
+										},
+										"head": {
+											"relative_to": {
+												"rotation": "entity"
+											},
+											"rotation": {
+												"0": "-query.target_x_rotation > 30 ? 30 : -query.target_x_rotation < -30 ? -30 : -query.target_x_rotation",
+												"1": "query.target_y_rotation",
+												"2": 0
+											}
+										}
+									},
+									"particle_effects": {
+										"0.0": {
+											"effect": "fuse",
+											"locator": "fuse"
+										}
+									}
+								},
+								"key": "bones",
+								"children": [
+									{
+										"open": {
+											"base": {
+												"relative_to": {
+													"rotation": "entity"
+												},
+												"rotation": {
+													"0": 0,
+													"1": 0,
+													"2": 0
+												}
+											},
+											"stand": {
+												"relative_to": {
+													"rotation": "entity"
+												},
+												"rotation": {
+													"0": 0,
+													"1": "query.target_y_rotation",
+													"2": 0
+												}
+											},
+											"head": {
+												"relative_to": {
+													"rotation": "entity"
+												},
+												"rotation": {
+													"0": "-query.target_x_rotation > 30 ? 30 : -query.target_x_rotation < -30 ? -30 : -query.target_x_rotation",
+													"1": "query.target_y_rotation",
+													"2": 0
+												}
+											}
+										},
+										"key": "base",
+										"children": [
+											{
+												"open": {
+													"relative_to": {
+														"rotation": "entity"
+													},
+													"rotation": {
+														"0": 0,
+														"1": 0,
+														"2": 0
+													}
+												},
+												"key": "relative_to",
+												"is_minified": true,
+												"children": {
+													"rotation": "entity"
+												}
+											},
+											{
+												"open": {
+													"relative_to": {
+														"rotation": "entity"
+													},
+													"rotation": {
+														"0": 0,
+														"1": 0,
+														"2": 0
+													}
+												},
+												"key": "rotation",
+												"is_minified": true,
+												"children": {
+													"0": 0,
+													"1": 0,
+													"2": 0
+												}
+											}
+										]
+									},
+									{
+										"key": "stand",
+										"is_minified": true,
+										"children": {
+											"relative_to": {
+												"rotation": "entity"
+											},
+											"rotation": {
+												"0": 0,
+												"1": "query.target_y_rotation",
+												"2": 0
+											}
+										}
+									},
+									{
+										"key": "head",
+										"is_minified": true,
+										"children": {
+											"relative_to": {
+												"rotation": "entity"
+											},
+											"rotation": {
+												"0": "-query.target_x_rotation > 30 ? 30 : -query.target_x_rotation < -30 ? -30 : -query.target_x_rotation",
+												"1": "query.target_y_rotation",
+												"2": 0
+											}
+										}
+									}
+								]
+							},
+							{
+								"key": "particle_effects",
+								"is_minified": true,
+								"children": {
+									"0.0": {
+										"effect": "fuse",
+										"locator": "fuse"
+									}
+								}
 							}
-						}
+						]
 					},
-					"animation.cannon_turret.death": {
-						"animation_length": 1,
-						"bones": {
-							"base": {
-								"relative_to": {
-									"rotation": "entity"
-								},
-								"rotation": {
-									"0": "this",
-									"1": "this",
-									"2": "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"
-								}
-							},
-							"stand": {
-								"relative_to": {
-									"rotation": "entity"
-								},
-								"rotation": {
-									"0": "this",
-									"1": "-query.body_y_rotation",
-									"2": "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"
-								}
-							},
-							"rightstand": {
-								"rotation": {
-									"0.0": [
-										0,
-										0,
-										0
-									],
-									"0.28": [
-										0,
-										0,
-										-110
-									],
-									"0.36": {
-										"post": [
-											0,
-											0,
-											-105
-										],
-										"lerp_mode": "catmullrom"
+					{
+						"key": "animation.cannon_turret.shoot",
+						"is_minified": true,
+						"children": {
+							"override_previous_animation": true,
+							"animation_length": 0.52,
+							"bones": {
+								"base": {
+									"relative_to": {
+										"rotation": "entity"
 									},
-									"0.44": [
-										0,
-										0,
-										-110
-									],
-									"0.72": [
-										0,
-										0,
-										-104
-									]
-								},
-								"position": {
-									"0.44": [
-										0,
-										0,
-										0
-									],
-									"0.72": [
-										-1,
-										-0.6,
-										0
-									]
-								}
-							},
-							"leftstand": {
-								"rotation": {
-									"0.0": [
-										0,
-										0,
-										0
-									],
-									"0.08": [
-										0,
-										-25,
-										0
-									],
-									"0.2": [
-										10,
-										-15.62,
-										0
-									],
-									"0.24": [
-										10,
-										-12.5,
-										0
-									],
-									"0.32": [
-										4,
-										-9.41,
-										24.69
-									],
-									"0.56": [
-										0,
-										0,
-										100
-									],
-									"0.64": {
-										"post": [
+									"rotation": {
+										"0.0": [
 											0,
-											0,
-											95
-										],
-										"lerp_mode": "catmullrom"
-									},
-									"0.72": [
-										0,
-										0,
-										100
-									]
-								},
-								"position": {
-									"0.0": [
-										0,
-										0,
-										0
-									],
-									"0.08": [
-										1,
-										0,
-										1
-									],
-									"0.12": [
-										1.37,
-										-0.25,
-										1.18
-									],
-									"0.2": [
-										1.75,
-										-0.3,
-										1.37
-									],
-									"0.24": [
-										2,
-										-0.3,
-										1.5
-									],
-									"0.56": [
-										2,
-										-1,
-										1.5
-									]
-								}
-							},
-							"head": {
-								"rotation": {
-									"0.0": [
-										0,
-										0,
-										0
-									],
-									"0.08": [
-										0,
-										0,
-										0
-									],
-									"0.24": [
-										15,
-										0,
-										0
-									],
-									"0.32": [
-										18.5,
-										0,
-										0
-									],
-									"0.44": [
-										15,
-										0,
-										0
-									],
-									"0.56": [
-										12.5,
-										0,
-										0
-									],
-									"0.72": [
-										15,
-										0,
-										0
-									]
-								},
-								"position": {
-									"0.0": [
-										0,
-										0,
-										0
-									],
-									"0.08": [
-										0,
-										-0.5,
-										0
-									],
-									"0.24": [
-										0,
-										-1,
-										0
-									],
-									"0.48": {
-										"post": [
-											0,
-											-0.65,
+											"-query.body_y_rotation",
 											0
 										],
-										"lerp_mode": "catmullrom"
+										"0.04": [
+											"Math.random(-0.5,0.5)",
+											"-query.body_y_rotation",
+											"Math.random(-0.5,0.5)"
+										],
+										"0.24": [
+											"Math.random(-0.25,0.25)",
+											"-query.body_y_rotation",
+											"Math.random(-0.25,0.25)"
+										],
+										"0.52": [
+											0,
+											"-query.body_y_rotation",
+											0
+										]
+									}
+								},
+								"stand": {
+									"relative_to": {
+										"rotation": "entity"
 									},
-									"0.72": [
-										0,
-										-1,
-										0
-									]
+									"rotation": {
+										"0.0": [
+											0,
+											"query.target_y_rotation",
+											0
+										],
+										"0.04": [
+											"Math.random(-0.25, 0.25)",
+											"query.target_y_rotation + Math.random(-0.25, 0.25)",
+											"Math.random(-0.25, 0.25)"
+										],
+										"0.24": [
+											"Math.random(-0.125, 0.125)",
+											"query.target_y_rotation + Math.random(-0.125, 0.125)",
+											"Math.random(-0.125, 0.125)"
+										],
+										"0.52": [
+											0,
+											"query.target_y_rotation",
+											0
+										]
+									}
+								},
+								"head": {
+									"rotation": {
+										"0.0": [
+											"query.target_x_rotation",
+											0,
+											0
+										],
+										"0.04": [
+											"query.target_x_rotation + 0.5",
+											0,
+											0
+										],
+										"0.08": [
+											"query.target_x_rotation - 7.5",
+											0,
+											0
+										],
+										"0.52": [
+											"query.target_x_rotation",
+											0,
+											0
+										]
+									},
+									"position": {
+										"0.0": [
+											0,
+											0,
+											0
+										],
+										"0.08": [
+											0,
+											0,
+											1
+										],
+										"0.52": [
+											0,
+											0,
+											0
+										]
+									}
+								}
+							},
+							"particle_effects": {
+								"0.04": {
+									"effect": "flash",
+									"locator": "barrel"
+								}
+							}
+						}
+					},
+					{
+						"key": "animation.cannon_turret.death",
+						"is_minified": true,
+						"children": {
+							"animation_length": 1,
+							"bones": {
+								"base": {
+									"relative_to": {
+										"rotation": "entity"
+									},
+									"rotation": {
+										"0": "this",
+										"1": "this",
+										"2": "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"
+									}
+								},
+								"stand": {
+									"relative_to": {
+										"rotation": "entity"
+									},
+									"rotation": {
+										"0": "this",
+										"1": "-query.body_y_rotation",
+										"2": "this + Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"
+									}
+								},
+								"rightstand": {
+									"rotation": {
+										"0.0": [
+											0,
+											0,
+											0
+										],
+										"0.28": [
+											0,
+											0,
+											-110
+										],
+										"0.36": {
+											"post": [
+												0,
+												0,
+												-105
+											],
+											"lerp_mode": "catmullrom"
+										},
+										"0.44": [
+											0,
+											0,
+											-110
+										],
+										"0.72": [
+											0,
+											0,
+											-104
+										]
+									},
+									"position": {
+										"0.44": [
+											0,
+											0,
+											0
+										],
+										"0.72": [
+											-1,
+											-0.6,
+											0
+										]
+									}
+								},
+								"leftstand": {
+									"rotation": {
+										"0.0": [
+											0,
+											0,
+											0
+										],
+										"0.08": [
+											0,
+											-25,
+											0
+										],
+										"0.2": [
+											10,
+											-15.62,
+											0
+										],
+										"0.24": [
+											10,
+											-12.5,
+											0
+										],
+										"0.32": [
+											4,
+											-9.41,
+											24.69
+										],
+										"0.56": [
+											0,
+											0,
+											100
+										],
+										"0.64": {
+											"post": [
+												0,
+												0,
+												95
+											],
+											"lerp_mode": "catmullrom"
+										},
+										"0.72": [
+											0,
+											0,
+											100
+										]
+									},
+									"position": {
+										"0.0": [
+											0,
+											0,
+											0
+										],
+										"0.08": [
+											1,
+											0,
+											1
+										],
+										"0.12": [
+											1.37,
+											-0.25,
+											1.18
+										],
+										"0.2": [
+											1.75,
+											-0.3,
+											1.37
+										],
+										"0.24": [
+											2,
+											-0.3,
+											1.5
+										],
+										"0.56": [
+											2,
+											-1,
+											1.5
+										]
+									}
+								},
+								"head": {
+									"rotation": {
+										"0.0": [
+											0,
+											0,
+											0
+										],
+										"0.08": [
+											0,
+											0,
+											0
+										],
+										"0.24": [
+											15,
+											0,
+											0
+										],
+										"0.32": [
+											18.5,
+											0,
+											0
+										],
+										"0.44": [
+											15,
+											0,
+											0
+										],
+										"0.56": [
+											12.5,
+											0,
+											0
+										],
+										"0.72": [
+											15,
+											0,
+											0
+										]
+									},
+									"position": {
+										"0.0": [
+											0,
+											0,
+											0
+										],
+										"0.08": [
+											0,
+											-0.5,
+											0
+										],
+										"0.24": [
+											0,
+											-1,
+											0
+										],
+										"0.48": {
+											"post": [
+												0,
+												-0.65,
+												0
+											],
+											"lerp_mode": "catmullrom"
+										},
+										"0.72": [
+											0,
+											-1,
+											0
+										]
+									}
+								}
+							}
+						}
+					},
+					{
+						"key": "animation.cannon_turret.fuse",
+						"is_minified": true,
+						"children": {
+							"animation_length": 4.48,
+							"particle_effects": {
+								"0.0": {
+									"effect": "fuse",
+									"locator": "fuse"
 								}
 							}
 						}
 					}
-				}
+				]
 			}
 		]
 	}
