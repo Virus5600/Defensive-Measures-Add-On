@@ -818,7 +818,9 @@
 			"custom_components": []
 		},
 		"BP/entities/mg_turret.json": {
-			"events": [],
+			"events": [
+				"removeTurret"
+			],
 			"bridge_core_tags": [],
 			"identifiers": [
 				"defensive:mg_turret"
@@ -827,6 +829,21 @@
 			"families": [
 				"ballista",
 				"turret"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/entities/mg_bullet.json": {
+			"events": [],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"defensive:mg_bullet"
+			],
+			"animation_references": [],
+			"families": [
+				"projectile",
+				"bullet",
+				"mg_bullet"
 			],
 			"custom_commands": [],
 			"custom_components": []
@@ -1190,6 +1207,28 @@
 			"geometry_identifiers": [
 				"default"
 			]
+		},
+		"RP/entity/mg_bullet.entity.json": {
+			"identifiers": [
+				"defensive:mg_bullet"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"move"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
 		}
 	},
 	"sound_definition": {
@@ -1197,7 +1236,10 @@
 			"ids": [
 				"cannon.shoot",
 				"cannon.destroyed",
-				"cannon.hit"
+				"cannon.hit",
+				"mg.shoot",
+				"bullet.ground_hit",
+				"bullet.hit"
 			]
 		}
 	},
@@ -1253,6 +1295,11 @@
 		"RP/render_controllers/mg_turret.render_controllers.json": {
 			"ids": [
 				"controller.render.machine_gun_turret"
+			]
+		},
+		"RP/render_controllers/mg_bullet.render_controllers.json": {
+			"ids": [
+				"controller.render.machine_gun_bullet"
 			]
 		}
 	},

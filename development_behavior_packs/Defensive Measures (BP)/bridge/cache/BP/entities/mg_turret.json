@@ -3,16 +3,16 @@
 	"file_type": "entity",
 	"format_version": 1,
 	"file_uuid": "a0a5ec86_7844_47a9_98f6_84d603dd1f6e",
-	"file_version": 26,
+	"file_version": 30,
 	"cache_content": {
 		"children": [
 			{
-				"data": "1.16.100",
+				"data": "1.17.0",
 				"key": "format_version"
 			},
 			{
 				"open": {
-					"format_version": "1.16.100",
+					"format_version": "1.17.0",
 					"minecraft:entity": {
 						"description": {
 							"identifier": "defensive:mg_turret",
@@ -101,7 +101,7 @@
 							},
 							"minecraft:persistent": {},
 							"minecraft:shooter": {
-								"def": "minecraft:arrow"
+								"def": "defensive:mg_bullet"
 							},
 							"minecraft:variant": {
 								"value": 0
@@ -138,6 +138,10 @@
 									"turret"
 								]
 							},
+							"minecraft:conditional_bandwidth_optimization": {},
+							"minecraft:scale": {
+								"value": 0.5
+							},
 							"minecraft:interact": {
 								"interactions": [
 									{
@@ -153,15 +157,25 @@
 											}
 										},
 										"spawn_items": {
-											"table": "loot_tables/mg_turret/mg_turret.drop.json"
+											"table": "loot_tables/mg_turret.drop.json"
 										},
 										"hurt_item": 1
 									}
 								]
-							},
-							"minecraft:conditional_bandwidth_optimization": {},
-							"minecraft:scale": {
-								"value": 0.5
+							}
+						},
+						"events": {
+							"removeTurret": {
+								"add": {
+									"component_groups": [
+										"despawn"
+									]
+								}
+							}
+						},
+						"component_groups": {
+							"despawn": {
+								"minecraft:instant_despawn": {}
 							}
 						}
 					}
@@ -257,7 +271,7 @@
 								},
 								"minecraft:persistent": {},
 								"minecraft:shooter": {
-									"def": "minecraft:arrow"
+									"def": "defensive:mg_bullet"
 								},
 								"minecraft:variant": {
 									"value": 0
@@ -294,6 +308,10 @@
 										"turret"
 									]
 								},
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:scale": {
+									"value": 0.5
+								},
 								"minecraft:interact": {
 									"interactions": [
 										{
@@ -309,15 +327,25 @@
 												}
 											},
 											"spawn_items": {
-												"table": "loot_tables/mg_turret/mg_turret.drop.json"
+												"table": "loot_tables/mg_turret.drop.json"
 											},
 											"hurt_item": 1
 										}
 									]
-								},
-								"minecraft:conditional_bandwidth_optimization": {},
-								"minecraft:scale": {
-									"value": 0.5
+								}
+							},
+							"events": {
+								"removeTurret": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								}
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {}
 								}
 							}
 						},
@@ -417,7 +445,7 @@
 								},
 								"minecraft:persistent": {},
 								"minecraft:shooter": {
-									"def": "minecraft:arrow"
+									"def": "defensive:mg_bullet"
 								},
 								"minecraft:variant": {
 									"value": 0
@@ -454,6 +482,10 @@
 										"turret"
 									]
 								},
+								"minecraft:conditional_bandwidth_optimization": {},
+								"minecraft:scale": {
+									"value": 0.5
+								},
 								"minecraft:interact": {
 									"interactions": [
 										{
@@ -469,15 +501,25 @@
 												}
 											},
 											"spawn_items": {
-												"table": "loot_tables/mg_turret/mg_turret.drop.json"
+												"table": "loot_tables/mg_turret.drop.json"
 											},
 											"hurt_item": 1
 										}
 									]
-								},
-								"minecraft:conditional_bandwidth_optimization": {},
-								"minecraft:scale": {
-									"value": 0.5
+								}
+							},
+							"events": {
+								"removeTurret": {
+									"add": {
+										"component_groups": [
+											"despawn"
+										]
+									}
+								}
+							},
+							"component_groups": {
+								"despawn": {
+									"minecraft:instant_despawn": {}
 								}
 							}
 						},
@@ -749,10 +791,156 @@
 								"children": {}
 							},
 							{
+								"open": {
+									"minecraft:behavior.defend_village_target": {
+										"priority": 1,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16,
+												"must_see": true
+											}
+										]
+									},
+									"minecraft:behavior.nearest_attackable_target": {
+										"priority": 2,
+										"entity_types": [
+											{
+												"filters": {
+													"subject": "other",
+													"test": "is_family",
+													"value": "monster"
+												},
+												"max_dist": 16
+											}
+										],
+										"must_see": true,
+										"within_radius": 16,
+										"persist_time": 2.5,
+										"attack_interval": 2.5
+									},
+									"minecraft:behavior.ranged_attack": {
+										"priority": 0,
+										"charge_charged_trigger": 2.4,
+										"charge_shoot_trigger": 2.5,
+										"attack_radius": 24,
+										"burst_shots": 10,
+										"burst_interval": 0.1
+									},
+									"minecraft:collision_box": {
+										"width": 0.75,
+										"height": 0.75
+									},
+									"minecraft:healable": {
+										"items": [
+											{
+												"item": "minecraft:iron_nugget",
+												"heal_amount": 1
+											},
+											{
+												"item": "minecraft:iron_ingot",
+												"heal_amount": 10
+											},
+											{
+												"item": "minecraft:iron_block",
+												"heal_amount": 100,
+												"effects": [
+													{
+														"name": "absorption",
+														"duration": 60,
+														"amplifier": 2
+													}
+												]
+											}
+										]
+									},
+									"minecraft:health": {
+										"value": 75
+									},
+									"minecraft:loot": {
+										"table": "loot_tables/mg_turret/mg_turret.json"
+									},
+									"minecraft:physics": {
+										"has_collision": true,
+										"has_gravity": true
+									},
+									"minecraft:pushable": {
+										"is_pushable": false,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:persistent": {},
+									"minecraft:shooter": {
+										"def": "defensive:mg_bullet"
+									},
+									"minecraft:variant": {
+										"value": 0
+									},
+									"minecraft:knockback_resistance": {
+										"value": 1
+									},
+									"minecraft:movement": {
+										"value": 0,
+										"max": 0
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:navigation.walk": {},
+									"minecraft:behavior.random_look_around": {
+										"priority": 8
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:type_family": {
+										"family": [
+											"ballista",
+											"turret"
+										]
+									},
+									"minecraft:conditional_bandwidth_optimization": {},
+									"minecraft:scale": {
+										"value": 0.5
+									},
+									"minecraft:interact": {
+										"interactions": [
+											{
+												"interact_text": "Remove Turret",
+												"on_interact": {
+													"target": "self",
+													"event": "removeTurret",
+													"filters": {
+														"domain": "hand",
+														"test": "has_equipment",
+														"value": "defensive:turret_remover",
+														"subject": "other"
+													}
+												},
+												"spawn_items": {
+													"table": "loot_tables/mg_turret.drop.json"
+												},
+												"hurt_item": 1
+											}
+										]
+									}
+								},
 								"key": "minecraft:shooter",
 								"is_minified": true,
 								"children": {
-									"def": "minecraft:arrow"
+									"def": "defensive:mg_bullet"
 								}
 							},
 							{
@@ -854,6 +1042,18 @@
 								}
 							},
 							{
+								"key": "minecraft:conditional_bandwidth_optimization",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:scale",
+								"is_minified": true,
+								"children": {
+									"value": 0.5
+								}
+							},
+							{
 								"key": "minecraft:interact",
 								"children": [
 									{
@@ -874,7 +1074,7 @@
 															}
 														},
 														"spawn_items": {
-															"table": "loot_tables/mg_turret/mg_turret.drop.json"
+															"table": "loot_tables/mg_turret.drop.json"
 														},
 														"hurt_item": 1
 													}
@@ -912,14 +1112,14 @@
 																}
 															},
 															"spawn_items": {
-																"table": "loot_tables/mg_turret/mg_turret.drop.json"
+																"table": "loot_tables/mg_turret.drop.json"
 															},
 															"hurt_item": 1
 														},
 														"key": "spawn_items",
 														"is_minified": true,
 														"children": {
-															"table": "loot_tables/mg_turret/mg_turret.drop.json"
+															"table": "loot_tables/mg_turret.drop.json"
 														}
 													},
 													{
@@ -931,166 +1131,30 @@
 										]
 									}
 								]
-							},
-							{
-								"key": "minecraft:conditional_bandwidth_optimization",
-								"is_minified": true,
-								"children": {}
-							},
-							{
-								"open": {
-									"minecraft:behavior.defend_village_target": {
-										"priority": 1,
-										"entity_types": [
-											{
-												"filters": {
-													"subject": "other",
-													"test": "is_family",
-													"value": "monster"
-												},
-												"max_dist": 16,
-												"must_see": true
-											}
-										]
-									},
-									"minecraft:behavior.nearest_attackable_target": {
-										"priority": 2,
-										"entity_types": [
-											{
-												"filters": {
-													"subject": "other",
-													"test": "is_family",
-													"value": "monster"
-												},
-												"max_dist": 16
-											}
-										],
-										"must_see": true,
-										"within_radius": 16,
-										"persist_time": 2.5,
-										"attack_interval": 2.5
-									},
-									"minecraft:behavior.ranged_attack": {
-										"priority": 0,
-										"charge_charged_trigger": 2.4,
-										"charge_shoot_trigger": 2.5,
-										"attack_radius": 24,
-										"burst_shots": 10,
-										"burst_interval": 0.1
-									},
-									"minecraft:collision_box": {
-										"width": 0.75,
-										"height": 0.75
-									},
-									"minecraft:healable": {
-										"items": [
-											{
-												"item": "minecraft:iron_nugget",
-												"heal_amount": 1
-											},
-											{
-												"item": "minecraft:iron_ingot",
-												"heal_amount": 10
-											},
-											{
-												"item": "minecraft:iron_block",
-												"heal_amount": 100,
-												"effects": [
-													{
-														"name": "absorption",
-														"duration": 60,
-														"amplifier": 2
-													}
-												]
-											}
-										]
-									},
-									"minecraft:health": {
-										"value": 75
-									},
-									"minecraft:loot": {
-										"table": "loot_tables/mg_turret/mg_turret.json"
-									},
-									"minecraft:physics": {
-										"has_collision": true,
-										"has_gravity": true
-									},
-									"minecraft:pushable": {
-										"is_pushable": false,
-										"is_pushable_by_piston": true
-									},
-									"minecraft:persistent": {},
-									"minecraft:shooter": {
-										"def": "minecraft:arrow"
-									},
-									"minecraft:variant": {
-										"value": 0
-									},
-									"minecraft:knockback_resistance": {
-										"value": 1
-									},
-									"minecraft:movement": {
-										"value": 0,
-										"max": 0
-									},
-									"minecraft:movement.basic": {},
-									"minecraft:navigation.walk": {},
-									"minecraft:behavior.random_look_around": {
-										"priority": 8
-									},
-									"minecraft:hurt_on_condition": {
-										"damage_conditions": [
-											{
-												"filters": {
-													"test": "in_lava",
-													"subject": "self",
-													"operator": "==",
-													"value": true
-												},
-												"cause": "lava",
-												"damage_per_tick": 4
-											}
-										]
-									},
-									"minecraft:type_family": {
-										"family": [
-											"ballista",
-											"turret"
-										]
-									},
-									"minecraft:interact": {
-										"interactions": [
-											{
-												"interact_text": "Remove Turret",
-												"on_interact": {
-													"target": "self",
-													"event": "removeTurret",
-													"filters": {
-														"domain": "hand",
-														"test": "has_equipment",
-														"value": "defensive:turret_remover",
-														"subject": "other"
-													}
-												},
-												"spawn_items": {
-													"table": "loot_tables/mg_turret/mg_turret.drop.json"
-												},
-												"hurt_item": 1
-											}
-										]
-									},
-									"minecraft:conditional_bandwidth_optimization": {},
-									"minecraft:scale": {
-										"value": 0.5
-									}
-								},
-								"key": "minecraft:scale",
-								"is_minified": true,
-								"children": {
-									"value": 0.5
-								}
 							}
 						]
+					},
+					{
+						"key": "events",
+						"is_minified": true,
+						"children": {
+							"removeTurret": {
+								"add": {
+									"component_groups": [
+										"despawn"
+									]
+								}
+							}
+						}
+					},
+					{
+						"key": "component_groups",
+						"is_minified": true,
+						"children": {
+							"despawn": {
+								"minecraft:instant_despawn": {}
+							}
+						}
 					}
 				]
 			}

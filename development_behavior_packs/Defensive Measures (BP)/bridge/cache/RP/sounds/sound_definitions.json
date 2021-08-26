@@ -3,7 +3,7 @@
 	"file_type": "sound_definition",
 	"format_version": 1,
 	"file_uuid": "06d622fa_4131_4a3a_9d72_287229c032b7",
-	"file_version": 3,
+	"file_version": 7,
 	"cache_content": {
 		"children": [
 			{
@@ -38,6 +38,30 @@
 								"sounds/turrets/Cannon Turret/hit1",
 								"sounds/turrets/Cannon Turret/hit2"
 							]
+						},
+						"mg.shoot": {
+							"category": "block",
+							"max_distance": 16,
+							"sounds": [
+								"sounds/turrets/MG Turret/shot1"
+							]
+						},
+						"bullet.ground_hit": {
+							"category": "block",
+							"max_distance": 12,
+							"sounds": [
+								"sounds/turrets/MG Turret/ground_hit1",
+								"sounds/turrets/MG Turret/ground_hit2",
+								"sounds/turrets/MG Turret/ground_hit3"
+							]
+						},
+						"bullet.hit": {
+							"category": "block",
+							"max_distance": 12,
+							"sounds": [
+								"sounds/turrets/MG Turret/hit1",
+								"sounds/turrets/MG Turret/hit2"
+							]
 						}
 					}
 				},
@@ -68,6 +92,30 @@
 								"sounds": [
 									"sounds/turrets/Cannon Turret/hit1",
 									"sounds/turrets/Cannon Turret/hit2"
+								]
+							},
+							"mg.shoot": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/MG Turret/shot1"
+								]
+							},
+							"bullet.ground_hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/ground_hit1",
+									"sounds/turrets/MG Turret/ground_hit2",
+									"sounds/turrets/MG Turret/ground_hit3"
+								]
+							},
+							"bullet.hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/hit1",
+									"sounds/turrets/MG Turret/hit2"
 								]
 							}
 						},
@@ -127,6 +175,30 @@
 									"sounds/turrets/Cannon Turret/hit1",
 									"sounds/turrets/Cannon Turret/hit2"
 								]
+							},
+							"mg.shoot": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/MG Turret/shot1"
+								]
+							},
+							"bullet.ground_hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/ground_hit1",
+									"sounds/turrets/MG Turret/ground_hit2",
+									"sounds/turrets/MG Turret/ground_hit3"
+								]
+							},
+							"bullet.hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/hit1",
+									"sounds/turrets/MG Turret/hit2"
+								]
 							}
 						},
 						"key": "cannon.destroyed",
@@ -183,6 +255,30 @@
 									"sounds/turrets/Cannon Turret/hit1",
 									"sounds/turrets/Cannon Turret/hit2"
 								]
+							},
+							"mg.shoot": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/MG Turret/shot1"
+								]
+							},
+							"bullet.ground_hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/ground_hit1",
+									"sounds/turrets/MG Turret/ground_hit2",
+									"sounds/turrets/MG Turret/ground_hit3"
+								]
+							},
+							"bullet.hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/hit1",
+									"sounds/turrets/MG Turret/hit2"
+								]
 							}
 						},
 						"key": "cannon.hit",
@@ -209,6 +305,246 @@
 								"children": [
 									"sounds/turrets/Cannon Turret/hit1",
 									"sounds/turrets/Cannon Turret/hit2"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"cannon.shoot": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/Cannon Turret/shot1",
+									"sounds/turrets/Cannon Turret/shot2",
+									"sounds/turrets/Cannon Turret/shot3"
+								]
+							},
+							"cannon.destroyed": {
+								"category": "block",
+								"max_distance": 8,
+								"sounds": [
+									"sounds/turrets/Cannon Turret/crumbling cannon1",
+									"sounds/turrets/Cannon Turret/crumbling cannon2"
+								]
+							},
+							"cannon.hit": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/Cannon Turret/hit1",
+									"sounds/turrets/Cannon Turret/hit2"
+								]
+							},
+							"mg.shoot": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/MG Turret/shot1"
+								]
+							},
+							"bullet.ground_hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/ground_hit1",
+									"sounds/turrets/MG Turret/ground_hit2",
+									"sounds/turrets/MG Turret/ground_hit3"
+								]
+							},
+							"bullet.hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/hit1",
+									"sounds/turrets/MG Turret/hit2"
+								]
+							}
+						},
+						"key": "mg.shoot",
+						"children": [
+							{
+								"data": "block",
+								"key": "category"
+							},
+							{
+								"data": "16",
+								"key": "max_distance"
+							},
+							{
+								"open": {
+									"category": "block",
+									"max_distance": 16,
+									"sounds": [
+										"sounds/turrets/MG Turret/shot1"
+									]
+								},
+								"key": "sounds",
+								"is_minified": true,
+								"children": [
+									"sounds/turrets/MG Turret/shot1"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"cannon.shoot": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/Cannon Turret/shot1",
+									"sounds/turrets/Cannon Turret/shot2",
+									"sounds/turrets/Cannon Turret/shot3"
+								]
+							},
+							"cannon.destroyed": {
+								"category": "block",
+								"max_distance": 8,
+								"sounds": [
+									"sounds/turrets/Cannon Turret/crumbling cannon1",
+									"sounds/turrets/Cannon Turret/crumbling cannon2"
+								]
+							},
+							"cannon.hit": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/Cannon Turret/hit1",
+									"sounds/turrets/Cannon Turret/hit2"
+								]
+							},
+							"mg.shoot": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/MG Turret/shot1"
+								]
+							},
+							"bullet.ground_hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/ground_hit1",
+									"sounds/turrets/MG Turret/ground_hit2",
+									"sounds/turrets/MG Turret/ground_hit3"
+								]
+							},
+							"bullet.hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/hit1",
+									"sounds/turrets/MG Turret/hit2"
+								]
+							}
+						},
+						"key": "bullet.ground_hit",
+						"children": [
+							{
+								"data": "block",
+								"key": "category"
+							},
+							{
+								"data": "12",
+								"key": "max_distance"
+							},
+							{
+								"open": {
+									"category": "block",
+									"max_distance": 12,
+									"sounds": [
+										"sounds/turrets/MG Turret/ground_hit1",
+										"sounds/turrets/MG Turret/ground_hit2",
+										"sounds/turrets/MG Turret/ground_hit3"
+									]
+								},
+								"key": "sounds",
+								"is_minified": true,
+								"children": [
+									"sounds/turrets/MG Turret/ground_hit1",
+									"sounds/turrets/MG Turret/ground_hit2",
+									"sounds/turrets/MG Turret/ground_hit3"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"cannon.shoot": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/Cannon Turret/shot1",
+									"sounds/turrets/Cannon Turret/shot2",
+									"sounds/turrets/Cannon Turret/shot3"
+								]
+							},
+							"cannon.destroyed": {
+								"category": "block",
+								"max_distance": 8,
+								"sounds": [
+									"sounds/turrets/Cannon Turret/crumbling cannon1",
+									"sounds/turrets/Cannon Turret/crumbling cannon2"
+								]
+							},
+							"cannon.hit": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/Cannon Turret/hit1",
+									"sounds/turrets/Cannon Turret/hit2"
+								]
+							},
+							"mg.shoot": {
+								"category": "block",
+								"max_distance": 16,
+								"sounds": [
+									"sounds/turrets/MG Turret/shot1"
+								]
+							},
+							"bullet.ground_hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/ground_hit1",
+									"sounds/turrets/MG Turret/ground_hit2",
+									"sounds/turrets/MG Turret/ground_hit3"
+								]
+							},
+							"bullet.hit": {
+								"category": "block",
+								"max_distance": 12,
+								"sounds": [
+									"sounds/turrets/MG Turret/hit1",
+									"sounds/turrets/MG Turret/hit2"
+								]
+							}
+						},
+						"key": "bullet.hit",
+						"children": [
+							{
+								"data": "block",
+								"key": "category"
+							},
+							{
+								"data": "12",
+								"key": "max_distance"
+							},
+							{
+								"open": {
+									"category": "block",
+									"max_distance": 12,
+									"sounds": [
+										"sounds/turrets/MG Turret/hit1",
+										"sounds/turrets/MG Turret/hit2"
+									]
+								},
+								"key": "sounds",
+								"is_minified": true,
+								"children": [
+									"sounds/turrets/MG Turret/hit1",
+									"sounds/turrets/MG Turret/hit2"
 								]
 							}
 						]

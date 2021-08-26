@@ -1,0 +1,59 @@
+//bridge-file-version: #13
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "defensive:mg_bullet",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"runtime_identifier": "minecraft:arrow"
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:type_family": {
+				"family": [
+					"projectile",
+					"bullet",
+					"mg_bullet"
+				]
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": [
+							5,
+							10
+						],
+						"knockback": false,
+						"semi_random_diff_damage": false,
+						"destroy_on_hit": true
+					}
+				},
+				"power": 5,
+				"inertia": 0.99,
+				"shoot_sound": "mg.shoot",
+				"gravity": 0.025,
+				"liquid_inertia": 0.5,
+				"hit_ground_sound": "bullet.ground_hit",
+				"hit_sound": "bullet.hit",
+				"offset": [
+					0,
+					0.25,
+					0
+				],
+				"should_bounce": true
+			},
+			"minecraft:physics": {},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			}
+		},
+		"component_groups": {},
+		"events": {}
+	}
+}

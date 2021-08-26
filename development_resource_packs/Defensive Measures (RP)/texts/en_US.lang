@@ -1,4 +1,4 @@
-##bridge-file-version: #31
+##bridge-file-version: #32
 pack.name=Defensive Measures (RP)
 pack.description=The required Resource Pack for the Behavior Pack Defensive Measures.
 
@@ -32,3 +32,4 @@ entity.defensive:ballista.name=Ballista
 entity.defensive:ballista_arrow.name=Ballista Arrow
 
 entity.defensive:mg_turret.name=MG Turret
+entity.defensive:mg_bullet.name=MG Bullet

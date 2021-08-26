@@ -16,7 +16,10 @@
 			"loop": true,
 			"bones": {
 				"base": {
-					"rotation": [0, "-query.target_y_rotation", 0]
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": [0, 0, 0]
 				},
 				"body": {
 					"rotation": [0, "query.target_y_rotation", 0]
@@ -267,7 +270,7 @@
 					"relative_to": {
 						"rotation": "entity"
 					},
-					"rotation": [0, "-query.body_y_rotation", 0]
+					"rotation": [0, 0, 0]
 				}
 			},
 			"particle_effects": {

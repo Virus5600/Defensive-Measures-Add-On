@@ -567,5 +567,14 @@
 	},
 	"BP/recipes/mg_turret/ammo_case.json": {
 		"data": {}
+	},
+	"BP/entities/mg_bullet.json": {
+		"data": {}
+	},
+	"RP/entity/mg_bullet.entity.json": {
+		"data": {}
+	},
+	"RP/render_controllers/mg_bullet.render_controllers.json": {
+		"data": {}
 	}
 }
