@@ -1,0 +1,95 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dm:ballista_arrow",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"runtime_identifier": "dm:ballista_arrow"
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:type_family": {
+				"family": [
+					"projectile",
+					"arrow",
+					"ballista_arrow"
+				]
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": [
+							3,
+							7
+						],
+						"knockback": true,
+						"semi_random_diff_damage": true,
+						"destroy_on_hit": false
+					},
+					"stick_in_ground": {
+						"shake_time": 0.35
+					}
+				},
+				"power": 1,
+				"hit_sound": "bow.hit",
+				"inertia": 0,
+				"gravity": 0,
+				"liquid_inertia": 0,
+				"hit_ground_sound": "random.bowhit",
+				"multiple_targets": true,
+				"offset": [
+					0,
+					1,
+					0
+				]
+			},
+			"minecraft:physics": {
+				"has_gravity": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:timer": {
+				"time": [
+					30,
+					30
+				],
+				"time_down_event": {
+					"target": "self",
+					"event": "despawn"
+				}
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false,
+						"cause": "all"
+					}
+				]
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawning"
+					]
+				}
+			}
+		},
+		"component_groups": {
+			"despawning": {
+				"minecraft:instant_despawn": {}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dm:turret_remover"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" i ",
+			" gi",
+			"r  "
+		],
+		"key": {
+			"r": {
+				"item": "minecraft:redstone_block"
+			},
+			"i": {
+				"item": "minecraft:iron_nugget"
+			},
+			"g": {
+				"item": "minecraft:gold_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "dm:turret_remover",
+				"count": 1
+			}
+		]
+	}
+}

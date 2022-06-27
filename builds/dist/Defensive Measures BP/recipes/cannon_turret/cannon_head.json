@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "dm:cannon_head"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "dm:unfinished_cannon_head",
+				"count": 1
+			},
+			{
+				"item": "minecraft:string",
+				"count": 1
+			}
+		],
+		"result": [
+			{
+				"item": "dm:cannon_head",
+				"count": 1
+			}
+		]
+	}
+}

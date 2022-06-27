@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dm:ballista_arrow_head"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" f ",
+			"fff"
+		],
+		"key": {
+			"f": {
+				"item": "minecraft:flint"
+			}
+		},
+		"result": [
+			{
+				"item": "dm:arrow_head",
+				"count": 1
+			}
+		]
+	}
+}
