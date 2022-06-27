@@ -1,0 +1,35 @@
+{
+	"format_version": "1.18.20",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dm:ballista",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/ballista"
+			},
+			"geometry": {
+				"default": "geometry.ballista"
+			},
+			"render_controllers": [
+				"controller.render.ballista"
+			],
+			"animations": {
+				"setup": "animation.ballista.setup",
+				"look_at_target": "animation.ballista.look_at_target",
+				"shoot": "animation.ballista.shoot",
+				"firing_sequence": "controller.animation.ballsita.firing_sequence",
+				"death": "animation.ballista.death"
+			},
+			"scripts": {
+				"animate": [
+					{"setup": "query.is_alive"},
+					{"look_at_target": "query.has_target"},
+					{"firing_sequence": "query.has_target"},
+					{"death": "!query.is_alive"}
+				]
+			}
+		}
+	}
+}

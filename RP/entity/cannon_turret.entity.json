@@ -1,0 +1,40 @@
+{
+	"format_version": "1.18.20",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dm:cannon_turret",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/cannon_turret"
+			},
+			"geometry": {
+				"default": "geometry.cannon_turret"
+			},
+			"render_controllers": [
+				"controller.render.cannon_turret"
+			],
+			"animations": {
+				"setup": "animation.cannon_turret.setup",
+				"look_at_target": "animation.cannon_turret.look_at_target",
+				"fuse": "animation.cannon_turret.fuse",
+				"shoot": "animation.cannon_turret.shoot",
+				"firing_sequence": "controller.animation.cannon_turret.firing_sequence",
+				"death": "animation.cannon_turret.death"
+			},
+			"scripts": {
+				"animate": [
+					{"setup": "query.is_alive"},
+					{"look_at_target": "query.has_target"},
+					{"firing_sequence": "query.has_target"},
+					{"death": "!query.is_alive"}
+				]
+			},
+			"particle_effects": {
+				"flash": "dm:cannon_flash",
+				"fuse": "dm:cannon_fuse"
+			}
+		}
+	}
+}

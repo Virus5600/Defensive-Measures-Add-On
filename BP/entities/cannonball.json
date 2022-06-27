@@ -1,0 +1,69 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dm:cannonball",
+			"is_spawnable": false,
+			"is_summonable": true
+		},
+		"component_groups": {
+			"exploding": {
+				"minecraft:explode": {
+					"fuse_length": 0,
+					"fuse_lit": true,
+					"power": 1.25,
+					"breaks_blocks": false
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"projectile",
+					"cannonball",
+					"explosive"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"definition_event": {
+						"affect_projectile": true,
+						"event_trigger": {
+							"event": "explode",
+							"target": "self"
+						}
+					}
+				},
+				"power": 2.5,
+				"hit_sound": "random.explode",
+				"inertia": 0.875,
+				"is_dangerous": true,
+				"liquid_inertia": 0.0625,
+				"hit_ground_sound": "random.explode",
+				"multiple_targets": false,
+				"reflect_on_hurt": false,
+				"anchor": 1
+			},
+			"minecraft:physics": {
+				"has_gravity": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			}
+		},
+		"events": {
+			"explode": {
+				"add": {
+					"component_groups": [
+						"exploding"
+					]
+				},
+			}
+		}
+	}
+}

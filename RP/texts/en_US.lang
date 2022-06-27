@@ -1,0 +1,41 @@
+pack.name=Defensive Measures (RP)
+pack.description=The required Resource Pack for the Behavior Pack Defensive Measures.
+
+tile.dm:arrow_head.name=Arrow Head
+
+item.dm:turret_remover.name=Turret Remover
+
+item.dm:cannon_base.name=Cannon Base
+item.dm:cannon_stand.name=Cannon Stand
+item.dm:unfinished_cannon_head.name=Unfinished Cannon Head
+item.dm:cannon_head.name=Cannon Head
+item.dm:cannon_turret.name=Place Cannon Turret
+
+item.dm:ballista_base.name=Ballista Base
+item.dm:ballista_base_with_stand.name=Ballista Base with Stand
+item.dm:ballista_bow.name=Ballista Bow
+item.dm:ballista_arrow.name=Ballista Arrow
+item.dm:ballista.name=Place Ballista
+
+item.dm:ammo_case.name=Ammo Case
+item.dm:ammo_rounds.name=Ammo Rounds
+item.dm:machine_gun_base.name=MG Base
+item.dm:machine_gun_head.name=MG Head
+item.dm:machine_gun_stand.name=MG Stand
+item.dm:mg_turret.name=MG Turret
+
+entity.dm:cannon_turret.name=Cannon Turret
+entity.dm:cannonball.name=Cannon ball
+
+entity.dm:ballista.name=Ballista
+entity.dm:ballista_arrow.name=Ballista Arrow
+
+entity.dm:mg_turret.name=MG Turret
+entity.dm:mg_bullet.name=MG Bullet
+
+action.turret.remove=Remove Turret
+
+itemGroup.name.dm_tools=Defensive Measures Tools
+itemGroup.name.dm_turret=Defensive Measures Turrets
+itemGroup.name.dm_items=Defensive Measures Items
+itemGroup.name.dm_traps=Defensive Measures Traps

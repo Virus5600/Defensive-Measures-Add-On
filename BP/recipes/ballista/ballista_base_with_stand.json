@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dm:ballista_base_with_stand"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"f",
+			"s"
+		],
+		"key": {
+			"f": {
+				"item": "minecraft:fence"
+			},
+			"s": {
+				"item": "dm:ballista_base"
+			}
+		},
+		"result": [
+			{
+				"item": "dm:ballista_base_with_stand",
+				"count": 1
+			}
+		]
+	}
+}

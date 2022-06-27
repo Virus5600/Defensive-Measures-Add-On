@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dm:ballista_bow"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"tst",
+			"sbt",
+			"wst"
+		],
+		"key": {
+			"t": {
+				"item": "minecraft:stick"
+			},
+			"s": {
+				"item": "minecraft:string"
+			},
+			"b": {
+				"item": "minecraft:wooden_button"
+			},
+			"w": {
+				"item": "minecraft:wooden_slab"
+			}
+		},
+		"result": [
+			{
+				"item": "dm:ballista_bow",
+				"count": 1
+			}
+		]
+	}
+}
