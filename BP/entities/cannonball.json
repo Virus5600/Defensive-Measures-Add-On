@@ -7,7 +7,7 @@
 			"is_summonable": true
 		},
 		"component_groups": {
-			"minecraft:exploding": {
+			"exploding": {
 				"minecraft:explode": {
 					"fuse_length": 0,
 					"fuse_lit": true,
@@ -33,17 +33,16 @@
 					"definition_event": {
 						"affect_projectile": true,
 						"event_trigger": {
-							"event": "minecraft:explode",
+							"event": "explode",
 							"target": "self"
 						}
 					}
 				},
-				"power": 1,
+				"power": 2.5,
 				"hit_sound": "random.explode",
-				"inertia": 0,
-				"gravity": 0,
+				"inertia": 0.875,
 				"is_dangerous": true,
-				"liquid_inertia": 0,
+				"liquid_inertia": 0.0625,
 				"hit_ground_sound": "random.explode",
 				"multiple_targets": false,
 				"reflect_on_hurt": false,
@@ -58,12 +57,12 @@
 			}
 		},
 		"events": {
-			"minecraft:explode": {
+			"explode": {
 				"add": {
 					"component_groups": [
-						"minecraft:exploding"
+						"exploding"
 					]
-				}
+				},
 			}
 		}
 	}

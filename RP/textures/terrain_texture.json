@@ -8,6 +8,9 @@
 			"textures": [
 				"textures/blocks/arrow_head"
 			]
+		},
+		"dm_arrow_head": {
+			"textures": "textures/blocks/arrow_head"
 		}
 	}
 }

@@ -1,37 +1,30 @@
 {
-	"format_version": "1.18.0",
+	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "dm:ballista_arrow"
+			"identifier": "dm:ballista_arrow",
+			"category": "items"
 		},
 		"components": {
 			"minecraft:fuel": {
 				"duration": 10
 			},
 			"minecraft:creative_category": {
-				"category": "items"
+				"parent": "itemGroup.name.dm_items"
 			},
 			"minecraft:icon": {
 				"texture": "ballista_arrow"
 			},
 			"minecraft:render_offsets": {
-				"main_hand": {
-					"first_person": {
-						"scale": [
-							0.01875,
-							0.015625,
-							0.01875
-						]
-					},
-					"third_person": {
-						"scale": [
-							0.01875,
-							0.015625,
-							0.01875
-						]
-					}
-				}
-			},
+                "main_hand": {
+                    "first_person": {
+                        "scale": [0.01875, 0.015625, 0.01875]
+                    },
+                    "third_person": {
+                        "scale": [0.01875, 0.015625, 0.01875]
+                    }
+                }
+            },
 			"minecraft:display_name": {
 				"value": "item.dm:ballista_arrow.name"
 			}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.19.0",
+	"format_version": "1.18.20",
 	"minecraft:client_entity": {
 		"description": {
 			"identifier": "dm:mg_turret",
@@ -12,6 +12,9 @@
 			"geometry": {
 				"default": "geometry.machine_gun_turret"
 			},
+			"render_controllers": [
+				"controller.render.machine_gun_turret"
+			],
 			"animations": {
 				"setup": "animation.machine_gun_turret.setup",
 				"look_at_target": "animation.machine_gun_turret.look_at_target",
@@ -22,16 +25,14 @@
 			"scripts": {
 				"scale": 0,
 				"animate": [
-					{
-						"death": "!query.is_alive"
-					}
+					{"setup": "query.is_alive"},
+					{"look_at_target": "query.has_target"},
+					{"firing_sequence": "query.has_target"},
+					{"death": "!query.is_alive"}
 				]
 			},
-			"render_controllers": [
-				"controller.render.machine_gun_turret"
-			],
 			"particle_effects": {
-				"muzzle_flash": "defensive:muzzle_flash"
+				"muzzle_flash": "dm:muzzle_flash"
 			}
 		}
 	}

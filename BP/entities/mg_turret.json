@@ -102,7 +102,7 @@
 			},
 			"minecraft:persistent": {},
 			"minecraft:shooter": {
-				"def": "defensive:mg_bullet"
+				"def": "dm:mg_bullet"
 			},
 			"minecraft:variant": {
 				"value": 0
@@ -135,13 +135,13 @@
 			},
 			"minecraft:type_family": {
 				"family": [
-					"ballista",
+					"mg_turret",
 					"turret"
 				]
 			},
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:scale": {
-				"value": 0.5
+				"value": 0.34375
 			},
 			"minecraft:interact": {
 				"interactions": [
@@ -153,12 +153,12 @@
 							"filters": {
 								"domain": "hand",
 								"test": "has_equipment",
-								"value": "defensive:turret_remover",
+								"value": "dm:turret_remover",
 								"subject": "other"
 							}
 						},
 						"spawn_items": {
-							"table": "loot_tables/mg_turret.drop.json"
+							"table": "loot_tables/mg_turret/mg_turret.drop.json"
 						},
 						"hurt_item": 1
 					}

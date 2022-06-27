@@ -1,11 +1,11 @@
 {
-	"format_version": "1.19.0",
+	"format_version": "1.10.0",
 	"particle_effect": {
 		"description": {
-			"identifier": "defensive:muzzle_flash",
+			"identifier": "dm:muzzle_flash",
 			"basic_render_parameters": {
 				"material": "particles_alpha",
-				"texture": "textures/particle/muzzle_flash"
+				"texture": "textures/particle/particles"
 			}
 		},
 		"components": {
@@ -13,37 +13,45 @@
 				"position": true,
 				"rotation": true
 			},
-			"minecraft:emitter_rate_steady": {
-				"spawn_rate": 1,
-				"max_particles": 10
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 1
 			},
 			"minecraft:emitter_lifetime_once": {
-				"active_time": 0.1
+				"active_time": 1
 			},
 			"minecraft:emitter_shape_point": {},
 			"minecraft:particle_lifetime_expression": {
-				"max_lifetime": 1
+				"max_lifetime": 0.5
 			},
-			"minecraft:particle_initial_speed": 0,
-			"minecraft:particle_motion_dynamic": {},
+			"minecraft:particle_initial_spin": {
+				"rotation": "Math.random(-45, 45)",
+				"rotation_rate": "Math.random(-15, 15)"
+			},
+			"minecraft:particle_initial_speed": "-Math.random(0.125, 1)",
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": ["Math.random(0, 0.5)", "-Math.random(0, 0.5)", "-Math.random(0, 5)"],
+				"linear_drag_coefficient": "Math.random(0, 0.5)"
+			},
 			"minecraft:particle_appearance_billboard": {
-				"size": [
-					0.2,
-					0.2
-				],
+				"size": ["Math.random(0.05, 0.1)", "Math.random(0.05, 0.1)"],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
-					"texture_width": 16,
-					"texture_height": 16,
-					"uv": [
-						0,
-						0
-					],
-					"uv_size": [
-						16,
-						16
-					]
+					"texture_width": 64,
+					"texture_height": 64,
+					"flipbook": {
+						"base_UV": [0, 12],
+						"size_UV": [4, 4],
+						"step_UV": [4, 0],
+						"frames_per_second": 10,
+						"max_frame": 2,
+						"loop": true
+					}
 				}
+			},
+			"minecraft:particle_motion_collision": {
+				"collision_drag": 0.1,
+				"coefficient_of_restitution": 0.125,
+				"collision_radius": 0.025
 			}
 		}
 	}

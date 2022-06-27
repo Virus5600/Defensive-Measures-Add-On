@@ -4,7 +4,7 @@
 		1,
 		0
 	],
-	"defensive:arrow_head": {
+	"dm:arrow_head": {
 		"textures": "arrow_head",
 		"sound": "stone"
 	}

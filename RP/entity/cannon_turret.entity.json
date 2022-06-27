@@ -1,5 +1,5 @@
 {
-	"format_version": "1.19.0",
+	"format_version": "1.18.20",
 	"minecraft:client_entity": {
 		"description": {
 			"identifier": "dm:cannon_turret",
@@ -25,14 +25,15 @@
 			},
 			"scripts": {
 				"animate": [
-					{
-						"death": "!query.is_alive"
-					}
+					{"setup": "query.is_alive"},
+					{"look_at_target": "query.has_target"},
+					{"firing_sequence": "query.has_target"},
+					{"death": "!query.is_alive"}
 				]
 			},
 			"particle_effects": {
-				"flash": "defensive:cannon_flash",
-				"fuse": "defensive:cannon_fuse"
+				"flash": "dm:cannon_flash",
+				"fuse": "dm:cannon_fuse"
 			}
 		}
 	}

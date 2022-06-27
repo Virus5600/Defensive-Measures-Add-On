@@ -6,27 +6,11 @@
 			"states": {
 				"default": {
 					"animations": [
-						"look_at_target"
+						"look_at_target",
+						{"fuse": "query.has_target"}
 					],
 					"transitions": [
-						{
-							"fuse": "query.has_target"
-						}
-					]
-				},
-				"fuse": {
-					"animations": [
-						{
-							"fuse": "query.has_target"
-						}
-					],
-					"transitions": [
-						{
-							"default": "!query.has_target"
-						},
-						{
-							"shoot": "query.is_charged"
-						}
+						{"shoot": "query.is_charged"}
 					]
 				},
 				"shoot": {
@@ -34,12 +18,7 @@
 						"shoot"
 					],
 					"transitions": [
-						{
-							"default": "!query.has_target"
-						},
-						{
-							"fuse": "!query.is_charged&&query.any_animation_finished"
-						}
+						{"default": "query.has_target && !query.is_charged && query.any_animation_finished"}
 					]
 				}
 			}

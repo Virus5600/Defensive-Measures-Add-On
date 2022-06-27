@@ -6,10 +6,10 @@
 		"Virus5600"
 	],
 	"targetVersion": "1.19.0",
-	"description": "eme",
+	"description": "An add-on that allows players to place turrets and traps to defend themselves.",
 	"experimentalGameplay": {
 		"holidayCreatorFeatures": true,
-		"creationOfCustomBiomes": false,
+		"creationOfCustomBiomes": true,
 		"upcomingCreatorFeatures": true,
 		"enableGameTestFramework": false,
 		"experimentalMolangFeatures": true,

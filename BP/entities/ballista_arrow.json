@@ -5,7 +5,7 @@
 			"identifier": "dm:ballista_arrow",
 			"is_spawnable": false,
 			"is_summonable": true,
-			"runtime_identifier": "dm:ballista_arrow"
+			"runtime_identifier": "arrow"
 		},
 		"components": {
 			"minecraft:collision_box": {
@@ -22,10 +22,7 @@
 			"minecraft:projectile": {
 				"on_hit": {
 					"impact_damage": {
-						"damage": [
-							3,
-							7
-						],
+						"damage": [3, 7],
 						"knockback": true,
 						"semi_random_diff_damage": true,
 						"destroy_on_hit": false
@@ -34,18 +31,14 @@
 						"shake_time": 0.35
 					}
 				},
-				"power": 1,
+				"power": 2,
 				"hit_sound": "bow.hit",
-				"inertia": 0,
-				"gravity": 0,
-				"liquid_inertia": 0,
+				"gravity": 0.075,
+				"inertia": 0.95,
+				"liquid_inertia": 0.0625,
 				"hit_ground_sound": "random.bowhit",
 				"multiple_targets": true,
-				"offset": [
-					0,
-					1,
-					0
-				]
+				"anchor": 1
 			},
 			"minecraft:physics": {
 				"has_gravity": true

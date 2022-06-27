@@ -78,11 +78,11 @@
 				"has_collision": true,
 				"has_gravity": true
 			},
+			"minecraft:persistent": {},
 			"minecraft:pushable": {
 				"is_pushable": false,
 				"is_pushable_by_piston": true
 			},
-			"minecraft:persistent": {},
 			"minecraft:shooter": {
 				"def": "dm:ballista_arrow"
 			},
@@ -120,6 +120,9 @@
 					"ballista",
 					"turret"
 				]
+			},
+			"minecraft:scale": {
+				"value": 0.8125
 			},
 			"minecraft:interact": {
 				"interactions": [

@@ -6,6 +6,20 @@
 			"is_summonable": true
 		},
 		"components": {
+			"minecraft:behavior.defend_village_target": {
+				"priority": 1,
+				"entity_types": [
+					{
+						"filters": {
+							"subject": "other",
+							"test": "is_family",
+							"value": "monster"
+						},
+						"max_dist": 16,
+						"must_see": true
+					}
+				]
+			},
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"entity_types": [
@@ -22,20 +36,6 @@
 				"within_radius": 16,
 				"persist_time": 2,
 				"attack_interval": 5
-			},
-			"minecraft:behavior.defend_village_target": {
-				"priority": 1,
-				"entity_types": [
-					{
-						"filters": {
-							"subject": "other",
-							"test": "is_family",
-							"value": "monster"
-						},
-						"max_dist": 16,
-						"must_see": true
-					}
-				]
 			},
 			"minecraft:behavior.ranged_attack": {
 				"priority": 0,
@@ -131,7 +131,7 @@
 			"minecraft:interact": {
 				"interactions": [
 					{
-						"interact_text": "Remove Turret",
+						"interact_text": "action.turret.remove",
 						"on_interact": {
 							"target": "self",
 							"event": "removeTurret",

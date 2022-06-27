@@ -1,8 +1,9 @@
 {
-	"format_version": "1.18.0",
+	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "dm:turret_remover"
+			"identifier": "dm:turret_remover",
+			"category": "equipment"
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
@@ -14,6 +15,9 @@
 					"min": 1,
 					"max": 1
 				}
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.dm_tools"
 			},
 			"minecraft:enchantable": {
 				"slot": "shears"

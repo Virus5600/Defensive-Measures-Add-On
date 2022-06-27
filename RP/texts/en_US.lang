@@ -32,3 +32,10 @@ entity.dm:ballista_arrow.name=Ballista Arrow
 
 entity.dm:mg_turret.name=MG Turret
 entity.dm:mg_bullet.name=MG Bullet
+
+action.turret.remove=Remove Turret
+
+itemGroup.name.dm_tools=Defensive Measures Tools
+itemGroup.name.dm_turret=Defensive Measures Turrets
+itemGroup.name.dm_items=Defensive Measures Items
+itemGroup.name.dm_traps=Defensive Measures Traps

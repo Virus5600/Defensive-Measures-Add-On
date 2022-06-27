@@ -2,14 +2,14 @@
 	"format_version": "1.19.0",
 	"render_controllers": {
 		"controller.render.machine_gun_bullet": {
-			"geometry": "geometry.default",
+			"geometry": "Geometry.default",
 			"materials": [
 				{
-					"*": "material.default"
+					"*": "Material.default"
 				}
 			],
 			"textures": [
-				"texture.default"
+				"Texture.default"
 			]
 		}
 	}

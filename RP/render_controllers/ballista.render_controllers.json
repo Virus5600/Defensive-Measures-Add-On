@@ -2,14 +2,14 @@
 	"format_version": "1.19.0",
 	"render_controllers": {
 		"controller.render.ballista": {
-			"geometry": "geometry.default",
+			"geometry": "Geometry.default",
 			"materials": [
 				{
-					"*": "material.default"
+					"*": "Material.default"
 				}
 			],
 			"textures": [
-				"texture.default"
+				"Texture.default"
 			],
 			"is_hurt_color": {
 				"r": 1,
