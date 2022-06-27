@@ -1,0 +1,35 @@
+$formatVersion: 1
+#block
+#customComponent
+#entity
+#item
+#lootTable
+#manifest
+#unknown
+#recipe
+#lang
+#clientAnimation
+#clientAnimationController
+#clientBiome
+#clientBlock
+#clientEntity
+#clientManifest
+#geometry
+#particle
+#renderController
+#musicDefinition
+#soundDefinition
+#clientSound
+#clientLang
+#texture
+#flipbookTexture
+#itemTexture
+#terrainTexture
+#bridgeConfig
+#item
+projects/Defensive Measures/BP/items/ballista/ballista.json|1656335277883|{"identifier":["dm:ballista"],"itemTexture":["ballista"],"tag":[]}
+projects/Defensive Measures/BP/items/mg_turret/machine_gun_head.json|1656335841406|{"identifier":["dm:machine_gun_head"],"itemTexture":["machine_gun_head"],"tag":[]}
+projects/Defensive Measures/BP/items/mg_turret/ammo_rounds.json|1656335841645|{"identifier":["dm:ammo_rounds"],"itemTexture":["ammo_rounds"],"tag":[]}
+projects/Defensive Measures/BP/items/mg_turret/ammo_case.json|1656335841776|{"identifier":["dm:ammo_case"],"itemTexture":["ammo_case"],"tag":[]}
+#manifest
+projects/Defensive Measures/BP/manifest.json|1656335313678
