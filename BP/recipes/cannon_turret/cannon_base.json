@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dm:cannon_base"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ppp",
+			"sss"
+		],
+		"key": {
+			"p": {
+				"item": "minecraft:wooden_slab"
+			},
+			"s": {
+				"item": "minecraft:stone_slab"
+			}
+		},
+		"result": [
+			{
+				"item": "dm:cannon_base",
+				"count": 1
+			}
+		]
+	}
+}

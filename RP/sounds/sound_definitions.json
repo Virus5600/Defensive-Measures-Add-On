@@ -1,0 +1,68 @@
+{
+	"format_version": "1.19.0",
+	"sound_definitions": {
+		"cannon.shoot": {
+			"category": "block",
+			"max_distance": 16,
+			"sounds": [
+				"sounds/turrets/Cannon Turret/shot1",
+				"sounds/turrets/Cannon Turret/shot2",
+				"sounds/turrets/Cannon Turret/shot3"
+			],
+			"subtitle": "Cannon Turret shoots"
+		},
+		"cannon.destroyed": {
+			"category": "block",
+			"max_distance": 8,
+			"sounds": [
+				"sounds/turrets/Cannon Turret/crumbling cannon1",
+				"sounds/turrets/Cannon Turret/crumbling cannon2"
+			],
+			"subtitle": "Cannon destroyed"
+		},
+		"cannon.hurt": {
+			"category": "block",
+			"max_distance": 16,
+			"sounds": [
+				"sounds/turrets/Cannon Turret/hurt1",
+				"sounds/turrets/Cannon Turret/hurt2"
+			],
+			"subtitle": "Cannon damaged"
+		},
+		"mg.shoot": {
+			"category": "block",
+			"max_distance": 16,
+			"sounds": [
+				"sounds/turrets/MG Turret/shot1"
+			],
+			"subtitle": "MG Turret shoots"
+		},
+		"mg.destroyed": {
+			"category": "block",
+			"max_distance": 12,
+			"sounds": [
+				"sounds/turrets/MG Turret/crumbling_mg1",
+				"sounds/turrets/MG Turret/crumbling_mg2"
+			]
+		},
+		"bullet.ground_hit": {
+			"category": "block",
+			"max_distance": 12,
+			"sounds": [
+				"sounds/turrets/MG Turret/ground_hit1",
+				"sounds/turrets/MG Turret/ground_hit2",
+				"sounds/turrets/MG Turret/ground_hit3"
+			],
+			"subtitle": "Bullet hits ground"
+		},
+		"bullet.hit": {
+			"category": "block",
+			"max_distance": 12,
+			"sounds": [
+				"sounds/turrets/MG Turret/hit1",
+				"sounds/turrets/MG Turret/hit2"
+			],
+			"subtitle": "Bullet hits"
+		}
+	}
+}

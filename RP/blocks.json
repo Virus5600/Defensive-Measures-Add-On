@@ -1,0 +1,11 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"dm:arrow_head": {
+		"textures": "arrow_head",
+		"sound": "stone"
+	}
+}

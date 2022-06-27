@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.machine_gun_turret.firing_sequence": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target"
+					],
+					"transitions": [
+						{"shoot": "query.is_charged"}
+					]
+				},
+				"shoot": {
+					"animations": [
+						"shoot"
+					],
+					"transitions": [
+						{"default": "(!query.has_target || query.is_charged) && query.any_animation_finished"}
+					]
+				}
+			}
+		}
+	}
+}

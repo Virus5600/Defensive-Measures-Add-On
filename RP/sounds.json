@@ -1,0 +1,153 @@
+{
+	"individual_event_sounds": {
+		"events": {
+			"bullet.ground_hit": {
+				"sound": "bullet.ground_hit",
+				"volume": 1,
+				"pitch": [0.75, 1.25]
+			},
+			"bullet.hit": {
+				"sound": "bullet.hit",
+				"volume": 1,
+				"pitch": [0.75, 1.25]
+			}
+		}
+	},
+	"block_sounds": {
+	},
+	"entity_sounds": {
+		"defaults": {
+			"volume": 1,
+			"pitch": [
+				0.8,
+				1.2
+			],
+			"events": {
+				"fall.big": {
+					"sound": "damage.fallbig",
+					"volume": 0.75,
+					"pitch": 1
+				},
+				"fall.small": {
+					"sound": "damage.fallsmall",
+					"volume": 0.75,
+					"pitch": 1
+				},
+				"splash": {
+					"sound": "random.splash",
+					"pitch": [
+						0.6,
+						1.4
+					]
+				},
+				"swim": {
+					"sound": "random.swim",
+					"pitch": [
+						0.6,
+						1.4
+					]
+				},
+				"fizz": {
+					"sound": "random.fizz",
+					"volume": 0.7,
+					"pitch": [
+						1.2,
+						2
+					]
+				},
+				"drink": {
+					"sound": "random.drink",
+					"volume": 0.5,
+					"pitch": [
+						0.9,
+						1
+					]
+				},
+				"eat": {
+					"sound": "random.eat",
+					"volume": [
+						0.5,
+						1.5
+					],
+					"pitch": [
+						0.8,
+						1.2
+					]
+				},
+				"ambient": {},
+				"flop": {},
+				"hurt": "game.player.hurt",
+				"death": "game.player.die",
+				"ambient.in.water": {},
+				"hurt.in.water": {},
+				"death.in.water": {},
+				"ambient.in.raid": {}
+			}
+		},
+		"entities": {
+			"dm:cannon_turret": {
+				"volume": 1,
+				"pitch": [0.5, 1.5],
+				"events": {
+					"shoot": {
+						"sound": "cannon.shoot",
+						"volume": 1,
+						"pitch": [0.75, 1.25]
+					},
+					"death": {
+						"sound": "cannon.destroyed",
+						"volume": 1,
+						"pitch": [0.75, 1.25]
+					},
+					"hurt": {
+						"sound": "cannon.hurt",
+						"volume": 1,
+						"pitch": [0.875, 1.125]
+					}
+				}
+			},
+			"dm:ballista": {
+				"volume": 1,
+				"pitch": [0.5, 1.5],
+				"events": {
+					"shoot": {
+						"sound": "crossbow.shoot",
+						"volume": 1,
+						"pitch": [0.75, 1.25]
+					},
+					"death": {
+						"sound": "mob.zombie.woodbreak",
+						"volume": 1,
+						"pitch": [0.75, 1.25]
+					},
+					"hurt": {
+						"sound": "mob.zombie.wood",
+						"volume": 1,
+						"pitch": [0.875, 1.125]
+					}
+				}
+			},
+			"dm:mg_turret": {
+				"volume": 1,
+				"pitch": [0.5, 1.5],
+				"events": {
+					"shoot": {
+						"sound": "mg.shoot",
+						"volume": 1,
+						"pitch": [0.875, 1.125]
+					},
+					"death": {
+						"sound": "mg.destroyed",
+						"volume": 1,
+						"pitch": [0.75, 1.25]
+					},
+					"hurt": {
+						"sound": "cannon.hurt",
+						"volume": 1,
+						"pitch": [0.875, 1.125]
+					}
+				}
+			}
+		}
+	}
+}

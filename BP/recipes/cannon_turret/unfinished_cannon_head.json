@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dm:unfinished_cannon_head"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ibi",
+			"bgi",
+			"ibi"
+		],
+		"key": {
+			"b": {
+				"item": "minecraft:iron_block"
+			},
+			"i": {
+				"item": "minecraft:iron_ingot"
+			},
+			"g": {
+				"item": "minecraft:gunpowder"
+			}
+		},
+		"result": [
+			{
+				"item": "dm:unfinished_cannon_head",
+				"count": 1
+			}
+		]
+	}
+}
