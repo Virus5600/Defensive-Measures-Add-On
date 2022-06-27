@@ -1,0 +1,44 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Defensive Measures",
+	"namespace": "dm",
+	"authors": [
+		"Virus5600"
+	],
+	"targetVersion": "1.19.0",
+	"description": "eme",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": true,
+		"enableGameTestFramework": false,
+		"experimentalMolangFeatures": true,
+		"theWildUpdate": true,
+		"educationEdition": false
+	},
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Defensive Measures"
+				}
+			]
+		]
+	}
+}

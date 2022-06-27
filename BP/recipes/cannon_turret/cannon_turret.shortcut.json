@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dm:cannon_turret.shortcut"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"shs",
+			"ppp",
+			"SSS"
+		],
+		"key": {
+			"s": {
+				"item": "dm:cannon_stand"
+			},
+			"h": {
+				"item": "dm:cannon_head"
+			},
+			"p": {
+				"item": "minecraft:wooden_slab"
+			},
+			"S": {
+				"item": "minecraft:stone_slab"
+			}
+		},
+		"result": [
+			{
+				"item": "dm:cannon_turret",
+				"count": 1
+			}
+		]
+	}
+}

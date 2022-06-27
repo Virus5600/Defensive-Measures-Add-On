@@ -1,0 +1,38 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "dm:machine_gun_base"
+		},
+		"components": {
+			"minecraft:max_stack_size": 16,
+			"minecraft:creative_category": {
+				"category": "items"
+			},
+			"minecraft:icon": {
+				"texture": "machine_gun_base"
+			},
+			"minecraft:render_offsets": {
+				"main_hand": {
+					"first_person": {
+						"scale": [
+							0.01875,
+							0.015625,
+							0.01875
+						]
+					},
+					"third_person": {
+						"scale": [
+							0.01875,
+							0.015625,
+							0.01875
+						]
+					}
+				}
+			},
+			"minecraft:display_name": {
+				"value": "item.dm:machine_gun_base.name"
+			}
+		}
+	}
+}
