@@ -22,7 +22,7 @@ item.dm:ammo_rounds.name=Ammo Rounds
 item.dm:machine_gun_base.name=MG Base
 item.dm:machine_gun_head.name=MG Head
 item.dm:machine_gun_stand.name=MG Stand
-item.dm:mg_turret.name=MG Turret
+item.dm:mg_turret.name=Place MG Turret
 
 entity.dm:cannon_turret.name=Cannon Turret
 entity.dm:cannonball.name=Cannon ball

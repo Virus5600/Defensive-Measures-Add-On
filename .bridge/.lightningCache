@@ -198,3 +198,11 @@ projects/Defensive Measures/RP/textures/item_texture.json|1656297200520|{"textur
 projects/Defensive Measures/RP/textures/terrain_texture.json|1656338743542|{"texture":["arrow_head","dm_arrow_head"],"texturePath":["projects/Defensive Measures/RP/textures/blocks/arrow_head.png"]}
 #bridgeConfig
 projects/Defensive Measures/config.json|1656338796699
+#block
+projects/Defensive Measures/BP/blocks/arrow_head.json|1656342278388|{"identifier":["dm:arrow_head"],"event":["dealDamage"],"eventReference":["dealDamage"],"geometryIdentifier":["geometry.arrow_head"],"texture":["dm_arrow_head"],"tag":["dm:trap"]}
+#manifest
+projects/Defensive Measures/BP/manifest.json|1656342278739
+#bridgeConfig
+projects/Defensive Measures/config.json|1656342286476
+#clientLang
+projects/Defensive Measures/RP/texts/en_US.lang|1656342312840|{"actionText":["action.turret.remove"]}
