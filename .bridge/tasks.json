@@ -1,9 +1,0 @@
-[
-	{
-		"title": "Fix item categories",
-		"description": "Fix the categories of each items. Turrets should all be in Equipment while parts should be in Items.",
-		"assignedTo": "Virus5600",
-		"isDone": false,
-		"isPinned": true
-	}
-]
