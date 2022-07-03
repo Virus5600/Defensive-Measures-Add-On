@@ -33,7 +33,7 @@
 			"minecraft:particle_initial_speed": "-Math.random(10,25)",
 			"minecraft:particle_motion_dynamic": {
 				"linear_acceleration": [0, 25, -100],
-				"linear_drag_coefficient": "Math.random(1,5)",
+				"linear_drag_coefficient": "Math.random(1,1.25)",
 				"rotation_drag_coefficient": "Math.random(0, 360)"
 			},
 			"minecraft:particle_appearance_billboard": {

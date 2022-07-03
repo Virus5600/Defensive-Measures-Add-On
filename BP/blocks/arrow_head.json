@@ -3,7 +3,10 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "dm:arrow_head",
-			"is_experimental": false
+			"is_experimental": false,
+			"properties": {
+				"dm:hide_dmsg": [true, false]
+			}
 		},
 		"components": {
 			"minecraft:geometry": "geometry.arrow_head",
@@ -33,16 +36,19 @@
 			"minecraft:on_step_on": {
 				"event": "dealDamage"
 			},
-			"minecraft:display_name": "dm:arrow_head",
-			"tag:dm:trap": {}
+			"tag:dm:trap": {},
+			"tag:dm:arrow_head": {}
 		},
 		"events": {
 			"dealDamage": {
-				"damage": {
-					"target": "other",
-					"type": "contact",
-					"amount": 2
-				}
+				"sequence": [
+					//{"condition": "v.valid = false; for_each(v.p, q.get_nearby_entities(1, 'minecraft:player'), {v.valid = (v.p->q.health <= 2); (v.valid) ? {return true;};};); return v.valid;", "set_block_property": {"dm:hide_dmsg": true}},
+					//{"condition": "q.block_property('dm:hide_dmsg') == true", "run_command": {"command": "/gamerule showdeathmessages false"}},
+					{"damage": {"target": "other", "type": "contact", "amount": 2}}//,
+					//{"condition": "q.block_property('dm:hide_dmsg') == true", "run_command": {"command": "/tellraw @a {\"rawtext\":[{\"selector\": \"@s\"}, {\"text\": \" stepped on an arrow head\"}]}", "target": "other"}},
+					//{"condition": "q.block_property('dm:hide_dmsg') == true", "run_command": {"command": "/gamerule showdeathmessages true"}},
+					//{"condition": "q.block_property('dm:hide_dmsg') == true", "set_block_property": {"dm:hide_dmsg": false}}
+				]
 			}
 		}
 	}
