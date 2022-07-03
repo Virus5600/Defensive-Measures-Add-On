@@ -4,3 +4,6 @@ Defensive Add-on is an add-on that allows players to place defensive turrets and
 
 # COPYRIGHT
 This document is Copyright ©2020 of Karl Satchi Navida (hereafter referred to as "The Owner") and is the intellectual property of The Owner. Only Minecraftforum.net is able to host any of The Owner's material without the consent of The Owner. It may not be placed on any other web site or otherwise distributed publicly without advance written permission. (Electronic mail is acceptable as long as you wait for a response.)
+
+# SUPPORT ME
+Ko-Fi: [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D6BFRR3)
