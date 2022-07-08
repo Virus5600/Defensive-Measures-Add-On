@@ -30,22 +30,40 @@
 							"value": "monster"
 						},
 						"max_dist": 16
+					},
+					{
+						"filters": {
+							"subject": "other",
+							"test": "is_family",
+							"value": "dragon"
+						}
+					},
+					{
+						"filters": {
+							"subject": "other",
+							"test": "is_family",
+							"value": "wither"
+						}
 					}
 				],
 				"must_see": true,
 				"within_radius": 16,
-				"persist_time": 2,
-				"attack_interval": 5
+				"persist_time": 2
 			},
 			"minecraft:behavior.ranged_attack": {
 				"priority": 0,
 				"charge_charged_trigger": 4.9,
 				"charge_shoot_trigger": 5,
-				"attack_radius": 16
+				"attack_interval": 0.1,
+				"burst_shots": 1,
+				"ranged_fov": 360,
+				"x_max_rotation": 30,
+				"attack_radius": 16,
+				"attack_radius_min": 1
 			},
 			"minecraft:collision_box": {
-				"width": 0.75,
-				"height": 0.75
+				"width": 1,
+				"height": 1
 			},
 			"minecraft:fire_immune": true,
 			"minecraft:healable": {

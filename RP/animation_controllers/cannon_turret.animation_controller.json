@@ -7,7 +7,7 @@
 				"default": {
 					"animations": [
 						"look_at_target",
-						{"fuse": "query.has_target"}
+						"fuse"
 					],
 					"transitions": [
 						{"shoot": "query.is_charged"}

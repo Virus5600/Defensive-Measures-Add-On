@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dm:mg_turret"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"h",
+			"s",
+			"b"
+		],
+		"key": {
+			"h": {
+				"item": "dm:machine_gun_head"
+			},
+			"s": {
+				"item": "dm:machine_gun_stand"
+			},
+			"b": {
+				"item": "dm:machine_gun_base"
+			}
+		},
+		"result": [
+			{
+				"item": "dm:mg_turret",
+				"count": 1
+			}
+		]
+	}
+}

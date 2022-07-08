@@ -17,7 +17,7 @@
 						"shoot"
 					],
 					"transitions": [
-						{"default": "(!query.has_target || query.is_charged) && query.any_animation_finished"}
+						{"default": "query.has_target && !query.is_charged && query.any_animation_finished"}
 					]
 				}
 			}
