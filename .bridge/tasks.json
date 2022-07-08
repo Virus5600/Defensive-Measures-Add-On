@@ -1,12 +1,5 @@
 [
 	{
-		"title": "Update \"DMA Read Me\" file",
-		"description": "Include the new blocks, items, crafting recipe",
-		"assignedTo": "Virus5600",
-		"isDone": false,
-		"isPinned": false
-	},
-	{
 		"title": "Create the trailer storyboard",
 		"description": "Create a trailer storyboard to follow when creating the trailer",
 		"assignedTo": "Virus5600",
@@ -18,6 +11,13 @@
 		"description": "Create a Medieval and Modern Base for the trailer.",
 		"assignedTo": "Virus5600",
 		"isDone": false,
+		"isPinned": false
+	},
+	{
+		"title": "Update \"DMA Read Me\" file",
+		"description": "Include the new blocks, items, crafting recipe",
+		"assignedTo": "Virus5600",
+		"isDone": true,
 		"isPinned": false
 	},
 	{

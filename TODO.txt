@@ -1,0 +1,9 @@
+[DESCRIPTION]
+Justify format
+
+[INSTALLATION]
+Add image for guide
+
+[TURRETS]
+Move all items related to the turret to the "Turrets" section
+Change `>` to its item image

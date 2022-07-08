@@ -1,7 +1,7 @@
 pack.name=Defensive Measures (RP)
 pack.description=The required Resource Pack for the Behavior Pack Defensive Measures.
 
-tile.dm:arrow_head.name=Arrow Head
+tile.dm:arrowhead.name=Arrowhead
 
 item.dm:turret_remover.name=Turret Remover
 
@@ -40,4 +40,4 @@ itemGroup.name.dm_turret=Defensive Measures Turrets
 itemGroup.name.dm_items=Defensive Measures Items
 itemGroup.name.dm_traps=Defensive Measures Traps
 
-#death.attack.generic=%1$s stepped on an arrow head
+#death.attack.generic=%1$s stepped on an arrowhead
