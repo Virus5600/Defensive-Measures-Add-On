@@ -4,13 +4,8 @@
 	"padding": 8,
 	"num_mip_levels": 4,
 	"texture_data": {
-		"arrow_head": {
-			"textures": [
-				"textures/blocks/arrow_head"
-			]
-		},
-		"dm_arrow_head": {
-			"textures": "textures/blocks/arrow_head"
+		"dm_arrowhead": {
+			"textures": "textures/blocks/arrowhead"
 		}
 	}
 }

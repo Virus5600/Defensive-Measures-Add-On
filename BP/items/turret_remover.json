@@ -53,25 +53,6 @@
 			"minecraft:display_name": {
 				"value": "item.dm:turret_remover.name"
 			}
-		},
-		"events": {
-			"preventUse": {
-				"swing": {},
-				"run_command": {
-					"target": "holder",
-					"command": [
-						"title @s actionbar §bPower §l§cdepleted§r§b. Re-charge using §4Redstone Block§r§b.§r"
-					]
-				}
-			},
-			"repaired": {
-				"run_command": {
-					"target": "holder",
-					"command": [
-						"title @s actionbar §bPower §l§arecharged§r§b.§r"
-					]
-				}
-			}
 		}
 	}
 }

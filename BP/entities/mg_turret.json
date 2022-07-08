@@ -35,21 +35,25 @@
 				],
 				"must_see": true,
 				"within_radius": 16,
-				"persist_time": 2.5,
-				"attack_interval": 2.5
+				"persist_time": 2
 			},
 			"minecraft:behavior.ranged_attack": {
 				"priority": 0,
 				"charge_charged_trigger": 2.4,
 				"charge_shoot_trigger": 2.5,
-				"attack_radius": 24,
+				"attack_interval": 0.1,
 				"burst_shots": 10,
+				"ranged_fov": 360,
+				"x_max_rotation": 90,
+				"attack_radius": 24,
+				"attack_radius_min": 1,
 				"burst_interval": 0.1
 			},
 			"minecraft:collision_box": {
-				"width": 0.75,
-				"height": 0.75
+				"width": 1,
+				"height": 1
 			},
+			"minecraft:fire_immune": true,
 			"minecraft:healable": {
 				"items": [
 					{
@@ -83,11 +87,11 @@
 				"has_collision": true,
 				"has_gravity": true
 			},
+			"minecraft:persistent": {},
 			"minecraft:pushable": {
 				"is_pushable": false,
 				"is_pushable_by_piston": true
 			},
-			"minecraft:persistent": {},
 			"minecraft:shooter": {
 				"def": "defensive:mg_bullet"
 			},
@@ -126,14 +130,10 @@
 					"turret"
 				]
 			},
-			"minecraft:conditional_bandwidth_optimization": {},
-			"minecraft:scale": {
-				"value": 0.5
-			},
 			"minecraft:interact": {
 				"interactions": [
 					{
-						"interact_text": "Remove Turret",
+						"interact_text": "action.turret.remove",
 						"on_interact": {
 							"target": "self",
 							"event": "removeTurret",
@@ -150,6 +150,10 @@
 						"hurt_item": 1
 					}
 				]
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:scale": {
+				"value": 0.34375
 			}
 		},
 		"events": {

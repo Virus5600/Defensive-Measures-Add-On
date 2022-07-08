@@ -17,18 +17,15 @@
 				"setup": "animation.machine_gun_turret.setup",
 				"look_at_target": "animation.machine_gun_turret.look_at_target",
 				"shoot": "animation.machine_gun_turret.shoot",
-				"death": "animation.machine_gun_turret.death",
-				"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence"
+				"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence",
+				"death": "animation.machine_gun_turret.death"
 			},
 			"scripts": {
 				"scale": 0.5,
 				"animate": [
-					"setup",
-					"look_at_target",
-					"firing_sequence",
-					{
-						"death": "!query.is_alive"
-					}
+					{"setup": "query.is_alive"},
+					{"firing_sequence": "query.has_target"},
+					{"death": "!query.is_alive"}
 				]
 			},
 			"render_controllers": [

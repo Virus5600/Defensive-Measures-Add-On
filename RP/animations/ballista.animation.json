@@ -30,6 +30,9 @@
 						"1.24": [0, 0, 0]
 					}
 				},
+				"bow": {
+					"rotation": ["query.target_x_rotation > 25 ? 25 : query.target_x_rotation < -25 ? -25 : query.target_x_rotation", "query.target_y_rotation", 0]
+				},
 				"leftside1": {
 					"rotation": {
 						"0.0": [0, 0, 0],

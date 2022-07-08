@@ -1,7 +1,7 @@
 pack.name=Defensive Measures (RP)
 pack.description=The required Resource Pack for the Behavior Pack Defensive Measures.
 
-tile.dm:arrow_head.name=Arrow Head
+tile.dm:arrowhead.name=Arrowhead
 
 item.dm:turret_remover.name=Turret Remover
 
@@ -22,7 +22,7 @@ item.dm:ammo_rounds.name=Ammo Rounds
 item.dm:machine_gun_base.name=MG Base
 item.dm:machine_gun_head.name=MG Head
 item.dm:machine_gun_stand.name=MG Stand
-item.dm:mg_turret.name=MG Turret
+item.dm:mg_turret.name=Place MG Turret
 
 entity.dm:cannon_turret.name=Cannon Turret
 entity.dm:cannonball.name=Cannon ball
@@ -39,3 +39,5 @@ itemGroup.name.dm_tools=Defensive Measures Tools
 itemGroup.name.dm_turret=Defensive Measures Turrets
 itemGroup.name.dm_items=Defensive Measures Items
 itemGroup.name.dm_traps=Defensive Measures Traps
+
+#death.attack.generic=%1$s stepped on an arrowhead

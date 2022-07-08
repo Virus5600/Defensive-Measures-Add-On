@@ -25,7 +25,6 @@
 			"scripts": {
 				"animate": [
 					{"setup": "query.is_alive"},
-					{"look_at_target": "query.has_target"},
 					{"firing_sequence": "query.has_target"},
 					{"death": "!query.is_alive"}
 				]

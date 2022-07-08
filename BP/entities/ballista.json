@@ -30,22 +30,39 @@
 							"value": "monster"
 						},
 						"max_dist": 16
+					},
+					{
+						"filters": {
+							"subject": "other",
+							"test": "is_family",
+							"value": "dragon"
+						}
+					},
+					{
+						"filters": {
+							"subject": "other",
+							"test": "is_family",
+							"value": "wither"
+						}
 					}
 				],
 				"must_see": true,
 				"within_radius": 16,
-				"persist_time": 2.5,
-				"attack_interval": 2
+				"persist_time": 2.5
 			},
 			"minecraft:behavior.ranged_attack": {
 				"priority": 0,
 				"charge_charged_trigger": 1.15,
 				"charge_shoot_trigger": 1.25,
-				"attack_radius": 16
+				"attack_interval": 0.1,
+				"ranged_fov": 360,
+				"x_max_rotation": 25,
+				"attack_radius": 16,
+				"attack_radius_min": 1
 			},
 			"minecraft:collision_box": {
-				"width": 0.75,
-				"height": 0.75
+				"width": 1,
+				"height": 1
 			},
 			"minecraft:fire_immune": false,
 			"minecraft:healable": {
@@ -65,6 +82,17 @@
 					{
 						"item": "minecraft:wood",
 						"heal_amount": 15
+					},
+					{
+						"item": "minecraft:log",
+						"heal_amount": 25,
+						"effects": [
+							{
+								"name": "absorption",
+								"duration": 60,
+								"amplifier": 2
+							}
+						]
 					}
 				]
 			},
@@ -121,13 +149,10 @@
 					"turret"
 				]
 			},
-			"minecraft:scale": {
-				"value": 0.8125
-			},
 			"minecraft:interact": {
 				"interactions": [
 					{
-						"interact_text": "Remove Turret",
+						"interact_text": "action.turret.remove",
 						"on_interact": {
 							"target": "self",
 							"event": "removeTurret",
@@ -145,7 +170,10 @@
 					}
 				]
 			},
-			"minecraft:conditional_bandwidth_optimization": {}
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:scale": {
+				"value": 0.8125
+			}
 		},
 		"events": {
 			"removeTurret": {

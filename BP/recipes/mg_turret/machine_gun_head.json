@@ -1,0 +1,39 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dm:machine_gun_head"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ggr",
+			"bii",
+			"ggc"
+		],
+		"key": {
+			"g": {
+				"item": "minecraft:green_dye"
+			},
+			"b": {
+				"item": "minecraft:iron_block"
+			},
+			"i": {
+				"item": "minecraft:iron_ingot"
+			},
+			"r": {
+				"item": "dm:ammo_rounds"
+			},
+			"c": {
+				"item": "dm:ammo_case"
+			}
+		},
+		"result": [
+			{
+				"item": "dm:machine_gun_head",
+				"count": 1
+			}
+		]
+	}
+}
