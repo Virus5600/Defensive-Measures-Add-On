@@ -6,7 +6,7 @@
 				{
 					"type": "loot_table",
 					"weight": 20,
-					"name": "loot_tables/ballista/cannon_turret.head_1.json"
+					"name": "loot_tables/cannon_turret/cannon_turret.head_1.json"
 				},
 				{
 					"type": "loot_table",

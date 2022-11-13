@@ -204,3 +204,98 @@ projects/Defensive Measures/RP/textures/flipbook_textures.json|1656341993421
 projects/Defensive Measures/RP/textures/item_texture.json|1656505536980|{"texture":["turret_remover","cannon_turret","cannon_base","cannon_stand","unfinished_cannon_head","cannon_head","ballista","ballista_base","ballista_base_with_stand","ballista_bow","ballista_arrow","ammo_case","ammo_rounds","machine_gun_base","machine_gun_head","machine_gun_stand","machine_gun_turret"],"texturePath":["projects/Defensive Measures/RP/textures/items/turret_remover.png","projects/Defensive Measures/RP/textures/items/cannon/cannon_turret.png","projects/Defensive Measures/RP/textures/items/cannon/cannon_base.png","projects/Defensive Measures/RP/textures/items/cannon/cannon_stand.png","projects/Defensive Measures/RP/textures/items/cannon/unfinished_cannon_head.png","projects/Defensive Measures/RP/textures/items/cannon/cannon_head.png","projects/Defensive Measures/RP/textures/items/ballista/ballista_icon.png","projects/Defensive Measures/RP/textures/items/ballista/ballista_base.png","projects/Defensive Measures/RP/textures/items/ballista/ballista_base_with_stand.png","projects/Defensive Measures/RP/textures/items/ballista/ballista_bow.png","projects/Defensive Measures/RP/textures/items/ballista/ballista_arrow.png","projects/Defensive Measures/RP/textures/items/machine_gun/ammo_case.png","projects/Defensive Measures/RP/textures/items/machine_gun/ammo_rounds.png","projects/Defensive Measures/RP/textures/items/machine_gun/machine_gun_base.png","projects/Defensive Measures/RP/textures/items/machine_gun/machine_gun_head.png","projects/Defensive Measures/RP/textures/items/machine_gun/machine_gun_stand.png","projects/Defensive Measures/RP/textures/items/machine_gun/machine_gun_turret_icon.png"]}
 #terrainTexture
 projects/Defensive Measures/RP/textures/terrain_texture.json|1656776255237|{"texture":["dm_arrow_head"],"texturePath":["projects/Defensive Measures/RP/textures/blocks/arrow_head.png"]}
+#entity
+projects/Defensive Measures/BP/entities/ballista.json|1660542442244|{"identifier":["dm:ballista"],"event":["removeTurret"],"eventReference":["removeTurret"],"componentGroup":["despawn"],"family":["ballista","turret"],"lootTablePath":["projects/Defensive Measures/BP/loot_tables/ballista/ballista.json","projects/Defensive Measures/BP/loot_tables/ballista/ballista.drop.json"]}
+projects/Defensive Measures/BP/entities/mg_turret.json|1658500941543|{"identifier":["dm:mg_turret"],"event":["removeTurret"],"eventReference":["removeTurret"],"componentGroup":["despawn"],"family":["mg_turret","turret"],"lootTablePath":["projects/Defensive Measures/BP/loot_tables/mg_turret/mg_turret.json","projects/Defensive Measures/BP/loot_tables/mg_turret/mg_turret.drop.json"]}
+projects/Defensive Measures/BP/entities/cannon_turret.json|1658728276188|{"identifier":["dm:cannon_turret"],"event":["removeTurret"],"eventReference":["removeTurret"],"componentGroup":["despawn"],"family":["cannon","turret"],"lootTablePath":["projects/Defensive Measures/BP/loot_tables/cannon_turret/cannon_turret.json","projects/Defensive Measures/BP/loot_tables/cannon_turret/cannon_turret.drop.json"]}
+projects/Defensive Measures/BP/entities/cannonball.json|1660012290196|{"identifier":["dm:cannonball"],"event":["explode"],"eventReference":["explode"],"componentGroup":["exploding"],"family":["projectile","cannonball","explosive"]}
+projects/Defensive Measures/BP/entities/ballista_arrow.json|1661173496056|{"identifier":["dm:ballista_arrow"],"event":["despawn"],"eventReference":["despawn"],"componentGroup":["despawning"],"family":["projectile","arrow","ballista_arrow"]}
+#item
+projects/Defensive Measures/BP/items/ballista/ballista_arrow.json|1658500949098|{"identifier":["dm:ballista_arrow"],"itemTexture":["ballista_arrow"],"tag":[]}
+projects/Defensive Measures/BP/items/cannon_turret/cannon_base.json|1658541215047|{"identifier":["dm:cannon_base"],"itemTexture":["cannon_base"],"tag":[]}
+projects/Defensive Measures/BP/items/cannon_turret/cannon_head.json|1658546180767|{"identifier":["dm:cannon_head"],"itemTexture":["cannon_head"],"tag":[]}
+projects/Defensive Measures/BP/items/cannon_turret/cannon_stand.json|1658546278220|{"identifier":["dm:cannon_stand"],"itemTexture":["cannon_stand"],"tag":[]}
+projects/Defensive Measures/BP/items/cannon_turret/cannon_turret.json|1658546441565|{"identifier":["dm:cannon_turret"],"itemTexture":["cannon_turret"],"tag":[]}
+projects/Defensive Measures/BP/items/cannon_turret/unfinished_cannon_head.json|1658546443121|{"identifier":["dm:unfinished_cannon_head"],"itemTexture":["unfinished_cannon_head"],"tag":[]}
+projects/Defensive Measures/BP/items/ballista/ballista.json|1658546519276|{"identifier":["dm:ballista"],"itemTexture":["ballista"],"tag":[]}
+projects/Defensive Measures/BP/items/ballista/ballista_base.json|1658548306383|{"identifier":["dm:ballista_base"],"itemTexture":["ballista_base"],"tag":[]}
+projects/Defensive Measures/BP/items/ballista/ballista_base_with_stand.json|1658547986242|{"identifier":["dm:ballista_base_with_stand"],"itemTexture":["ballista_base_with_stand"],"tag":[]}
+projects/Defensive Measures/BP/items/ballista/ballista_bow.json|1658548136535|{"identifier":["dm:ballista_bow"],"itemTexture":["ballista_bow"],"tag":[]}
+projects/Defensive Measures/BP/items/mg_turret/ammo_case.json|1658548439583|{"identifier":["dm:ammo_case"],"itemTexture":["ammo_case"],"tag":[]}
+projects/Defensive Measures/BP/items/mg_turret/ammo_rounds.json|1658548939418|{"identifier":["dm:ammo_rounds"],"itemTexture":["ammo_rounds"],"tag":[]}
+projects/Defensive Measures/BP/items/mg_turret/machine_gun_base.json|1658549339972|{"identifier":["dm:machine_gun_base"],"itemTexture":["machine_gun_base"],"tag":[]}
+projects/Defensive Measures/BP/items/mg_turret/machine_gun_head.json|1658549383749|{"identifier":["dm:machine_gun_head"],"itemTexture":["machine_gun_head"],"tag":[]}
+projects/Defensive Measures/BP/items/mg_turret/machine_gun_stand.json|1658549428349|{"identifier":["dm:machine_gun_stand"],"itemTexture":["machine_gun_stand"],"tag":[]}
+projects/Defensive Measures/BP/items/turret_remover.json|1658549928318|{"identifier":["dm:turret_remover"],"itemTexture":["turret_remover"],"tag":[]}
+#geometry
+projects/Defensive Measures/RP/models/entity/machine_gun_turret.geo.json|1658538735071|{"identifier":["geometry.machine_gun_turret"],"locator":["barrel"],"bone":["base","body","head","gun","discarded_ammo","ammo_case","rounds","ammo1","ammo2","ammo3","ammo4","ammo5","ammo6","ammo7","ammo8","ammo9","ammo10"]}
+projects/Defensive Measures/RP/models/entity/cannon_turret.geo.json|1658832804417|{"identifier":["geometry.cannon_turret"],"locator":["barrel","fuse"],"bone":["base","stand","rightstand","leftstand","barrel_container","head"]}
+projects/Defensive Measures/RP/models/entity/ballista.geo.json|1660558805657|{"identifier":["geometry.ballista"],"locator":["mouth"],"bone":["base","stand","head","leftscrew","rightscrew","bow","leftside1","leftside2","leftside3","leftside4","rightside1","rightside2","rightside3","rightside4","string","leftstring","rightstring","pulley","pusher","pulleyrope","arrow"]}
+projects/Defensive Measures/RP/models/blocks/arrowhead.geo.json|1662120194457|{"identifier":["geometry.arrowhead"],"bone":["arrow"]}
+projects/Defensive Measures/RP/models/entity/mg_bullet.geo.json|1662120196711|{"identifier":["geometry.mg_bullet"],"bone":["body"]}
+projects/Defensive Measures/RP/models/entity/ballista_arrow.geo.json|1668074626792|{"identifier":["geometry.ballista_arrow"],"bone":["arrow"]}
+projects/Defensive Measures/RP/models/entity/cannonball.geo.json|1668074728280|{"identifier":["geometry.cannonball"],"bone":["body"]}
+#clientAnimation
+projects/Defensive Measures/RP/animations/machine_gun_turret.animation.json|1658538798791|{"identifier":["animation.machine_gun_turret.setup","animation.machine_gun_turret.look_at_target","animation.machine_gun_turret.shoot","animation.machine_gun_turret.death"],"particleEffect":["muzzle_flash"]}
+projects/Defensive Measures/RP/animations/cannon_turret.animation.json|1658804917724|{"identifier":["animation.cannon_turret.setup","animation.cannon_turret.look_at_target","animation.cannon_turret.shoot","animation.cannon_turret.death","animation.cannon_turret.fuse"],"particleEffect":["flash","fuse"]}
+projects/Defensive Measures/RP/animations/ballista_arrow.animation.json|1662120176908|{"identifier":["animation.ballista_arrow.shake","animation.ballista_arrow.move"]}
+projects/Defensive Measures/RP/animations/ballista.animation.json|1662120178155|{"identifier":["animation.ballista.setup","animation.ballista.look_at_target","animation.ballista.shoot","animation.ballista.death"]}
+#lang
+projects/Defensive Measures/BP/texts/en_US.lang|1658548483678
+projects/Defensive Measures/BP/texts/languages.json|1658548486541
+#texture
+projects/Defensive Measures/RP/textures/blocks/arrowhead.png|1657248071395
+projects/Defensive Measures/RP/textures/particle/particles.png|1656341993448
+projects/Defensive Measures/RP/textures/particle/muzzle_flash.png|1656341993747
+#clientLang
+projects/Defensive Measures/RP/texts/en_US.lang|1658548497520|{"actionText":["action.turret.remove"]}
+projects/Defensive Measures/RP/texts/languages.json|1658548502008
+#flipbookTexture
+projects/Defensive Measures/RP/textures/flipbook_textures.json|1658548505413
+#itemTexture
+projects/Defensive Measures/RP/textures/item_texture.json|1658548509067|{"texture":["turret_remover","cannon_turret","cannon_base","cannon_stand","unfinished_cannon_head","cannon_head","ballista","ballista_base","ballista_base_with_stand","ballista_bow","ballista_arrow","ammo_case","ammo_rounds","machine_gun_base","machine_gun_head","machine_gun_stand","machine_gun_turret"],"texturePath":["projects/Defensive Measures/RP/textures/items/turret_remover.png","projects/Defensive Measures/RP/textures/items/cannon/cannon_turret.png","projects/Defensive Measures/RP/textures/items/cannon/cannon_base.png","projects/Defensive Measures/RP/textures/items/cannon/cannon_stand.png","projects/Defensive Measures/RP/textures/items/cannon/unfinished_cannon_head.png","projects/Defensive Measures/RP/textures/items/cannon/cannon_head.png","projects/Defensive Measures/RP/textures/items/ballista/ballista_icon.png","projects/Defensive Measures/RP/textures/items/ballista/ballista_base.png","projects/Defensive Measures/RP/textures/items/ballista/ballista_base_with_stand.png","projects/Defensive Measures/RP/textures/items/ballista/ballista_bow.png","projects/Defensive Measures/RP/textures/items/ballista/ballista_arrow.png","projects/Defensive Measures/RP/textures/items/machine_gun/ammo_case.png","projects/Defensive Measures/RP/textures/items/machine_gun/ammo_rounds.png","projects/Defensive Measures/RP/textures/items/machine_gun/machine_gun_base.png","projects/Defensive Measures/RP/textures/items/machine_gun/machine_gun_head.png","projects/Defensive Measures/RP/textures/items/machine_gun/machine_gun_stand.png","projects/Defensive Measures/RP/textures/items/machine_gun/machine_gun_turret_icon.png"]}
+#terrainTexture
+projects/Defensive Measures/RP/textures/terrain_texture.json|1658548513068|{"texture":["dm_arrowhead"],"texturePath":["projects/Defensive Measures/RP/textures/blocks/arrowhead.png"]}
+#musicDefinition
+projects/Defensive Measures/RP/sounds/music_definitions.json|1656341993787
+#soundDefinition
+projects/Defensive Measures/RP/sounds/sound_definitions.json|1658548526871|{"identifier":["cannon.shoot","cannon.destroyed","cannon.hurt","mg.shoot","mg.destroyed","bullet.ground_hit","bullet.hit"]}
+#particle
+projects/Defensive Measures/RP/particles/muzzle_flash.particle.json|1657248040748|{"identifier":["dm:muzzle_flash"],"texturePath":["projects/Defensive Measures/RP/textures/particle/particles.png"]}
+projects/Defensive Measures/RP/particles/cannon_turret/cannon_flash.particle.json|1658548539376|{"identifier":["dm:cannon_flash"],"texturePath":["projects/Defensive Measures/RP/textures/particle/particles.png"]}
+projects/Defensive Measures/RP/particles/cannon_turret/cannon_fuse.particle.json|1656761306549|{"identifier":["dm:cannon_fuse"],"texturePath":["projects/Defensive Measures/RP/textures/particle/particles.png"]}
+#recipe
+projects/Defensive Measures/BP/recipes/turret_remover.json|1658612616133|{"identifier":["dm:turret_remover"],"recipeTag":["crafting_table"],"itemIdentifier":["minecraft:redstone_block","minecraft:iron_nugget","minecraft:gold_ingot"]}
+projects/Defensive Measures/BP/recipes/mg_turret/machine_gun_base.json|1668066804009|{"identifier":["dm:machine_gun_base"],"recipeTag":["crafting_table"],"itemIdentifier":["minecraft:netherbrick","minecraft:heavy_weighted_pressure_plate"]}
+#manifest
+projects/Defensive Measures/BP/manifest.json|1668383181026
+#block
+projects/Defensive Measures/BP/blocks/arrowhead.json|1658650123334|{"identifier":["dm:arrowhead"],"event":["dealDamage"],"eventReference":["dealDamage"],"property":["dm:hide_dmsg"],"geometryIdentifier":["geometry.arrowhead"],"texture":["dm_arrowhead"],"tag":["dm:trap","dm:arrow_head"]}
+#clientEntity
+projects/Defensive Measures/RP/entity/cannon_turret.entity.json|1658803309668|{"identifier":["dm:cannon_turret"],"particleReference":["flash","fuse"],"animationReference":["setup","look_at_target","fuse","shoot","firing_sequence","death"],"textureReference":["default"],"materialReference":["default"],"geometryReference":["default"],"particleIdentifier":["dm:cannon_flash","dm:cannon_fuse"],"animationIdentifier":["animation.cannon_turret.setup","animation.cannon_turret.look_at_target","animation.cannon_turret.fuse","animation.cannon_turret.shoot","controller.animation.cannon_turret.firing_sequence","animation.cannon_turret.death"],"materialIdentifier":["entity"],"geometryIdentifier":["geometry.cannon_turret"],"renderControllerIdentifier":["controller.render.cannon_turret"],"texturePath":["projects/Defensive Measures/RP/textures/entity/cannon_turret.png"]}
+projects/Defensive Measures/RP/entity/ballista.entity.json|1660558793736|{"identifier":["dm:ballista"],"animationReference":["setup","look_at_target","shoot","firing_sequence","death"],"textureReference":["default"],"materialReference":["default"],"geometryReference":["default"],"animationIdentifier":["animation.ballista.setup","animation.ballista.look_at_target","animation.ballista.shoot","controller.animation.ballsita.firing_sequence","animation.ballista.death"],"materialIdentifier":["entity"],"geometryIdentifier":["geometry.ballista"],"renderControllerIdentifier":["controller.render.ballista"],"texturePath":["projects/Defensive Measures/RP/textures/entity/ballista.png"]}
+projects/Defensive Measures/RP/entity/mg_turret.entity.json|1662120143250|{"identifier":["dm:mg_turret"],"particleReference":["muzzle_flash"],"animationReference":["setup","look_at_target","shoot","firing_sequence","death"],"textureReference":["default"],"materialReference":["default"],"geometryReference":["default"],"particleIdentifier":["dm:muzzle_flash"],"animationIdentifier":["animation.machine_gun_turret.setup","animation.machine_gun_turret.look_at_target","animation.machine_gun_turret.shoot","controller.animation.machine_gun_turret.firing_sequence","animation.machine_gun_turret.death"],"materialIdentifier":["entity"],"geometryIdentifier":["geometry.machine_gun_turret"],"renderControllerIdentifier":["controller.render.machine_gun_turret"],"texturePath":["projects/Defensive Measures/RP/textures/entity/machine_gun_turret.png"]}
+projects/Defensive Measures/RP/entity/mg_bullet.entity.json|1662120170849|{"identifier":["dm:mg_bullet"],"animationReference":["move"],"textureReference":["default"],"materialReference":["default"],"geometryReference":["default"],"animationIdentifier":["animation.arrow.move"],"materialIdentifier":["arrow"],"geometryIdentifier":["geometry.mg_bullet"],"renderControllerIdentifier":["controller.render.arrow"],"texturePath":["projects/Defensive Measures/RP/textures/entity/mg_bullet.png"]}
+projects/Defensive Measures/RP/entity/cannonball.entity.json|1662120173622|{"identifier":["dm:cannonball"],"textureReference":["default"],"materialReference":["default"],"geometryReference":["default"],"materialIdentifier":["entity"],"geometryIdentifier":["geometry.cannonball"],"renderControllerIdentifier":["controller.render.cannonball"],"texturePath":["projects/Defensive Measures/RP/textures/entity/cannonball.png"]}
+#clientAnimationController
+projects/Defensive Measures/RP/animation_controllers/cannon_turret.animation_controller.json|1659189738566|{"identifier":["controller.animation.cannon_turret.firing_sequence"],"state":["default","shoot"],"animationReference":["look_at_target","fuse","shoot"]}
+#clientSound
+projects/Defensive Measures/RP/sounds.json|1660546532480|{"soundEvent":["shoot","death","hurt"]}
+#lootTable
+projects/Defensive Measures/BP/loot_tables/ballista/ballista.drop.json|1668074610956|{"lootTablePath":[]}
+projects/Defensive Measures/BP/loot_tables/ballista/ballista.head_1.json|1668074780243|{"lootTablePath":[]}
+projects/Defensive Measures/BP/loot_tables/ballista/ballista.json|1668074792778|{"lootTablePath":["projects/Defensive Measures/BP/loot_tables/ballista/ballista.head_1.json","projects/Defensive Measures/BP/loot_tables/ballista/ballista.head_2.json"]}
+projects/Defensive Measures/BP/loot_tables/ballista/ballista.head_2.json|1668075034191|{"lootTablePath":[]}
+projects/Defensive Measures/BP/loot_tables/empty.json|1668246456585
+projects/Defensive Measures/BP/loot_tables/cannon_turret/cannon_turret.drop.json|1668246476502|{"lootTablePath":[]}
+projects/Defensive Measures/BP/loot_tables/cannon_turret/cannon_turret.head_1.json|1668246477108|{"lootTablePath":[]}
+projects/Defensive Measures/BP/loot_tables/cannon_turret/cannon_turret.head_2.json|1668246477932|{"lootTablePath":[]}
+projects/Defensive Measures/BP/loot_tables/cannon_turret/cannon_turret.json|1668246793691|{"lootTablePath":["projects/Defensive Measures/BP/loot_tables/cannon_turret/cannon_turret.head_1.json","projects/Defensive Measures/BP/loot_tables/cannon_turret/cannon_turret.head_2.json"]}
+projects/Defensive Measures/BP/loot_tables/mg_turret/mg_turret.drop.json|1668247103906|{"lootTablePath":[]}
+projects/Defensive Measures/BP/loot_tables/mg_turret/mg_turret.head_1.json|1668247104389|{"lootTablePath":[]}
+projects/Defensive Measures/BP/loot_tables/mg_turret/mg_turret.head_2.json|1668247201729|{"lootTablePath":[]}
+projects/Defensive Measures/BP/loot_tables/mg_turret/mg_turret.json|1668247291497|{"lootTablePath":["projects/Defensive Measures/BP/loot_tables/mg_turret/mg_turret.head_1.json","projects/Defensive Measures/BP/loot_tables/mg_turret/mg_turret.head_2.json"]}
+#unknown
+projects/Defensive Measures/BP/pack_icon.png|1668383204629
+#clientManifest
+projects/Defensive Measures/RP/manifest.json|1668383207894|{"uuid":["e3aae82e-3c0d-4c81-b811-280b635fff08"]}

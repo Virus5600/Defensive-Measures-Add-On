@@ -23,6 +23,9 @@
                     }
                 }
             },
+			"minecraft:fuel": {
+				"duration": 25
+			},
 			"minecraft:display_name": {
 				"value": "item.dm:ballista_base.name"
 			}
