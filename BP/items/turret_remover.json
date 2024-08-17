@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.0",
 	"minecraft:item": {
 		"description": {
 			"identifier": "dm:turret_remover",
@@ -15,9 +15,6 @@
 					"min": 1,
 					"max": 1
 				}
-			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.dm_tools"
 			},
 			"minecraft:enchantable": {
 				"slot": "shears"
