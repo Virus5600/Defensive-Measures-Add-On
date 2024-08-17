@@ -1,0 +1,37 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.flak_turret.firing_sequence": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"shoot": "query.is_charged"
+						}
+					]
+				},
+				"shoot": {
+					"animations": [
+						"shoot",
+						"look_at_target"
+					],
+					"particle_effects": [
+						{
+							"effect": "muzzle_flash",
+							"locator": "barrel"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.has_target && !query.is_charged && query.any_animation_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

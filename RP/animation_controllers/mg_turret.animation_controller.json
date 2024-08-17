@@ -9,15 +9,26 @@
 						"look_at_target"
 					],
 					"transitions": [
-						{"shoot": "query.is_charged"}
+						{
+							"shoot": "query.is_charged"
+						}
 					]
 				},
 				"shoot": {
 					"animations": [
-						"shoot"
+						"shoot",
+						"look_at_target"
+					],
+					"particle_effects": [
+						{
+							"effect": "muzzle_flash",
+							"locator": "barrel"
+						}
 					],
 					"transitions": [
-						{"default": "query.has_target && !query.is_charged && query.any_animation_finished"}
+						{
+							"default": "query.has_target && !query.is_charged && query.any_animation_finished"
+						}
 					]
 				}
 			}

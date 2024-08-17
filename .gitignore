@@ -1,7 +1,6 @@
-Desktop.ini    
-.DS_Store 
-!.bridge/
-.bridge/*
-!.bridge/compiler/
-!.bridge/extensions
+.bridge
+.DS_Store
 builds
+com.mojang
+logs
+node_modules

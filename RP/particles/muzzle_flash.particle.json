@@ -14,7 +14,7 @@
 				"rotation": true
 			},
 			"minecraft:emitter_rate_instant": {
-				"num_particles": 1
+				"num_particles": 5
 			},
 			"minecraft:emitter_lifetime_once": {
 				"active_time": 1
@@ -29,19 +29,35 @@
 			},
 			"minecraft:particle_initial_speed": "-Math.random(0.125, 1)",
 			"minecraft:particle_motion_dynamic": {
-				"linear_acceleration": ["Math.random(0, 0.5)", "-Math.random(0, 0.5)", "-Math.random(0, 5)"],
+				"linear_acceleration": [
+					"Math.random(0, 0.5)",
+					"-Math.random(0, 0.5)",
+					"-Math.random(0, 5)"
+				],
 				"linear_drag_coefficient": "Math.random(0, 0.5)"
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": ["Math.random(0.05, 0.1)", "Math.random(0.05, 0.1)"],
+				"size": [
+					"Math.random(0.05, 0.1)",
+					"Math.random(0.05, 0.1)"
+				],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
 					"texture_width": 64,
 					"texture_height": 64,
 					"flipbook": {
-						"base_UV": [0, 12],
-						"size_UV": [4, 4],
-						"step_UV": [4, 0],
+						"base_UV": [
+							0,
+							12
+						],
+						"size_UV": [
+							4,
+							4
+						],
+						"step_UV": [
+							4,
+							0
+						],
 						"frames_per_second": 10,
 						"max_frame": 2,
 						"loop": true
