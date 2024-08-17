@@ -5,7 +5,7 @@
 			"identifier": "dm:arrowhead",
 			"menu_category": {
 				"category": "equipment",
-				"parent": "itemGroup.name.dm_traps"
+				"group": "itemGroup.name.dm_traps"
 			},
 			"states": {
 				"dm:damage_on_step_triggered": [

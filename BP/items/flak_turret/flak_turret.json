@@ -1,38 +1,20 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.0",
 	"minecraft:item": {
 		"description": {
 			"identifier": "dm:flak_turret",
-			"category": "equipment"
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.dm_turret"
+			}
 		},
 		"components": {
 			"minecraft:max_stack_size": 16,
 			"minecraft:entity_placer": {
 				"entity": "dm:flak_turret"
 			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.dm_turret"
-			},
 			"minecraft:icon": {
 				"texture": "flak_turret"
-			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"first_person": {
-						"scale": [
-							0.01875,
-							0.015625,
-							0.01875
-						]
-					},
-					"third_person": {
-						"scale": [
-							0.01875,
-							0.015625,
-							0.01875
-						]
-					}
-				}
 			},
 			"minecraft:display_name": {
 				"value": "item.dm:flak_turret.name"
