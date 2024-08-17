@@ -1,24 +1,24 @@
-//bridge-file-version: #2
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.0",
 	"minecraft:item": {
 		"description": {
-			"identifier": "defensive:mg_turret",
-			"category": "equipment"
+			"identifier": "dm:mg_turret",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.dm_turret"
+			}
 		},
 		"components": {
 			"minecraft:max_stack_size": 16,
 			"minecraft:entity_placer": {
-				"entity": "defensive:mg_turret"
-			},
-			"minecraft:creative_category": {
-				"parent": "equipment"
+				"entity": "dm:mg_turret"
 			},
 			"minecraft:icon": {
 				"texture": "machine_gun_turret"
 			},
-			"minecraft:display_name": {}
-		},
-		"events": {}
+			"minecraft:display_name": {
+				"value": "item.dm:mg_turret.name"
+			}
+		}
 	}
 }

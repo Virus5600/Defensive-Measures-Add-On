@@ -1,21 +1,21 @@
-//bridge-file-version: #5
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.0",
 	"minecraft:item": {
 		"description": {
-			"identifier": "defensive:ammo_case",
-			"category": "items"
+			"identifier": "dm:ammo_case",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.dm_items"
+			}
 		},
 		"components": {
 			"minecraft:max_stack_size": 16,
-			"minecraft:creative_category": {
-				"parent": "items"
-			},
 			"minecraft:icon": {
 				"texture": "ammo_case"
 			},
-			"minecraft:display_name": {}
-		},
-		"events": {}
+			"minecraft:display_name": {
+				"value": "item.dm:ammo_case.name"
+			}
+		}
 	}
 }

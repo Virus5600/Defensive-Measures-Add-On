@@ -5,7 +5,7 @@
 		0
 	],
 	"dm:arrowhead": {
-		"textures": "arrowhead",
+		"textures": "dm_arrowhead",
 		"sound": "stone"
 	}
 }

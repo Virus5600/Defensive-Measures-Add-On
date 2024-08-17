@@ -1,0 +1,14 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "minecraft-js",
+			"request": "attach",
+			"name": "Debug with Minecraft",
+			"mode": "listen",
+			"targetModuleUuid": "109c164f-3c8c-4d1d-bbb2-885c693a936d",
+			"localRoot": "C:/Users/Virus5600/AppData/Local/com.bridge.dev/bridge/projects/Defensive Measures/BP",
+			"port": 19144,
+		}
+	]
+}

@@ -24,6 +24,8 @@ item.dm:machine_gun_head.name=MG Head
 item.dm:machine_gun_stand.name=MG Stand
 item.dm:mg_turret.name=Place MG Turret
 
+item.dm:flak_turret.name=Place Flak Turret
+
 entity.dm:cannon_turret.name=Cannon Turret
 entity.dm:cannonball.name=Cannon ball
 
@@ -33,11 +35,11 @@ entity.dm:ballista_arrow.name=Ballista Arrow
 entity.dm:mg_turret.name=MG Turret
 entity.dm:mg_bullet.name=MG Bullet
 
+entity.dm:flak_turret.name=Flak Turret
+
 action.turret.remove=Remove Turret
 
 itemGroup.name.dm_tools=Defensive Measures Tools
 itemGroup.name.dm_turret=Defensive Measures Turrets
 itemGroup.name.dm_items=Defensive Measures Items
 itemGroup.name.dm_traps=Defensive Measures Traps
-
-#death.attack.generic=%1$s stepped on an arrowhead

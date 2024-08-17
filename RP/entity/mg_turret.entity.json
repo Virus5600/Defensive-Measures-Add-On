@@ -23,9 +23,15 @@
 			"scripts": {
 				"scale": 0.5,
 				"animate": [
-					{"setup": "query.is_alive"},
-					{"firing_sequence": "query.has_target"},
-					{"death": "!query.is_alive"}
+					{
+						"setup": "query.is_alive"
+					},
+					{
+						"firing_sequence": "query.has_target"
+					},
+					{
+						"death": "!query.is_alive"
+					}
 				]
 			},
 			"render_controllers": [

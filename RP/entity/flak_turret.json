@@ -1,0 +1,43 @@
+{
+	"format_version": "1.18.20",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dm:flak_turret",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/flak_turret"
+			},
+			"geometry": {
+				"default": "geometry.flak_turret"
+			},
+			"render_controllers": [
+				"controller.render.flak_turret"
+			],
+			"animations": {
+				"setup": "animation.flak_turret.setup",
+				"look_at_target": "animation.flak_turret.look_at_target",
+				"shoot": "animation.flak_turret.shoot",
+				"firing_sequence": "controller.animation.flak_turret.firing_sequence",
+				"death": "animation.flak_turret.shoot"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"setup": "query.is_alive"
+					},
+					{
+						"firing_sequence": "query.has_target"
+					},
+					{
+						"death": "!query.is_alive"
+					}
+				]
+			},
+			"particle_effects": {
+				"muzzle_flash": "dm:muzzle_flash"
+			}
+		}
+	}
+}

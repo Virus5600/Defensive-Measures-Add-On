@@ -4,17 +4,22 @@
 			"bullet.ground_hit": {
 				"sound": "bullet.ground_hit",
 				"volume": 1,
-				"pitch": [0.75, 1.25]
+				"pitch": [
+					0.75,
+					1.25
+				]
 			},
 			"bullet.hit": {
 				"sound": "bullet.hit",
 				"volume": 1,
-				"pitch": [0.75, 1.25]
+				"pitch": [
+					0.75,
+					1.25
+				]
 			}
 		}
 	},
-	"block_sounds": {
-	},
+	"block_sounds": {},
 	"entity_sounds": {
 		"defaults": {
 			"volume": 1,
@@ -87,64 +92,133 @@
 		"entities": {
 			"dm:cannon_turret": {
 				"volume": 1,
-				"pitch": [0.5, 1.5],
+				"pitch": [
+					0.5,
+					1.5
+				],
 				"events": {
 					"shoot": {
 						"sound": "cannon.shoot",
 						"volume": 1,
-						"pitch": [0.75, 1.25]
+						"pitch": [
+							0.75,
+							1.25
+						]
 					},
 					"death": {
 						"sound": "cannon.destroyed",
 						"volume": 1,
-						"pitch": [0.75, 1.25]
+						"pitch": [
+							0.75,
+							1.25
+						]
 					},
 					"hurt": {
 						"sound": "cannon.hurt",
 						"volume": 1,
-						"pitch": [0.875, 1.125]
+						"pitch": [
+							0.875,
+							1.125
+						]
 					}
 				}
 			},
 			"dm:ballista": {
 				"volume": 1,
-				"pitch": [0.5, 1.5],
+				"pitch": [
+					0.5,
+					1.5
+				],
 				"events": {
 					"shoot": {
 						"sound": "crossbow.shoot",
 						"volume": 1,
-						"pitch": [0.75, 1.25]
+						"pitch": [
+							0.75,
+							1.25
+						]
 					},
 					"death": {
 						"sound": "mob.zombie.woodbreak",
 						"volume": 1,
-						"pitch": [0.75, 1.25]
+						"pitch": [
+							0.75,
+							1.25
+						]
 					},
 					"hurt": {
 						"sound": "mob.zombie.wood",
 						"volume": 1,
-						"pitch": [0.875, 1.125]
+						"pitch": [
+							0.875,
+							1.125
+						]
 					}
 				}
 			},
 			"dm:mg_turret": {
 				"volume": 1,
-				"pitch": [0.5, 1.5],
+				"pitch": [
+					0.5,
+					1.5
+				],
 				"events": {
 					"shoot": {
 						"sound": "mg.shoot",
 						"volume": 1,
-						"pitch": [0.875, 1.125]
+						"pitch": [
+							0.875,
+							1.125
+						]
 					},
 					"death": {
 						"sound": "mg.destroyed",
 						"volume": 1,
-						"pitch": [0.75, 1.25]
+						"pitch": [
+							0.75,
+							1.25
+						]
 					},
 					"hurt": {
 						"sound": "cannon.hurt",
 						"volume": 1,
-						"pitch": [0.875, 1.125]
+						"pitch": [
+							0.875,
+							1.125
+						]
+					}
+				}
+			},
+			"dm:flak_turret": {
+				"volume": 1,
+				"pitch": [
+					0.5,
+					1.5
+				],
+				"events": {
+					"shoot": {
+						"sound": "mg.shoot",
+						"volume": 1,
+						"pitch": [
+							0.875,
+							1.125
+						]
+					},
+					"death": {
+						"sound": "mg.destroyed",
+						"volume": 1,
+						"pitch": [
+							0.75,
+							1.25
+						]
+					},
+					"hurt": {
+						"sound": "cannon.hurt",
+						"volume": 1,
+						"pitch": [
+							0.875,
+							1.125
+						]
 					}
 				}
 			},
