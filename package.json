@@ -1,0 +1,13 @@
+{
+	"name": "defensive-measures",
+	"version": "1.1.0",
+	"productName": "Defensive Measures",
+	"description": "Allows you to craft defensive turrets that will shoot any hostile mobs it detects and defend villages that are within proximity.",
+	"private": true,
+	"dependencies": {
+		"@minecraft/math": "^1.4.0",
+		"@minecraft/server": "^1.13.0",
+		"@minecraft/server-ui": "^1.2.0",
+		"@minecraft/vanilla-data": "^1.21.20"
+	}
+}

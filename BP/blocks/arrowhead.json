@@ -1,13 +1,32 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.10",
 	"minecraft:block": {
 		"description": {
 			"identifier": "dm:arrowhead",
-			"is_experimental": false,
-			"properties": {
-				"dm:hide_dmsg": [true, false]
+			"menu_category": {
+				"category": "equipment",
+				"parent": "itemGroup.name.dm_traps"
+			},
+			"states": {
+				"dm:damage_on_step_triggered": [
+					false,
+					true
+				]
 			}
 		},
+		"permutations": [
+			{
+				"condition": "query.block_state('dm:damage_on_step_triggered') == true",
+				"components": {
+					"minecraft:tick": {
+						"interval_range": [
+							10,
+							10
+						]
+					}
+				}
+			}
+		],
 		"components": {
 			"minecraft:geometry": "geometry.arrowhead",
 			"minecraft:material_instances": {
@@ -17,39 +36,41 @@
 					"face_dimming": false
 				}
 			},
-			"minecraft:breathability": "air",
-			"minecraft:block_light_absorption": 0,
-			"minecraft:pick_collision": {
-				"origin": [-2, 0, -2],
-				"size": [4, 2, 4]
-			},
-			"minecraft:entity_collision": {
-				"origin": [-2, 0, -2],
-				"size": [4, 4, 4]
-			},
-			"minecraft:creative_category": {
-				"category": "equipment",
-				"parent": "itemGroup.name.dm_traps"
-			},
-			"minecraft:destroy_time": 1.5,
-			"minecraft:explosion_resistance": 1,
-			"minecraft:on_step_on": {
-				"event": "dealDamage"
-			},
-			"tag:dm:trap": {},
-			"tag:dm:arrow_head": {}
-		},
-		"events": {
-			"dealDamage": {
-				"sequence": [
-					//{"condition": "v.valid = false; for_each(v.p, q.get_nearby_entities(1, 'minecraft:player'), {v.valid = (v.p->q.health <= 2); (v.valid) ? {return true;};};); return v.valid;", "set_block_property": {"dm:hide_dmsg": true}},
-					//{"condition": "q.block_property('dm:hide_dmsg') == true", "run_command": {"command": "/gamerule showdeathmessages false"}},
-					{"damage": {"target": "other", "type": "contact", "amount": 2}}//,
-					//{"condition": "q.block_property('dm:hide_dmsg') == true", "run_command": {"command": "/tellraw @a {\"rawtext\":[{\"selector\": \"@s\"}, {\"text\": \" stepped on an arrow head\"}]}", "target": "other"}},
-					//{"condition": "q.block_property('dm:hide_dmsg') == true", "run_command": {"command": "/gamerule showdeathmessages true"}},
-					//{"condition": "q.block_property('dm:hide_dmsg') == true", "set_block_property": {"dm:hide_dmsg": false}}
+			"minecraft:light_dampening": 0,
+			"minecraft:selection_box": {
+				"origin": [
+					-2,
+					0,
+					-2
+				],
+				"size": [
+					4,
+					4,
+					4
 				]
-			}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-2,
+					0,
+					-2
+				],
+				"size": [
+					4,
+					4,
+					4
+				]
+			},
+			// TAGS
+			"tag:dm:trap": {},
+			"tag:dm:arrow_head": {},
+			// CUSTOM COMPONENTS
+			"minecraft:custom_components": [
+				"dm:damage_on_step"
+			],
+			// DAMAGE ON STEP PARAMETERS
+			"tag:dm:damage_on_step_damage:2": {},
+			"tag:dm:damage_on_step_continuous": {}
 		}
 	}
 }

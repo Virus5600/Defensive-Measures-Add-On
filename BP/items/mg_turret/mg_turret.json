@@ -17,15 +17,23 @@
 				"texture": "machine_gun_turret"
 			},
 			"minecraft:render_offsets": {
-                "main_hand": {
-                    "first_person": {
-                        "scale": [0.01875, 0.015625, 0.01875]
-                    },
-                    "third_person": {
-                        "scale": [0.01875, 0.015625, 0.01875]
-                    }
-                }
-            },
+				"main_hand": {
+					"first_person": {
+						"scale": [
+							0.01875,
+							0.015625,
+							0.01875
+						]
+					},
+					"third_person": {
+						"scale": [
+							0.01875,
+							0.015625,
+							0.01875
+						]
+					}
+				}
+			},
 			"minecraft:display_name": {
 				"value": "item.dm:mg_turret.name"
 			}
