@@ -5,9 +5,9 @@
 			"category": "block",
 			"max_distance": 16,
 			"sounds": [
-				"sounds/turrets/Cannon Turret/shot1",
-				"sounds/turrets/Cannon Turret/shot2",
-				"sounds/turrets/Cannon Turret/shot3"
+				"sounds/turrets/cannon_turret/shot1",
+				"sounds/turrets/cannon_turret/shot2",
+				"sounds/turrets/cannon_turret/shot3"
 			],
 			"subtitle": "Cannon Turret shoots"
 		},
@@ -15,8 +15,8 @@
 			"category": "block",
 			"max_distance": 8,
 			"sounds": [
-				"sounds/turrets/Cannon Turret/crumbling cannon1",
-				"sounds/turrets/Cannon Turret/crumbling cannon2"
+				"sounds/turrets/cannon_turret/crumbling_cannon1",
+				"sounds/turrets/cannon_turret/crumbling_cannon2"
 			],
 			"subtitle": "Cannon destroyed"
 		},
@@ -24,8 +24,8 @@
 			"category": "block",
 			"max_distance": 16,
 			"sounds": [
-				"sounds/turrets/Cannon Turret/hurt1",
-				"sounds/turrets/Cannon Turret/hurt2"
+				"sounds/turrets/cannon_turret/hurt1",
+				"sounds/turrets/cannon_turret/hurt2"
 			],
 			"subtitle": "Cannon damaged"
 		},
@@ -33,7 +33,7 @@
 			"category": "block",
 			"max_distance": 16,
 			"sounds": [
-				"sounds/turrets/MG Turret/shot1"
+				"sounds/turrets/mg_turret/shot1"
 			],
 			"subtitle": "MG Turret shoots"
 		},
@@ -41,17 +41,17 @@
 			"category": "block",
 			"max_distance": 12,
 			"sounds": [
-				"sounds/turrets/MG Turret/crumbling_mg1",
-				"sounds/turrets/MG Turret/crumbling_mg2"
+				"sounds/turrets/mg_turret/crumbling_mg1",
+				"sounds/turrets/mg_turret/crumbling_mg2"
 			]
 		},
 		"bullet.ground_hit": {
 			"category": "block",
 			"max_distance": 12,
 			"sounds": [
-				"sounds/turrets/MG Turret/ground_hit1",
-				"sounds/turrets/MG Turret/ground_hit2",
-				"sounds/turrets/MG Turret/ground_hit3"
+				"sounds/turrets/mg_turret/ground_hit1",
+				"sounds/turrets/mg_turret/ground_hit2",
+				"sounds/turrets/mg_turret/ground_hit3"
 			],
 			"subtitle": "Bullet hits ground"
 		},
@@ -59,8 +59,8 @@
 			"category": "block",
 			"max_distance": 12,
 			"sounds": [
-				"sounds/turrets/MG Turret/hit1",
-				"sounds/turrets/MG Turret/hit2"
+				"sounds/turrets/mg_turret/hit1",
+				"sounds/turrets/mg_turret/hit2"
 			],
 			"subtitle": "Bullet hits"
 		}

@@ -2,7 +2,7 @@
 	"format_version": "1.19.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "dm:flak_turret",
+			"identifier": "dm:aa_turret",
 			"is_summonable": true
 		},
 		"components": {
@@ -15,7 +15,7 @@
 							"test": "is_family",
 							"value": "monster"
 						},
-						"max_dist": 16,
+						"max_dist": 64,
 						"must_see": true
 					}
 				]
@@ -28,41 +28,66 @@
 							"subject": "other",
 							"test": "is_family",
 							"value": "blaze"
-						},
-						"max_dist": 16
+						}
 					},
 					{
 						"filters": {
 							"subject": "other",
 							"test": "is_family",
 							"value": "dragon"
-						}
+						},
+						"max_dist": 64
+					},
+					{
+						"filters": {
+							"subject": "other",
+							"test": "is_family",
+							"value": "wither"
+						},
+						"max_dist": 64
 					},
 					{
 						"filters": {
 							"subject": "other",
 							"test": "is_family",
 							"value": "ghast"
-						}
+						},
+						"max_dist": 64
 					},
 					{
 						"filters": {
 							"subject": "other",
 							"test": "is_family",
 							"value": "phantom"
-						}
+						},
+						"max_dist": 64
 					},
 					{
 						"filters": {
 							"subject": "other",
 							"test": "is_family",
 							"value": "vex"
+						},
+						"max_dist": 64
+					},
+					{
+						"filters": {
+							"subject": "other",
+							"test": "is_family",
+							"value": "shulker_bullet"
+						}
+					},
+					{
+						"filters": {
+							"subject": "other",
+							"test": "is_family",
+							"value": "fireball"
 						}
 					}
 				],
 				"must_see": true,
-				"within_radius": 16,
-				"persist_time": 2
+				"within_radius": 64,
+				"persist_time": 5
 			},
 			"minecraft:behavior.ranged_attack": {
 				"priority": 0,
@@ -72,15 +97,16 @@
 				"burst_shots": 100,
 				"ranged_fov": 360,
 				"x_max_rotation": 90,
-				"attack_radius": 32,
-				"attack_radius_min": 0,
+				"y_max_head_rotation": 90,
+				"attack_radius": 64,
+				"attack_radius_min": 1,
 				"burst_interval": 0.1
 			},
 			"minecraft:collision_box": {
 				"width": 1,
 				"height": 1
 			},
-			"minecraft:fire_immune": true,
+			"minecraft:fire_immune": {},
 			"minecraft:healable": {
 				"items": [
 					{
@@ -151,7 +177,7 @@
 			},
 			"minecraft:type_family": {
 				"family": [
-					"flak_turret",
+					"aa_turret",
 					"turret"
 				]
 			},
@@ -170,7 +196,7 @@
 							}
 						},
 						"spawn_items": {
-							"table": "loot_tables/flak_turret/flak_turret.drop.json"
+							"table": "loot_tables/aa_turret/aa_turret.drop.json"
 						},
 						"hurt_item": 1
 					}

@@ -28,8 +28,7 @@
 							"subject": "other",
 							"test": "is_family",
 							"value": "monster"
-						},
-						"max_dist": 16
+						}
 					},
 					{
 						"filters": {
@@ -66,7 +65,7 @@
 				"width": 1,
 				"height": 1
 			},
-			"minecraft:fire_immune": true,
+			"minecraft:fire_immune": {},
 			"minecraft:healable": {
 				"items": [
 					{
@@ -164,10 +163,7 @@
 					}
 				]
 			},
-			"minecraft:conditional_bandwidth_optimization": {},
-			"minecraft:scale": {
-				"value": 0.34375
-			}
+			"minecraft:conditional_bandwidth_optimization": {}
 		},
 		"events": {
 			"removeTurret": {

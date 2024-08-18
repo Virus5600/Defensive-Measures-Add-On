@@ -1,7 +1,7 @@
 {
-	"format_version": "1.19.0",
+	"format_version": "1.10.0",
 	"render_controllers": {
-		"controller.render.flak_turret": {
+		"controller.render.aa_turret": {
 			"geometry": "Geometry.default",
 			"materials": [
 				{

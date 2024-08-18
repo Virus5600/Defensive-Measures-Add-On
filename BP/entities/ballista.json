@@ -64,7 +64,6 @@
 				"width": 1,
 				"height": 1
 			},
-			"minecraft:fire_immune": false,
 			"minecraft:healable": {
 				"items": [
 					{

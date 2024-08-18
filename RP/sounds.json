@@ -189,7 +189,7 @@
 					}
 				}
 			},
-			"dm:flak_turret": {
+			"dm:aa_turret": {
 				"volume": 1,
 				"pitch": [
 					0.5,

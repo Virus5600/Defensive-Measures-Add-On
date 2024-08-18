@@ -2,25 +2,25 @@
 	"format_version": "1.18.20",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "dm:flak_turret",
+			"identifier": "dm:aa_turret",
 			"materials": {
 				"default": "entity"
 			},
 			"textures": {
-				"default": "textures/entity/flak_turret"
+				"default": "textures/entity/aa_turret"
 			},
 			"geometry": {
-				"default": "geometry.flak_turret"
+				"default": "geometry.aa_turret"
 			},
 			"render_controllers": [
-				"controller.render.flak_turret"
+				"controller.render.aa_turret"
 			],
 			"animations": {
-				"setup": "animation.flak_turret.setup",
-				"look_at_target": "animation.flak_turret.look_at_target",
-				"shoot": "animation.flak_turret.shoot",
-				"firing_sequence": "controller.animation.flak_turret.firing_sequence",
-				"death": "animation.flak_turret.shoot"
+				"setup": "animation.aa_turret.setup",
+				"look_at_target": "animation.aa_turret.look_at_target",
+				"shoot": "animation.aa_turret.shoot",
+				"firing_sequence": "controller.animation.aa_turret.firing_sequence",
+				"death": "animation.aa_turret.death"
 			},
 			"scripts": {
 				"animate": [

@@ -87,9 +87,9 @@
 				"textures/items/machine_gun/machine_gun_turret_icon"
 			]
 		},
-		"flak_turret": {
+		"aa_turret": {
 			"textures": [
-				"textures/items/flak_turret/flak_turret"
+				"textures/items/aa_turret/aa_turret"
 			]
 		}
 	}

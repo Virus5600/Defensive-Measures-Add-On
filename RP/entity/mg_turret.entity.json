@@ -23,7 +23,6 @@
 				"death": "animation.machine_gun_turret.death"
 			},
 			"scripts": {
-				"scale": 0,
 				"animate": [
 					{
 						"setup": "query.is_alive"

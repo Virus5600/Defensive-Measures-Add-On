@@ -2,7 +2,7 @@
 	"format_version": "1.20.0",
 	"minecraft:item": {
 		"description": {
-			"identifier": "dm:flak_turret",
+			"identifier": "dm:aa_turret",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.dm_turret"
@@ -11,13 +11,13 @@
 		"components": {
 			"minecraft:max_stack_size": 16,
 			"minecraft:entity_placer": {
-				"entity": "dm:flak_turret"
+				"entity": "dm:aa_turret"
 			},
 			"minecraft:icon": {
-				"texture": "flak_turret"
+				"texture": "aa_turret"
 			},
 			"minecraft:display_name": {
-				"value": "item.dm:flak_turret.name"
+				"value": "item.dm:aa_turret.name"
 			}
 		}
 	}

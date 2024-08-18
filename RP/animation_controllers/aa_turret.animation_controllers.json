@@ -1,7 +1,7 @@
 {
-	"format_version": "1.19.0",
+	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.flak_turret.firing_sequence": {
+		"controller.animation.aa_turret.firing_sequence": {
 			"initial_state": "default",
 			"states": {
 				"default": {

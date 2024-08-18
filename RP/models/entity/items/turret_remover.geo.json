@@ -1,0 +1,29 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.turret_remover",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "pole",
+					"pivot": [0, 24, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{"origin": [-0.75, 14, -0.75], "size": [1.5, 8, 1.5], "uv": [0, 3]},
+						{"origin": [-1, 22, -1], "size": [2, 1, 2], "uv": [8, 6]},
+						{"origin": [-2, 23, -1], "size": [4, 1, 2], "uv": [0, 0]},
+						{"origin": [1, 24, -1], "size": [1, 3, 2], "uv": [4, 8]},
+						{"origin": [-2, 24, -1], "size": [1, 3, 2], "uv": [4, 3]}
+					]
+				}
+			]
+		}
+	]
+}
