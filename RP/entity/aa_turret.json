@@ -19,8 +19,9 @@
 				"setup": "animation.aa_turret.setup",
 				"look_at_target": "animation.aa_turret.look_at_target",
 				"shoot": "animation.aa_turret.shoot",
+				"death_animation": "animation.aa_turret.death",
 				"firing_sequence": "controller.animation.aa_turret.firing_sequence",
-				"death": "animation.aa_turret.death"
+				"death": "controller.animation.common_turret.death"
 			},
 			"scripts": {
 				"animate": [

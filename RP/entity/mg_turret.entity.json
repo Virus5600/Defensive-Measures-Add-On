@@ -19,8 +19,9 @@
 				"setup": "animation.machine_gun_turret.setup",
 				"look_at_target": "animation.machine_gun_turret.look_at_target",
 				"shoot": "animation.machine_gun_turret.shoot",
+				"death_animation": "animation.machine_gun_turret.death",
 				"firing_sequence": "controller.animation.machine_gun_turret.firing_sequence",
-				"death": "animation.machine_gun_turret.death"
+				"death": "controller.animation.common_turret.death"
 			},
 			"scripts": {
 				"animate": [

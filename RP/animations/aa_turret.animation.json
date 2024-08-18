@@ -716,6 +716,20 @@
 							3.63886
 						]
 					}
+				},
+				"base": {
+					"rotation": [
+						0,
+						"-query.body_y_rotation",
+						"Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90"
+					]
+				},
+				"stand": {
+					"rotation": [
+						0,
+						"-query.body_y_rotation",
+						"Math.min(Math.sqrt(Math.max(0, query.anim_time * 20 - 0.5) / 20 * 1.6), 1) * -90 "
+					]
 				}
 			}
 		}

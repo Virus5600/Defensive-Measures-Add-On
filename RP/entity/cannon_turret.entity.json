@@ -20,8 +20,9 @@
 				"look_at_target": "animation.cannon_turret.look_at_target",
 				"fuse": "animation.cannon_turret.fuse",
 				"shoot": "animation.cannon_turret.shoot",
+				"death_animation": "animation.cannon_turret.death",
 				"firing_sequence": "controller.animation.cannon_turret.firing_sequence",
-				"death": "animation.cannon_turret.death"
+				"death": "controller.animation.common_turret.death"
 			},
 			"scripts": {
 				"animate": [
