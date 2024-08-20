@@ -85,7 +85,6 @@
 						}
 					}
 				],
-				"must_see": true,
 				"within_radius": 64,
 				"persist_time": 5
 			},
@@ -97,7 +96,6 @@
 				"burst_shots": 100,
 				"ranged_fov": 360,
 				"x_max_rotation": 90,
-				"y_max_head_rotation": 90,
 				"attack_radius": 64,
 				"attack_radius_min": 1,
 				"burst_interval": 0.1
